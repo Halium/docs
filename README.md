@@ -1,1 +1,3 @@
-# docs
+# Docs
+
+[Planning](planning.md)
