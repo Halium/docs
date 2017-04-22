@@ -148,14 +148,6 @@ Jolla guys potentially interested but too early to commit to this. We need a pro
 
 Jolla was concerned about how our things work with the ODMs way of things. This may not be a problem for community projects like ubports, plasma, et. al. but especially for Jolla since they’re dealing straight with the ODMs. Something to take into account when we build our infrastructure. We should make it as flexible as possible so that this would work with them also.
 
-## FAQ
-
-Why this effort?
-
-Who are you?
-
----
-
 # Initial halium creator script (locusf rambling)
 
 1.  Plug in phone, run adb, which pulls in needed binaries from /system
