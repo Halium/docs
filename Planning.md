@@ -48,23 +48,6 @@ This stack doesn't include the,
 *   Please let’s move away from android recovery update method (it does not fit us) (Boot from sdcard using efidroid at least for testing, so write images to sdcards?)
 *   Document all the things! YES! We need that badly
 
-## Feature ideas
-
-*   Common upstream msm kernel for all devices
-*   Common sets of qcom drivers
-*   All qcom devices to caf
-*   Freedreno for mainlined devices
-*   Backport 5.1 and 6.0 kernel driver required by 5.1 and 6.0 blobs
-*   Upstream the Android N port of libhybris from UBports fork
-*   Common place to place device configs for userspace (not talking about android device configs here, but the config each OS uses to config different parts)
-*   Create a _translator_ that convert common configs to OS specific configs
-*   Possibly something to “update” kernel from distribution packaging. I remember gnulinux_support have something around that.
-*   Create a sandbox env to test _only_ the hal and libhybris
-*   Mentioning Flatpak, Snappy as target platforms is important
-*   (what about others like appimages? You can basically run every type of package on this base)
-*   appimage cannot possibly be supported by a platform, by definition. But sure, it’s not about excluding anyone.
-*   Also note it’s not the same to support bundles than packaging systems. Packaging systems cannot work.
-
 # REVIEW ONCE THEN MOVE UP - bshah
 
 ## What this base consists of? Or what is our “products”?
