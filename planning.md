@@ -5,63 +5,38 @@
 Overall idea is, This stack includes,
 
 *   Linux kernel
-
 *   Android HAL
-
 *   Sensors
-
 *   Camera
-
 *   RILd
-
 *   Libhybris
-
 *   Android HAL interfaces like Audioflingerglue and droidmedia
-
 *   Build system and scripts
-
 *   GPS - AGPS from Mozilla
-
 *   Pulseaudio
-
 *   Media codecs
-
 *   oFono
-
 *   Way to distribute updates and images (way to install) (that's debatable)
-
 *   Systemd? (Upstart can handle user-level service initialization: See Ubuntu Touch)
 
 This stack doesn't include the,
 
 *   Qt
-
 *   No Qt would be best, most platforms are very strict on the version they depend on
-
 *   Wayland
-
 *   KWin hwcomposer platform
-
 *   Plasma
-
 *   Unity
-
 *   Mir
-
 *   Lipstick
-
 *   Gecko
-
 *   Applications
-
 *   ....
 
 ## Action Points
 
-*   Have a team meeting​ possibly this week(?)
 *   See if there are any conflicting requirements and how best to resolve them. For eg. Ubuntu touch needs apparmor patches in kernel, while Sailfish doesn’t.
 *   Decide what the stack will contain and make a short summary of the whole thing.
-*   Make a proposition for Sailfish OS, Open Source, community collaboration meeting at #mer-meeting@freenode. Add a new topic to the agenda [here](https://together.jolla.com/question/54157/sailfishos-open-source-collaboration-meeting-planning/). Action by:<name></name>
 *   Decide how the lxc/container should be setup (img file like ubuntu or in rootfs like sailfish)
 *   Decide what will be the default method to accrue android, build our own or take vendors and modify that (both would be best here in my opinion)
 *   What infrastructure we will need for this? What are options?
@@ -76,72 +51,19 @@ This stack doesn't include the,
 ## Feature ideas
 
 *   Common upstream msm kernel for all devices
-
 *   Common sets of qcom drivers
-
 *   All qcom devices to caf
-
 *   Freedreno for mainlined devices
-
 *   Backport 5.1 and 6.0 kernel driver required by 5.1 and 6.0 blobs
-
 *   Upstream the Android N port of libhybris from UBports fork
-
 *   Common place to place device configs for userspace (not talking about android device configs here, but the config each OS uses to config different parts)
-
 *   Create a _translator_ that convert common configs to OS specific configs
-
 *   Possibly something to “update” kernel from distribution packaging. I remember gnulinux_support have something around that.
-
 *   Create a sandbox env to test _only_ the hal and libhybris
-
 *   Mentioning Flatpak, Snappy as target platforms is important
-
 *   (what about others like appimages? You can basically run every type of package on this base)
-
 *   appimage cannot possibly be supported by a platform, by definition. But sure, it’s not about excluding anyone.
-
 *   Also note it’s not the same to support bundles than packaging systems. Packaging systems cannot work.
-
-## Name
-
-Since we can’t call ourselves Libhybris, we should think of a nice name for this. Suggest your names in the list below. Add a (+1) (+2) etc. to the one you like. (Maybe do that on strawpoll?) (need comments too)
-
-*   Stroqdu
-*   OpenPhablet (+2) (may be confusing, phablets aren't the only target) < phablets are not even a thing, we should think convergence
-*   OpenDroid(Hal) (-1, this would be confusing) (+1)
-*   GnuDroid (+1)
-*   Mobile Linux Standard Base (MLSB)
-*   Libre Device Platform
-*   Linux Compatibility Platform (+2)
-
-The name should be inclusive enough so anyone in the FOSS world feels identified by it, they should read the name and know it belongs in their pocket.
-
-Maybe something that doesn't associate with Droid? (+7)
-
-*   Open::hal
-*   Open::phablet
-*   LibreBase
-*   Halogen (+1)
-*   Halygon
-*   Halium (+10) (-1)
-*   Integra
-
-![](images/image00.png)
-
-*   Hydra (+1)
-
-Mer-meeting
-
-bhushan
-
-Dinesh
-
-Mariogrip
-
-Toxip will setup outline for meeting
-
-* * *
 
 # REVIEW ONCE THEN MOVE UP - bshah
 
@@ -210,55 +132,6 @@ The linux distribution running with this stack can either use packages of libhyb
 
 ![halium_architecture.svg55d72.png](images/image01.png)
 
-Hello everyone,
-
-To introduce, I am Bhushan Shah from KDE, Plasma Mobile maintainer and in CC:  
-Marius Gripsgård, is founder and maintainer of project UBports, Toxip is part of  
-Sailfish OS Fan Club group on telegram.
-
-Earlier it was suggested to our projects that we should collaborate with other  
-communities working on making GNU/Linux available to android phones, and that  
-idea made lot of sense to us. Below is some details about the current situation  
-and how this idea aims to solve it.
-
-Currently Ubuntu Touch, SailfishOS/Mer, Plasma Mobile and others have  
-different android source trees and methods on how our stacks are built. There is  
-lot of fragmentation on the following areas:
-
-*   Android source tree
-*   How android init is started (droid-hal-init vs lxc container vs chroot  
-    etc..)
-*   How images are flashed to device, (flash cm first v/s flash system directly)
-*   ...
-
-But ideally these parts wouldn’t need to be separate, because we all have the  
-same goal in the end. Each OS make use of android binary drivers using projects like  
-libhybris, ofono, libcamera, audioflinger glue etc.
-
-Instead of being fragmented and everyone having to do the same job in a different way we have come up with idea to have a common base for all the OSs. The common base would include Linux kernel + Android HAL + libhybris shared between all the OSs. Less fragmentation would mean more common resources and would be a huge boon for porting efforts.
-
-This kind of approach would have the following benefits:
-
-*   Shared porting effort, port once and use everywhere
-*   More streamlined HAL
-*   Makes it easier for other distributions to run on mobile devices
-*   Common ground for communication between the different projects
-
-Currently this project idea is codenamed Halium. Overall idea for the project is drafted at the  
-[https://tinyurl.com/halium](https://www.google.com/url?q=https://tinyurl.com/halium&sa=D&ust=1492799339891000& usg=AFQjCNEq5Y4Ntg8lvQjuGKm0IY5h842YVQ) , and our communication channels are at matrix channel
-
-# halium:disroot.org or at IRC channel #halium@freenode or at telegram group
-
-[https://t.me/halium](https://t.me/halium) . (All of these communication channels are bridged  
-together, so you can choose whatever suits the best for you).
-
-If you’re interested in this kind of collaboration or have any comments or questions, please join one of our communications channels or reply to this message. We will be happy to answer to any kind of questions.
-
-We are looking forward to your feedback and collaboration.  
-The Halium team
-
-* * *
-
 ## Development plan/outline:
 
 Goal: being able to adb shell / telnet / SSH into the Linux system where you can run tests related to android hardware enablement and they work out of the box.
@@ -289,7 +162,7 @@ Tests: We need to write tests that can run in our reference rootfs to make it ea
 
 Automated tests: These test will run run after each CI build to ensure the build that comes out of our build servers are working. (ubports has some tests we can use for this)
 
-* * *
+---
 
 ## Some random links
 
@@ -311,58 +184,12 @@ Why this effort?
 
 Who are you?
 
-* * *
-
-## Agenda for next meeting
-
-*   Going public
-
-*   Website [Halium.org repository](https://github.com/Halium/halium.org)
-
-*   initial announcement
-
-*   individual announcement (i.e on ubports, pm blog?)
-
-*   Development
-
-*   Proposed stage 0 development plan
-
-*   Creating todo items from action points
-
-*   Use github as task tracker(?)
-
-*   What infrastructure we need
-
-*   Image build node
-
-*   rootfs build node (probably both can be combined)
-
-*   place to serve the images
-
-*   documentation website
-
-*   do we have sponsor for this? can we reuse our own infrastructure (ubports/pm/sailfishos) for while?
-
-*   Team management
-
-*   Who wants to volunteer and which parts
-
-*   Development
-
-*   Porting
-
-*   Documentation
-
-*   Testing
-
-*   Communication
+---
 
 # Initial halium creator script (locusf rambling)
 
 1.  Plug in phone, run adb, which pulls in needed binaries from /system
 2.  builds halium kernel + the boot selection (still wondering what this could be)
 3.  boot selector then fetches/runs the actual os inside some runtime (container/switch_root up to debate)
-
-*   ![](images/image02.jpg "Seen by @yannic:mryr.de at 2:16:00 PM")
 
 Halium kernel means both the actual kernel + middleware needed in order to have a common libhybris base from the running android system 
