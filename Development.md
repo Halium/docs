@@ -27,3 +27,16 @@
 *Tests:* We need to write tests that can run in our reference rootfs to make it easier to spot problems, we need both direct tests that lives in android and tests that uses libhybris.
 
 *Automated tests:* These test will run run after each CI build to ensure the build that comes out of our build servers are working. (ubports has some tests we can use for this)
+
+## Future ideas
+
+- [ ] Common upstream msm kernel for all devices
+- [ ] Common sets of qcom drivers
+- [ ] All qcom devices to caf
+- [ ] Freedreno for mainlined devices
+- [ ] Backport 5.1 and 6.0 kernel driver required by 5.1 and 6.0 blobs
+- [ ] Upstream the Android N port of libhybris from UBports fork
+- [ ] Common place to place device configs for userspace (not talking about android device configs here, but the config each OS uses to config different parts)
+- [ ] Create a _translator_ that convert common configs to OS specific configs
+- [ ] Possibly something to “update” kernel from distribution packaging. I remember gnulinux_support have something around that.
+- [ ] Create a sandbox env to test _only_ the hal and libhybris
