@@ -92,32 +92,6 @@ What I would expect from this is a minimal booting android with libhybris, and a
 *   Distributions picks up this new packaging if they are using our reference packaging for userspace (Linux) parts, otherwise they build their own packages.
 *   Along with rootfs generated from side of Distribution, they use the android IMG from the port lifecycle. (kernel depends on splitting / not splitting android and kernel)
 
-# PLEASE REVIEW, THEN MOVE UP - JBBgameich
-
-## Different ways of starting android - pro and cons
-
-1.  ## Split kernel and Android and start up android system services and the normal system using systemd and for example droid-hal-init, or start up a android chroot
-
-### Pro
-
-*   The glibc based linux runs “more native”
-*   Full control about the boot process
-*   Cleaner for long term (when mainlined devices exist which don’t need android things)
-
-### Con
-
-*   Requires a real build script
-
-### 1.1) Run android inside a container or schroot
-
-### Pro
-
-*   maybe more secure
-*   Android and glibc linux cannot conflict
-*   fewer modifications to the Android side are needed (If android init is run inside a chroot), thereby easier upgrading.
-
-### Con
-
 # The Stack - proposal
 
 The system is running on a android manufacturer linux kernel, IF the device is mainlined, it can run mainline linux kernel
