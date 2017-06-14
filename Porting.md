@@ -24,15 +24,14 @@ TODO: Add instructions for installing building tools for other distros as well
 ```
 mkdir ~/bin
 PATH=~/bin:$PATH
-cd ~/bin
-curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+curl http://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 ```
 
 ### Step 3, Create a new directory to download the halium tree
 
 ```
-mkdir phablet
+mkdir halium && cd halium
 repo init -u https://github.com/Halium/android -b halium-5.1
 ```
 
@@ -40,7 +39,7 @@ repo init -u https://github.com/Halium/android -b halium-5.1
 
 ### Put parts together
 
-Now you need to put all the parts for your device togheter, and since our tree is based on Cyanogenmod you can use the device files they provide. 
+Now you need to put all the parts for your device together, and since our tree is based on Cyanogenmod you can use the device files they provide. 
 
 Parts that is needed:
 - device
@@ -51,7 +50,7 @@ You may check the "cm.dependencies" that is included in every cyanogenmod device
 
 ### Modify the kernel configuration
 
-Halium uses the systemd as a init system which requires various kernel config options to be enabled
+Halium uses the systemd as the init system which requires various kernel config options to be enabled
 
 To check which config options needs to be enabled we use mer-kernel-check utility provided by hybris-boot
 
@@ -70,7 +69,7 @@ If not then, you will need to add a code similar to [following](https://github.c
 To figure out the actual device node for the block device you can use following command
 
 ```
-readlink -f  /dev/block/platform/msm_sdcc.1/by-name/<blocdevicename>
+readlink -f /dev/block/platform/msm_sdcc.1/by-name/<blockdevicename>
 ```
 
 
@@ -124,7 +123,7 @@ Lunch menu... pick a combo:
 Which would you like? [aosp_arm-eng] 
 ```
 
-Here you need to choose your device cm[your device]-userdebug, example if you were to build the oneplus one you would choose cm_bacon-userdebug or 9.
+Here you need to choose your device `cm_[your device]-userdebug`, example if you were to build the oneplus one you would choose `cm_bacon-userdebug` or `9`.
 
 ### Building the system.img and hybris-boot.img
 
