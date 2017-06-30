@@ -2,11 +2,11 @@
 
 ## Setup your environment
 
-Setting up your environment is necessary before starting porting to any device
+Setting up your environment is necessary before starting the porting process.
 
-## Using Ubuntu
+### Using Ubuntu
 
-### Step 1, Install building tools
+#### Step 1: Installing required packages
 
 ```
 sudo apt-get install git gnupg flex bison gperf build-essential \
@@ -17,56 +17,72 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
   g++-4.8-multilib
 ```
 
-TODO: Add instructions for installing building tools for other distros as well
+**//TODO: Add instructions for installing building tools for other distros as well**
 
-### Step 2, Download and install the latest repo version
+#### Step 2: Installing Repo
+
+Repo is a tool that makes it easier to work with Git in the context of Android. [More information](https://source.android.com/source/developing)
 
 ```
 mkdir ~/bin
 PATH=~/bin:$PATH
-curl http://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 ```
 
-### Step 3, Create a new directory to download the halium tree
+#### Step 3: Create a new directory to download the Halium tree
 
 ```
 mkdir halium && cd halium
 repo init -u https://github.com/Halium/android -b halium-5.1
+# or
+repo init -u https://github.com/Halium/android -b halium-7.1
 ```
 
-## Prepare the android tree
+**//TODO: Add notes about halium-5.1 and halium-7.1**
+
+#### Step 4: Download the source code
+
+```
+repo sync
+```
+
+## Prepare the Android tree
 
 ### Put parts together
 
-Now you need to put all the parts for your device together, and since our tree is based on Cyanogenmod you can use the device files they provide. 
+Now you need to put all the parts for your device together, and since our tree is based on LineageOS for `halium-7.1` or CyanogenMod for `halium-5.1` you can use the device files they provide.
 
 Parts that is needed:
-- device
-- vendor
-- kernel
+- device tree
+- kernel source
+- vendor tree (eg from [TheMuppets](https://github.com/TheMuppets))
 
-You may check the "cm.dependencies" that is included in every cyanogenmod device repo.
+You might have to check `lineage.dependencies`/`cm.dependencies` that is included in every LineageOS/CyanogenMod device repo for additional repositories.
+
+**//TODO: Include documentation about local_manifests.**
 
 ### Modify the kernel configuration
 
-Halium uses the systemd as the init system which requires various kernel config options to be enabled
+Halium uses the systemd as the init system which requires various kernel config options to be enabled.
 
-To check which config options needs to be enabled we use mer-kernel-check utility provided by hybris-boot
+To check which config options needs to be enabled we use [mer-kernel-check](https://github.com/mer-hybris/mer-kernel-check) utility provided by mer-hybris.
 
 ```
 git clone https://github.com/mer-hybris/mer-kernel-check
 cd mer-kernel-check
-./mer-kernel-check <path to kernel configuration>
+./mer_verify_kernel_config <path to kernel configuration>
 ```
 
-### Include device in fixup-mountpoints script if not already
+If you don't know the path to your kernel config run `grep "TARGET_KERNEL_CONFIG" device/<VENDOR>/<CODENAME>/BoardConfig.mk`. It should be in `arch/arm/configs/<CONFIG>` or `arch/arm64/configs/<CONFIG>` depending on the architecture of your device.
 
-First check if your device is already included in the `hybris-boot/fixup-mountpoints` script.
+### Include your device in fixup-mountpoints script
 
-If not then, you will need to add a code similar to [following](https://github.com/Halium/hybris-boot/blob/master/fixup-mountpoints#L198) in the `fixup-mountpoints` script
+First check if the codename of your device is already included in the `halium/hybris-boot/fixup-mountpoints` script.
 
-To figure out the actual device node for the block device you can use following command
+If it's not already included, you will need to add a few lines similar to [following](https://github.com/Halium/hybris-boot/blob/master/fixup-mountpoints#L198-L205) in the `fixup-mountpoints` script for the `boot`, `system` and `userdata` partition. You can ignore the rest of the partitions.
+
+To figure out the actual device node for the block device you can use following command:
 
 ```
 readlink -f /dev/block/platform/msm_sdcc.1/by-name/<blockdevicename>
@@ -75,12 +91,12 @@ readlink -f /dev/block/platform/msm_sdcc.1/by-name/<blockdevicename>
 
 ## Building
 
-### Initalize
+### Initialize
 
-First we need to Initialize the environment using the envsetup.sh tool:
+First we need to initialize the environment using the envsetup.sh tool:
 
 ```
-. build/envsetup.sh
+source build/envsetup.sh
 ```
 
 This will give you an output that looks like this:
@@ -104,7 +120,7 @@ including device/asus/grouper/vendorsetup.sh
 
 ### Choose you target
 
-Now we need to choose the target to build using the lunch command;
+Now we need to choose the target to build using the lunch command:
 
 ```
 lunch
@@ -123,17 +139,21 @@ Lunch menu... pick a combo:
 Which would you like? [aosp_arm-eng] 
 ```
 
-Here you need to choose your device `cm_[your device]-userdebug`, example if you were to build the oneplus one you would choose `cm_bacon-userdebug` or `9`.
+Here you need to choose your device `cm_[your device]-userdebug`, example if you were to build the OnePlus One you would choose `cm_bacon-userdebug` or `9`.
+
+**//TODO: LineageOS recommends the breakfast tool instead of lunch.**
 
 ### Building the system.img and hybris-boot.img
 
-To build the system.img and hybris-boot.img, required to run halium reference rootfs use the following commands
+To build the `system.img` and `hybris-boot.img` - required for Halium - use the following commands
 
 ```
 mka hybris-boot
 mka systemimage
 ```
 
-Once you have hybris-boot.img and system.img built successfully you can move to testing this on your device.
+If you are hitting an error with `mka hybris-boot` about the command `mkbootimg` missing, run `mka mkbootimg` and then `mka hybris-boot` again.
 
-TODO: add testing instructions in this file
+Once you have `hybris-boot.img` and `system.img` built successfully you can move to testing this on your device.
+
+**//TODO: add testing instructions in this file**
