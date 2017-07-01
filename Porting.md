@@ -34,18 +34,33 @@ chmod a+x ~/bin/repo
 
 ```
 mkdir halium && cd halium
-repo init -u https://github.com/Halium/android -b halium-5.1
-# or
+```
+
+If the target device has Android 7.1 or LineageOS 14.1 support, it's recommended to select halium-7.1
+```
 repo init -u https://github.com/Halium/android -b halium-7.1
+```
+
+If your device does not have Android 7.1 or LineageOS 14.1 support but has Android 5.1 or CyanogenMod 12.1 select halium-5.1
+
+```
+repo init -u https://github.com/Halium/android -b halium-5.1
 ```
 
 **//TODO: Add notes about halium-5.1 and halium-7.1**
 
+halium-7.1 is based on LineageOS 14.1
+halium-5.1 is based on CyanogenMod 12.1
+
 #### Step 4: Download the source code
 
 ```
-repo sync
+repo sync -c -j10
 ```
+
+`-c` this only download one branch, this makes the source a lot smaller since it won't download all old branches, this will also result in a much faster sync time.
+
+`-j10` this set projects to fetch simultaneously, this also results in faster sync time, this defaults to 6 but bumping it to 10 makes a big different on network with high bandwidth.
 
 ## Prepare the Android tree
 
@@ -132,11 +147,11 @@ The output of this command will look something like this:
 You're building on Linux
 
 Lunch menu... pick a combo:
- 1. aosp_arm64-eng 	 4. aosp_mips-eng 	  7. cm_bacon-eng 
- 2. aosp_arm-eng 	 5. aosp_x86_64-eng   8. cm_bacon-user 
- 3. aosp_mips64-eng  6. aosp_x86-eng      9. cm_bacon-userdebug 
+ 1. aosp_arm64-eng 	 4. aosp_mips-eng 	  7. cm_bacon-eng
+ 2. aosp_arm-eng 	 5. aosp_x86_64-eng   8. cm_bacon-user
+ 3. aosp_mips64-eng  6. aosp_x86-eng      9. cm_bacon-userdebug
 
-Which would you like? [aosp_arm-eng] 
+Which would you like? [aosp_arm-eng]
 ```
 
 Here you need to choose your device `cm_[your device]-userdebug`, example if you were to build the OnePlus One you would choose `cm_bacon-userdebug` or `9`.
@@ -151,6 +166,8 @@ To build the `system.img` and `hybris-boot.img` - required for Halium - use the 
 mka hybris-boot
 mka systemimage
 ```
+
+Here is also recomended to set `-j[num]` to do parallel building, this reduces build time. *NOTE* this is not needed on halium-7.1 since it will calculate parallel building based on CPU performance.
 
 If you are hitting an error with `mka hybris-boot` about the command `mkbootimg` missing, run `mka mkbootimg` and then `mka hybris-boot` again.
 
