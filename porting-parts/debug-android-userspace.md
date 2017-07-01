@@ -1,6 +1,6 @@
-## Debugging Android userspace
+## Debugging the Android userspace
 
-Debuggin of the Android userspace
+Debugging the Android userspace
 
 #### Logcat
 

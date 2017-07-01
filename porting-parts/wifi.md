@@ -2,7 +2,7 @@
 
 
 #### Tests
-Testing wifi is done using Network manager
+Testing wifi is done using NetworkManager
 
 ```
 nmcli d
