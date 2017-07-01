@@ -55,12 +55,12 @@ halium-5.1 is based on CyanogenMod 12.1
 #### Step 4: Download the source code
 
 ```
-repo sync -c -j10
+repo sync -c
 ```
 
 `-c` this only download one branch, this makes the source a lot smaller since it won't download all old branches, this will also result in a much faster sync time.
 
-`-j10` this set projects to fetch simultaneously, this also results in faster sync time, this defaults to 6 but bumping it to 10 makes a big different on network with high bandwidth.
+`-j[num]` this set projects to fetch simultaneously, this also results in faster sync time, this defaults to 6 but bumping it to 10 makes a big different on network with high bandwidth.
 
 ## Prepare the Android tree
 
@@ -167,7 +167,7 @@ mka hybris-boot
 mka systemimage
 ```
 
-Here is also recomended to set `-j[num]` to do parallel building, this reduces build time. *NOTE* this is not needed on halium-7.1 since it will calculate parallel building based on CPU performance.
+If you use `make` and not `mka` it's recommended to set `-j[num]` to do parallel building, this reduces build time. *NOTE* this is not needed on halium-7.1 since it will calculate parallel building based on CPU performance.
 
 If you are hitting an error with `mka hybris-boot` about the command `mkbootimg` missing, run `mka mkbootimg` and then `mka hybris-boot` again.
 
