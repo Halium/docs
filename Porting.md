@@ -4,9 +4,7 @@
 
 Setting up your environment is necessary before starting the porting process.
 
-### Using Ubuntu
-
-#### Step 1: Installing required packages
+#### Step 1: Installing required packages (Ubuntu/debian)
 
 ```
 sudo apt-get install git gnupg flex bison gperf build-essential \
@@ -16,6 +14,38 @@ sudo apt-get install git gnupg flex bison gperf build-essential \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
   g++-4.8-multilib
 ```
+
+#### Step 1: Installing required packages (Arch)
+
+First install this GPG key (it's needed for a PGP signature in the ncurses5-compat-libs and lib32-ncurses5-compat-libs packages)
+
+```
+gpg --recv-keys 702353E0F7E48EDB
+```
+
+Then install the lineageos-devel meta package from AUR
+
+**With yaourt**
+
+```
+yaourt -S lineageos-devel
+```
+
+**Manually**
+
+```
+git clone https://aur.archlinux.org/lineageos-devel.git
+cd lineageos-devel
+makepkg -si
+cd ..
+```
+
+Lastly install cpio with pacman
+
+```
+pacman -S cpio
+```
+
 
 **//TODO: Add instructions for installing building tools for other distros as well**
 
