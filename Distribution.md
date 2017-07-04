@@ -1,6 +1,6 @@
 # Reference rootfs
 
-To make development and porting easier, halium team provides the refrence rootfs which is based on Ubuntu 16.04. It includes the following,
+To make development and porting easier, halium team provides the reference rootfs which is based on Ubuntu 16.04. It includes the following,
 
 - systemd
 - lxc
