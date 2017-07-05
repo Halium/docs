@@ -80,7 +80,7 @@ If you don't know the path to your kernel config run `grep "TARGET_KERNEL_CONFIG
 
 First check if the codename of your device is already included in the `halium/hybris-boot/fixup-mountpoints` script.
 
-If it's not already included, you will need to add a few lines similar to [following](https://github.com/Halium/hybris-boot/blob/master/fixup-mountpoints#L198-L205) in the `fixup-mountpoints` script for the `boot` and `userdata` partition. You can ignore the rest of the partitions.
+If it's not already included, you will need to add a few lines similar to [following](https://github.com/Halium/hybris-boot/blob/master/fixup-mountpoints#L198-L205) in the `fixup-mountpoints` script for partitions that are mountable (i.e. have an `fstype` of `ext4`, `vfat`, `f2fs` or others). You can ignore the rest of the partitions.
 
 To figure out the actual device node for the block device you can use following command:
 
