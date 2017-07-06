@@ -3,6 +3,10 @@ layout: page
 date:   2017-04-24 10:07:34 +0530
 permalink: /docs/Planning
 ---
+
+* TOC
+{:toc}
+
 # Linux kernel + Android + Libhybris common basel
 
 ## Introduction

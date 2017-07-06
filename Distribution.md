@@ -3,6 +3,10 @@ layout: page
 date:   2017-04-24 10:07:34 +0530
 permalink: /docs/Distribution
 ---
+
+* TOC
+{:toc}
+
 # Reference rootfs
 
 To make development and porting easier, halium team provides the reference rootfs which is based on Ubuntu 16.04. It includes the following,
