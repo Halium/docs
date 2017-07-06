@@ -1,3 +1,10 @@
+---
+layout: page
+date:   2017-04-24 10:07:34 +0530
+author: "Bhushan Shah (bshah)"
+permalink: /docs/Porting/index
+
+---
 # Porting guide
 
 ## Setup your environment
@@ -174,3 +181,5 @@ If you are hitting an error with `mka hybris-boot` about the command `mkbootimg`
 Once you have `hybris-boot.img` and `system.img` built successfully you can move to testing this on your device.
 
 **//TODO: add testing instructions in this file**
+
+TODO: link the specific porting parts here

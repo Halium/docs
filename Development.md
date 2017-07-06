@@ -1,3 +1,9 @@
+---
+layout: page
+date:   2017-04-24 10:07:34 +0530
+permalink: /docs/Development
+
+---
 ## Development plan/outline:
 
 *Goal:* being able to `adb shell` / `telnet` / `SSH` into the `GNU/Linux` system where you can run tests related to `android` hardware enablement and they work out of the box.
