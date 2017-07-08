@@ -1,10 +1,3 @@
----
-layout: page
-date:   2017-04-24 10:07:34 +0530
-author: "Bhushan Shah (bshah)"
-permalink: /docs/Porting/index
-
----
 # Porting guide
 
 ## Setup your environment
@@ -182,4 +175,10 @@ Once you have `hybris-boot.img` and `system.img` built successfully you can move
 
 **//TODO: add testing instructions in this file**
 
-TODO: link the specific porting parts here
+## Porting parts
+
+* [Debug android userspace](debug-android-userspace.md)
+* [graphics](graphics.md)
+* [lights](lights.md)
+* [vibrator](vibrator.md)
+* [wifi](wifi.md)
