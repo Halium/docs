@@ -60,7 +60,7 @@ repo sync -c
 
 `-c` this only download one branch, this makes the source a lot smaller since it won't download all old branches, this will also result in a much faster sync time.
 
-`-j[num]` this set projects to fetch simultaneously, this also results in faster sync time, this defaults to 6 but bumping it to 10 makes a big different on network with high bandwidth.
+`-j[num]` this set projects to fetch simultaneously, this also results in faster sync time, this defaults to 6 but bumping it to 10 makes a big difference on network with high bandwidth.
 
 ## Prepare the Android tree
 
