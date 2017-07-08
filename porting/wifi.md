@@ -1,13 +1,7 @@
----
-layout: page
-date:   2017-04-24 10:07:34 +0530
-permalink: docs/Porting/Wireless
----
-
-### Wifi
+# Wifi
 
 
-#### Tests
+## Tests
 Testing wifi is done using NetworkManager
 
 ```
@@ -15,7 +9,7 @@ nmcli d
 ```
 
 
-#### Qcom devices
+## Qcom devices
 
 Wifi is fairly easy to get going on most Qcom based devices
 
@@ -27,7 +21,7 @@ echo sta > /sys/module/wlan/parameters/fwpath
 That should enable wifi
 
 
-#### broadcom bcmdhd
+## broadcom bcmdhd
 
 It is recommended to modularize bcmdhd drivers since that will ensure use of HW MAC address.
 

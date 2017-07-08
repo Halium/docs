@@ -1,14 +1,6 @@
----
-layout: page
-date:   2017-04-24 10:07:34 +0530
-permalink: /docs/Development
+# Development
 
----
-
-* TOC
-{:toc}
-
-# Development plan/outline:
+## Development plan/outline:
 
 *Goal:* being able to `adb shell` / `telnet` / `SSH` into the `GNU/Linux` system where you can run tests related to `android` hardware enablement and they work out of the box.
 
@@ -16,7 +8,7 @@ permalink: /docs/Development
 
 *Reference rootfs:* `Ubuntu ARM` or `ArchLinux ARM` or `Debian ARM` or `Fedora ARM` (Requirement: `systemd` as main init system)
 
-# Initial development (stage 0, libhybris):
+## Initial development (stage 0, libhybris):
 
 - [ ] Fork the Android source tree with libhybris patches
 - [ ] Bring continuous integration system up to build the android image
@@ -25,12 +17,12 @@ permalink: /docs/Development
 - [ ] Create publishing infrastructure for the distribution of the android image and rootfs
 - [ ] At this point it's fine if not all tests "pass" but they should at least run.
 
-# Hardware enablement (stage 1):
+## Hardware enablement (stage 1):
 
 - [ ] After stage 0 we will have a system to work on where we are able to run the `libhybris` tests and get the logs required, in this stage we can pick random hardware component and get it working
 - [ ] At end of this stage, Halium is "ready" for distributions
 
-# Device enablement (stage 2):
+## Device enablement (stage 2):
 
 - [ ] During this stage we will have most of the infrastructure ready for including new devices, so this is the time to go wild ;-)
 
@@ -38,7 +30,7 @@ permalink: /docs/Development
 
 *Automated tests:* These tests will run run after each `CI` build to ensure the builds that comes out of our build servers are working. (@UBports has some tests we can use for this)
 
-# Future ideas
+## Future ideas
 
 - [ ] Common upstream msm kernel for all devices
 - [ ] Common sets of qcom drivers

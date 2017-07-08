@@ -1,14 +1,10 @@
----
-layout: page
-date:   2017-04-24 10:07:34 +0530
-author: "Bhushan Shah (bshah)"
----
-
-# Docs
+# Halium docs
 
 This repository contains the following documents:
 
-- [Planning](Planning)
-- [Development](Development)
-- [Distribution Guide](Distribution)
-- [Porting Guide](Porting)
+# Contents
+
+* [Planning](Planning.md)
+* [Development](Development.md)
+* [Distribution Guide](Distribution.md)
+* [Porting Guide](porting/index.md)
