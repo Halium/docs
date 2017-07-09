@@ -22,7 +22,7 @@ sudo apt install git gnupg flex bison gperf build-essential \
   libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
   libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
-  g++-4.8-multilib repo
+  repo
 ```
 
 **//TODO: Add instructions for installing build tools for other distros as well**
