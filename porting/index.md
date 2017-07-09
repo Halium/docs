@@ -56,7 +56,7 @@ repo sync -c
 
 Specifying `-c` only downloads one branch, which makes the download a lot smaller since it won't download all of the old branches, this will also result in a much faster sync time.
 
-You can also specify `-j[num]` as it will fetch the files simultaneously. This defaults to 6 but bumping it to 10 makes a big difference on network with high bandwidth.
+You can also specify `-j[num]` as it will fetch the files simultaneously. This defaults to 6 consecutive processes but bumping it to 10 makes a big difference on network with high bandwidth.
 
 ## Prepare the Android tree
 
