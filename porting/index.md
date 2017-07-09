@@ -4,63 +4,59 @@
 
 Setting up your environment is necessary before starting the porting process.
 
-### Using Ubuntu
+### Using Debian (Stretch or newer) or Ubuntu (16.04 LTS or newer)
 
 #### Step 1: Installing required packages
 
+If you are on the `amd64` architecture (commonly referred to as 64 bit), enable the usage of the `i386` architecture:
+
 ```
-sudo apt-get install git gnupg flex bison gperf build-essential \
+sudo dpkg --add-architecture i386
+```
+
+Install the required dependencies:
+
+```
+sudo apt install git gnupg flex bison gperf build-essential \
   zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
   libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
-  libgl1-mesa-dev g++-multilib mingw32 tofrodos \
+  libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
-  g++-4.8-multilib
+  g++-4.8-multilib repo
 ```
 
-**//TODO: Add instructions for installing building tools for other distros as well**
+**//TODO: Add instructions for installing build tools for other distros as well**
 
-#### Step 2: Installing Repo
-
-Repo is a tool that makes it easier to work with Git in the context of Android. [More information](https://source.android.com/source/developing)
-
-```
-mkdir ~/bin
-PATH=~/bin:$PATH
-curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
-chmod a+x ~/bin/repo
-```
-
-#### Step 3: Create a new directory to download the Halium tree
+#### Step 2: Create a new directory to download the Halium tree
 
 ```
 mkdir halium && cd halium
 ```
 
-If the target device has Android 7.1 or LineageOS 14.1 support, it's recommended to select halium-7.1
+If the target device has Android 7.1 or LineageOS 14.1 support, it's recommended to select `halium-7.1`:
 ```
 repo init -u https://github.com/Halium/android -b halium-7.1
 ```
 
-If your device does not have Android 7.1 or LineageOS 14.1 support but has Android 5.1 or CyanogenMod 12.1 select halium-5.1
-
+If your device does not have Android 7.1 or LineageOS 14.1 support but has support for Android 5.1 or CyanogenMod 12.1, select `halium-5.1`:
 ```
 repo init -u https://github.com/Halium/android -b halium-5.1
 ```
 
 **//TODO: Add notes about halium-5.1 and halium-7.1**
 
-halium-7.1 is based on LineageOS 14.1
-halium-5.1 is based on CyanogenMod 12.1
+`halium-7.1` is based on LineageOS 14.1
+`halium-5.1` is based on CyanogenMod 12.1
 
-#### Step 4: Download the source code
+#### Step 3: Download the source code
 
 ```
 repo sync -c
 ```
 
-`-c` this only download one branch, this makes the source a lot smaller since it won't download all old branches, this will also result in a much faster sync time.
+Specifying `-c` only downloads one branch, which makes the download a lot smaller since it won't download all of the old branches, this will also result in a much faster sync time.
 
-`-j[num]` this set projects to fetch simultaneously, this also results in faster sync time, this defaults to 6 but bumping it to 10 makes a big difference on network with high bandwidth.
+You can also specify `-j[num]` as it will fetch the files simultaneously. This defaults to 6 but bumping it to 10 makes a big difference on network with high bandwidth.
 
 ## Prepare the Android tree
 
@@ -68,10 +64,10 @@ repo sync -c
 
 Now you need to put all the parts for your device together, and since our tree is based on LineageOS for `halium-7.1` or CyanogenMod for `halium-5.1` you can use the device files they provide.
 
-Parts that is needed:
-- device tree
-- kernel source
-- vendor tree (eg from [TheMuppets](https://github.com/TheMuppets))
+Parts that are needed:
+- Device tree
+- Kernel source
+- Vendor tree (e.g. from [TheMuppets](https://github.com/TheMuppets))
 
 You might have to check `lineage.dependencies`/`cm.dependencies` that is included in every LineageOS/CyanogenMod device repo for additional repositories.
 
