@@ -181,7 +181,7 @@ After you built `hybris-boot.img` it is time to test it out.
  3. Change to the directory where the boot images have been created with the command `cout`.
  4. Boot the kernel image with: `fastboot boot hybris-boot.img`
 
-** //TOOD: what are we supposed to do with the systemimage? What can we expect from it?
+**//TODO: what are we supposed to do with the systemimage? What can we expect from it?**
 
 ## Debugging
 
