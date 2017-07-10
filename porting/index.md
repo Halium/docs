@@ -245,4 +245,3 @@ The `hybris-boot.img` brings up the telnet interface if it detects a problem. Al
 ## References
 
 The hybris-boot image is based on work from the Sailfish OS and the [Sailfish Hardware Adaptation Development Kit porting guide](https://sailfishos.org/develop/hadk/) contains valuable tips.
- 
