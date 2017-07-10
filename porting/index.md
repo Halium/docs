@@ -231,6 +231,9 @@ ping -c 2 192.168.2.15
 
 Now you have terminal access to the system running from initrd.
 
+The `hybris-boot.img` brings up the telnet interface if it detects a problem. Alternatively, you can use the `hybris-recovery.img` image which will always start telnet.
+
+
 ## Porting parts
 
 * [Debug android userspace](debug-android-userspace.md)
