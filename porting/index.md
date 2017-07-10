@@ -171,6 +171,66 @@ Once you have `hybris-boot.img` and `system.img` built successfully you can move
 
 **//TODO: add testing instructions in this file**
 
+### Booting the device
+
+After you built `hybris-boot.img` it is time to test it out.
+
+ 1. Connect your device with a USB cable to your desktop.
+ 2. Start the device in bootloader (aka "fastboot") mode.<br>
+ This is usually acomplished by holding some combination of keys on the device for a few seconds. On some devices this is Volume-Down + Power. The Lineage OS wiki is a good resource to check for this.
+ 3. Change to the directory where the boot images have been created with the command `cout`.
+ 4. Boot the kernel image with: `fastboot boot hybris-boot.img`
+
+** //TOOD: what are we supposed to do with the systemimage? What can we expect from it?
+
+## Debugging
+
+### Reading kernel logs
+
+To find out what happened during an unsuccessful boot you can check the kernel log files. These can usually be retrieved from `/proc/last_kmsg` after rebooting the device into another, working system. A precondition for this is that you have a system that you can successfully boot, such as TWRP.
+
+ 1. Boot your newly built image
+ 2. Wait for it to fail
+ 3. Reboot the device into the working system.
+ 4. Retrieve the kernel log with `adb shell sudo cat /proc/last_kmsg > ~/last_kmsg`
+ 5. Read `~/last_kmsg` and find out what went wrong
+
+### Debugging via telnet
+
+The hybris-boot image can offer you a telnet interface to access the system on the device even if it does not come up fully. To this end, the usb function of the device will be reconfigured to work as a network interface. While bringing this network interface up, the boot image will write a few debug messages. These debug messages are communicated via a clever hack of resetting the serial number of the usb connection. Once you see that the usb networking and telnet have been set up, you can configure the usb networking on your desktop and then telnet into the system.
+
+The steps in detail are:
+
+ * Execute this command to watch the changes in the usb serial number:<br>
+ `while : ; do
+    lsusb -v 2>/dev/null \
+    | grep -Ee 'iSerial +[0-9]+ +[^ ]'
+    done \
+  | uniq `
+ * Boot your newly built image
+ * Watch the output of the lsusb command above. It will put out lines like this:
+```
+iSerial                 3 01234567
+iSerial                 3 Mer Debug setting up (DONE_SWITCH=no)
+iSerial                 3 Mer Debug telnet on port 23 on usb0 192.168.2.15 - also running udhcpd
+```
+  * Determine the name of the usb network device on your desktop:
+ `dmesg | tail`. You're looking for a line similar to this:
+```
+ [ 1234.123456] rndis_host 1-7:1.0 enp0s20f0u7: renamed from usb0
+```
+ * In this example shown above, `enp0s20f0u7` is the usb network device name. Use this for the USBNETWORK below
+ * Configure usb networking:
+```
+sudo ip address add 192.168.2.1 dev USBNETWORK
+ip address show dev USBNETWORK
+sudo ip route  add 192.168.2.15 dev USBNETWORK
+ping -c 2 192.168.2.15
+```
+ * Connect with telnet: `telnet 192.168.2.15`
+
+Now you have terminal access to the system running from initrd.
+
 ## Porting parts
 
 * [Debug android userspace](debug-android-userspace.md)
