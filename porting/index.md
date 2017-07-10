@@ -192,7 +192,7 @@ To find out what happened during an unsuccessful boot you can check the kernel l
  1. Boot your newly built image
  2. Wait for it to fail
  3. Reboot the device into the working system.
- 4. Retrieve the kernel log with `adb shell sudo cat /proc/last_kmsg > ~/last_kmsg`
+ 4. Retrieve the kernel log with `adb shell cat /proc/last_kmsg > ~/last_kmsg`
  5. Read `~/last_kmsg` and find out what went wrong
 
 ### Debugging via telnet
