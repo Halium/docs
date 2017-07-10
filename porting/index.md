@@ -195,7 +195,7 @@ To find out what happened during an unsuccessful boot you can check the kernel l
  4. Retrieve the kernel log with `adb shell sudo cat /proc/last_kmsg > ~/last_kmsg`
  5. Read `~/last_kmsg` and find out what went wrong
 
-### Debugging initrd
+### Debugging via telnet
 
 The hybris-boot image can offer you a telnet interface to access the system on the device even if it does not come up fully. To this end, the usb function of the device will be reconfigured to work as a network interface. While bringing this network interface up, the boot image will write a few debug messages. These debug messages are communicated via a clever hack of resetting the serial number of the usb connection. Once you see that the usb networking and telnet have been set up, you can configure the usb networking on your desktop and then telnet into the system.
 
