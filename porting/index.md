@@ -181,7 +181,7 @@ After you built `hybris-boot.img` it is time to test it out.
  3. Change to the directory where the boot images have been created with the command `cout`.
  4. Boot the kernel image with: `fastboot boot hybris-boot.img`
 
-** //TOOD: what are we supposed to do with the systemimage? What can we expect from it?
+**//TODO: what are we supposed to do with the systemimage? What can we expect from it?**
 
 ## Debugging
 
@@ -192,7 +192,7 @@ To find out what happened during an unsuccessful boot you can check the kernel l
  1. Boot your newly built image
  2. Wait for it to fail
  3. Reboot the device into the working system.
- 4. Retrieve the kernel log with `adb shell sudo cat /proc/last_kmsg > ~/last_kmsg`
+ 4. Retrieve the kernel log with `adb shell cat /proc/last_kmsg > ~/last_kmsg`
  5. Read `~/last_kmsg` and find out what went wrong
 
 ### Debugging via telnet
@@ -231,6 +231,9 @@ ping -c 2 192.168.2.15
 
 Now you have terminal access to the system running from initrd.
 
+The `hybris-boot.img` brings up the telnet interface if it detects a problem. Alternatively, you can use the `hybris-recovery.img` image which will always start telnet.
+
+
 ## Porting parts
 
 * [Debug android userspace](debug-android-userspace.md)
@@ -238,3 +241,7 @@ Now you have terminal access to the system running from initrd.
 * [lights](lights.md)
 * [vibrator](vibrator.md)
 * [wifi](wifi.md)
+
+## References
+
+The hybris-boot image is based on work from the Sailfish OS and the [Sailfish Hardware Adaptation Development Kit porting guide](https://sailfishos.org/develop/hadk/) contains valuable tips.
