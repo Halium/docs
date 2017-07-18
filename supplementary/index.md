@@ -11,9 +11,9 @@ In this section, we want to gather information about
  
 ## Where to document this?
 The documentation should preferably have a logical structure so that every specific group of devs we are trying to help here can access the info that is meant for them without having to read the other parts.
- * [Device Overview](supplementary/device_overview.md) this is meant for linking to each devices sub page, show halium status (for porters) and list exact hardware parts (for kernel devs)
- * [Hardware Enablement](supplementary/hardware_enablement.md) this is more or less only for the kernel devs and should document mainlining/driver progress for all the hardware
- * [How 2 Document](supplementary/how_2_document.md) this is only for newcomers who want to know how to help with documenting here
+ * [Device Overview](device_overview.md) this is meant for linking to each devices sub page, show halium status (for porters) and list exact hardware parts (for kernel devs)
+ * [Hardware Enablement](hardware_enablement.md) this is more or less only for the kernel devs and should document mainlining/driver progress for all the hardware
+ * [How 2 Document](how_2_document.md) this is only for newcomers who want to know how to help with documenting here
 
 ## Why is this important?
 
