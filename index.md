@@ -8,3 +8,4 @@ This repository contains the following documents:
 * [Development](Development.md)
 * [Distribution Guide](Distribution.md)
 * [Porting Guide](porting/index.md)
+* [Supplementary Hardware Information](supplementary/index.md)
