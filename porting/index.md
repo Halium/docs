@@ -220,6 +220,17 @@ iSerial                 3 Mer Debug telnet on port 23 on usb0 192.168.2.15 - als
  [ 1234.123456] rndis_host 1-7:1.0 enp0s20f0u7: renamed from usb0
 ```
  * In this example shown above, `enp0s20f0u7` is the usb network device name. Use this for the USBNETWORK below
+ * Check if the usb network device has a MAC address assigned.
+```
+$ ip address show dev USBNETWORK
+6: USBNETWORK: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+```
+If it shows the link/ether address `00:00:00:00:00:00` as shown above, you will have to manually assign the MAC address,
+```
+ip link set USBNETWORK address 02:01:02:03:04:08
+```
+You can set any MAC address you want, it just needs to be a valid MAC address.
  * Configure usb networking:
 ```
 sudo ip address add 192.168.2.1 dev USBNETWORK
