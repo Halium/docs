@@ -24,6 +24,9 @@ sudo apt install git gnupg flex bison gperf build-essential \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
   repo liblz4-tool bc
 ```
+##### What is repo? #####
+
+Repo is a tool written by the Android developers for working on Android source trees. It downloads large numbers of git projects into a repeatable directory structure, important for something as complicated as Android. To do this, Repo uses a manifest, which is simply an XML document that tells it what to get and where to put it. You can find a full reference for the repo command [here](https://source.android.com/source/using-repo.html) here, but we'll mainly be using the repo init and repo sync commands (and repo diff and repo status for analyzing the changes made to the device-specific parts so that its easier later to commit them to a Github repo).
 
 **//TODO: Add instructions for installing build tools for other distros as well**
 
@@ -32,6 +35,8 @@ sudo apt install git gnupg flex bison gperf build-essential \
 ```
 mkdir halium && cd halium
 ```
+
+This directory will be called BUILDDIR in the remaining part of the guide, when necessary, to avoid confusion.
 
 If the target device has Android 7.1 or LineageOS 14.1 support, it's recommended to select `halium-7.1`:
 ```
@@ -50,6 +55,8 @@ repo init -u https://github.com/Halium/android -b halium-5.1
 
 #### Step 3: Download the source code
 
+*Note:* the repo tool takes some time to download the sources. You need a little patience here. Also it could make sense to first read the next part about the Android tree configuration, since there you need another repo sync call to download everything.
+ 
 ```
 repo sync -c
 ```
@@ -62,14 +69,53 @@ You can also specify `-j[num]` as it will fetch the files simultaneously. This d
 
 ### Put parts together
 
-Now you need to put all the parts for your device together, and since our tree is based on LineageOS for `halium-7.1` or CyanogenMod for `halium-5.1` you can use the device files they provide.
+Now you need to put all the parts for your device together, and since our tree is based on LineageOS for `halium-7.1` or CyanogenMod for `halium-5.1` you can use the device files they provide. Take care to switch the branch selection in Githubs webpage so you download the correct branches!
 
 Parts that are needed:
-- Device tree
-- Kernel source
+- Device tree (from [LineageOS](https://github.com/LineageOS))
+- Kernel source (also from LineageOS)
 - Vendor tree (e.g. from [TheMuppets](https://github.com/TheMuppets))
 
 You might have to check `lineage.dependencies`/`cm.dependencies` that is included in every LineageOS/CyanogenMod device repo for additional repositories.
+
+### Create a local manifest ###
+
+Create additional entries for the repo tool to download the required parts automatically:
+
+```
+cd <BUILDDIR>/.repo && mkdir local_manifests && cd local_manifests
+gedit <VENDOR>_<CODENAME>.xml. 
+```
+
+The repo tool will accept additional repositories to be synced on top of the ones defined by Halium already. Since you are porting for a new device, you also need to do this work. Later on your local manifest entries can become part of a central repository for device ports.
+
+For the time being, add entries to the created xml file as follows:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!-- Example for a device with one specific vendor repo, and 2 repos for the device, a common and a specific one. At the end, a common kernel repo -->
+  <project path="vendor/samsung" name="proprietary_vendor_samsung" remote="them" />
+  <project name="android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="los" />
+  <project name="android_device_samsung_i9300" path="device/samsung/i9300" remote="los" />
+  <project name="android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="los" />
+  
+  <!-- Example for additional repos gathered from the dependencies files in the device or vendor repo -->
+  <project name="android_hardware_samsung" path="hardware/samsung" remote="los" />
+  <project name="android_external_stlport" path="external/stlport" remote="los" />
+
+</manifest>
+```
+
+The remote properties "los" and "them" are shortcuts for the already defined remotes in the Halium manifest.xml, which can be reviewed by looking into manifest.xml in the .repo directory. As default they point to 14.1 or 12.1 branches, respectively. You can create references to new remotes by adding the following snippet in front of any project definition:
+
+```
+  <remote name="new_remote"
+        fetch="http://github.com/<path_to_project>"
+        revision="refs/heads/<branchname>" />
+```
+
+
 
 **//TODO: Include documentation about local_manifests.**
 
@@ -89,7 +135,7 @@ If you don't know the path to your kernel config run `grep "TARGET_KERNEL_CONFIG
 
 ### Include your device in fixup-mountpoints script
 
-First check if the codename of your device is already included in the `halium/hybris-boot/fixup-mountpoints` script.
+First check if the codename of your device is already included in the `<BUILDDIR>/halium/hybris-boot/fixup-mountpoints` script.
 
 If it's not already included, you will need to add a few lines similar to [following](https://github.com/Halium/hybris-boot/blob/master/fixup-mountpoints#L198-L205) in the `fixup-mountpoints` script for all partitions that are mountable (i.e. have an `fstype` of `ext4`, `vfat`, `f2fs` or others). You can ignore the rest of the partitions.
 
@@ -156,6 +202,12 @@ Here you need to choose your device `cm_[your device]-userdebug`, example if you
 
 ### Building the system.img and hybris-boot.img
 
+Halium will use the mkbootimg tool for creating the boot image. In most cases it is not on the local harddisk, so it can be built by issuing
+
+```
+mka mkbootimg
+```
+
 To build the `system.img` and `hybris-boot.img` - required for Halium - use the following commands
 
 ```
@@ -164,8 +216,6 @@ mka systemimage
 ```
 
 If you use `make` and not `mka` it's recommended to set `-j[num]` to do parallel building, this reduces build time. *NOTE* this is not needed on halium-7.1 since it will calculate parallel building based on CPU performance.
-
-If you are hitting an error with `mka hybris-boot` about the command `mkbootimg` missing, run `mka mkbootimg` and then `mka hybris-boot` again.
 
 Once you have `hybris-boot.img` and `system.img` built successfully you can move to testing this on your device.
 
