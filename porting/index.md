@@ -26,7 +26,7 @@ sudo apt install git gnupg flex bison gperf build-essential \
 ```
 ##### What is repo? #####
 
-Repo is a tool written by the Android developers for working on Android source trees. It downloads large numbers of git projects into a repeatable directory structure, important for something as complicated as Android. To do this, Repo uses a manifest, which is simply an XML document that tells it what to get and where to put it. You can find a full reference for the repo command [here](https://source.android.com/source/using-repo.html) here, but we'll mainly be using the repo init and repo sync commands (and repo diff and repo status for analyzing the changes made to the device-specific parts so that its easier later to commit them to a Github repo).
+Repo is a tool written by the Android developers for working on Android source trees. It downloads large numbers of git projects into a repeatable directory structure, important for something as complicated as Android. To do this, Repo uses a manifest, which is simply an XML document that tells it what to get and where to put it. You can find a full reference for the repo command [here](https://source.android.com/source/using-repo.html) here, but we'll mainly be using the repo init and repo sync commands (and repo diff and repo status for analyzing the changes made to the device-specific parts so that its easier later to commit them to a GitHub repo).
 
 **//TODO: Add instructions for installing build tools for other distros as well**
 
@@ -110,7 +110,7 @@ For the time being, add entries to the created xml file as follows:
 </manifest>
 ```
 
-The remote properties "los" and "them" are shortcuts for the already defined remotes that Halium provides. They can be reviewed by looking into default.xml in the .repo/manifests directory (It is also symlinked to .repo/manifest.xml). Depending on which Halium branch you used, default.xml will be either set up for [LineageOS 14.1](https://github.com/Halium/android/blob/halium-7.1/default.xml) or [CyanogenMod 12.1 ](https://github.com/Halium/android/blob/halium-5.1/default.xml). You can create references to new remotes by adding the following snippet in front of any project definition:
+The remote properties "los" and "them" are shortcuts for the already defined remotes that Halium provides. They can be reviewed by looking into default.xml in the .repo/manifests directory (It is also symlinked to .repo/manifest.xml). Depending on which Halium branch you used, default.xml will be either set up for [LineageOS 14.1](https://github.com/Halium/android/blob/halium-7.1/default.xml) or [CyanogenMod 12.1](https://github.com/Halium/android/blob/halium-5.1/default.xml). You can create references to new remotes by adding the following snippet in front of any project definition:
 
 ```
   <remote name="new_remote"
@@ -130,8 +130,6 @@ repo will detect most mistakes in your local manifest. Sometimes, if you misspel
 ```
 repo sync -c --force-sync
 ```
-
-**//Can we remove this now? TODO: Include documentation about local_manifests.**
 
 ### Modify the kernel configuration
 
