@@ -25,4 +25,4 @@ Both **UBports(UBP) and LOS share a common base** which is Cyanogenmod. However 
 
 ## Device Specifics
 
-This should be populated with guides how to get into different boot modes and similar. Maybe this can be pulled from the LOS device database. For now check the LOS device page linked in the table above.
+This should be populated with guides how to get into different boot modes and similar. Maybe this can be pulled from the [LOS device database](https://github.com/LineageOS/lineage_wiki/tree/master/_data/devices). For now check the LOS device page linked in the table above.
