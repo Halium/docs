@@ -22,10 +22,12 @@ How to find all hardware related data is documented on the Devices Overview. How
   
 
 There are many ways to search for specific drivers. I'll need to tinker a little bit or ask around to find out which way works best. All ways shall be listed below
-    1. You can for example manually browse the mainline kernel by clicking on 'browse' there, then navigate to the 'tree' section and then click yourself through the drivers folder
-    2. You can search linux kernel mailing lists like [the linux-arm-kernel archives](http://lists.infradead.org/pipermail/linux-arm-kernel/) for specific hardware
-    3. For **Qualcomm SoCs** there is a community driven [qualcomm mainlining wiki](http://elinux.org/Qualcomm_SOC_Mainlining_Project) as is for **Allwinner** @ [sunxi mainlining](http://linux-sunxi.org/Linux_mainlining_effort)
-    4. You can also look into [kernel changes on kernelnewbies.org](https://kernelnewbies.org/LinuxChanges)
+
+1. You can for example manually browse the mainline kernel by clicking on 'browse' there, then navigate to the 'tree' section and then click yourself through the drivers folder
+2. You can search linux kernel mailing lists like [the linux-arm-kernel archives](http://lists.infradead.org/pipermail/linux-arm-kernel/) for specific hardware
+3. For **Qualcomm SoCs** there is a community driven [qualcomm mainlining wiki](http://elinux.org/Qualcomm_SOC_Mainlining_Project) as is for **Allwinner** @ [sunxi mainlining](http://linux-sunxi.org/Linux_mainlining_effort)
+4. You can also look into [kernel changes on kernelnewbies.org](https://kernelnewbies.org/LinuxChanges)
+5. Wicket from the Maemo community also has a short [list of devices](https://talk.maemo.org/showthread.php?t=99357) and their status pages.
 
 #### SoC support @ Device Tree Source (dts) folder
 

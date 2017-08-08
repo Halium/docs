@@ -1,30 +1,26 @@
 # Nexus 5X aka Bullhead
 
-This is one of our **reference devices**.
+This is supposed to become one of our **reference devices**.
 
 ## Status
 
 ### Halium
 
-Halium is **working on this device as version 5.1**. You can find the [kernel here]() and the [device files here]().
+Halium is **being worked on for this device **. You can find the [kernel here](https://github.com/Halium/android_kernel_lge_bullhead) and the [device files here](https://github.com/Halium/android_device_lge_bullhead).
 
 ### Distributions
 
-| Ubuntu Touch/Ubports | KDE mobile | Cynogenmod | LineageOS |
-| :------------------: | :--------: | :--------: | :-------: |
-|          ?           |     ?      |     ?      |     ?     |
-
-#### Ubports 15.04 (Android 5.1 base)
-
-The Halium sources above are essentially forks from the ubports DEVICE FILES AND KERNEL. Both **UBports and LOS share a common base** which is Cyanogenmod. However the Ubports kernel received some patches from the **backports project** ([backports on github](https://github.com/ubuntu-phonedations/backports) and the official [wiki](https://backports.wiki.kernel.org/index.php/Main_Page)) whereas the LOS kernel has a few more manual commits.
+| Ubuntu Touch/Ubports | KDE mobile | Cynogenmod |                LineageOS                 |
+| :------------------: | :--------: | :--------: | :--------------------------------------: |
+|          ?           |     ?      |     ?      | [14.1](https://wiki.lineageos.org/devices/bullhead) |
 
 #### LineageOS 14.1
 
-The sources for LOS 14.1 can be found HERE  and their  KERNEL HERE. The kernel is based on version 3.4.0 (according to it's Makefile)
+The sources for LOS 14.1 can be found [here (device specific files)](https://github.com/LineageOS/android_device_lge_bullhead)  and their [kernel here](https://github.com/LineageOS/android_kernel_lge_bullhead). The kernel is based on version 3.10.73 (according to it's Makefile)
 
 ### Kernel & Hardware
 
-Main dts is there [root](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/?h=v4.13-rc4)/[arch](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch?h=v4.13-rc4)/[arm](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm?h=v4.13-rc4)/[boot](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/boot?h=v4.13-rc4)/[dts](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/boot/dts?h=v4.13-rc4)/[qcom-msm8974-lge-nexus5-hammerhead.dts](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/arch/arm/boot/dts/qcom-msm8974-lge-nexus5-hammerhead.dts?h=v4.13-rc4), inside the latest mainline kernel (4.13rc4 as of writing) but how far the functionality goes exactly is unknwon. The general support for Nexus 5X and Nexus 6 landed with 4.10 according to [phoronix](http://www.phoronix.com/scan.php?page=news_item&px=Linux-4.10-ARM-Tegra-More). 
+There is no device tree source (dts) file in the mainline kernel (4.13rc4 as of writing), neither for the device itself nor for the underlying SoC (MSM8992). The general support for Nexus 5X and Nexus 6 landed with 4.10 according to [phoronix](http://www.phoronix.com/scan.php?page=news_item&px=Linux-4.10-ARM-Tegra-More). A short slideshow by Jeremy McNicoll about the initial and ongoing mainlining process already happening is [hosted by the linux foundation here](http://events.linuxfoundation.org/sites/events/files/slides/JRM_NEXUS_ELC_2017.pdf).
 
 
 ## Device Specifics
