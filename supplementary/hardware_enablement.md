@@ -165,6 +165,6 @@ this means gyroscopes, accelerometers, compasses and GPS, probably inside /drive
 
 ## How to test a new kernel 
 
-There is some [nice documentation](http://www.lieberbiber.de/2015/07/02/hacking-the-bq-part-4-building-and-booting-a-kernel/) by Simon Raffeiner at his blog how to boot a new kernel in Ubuntu Touch once for testing. 
+There is some [nice documentation](http://www.lieberbiber.de/2015/07/02/hacking-the-bq-part-4-building-and-booting-a-kernel/) by Simon Raffeiner at his blog how to boot a new kernel in Ubuntu Touch (MediaTek devices only!) once for testing. 
 
 **TODO: Add info about this on Android/Others**
