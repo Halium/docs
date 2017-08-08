@@ -31,7 +31,8 @@ Please use the following where the formatting is not obvious:
   * Search the [xda-developers forum](https://forum.xda-developers.com)
   * Connect to your device via adb (assuming you have some kind of Android on your phone/tablet) and search for infos using getprop or similar
   * Search for **teardowns** and scan the images for readable chips and try to find out what each one does (you may of course do a teardown on your own) good starting points for this are iFixit or Youtube Videos that show how to repair/tear down a device
-  * Please **write down your sources somewhere and link to them in the device's sub page**
+  * Search the [LineageOS device database](https://github.com/LineageOS/lineage_wiki/tree/master/_data/devices) for your devices codename.
+  * Please **write down your sources somewhere and link to them below the table or in the device's sub page**
 
 
 ## Devices
