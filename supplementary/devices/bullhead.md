@@ -25,4 +25,4 @@ Unclear whether security bug fixes are implemented into this kernel (long term 3
 
 ## Device Specifics
 
-This should be populated with guides how to get into different boot modes and similar. Maybe this can be pulled from the LOS device database. For now check the LOS device page linked in the table above.
+This should be populated with guides how to get into different boot modes and similar. Maybe this can be pulled from the [LOS device database](https://github.com/LineageOS/lineage_wiki/tree/master/_data/devices). For now check the LOS device page linked in the table above.
