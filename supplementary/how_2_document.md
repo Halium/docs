@@ -4,7 +4,7 @@
 
 Okay, we'll assume that you want to help in other ways than donating, bug reporting/testing, translating or organizing/moderating but instead **want to document**.
 
-Why is this useful? If you have device x at home and want to have a working UBports (Ubuntu Touch)/KDE Mobile/Halium image but there is no developer out there right now who wants to take on this project you might think _I’ll just post a request in the forum, i can't do anything anyway_ but **that's wrong**. If you gather information about **software support (Cyanogenmod/Lineage OS/Android images and Kernels available)** what **Hardware is inside exactly**. You have already done the first steps and some dev might think he/she gives it a quick look.
+Why is this useful? If you have device x at home and want to have a working UBports (Ubuntu Touch)/Plasma Mobile/Halium image but there is no developer out there right now who wants to take on this project you might think _I’ll just post a request in the forum, i can't do anything anyway_ but **that's wrong**. If you gather information about **software support (Cyanogenmod/Lineage OS/Android images and Kernels available)** what **Hardware is inside exactly**. You have already done the first steps and some dev might think he/she gives it a quick look.
 
 If you now compare the exact hardware with existing, ported devices you **may find that most/some of the hardware is already supported on another device**. If this is the case, you can go a step further and try to find out where exactly in the code these hardware parts are mentioned and if they are also included in the so called 'mainline' linux kernel.
 
@@ -14,7 +14,7 @@ For all those who read this but have a little more knowledge about some step/wan
 
 ## 1 First step: You wonder if you want Halium running on your device
 
-You are on the right track! Halium offers the possibility to run Ubuntu Touch/KDE mobile and in the future perhaps even more cool distributions which are great ;-P. Let's see what we can do to make this dream come true...
+You are on the right track! Halium offers the possibility to run Ubuntu Touch/Plasma mobile and in the future perhaps even more cool distributions which are great ;-P. Let's see what we can do to make this dream come true...
 
   1. Check the [Device Overview Wiki Page](device_overview.md) if your device has already been inserted
   2. If it is **inside the list** BUT has no image for download available based upon Halium, see if the entry has all points covered or if info is missing. Also check the device specific sub page and the hardware parts' sub pages if there is some info that has not been inserted yet. Even if all those exist, try to check _when_ the info has been gathered, perhaps something has changed since then?
