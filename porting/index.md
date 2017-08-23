@@ -317,6 +317,7 @@ The `hybris-boot.img` brings up the telnet interface if it detects a problem. Al
 * [lights](lights.md)
 * [vibrator](vibrator.md)
 * [wifi](wifi.md)
+* [following guide](deploying-rootfs.md)
 
 ## References
 
