@@ -244,7 +244,7 @@ After you built `hybris-boot.img` it is time to test it out.
  2. Start the device in bootloader (aka "fastboot") mode.<br>
  This is usually acomplished by holding some combination of keys on the device for a few seconds. On some devices this is Volume-Down + Power. The Lineage OS wiki is a good resource to check for this.
  3. Change to the directory where the boot images have been created with the command `cout`.
- 4. Flash the kernel image with: `fastboot flash boot hybris-boot.img`. You can use `fastboot boot hybris-boot.img` but that is not working for some devices.
+ 4. Flash the kernel image with: `fastboot flash boot hybris-boot.img`. You can use `fastboot boot hybris-boot.img` to try to boot the kernel image without flashing, but that is not working for some devices.
  5. Next reboot into the recovery. You can use the latest version of TWRP recovery to deploy the rootfs and system.img. Please read the [following guide](deploying-rootfs.md) for further information.
  6. Once done you can reboot the device.
 
@@ -317,6 +317,7 @@ The `hybris-boot.img` brings up the telnet interface if it detects a problem. Al
 * [lights](lights.md)
 * [vibrator](vibrator.md)
 * [wifi](wifi.md)
+* [following guide](deploying-rootfs.md)
 
 ## References
 
