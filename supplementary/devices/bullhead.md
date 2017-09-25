@@ -6,7 +6,7 @@ This is supposed to become one of our **reference devices**.
 
 ### Halium
 
-Halium is **being worked on for this device **. You can find the [kernel here](https://github.com/Halium/android_kernel_lge_bullhead) and the [device files here](https://github.com/Halium/android_device_lge_bullhead).
+Halium is **being worked on for this device**. You can find the [kernel here](https://github.com/Halium/android_kernel_lge_bullhead) and the [device files here](https://github.com/Halium/android_device_lge_bullhead).
 
 ### Distributions
 
