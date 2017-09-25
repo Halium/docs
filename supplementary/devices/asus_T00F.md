@@ -17,7 +17,7 @@ Halium 7.1 is being worked on by [Ilya Bizyaev](https://github.com/IlyaBizyaev) 
   <project name="android_external_stlport" path="external/stlport" remote="los"/></manifest>
 ```
 
- 
+There is an  [issue in halium/projectmanagement](https://github.com/Halium/projectmanagement/issues/25) for the T00F.
 
 ### Distributions
 
