@@ -19,12 +19,12 @@ The following entries are just a placeholder, exactly as this sentence.
 
 |               Distribution               |          Device Specific Files           |                  Kernel                  | What works | What doesn't work |
 | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------: | :---------------: |
-| LineageOS 14.1 [device page](https://wiki.lineageos.org/devices/hammerhead) | [android_device_lge_hammerhead](https://github.com/LineageOS/android_device_lge_hammerhead) | [android_kernel_lge_hammerhead](https://github.com/LineageOS/android_kernel_lge_hammerhead) based on v3.4.0 |     ?      |         ?         |
-| Ubports 15.04 (Android 5.1 base) [device page](https://devices.ubports.com/#/hammerhead) | [android_device_lge_hammerhead](https://github.com/ubports/android_device_lge_hammerhead) | [android_kernel_lge_hammerhead](https://github.com/ubports/android_kernel_lge_hammerhead) based on v3.4.0 |     ?      |         ?         |
+| LineageOS placeholder [device page placeholder](placeholder) | [android_device_placeholder](placeholder) | [android_kernel_placeholder](placeholder) based on vX.Y.Z |     ?      |         ?         |
+| Ubports placeholder [device page placeholder](placeholder) | [android_device_placeholder](placeholder) | [android_kernel_placeholder](placeholder) based on vX.Y.Z |     ?      |         ?         |
 
 
 ### Kernel & Hardware
-#### Mainline (4.13rc4 as of writing)
+#### Mainline (vX.Y.Z as of writing)
 Write whether something that is needed for the device is mainline already (switch the version in the heading for what's recent when you write this). This means **device tree source files (.dts) as well as single drivers** (for example only the wifi driver).
 
 #### Cyanogemod based kernels (LOS & UBP)
