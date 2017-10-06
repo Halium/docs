@@ -267,11 +267,7 @@ The hybris-boot image can offer you a telnet interface to access the system on t
 The steps in detail are:
 
  * Execute this command to watch the changes in the usb serial number:<br>
- `while : ; do
-    lsusb -v 2>/dev/null \
-    | grep -Ee 'iSerial +[0-9]+ +[^ ]'
-    done \
-  | uniq `
+ `while : ; do lsusb -v 2>/dev/null | grep -Ee 'iSerial +[0-9]+ +[^ ]' ; done | uniq `
  * Boot your newly built image
  * Watch the output of the lsusb command above. It will put out lines like this:
 ```
