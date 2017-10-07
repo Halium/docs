@@ -2,7 +2,7 @@
 
 ## Device considerations
 
-* **Kernel:** Halium currently requires a device with a kernel greater or equal version 3.1.0 - older device kernels are not compatible with the glibc build in the root filesystem being used. Check your device´s kernel version by using adb with uname -a for example.
+* **Kernel:** Halium currently requires a device with a kernel greater than or equal to version 3.1.0 - older device kernels are not compatible with the glibc build in the root filesystem being used. Check your device's kernel version by using adb with `uname -a` for example.
 * **RAM:** While 1GB of RAM is sufficient to start the OS, it is recommended to have 2GB at least to have a good end user experience.
 * **Chipset:** Try to avoid Mediatek chipsets, they are not open-sourced and so there are nearly no usable Android trees for building available.
 * **Flash:** 16GB of flash storage are enough. Most devices have at least this amount of storage.
