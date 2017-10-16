@@ -11,8 +11,8 @@ A port for **Halium 7.1 is being worked on** by [Ivan Semkin](https://github.com
 
 |               Distribution               |          Device Specific Files           |                  Kernel                  | What works | What doesn't work |
 | :--------------------------------------: | :--------------------------------------: | :--------------------------------------: | :--------: | :---------------: |
-| LineageOS 14.1 [device page](https://wiki.lineageos.org/devices/pme) | [android_device_htc_pme](https://github.com/LineageOS/android_device_htc_pme) | [android_kernel_htc_msm8996](https://github.com/LineageOS/android_kernel_htc_msm8996) based on v3.18.31 |     see device page      |         see device page         |
-| Halium 7.1 [device page](https://github.com/Halium/projectmanagement/issues/28) | [android_device_htc_pme](https://github.com/vanyasem/android_device_htc_pme) | [android_kernel_htc_msm8996](https://github.com/vanyasem/android_kernel_htc_msm8996) based on v3.18.31 |     see device page      |         see device page         |
+| LineageOS 14.1 [device page](https://wiki.lineageos.org/devices/pme) | [android_device_htc_pme](https://github.com/LineageOS/android_device_htc_pme) | [android_kernel_htc_msm8996](https://github.com/LineageOS/android_kernel_htc_msm8996) based on v3.18.31 | see device page | see device page |
+| Halium 7.1 [device page](https://github.com/Halium/projectmanagement/issues/28) | [android_device_htc_pme](https://github.com/Halium/android_device_htc_pme) | [android_kernel_htc_msm8996](https://github.com/Halium/android_kernel_htc_msm8996) based on v3.18.31 | see device page | see device page |
 
 
 ### Kernel & Hardware
