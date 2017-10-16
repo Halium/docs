@@ -58,6 +58,7 @@ Please use the following where the formatting is not obvious:
 | [BQ Aquaris U](devices/chaozu.md)        |    chaozu    | Halium porting started | 3.18.31 based |                   SoC                    |                  CPU                   |                  GPU                   |                   RAM                    |                 Storage                  |               Connectivity               |          Camera Front           |               Camera Back                |              Battery               |             Sound              |               Touch screen               |                 Display                  |                Navigation                |                 Sensors                  |                  Other                   |
 | [Moto G 2014](devices/titan.md)          |    titan     |   Halium 7.1 working   |    Kernel     |                   SoC                    |                  CPU                   |                  GPU                   |                   RAM                    |                 Storage                  |               Connectivity               |          Camera Front           |               Camera Back                |              Battery               |             Sound              |               Touch screen               |                 Display                  |                Navigation                |                 Sensors                  |                  Other                   |
 | [Sony Xperia Z](devices/yuga.md)                                   |   yuga   |     Halium 7.1 working      |    Kernel     |                   SoC                    |                  CPU                   |                  GPU                   |                   RAM                    |                 Storage                  |               Connectivity               |          Camera Front           |               Camera Back                |              Battery               |             Sound              |               Touch screen               |                 Display                  |                Navigation                |                 Sensors                  |                  Other                   |
+[HTC 10](devices/pme.md) | pme | Halium 7.1 WIP | v3.18.31 | Snapdragon 820 (MSM8996) | Quad-core ARMv8-A (2x2.15 GHz Kryo & 2x1.6 GHz Kryo) | Adreno 530 | 4 GB LPDDR4 RAM **??** | 32 or 64 GB **??** + microSD up to 256 GB | Broadcom BCM4359 (Wi-Fi), NFC, BT 4.2, Display Port, Chromecast, DLNA™, AirPlay™, Miracast™ **??** | Samsung S5K4E6 | Sony Exmor R IMX377 | Non-removable Li-Ion 3.8 V, 11.5 Wh (3,000 mAh) **??** | Sound **??** | Touch screen **??** | Super LCD 5 (2560 x 1440 pixels) **??** | GPS + GLONASS + (Beidou) Navigation **??** | Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor, Fingerprint sensor, Sensor Hub - **??**| Other **??** |
 
 
 ### Sources
@@ -119,4 +120,12 @@ Since there are no sub pages yet, gathering links for the examples here:
 #### BQ Aquaris E4.5
   * own teardown
   * [Wikipedia](https://en.wikipedia.org/wiki/BQ_Aquaris_E4.5)
+
+#### HTC 10
+  * [Wikipedia](https://en.wikipedia.org/wiki/HTC_10)
+  * [GSMArena](https://www.gsmarena.com/htc_10-7884.php)
+  * [DeviceSpecifications](https://www.devicespecifications.com/en/model/97ba3b52)
+  * [iFixit](https://www.ifixit.com/Device/HTC_10)
+  * [LOS](https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/pme.yml)
+  * [HTC](https://www.htc.com/us/smartphones/htc-10)
 
