@@ -11,9 +11,9 @@
 
 Setting up your environment is necessary before starting the porting process.
 
-### Using Debian (Stretch or newer) or Ubuntu (16.04 LTS or newer)
+### Using Debian (Stretch or newer) / Ubuntu (16.04 LTS or newer) or Arch Linux
 
-#### Step 1: Installing required packages
+#### Step 1: Installing required packages (Debian/Ubuntu)
 
 If you are on the `amd64` architecture (commonly referred to as 64 bit), enable the usage of the `i386` architecture:
 
@@ -30,6 +30,37 @@ sudo apt install git gnupg flex bison gperf build-essential \
   libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
   python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
   repo liblz4-tool bc
+```
+
+#### Step 1: Installing required packages (Arch Linux)
+
+First install this GPG key (it's needed for a PGP signature in the ncurses5-compat-libs and lib32-ncurses5-compat-libs packages)
+
+```
+gpg --recv-keys 702353E0F7E48EDB
+```
+
+Then install the `lineageos-devel` meta package from AUR
+
+**With pacaur**
+
+```
+pacaur -S lineageos-devel
+```
+
+**Manually**
+
+```
+git clone https://aur.archlinux.org/lineageos-devel.git
+cd lineageos-devel
+makepkg -si
+cd ..
+```
+
+Lastly install `cpio` using pacman
+
+```
+pacman -S cpio
 ```
 ##### What is repo? #####
 
@@ -63,7 +94,7 @@ repo init -u https://github.com/Halium/android -b halium-5.1
 #### Step 3: Download the source code
 
 *Note:* the repo tool takes some time to download the sources. You need a little patience here. Execute the following:
- 
+
 ```
 repo sync -c
 ```
@@ -109,7 +140,7 @@ For the time being, add entries to the created xml file as follows:
   <project name="android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="los" />
   <project name="android_device_samsung_i9300" path="device/samsung/i9300" remote="los" />
   <project name="android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="los" />
-  
+
   <!-- Example for additional repos gathered from the dependencies files in the device or vendor repo -->
   <project name="android_hardware_samsung" path="hardware/samsung" remote="los" />
   <project name="android_external_stlport" path="external/stlport" remote="los" />
