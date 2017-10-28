@@ -1,6 +1,8 @@
-# Linux kernel + Android + Libhybris common basel
+# Planning
 
-## Introduction
+## Linux kernel + Android + Libhybris common basel
+
+### Introduction
 
 Overall idea is, This stack includes,
 
@@ -33,7 +35,7 @@ This stack doesn't include the,
 *   Applications
 *   ....
 
-## Action Points
+### Action Points
 
 *   See if there are any conflicting requirements and how best to resolve them. For eg. Ubuntu touch needs apparmor patches in kernel, while Sailfish doesn’t.
 *   Decide what the stack will contain and make a short summary of the whole thing.
@@ -48,9 +50,9 @@ This stack doesn't include the,
 *   Please let’s move away from android recovery update method (it does not fit us) (Boot from sdcard using efidroid at least for testing, so write images to sdcards?)
 *   Document all the things! YES! We need that badly
 
-# REVIEW ONCE THEN MOVE UP - bshah
+## REVIEW ONCE THEN MOVE UP - bshah
 
-## What this base consists of? Or what is our “products”?
+### What this base consists of? Or what is our “products”?
 
 *   AOSP source tree (LineageOS)
 *   Collection of Device Repos (similar to Cyanogenmod)
@@ -63,19 +65,19 @@ This stack doesn't include the,
 
 What I would expect from this is a minimal booting android with libhybris, and all the libhybris tests pass
 
-## What is the lifecycle of port?
+### What is the lifecycle of port?
 
 *   Porting team decides upon target (or someone suggests it)
 *   We create android device and vendor tree or “fork” it from LineageOS/CM/AOSP/whatever
 *   Integrate our changes required for libhybris etc
 *   CI builds image and publishes them
 
-## Distributions (Plasma Mobile, UBports, Mer etc)
+### Distributions (Plasma Mobile, UBports, Mer etc)
 
 *   Distributions picks up this new packaging if they are using our reference packaging for userspace (Linux) parts, otherwise they build their own packages.
 *   Along with rootfs generated from side of Distribution, they use the android IMG from the port lifecycle. (kernel depends on splitting / not splitting android and kernel)
 
-# The Stack - proposal
+## The Stack - proposal
 
 The system is running on a android manufacturer linux kernel, IF the device is mainlined, it can run mainline linux kernel
 
@@ -91,7 +93,7 @@ The linux distribution running with this stack can either use packages of libhyb
 
 ---
 
-## Some random links
+### Some random links
 
 *   [http://www.webos-ports.org/wiki/Halium_Considerations](http://www.webos-ports.org/wiki/Halium_Considerations)
 
@@ -99,16 +101,16 @@ The linux distribution running with this stack can either use packages of libhyb
 
 *   [http://merproject.org/meetings/mer-meeting/2017/mer-meeting.2017-04-19-08.00.log.html](http://merproject.org/meetings/mer-meeting/2017/mer-meeting.2017-04-19-08.00.log.html)
 
-## Mer-meeting takeaway
+### Mer-meeting takeaway
 
 Jolla guys potentially interested but too early to commit to this. We need a proper proof-of-concept to show mer could run on top. Sailfish OS community devs of course anyone is welcome.
 
 Jolla was concerned about how our things work with the ODMs way of things. This may not be a problem for community projects like ubports, plasma, et. al. but especially for Jolla since they’re dealing straight with the ODMs. Something to take into account when we build our infrastructure. We should make it as flexible as possible so that this would work with them also.
 
-# Initial halium creator script (locusf rambling)
+## Initial halium creator script (locusf rambling)
 
 1.  Plug in phone, run adb, which pulls in needed binaries from /system
 2.  builds halium kernel + the boot selection (still wondering what this could be)
 3.  boot selector then fetches/runs the actual os inside some runtime (container/switch_root up to debate)
 
-Halium kernel means both the actual kernel + middleware needed in order to have a common libhybris base from the running android system 
+Halium kernel means both the actual kernel + middleware needed in order to have a common libhybris base from the running android system
