@@ -1,5 +1,5 @@
 
-Hardware and Kernel Enablement
+Hardware and kernel enablement
 ==============================
 
 This page is meant as an overview of

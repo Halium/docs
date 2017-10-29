@@ -1,5 +1,5 @@
 
-Halium Device Overview
+Halium device overview
 ======================
 
 Below are devices that
