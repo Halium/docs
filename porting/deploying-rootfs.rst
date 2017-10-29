@@ -8,7 +8,7 @@ Currently latest rootfs is available at, bshah's personal server: `Link <http://
 
 You can use the halium-install script as below, when device is connected in recovery mode
 
-.. code-block::
+.. code-block:: guess
 
    halium-install <path to rootfs tarball> <path to android system.img>
 

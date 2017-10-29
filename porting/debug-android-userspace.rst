@@ -9,13 +9,13 @@ Logcat
 
 Logcat is a tool that reads
 
-.. code-block::
+.. code-block:: guess
 
    /system/bin/logcat
 
 For radio logs
 
-.. code-block::
+.. code-block:: guess
 
    /system/bin/logcat -b radio
 
@@ -24,7 +24,7 @@ dmesg
 
 Even though Android logs does not normally end up in dmesg, early initialization of Android and kernel output ends up here.
 
-.. code-block::
+.. code-block:: guess
 
    dmesg
 

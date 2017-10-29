@@ -7,7 +7,7 @@ vibrator is one of the simple parts to get going in Halium, and is often used as
 Tests
 -----
 
-.. code-block::
+.. code-block:: guess
 
    test_vibrator
 

@@ -42,14 +42,14 @@ boot.img have really simple function,
 
 Mount the data partition, and the rootfs.img in it to /target
 
-.. code-block::
+.. code-block:: guess
 
    mount $DATA_PARTITION /data
    mount /data/rootfs.img /target
 
 And switch to the target rootfs and run the init (systemd)
 
-.. code-block::
+.. code-block:: guess
 
    exec switch_root /target $INIT --log-target=kmsg &> /target/init-stderrout
 
