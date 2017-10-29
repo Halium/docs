@@ -21,8 +21,6 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 # At top on conf.py (with other import statements)
-import recommonmark
-from recommonmark.transform import AutoStructify
 
 # -- General configuration ------------------------------------------------
 
@@ -42,11 +40,8 @@ templates_path = ['_templates']
 # You can specify multiple suffix as a list of string:
 #
 # source_suffix = ['.rst', '.md']
-source_parsers = {
-   '.md': 'recommonmark.parser.CommonMarkParser',
-}
 
-source_suffix = ['.rst', '.md']
+source_suffix = ['.rst']
 
 # The master toctree document.
 master_doc = 'index'
@@ -75,7 +70,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'env', 'README.rst']
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -173,14 +168,3 @@ texinfo_documents = [
      author, 'Haliumdocs', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-
-# At the bottom of conf.py
-github_doc_root = ''
-def setup(app):
-    app.add_config_value('recommonmark_config', {
-            'url_resolver': lambda url: url,
-            "enable_auto_doc_ref": False,
-            }, True)
-    app.add_transform(AutoStructify)
