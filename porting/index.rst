@@ -19,11 +19,11 @@ Setup your environment
 
 Setting up your environment is necessary before starting the porting process.
 
-Using Debian (Stretch or newer) or Ubuntu (16.04 LTS or newer)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Using Debian (Stretch or newer) / Ubuntu (16.04 LTS or newer) or Arch Linux
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Step 1: Installing required packages
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Step 1: Installing required packages (Debian/Ubuntu)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you are on the ``amd64`` architecture (commonly referred to as 64 bit), enable the usage of the ``i386`` architecture:
 
@@ -41,6 +41,38 @@ Install the required dependencies:
      libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
      repo liblz4-tool bc
+
+Step 1: Installing required packages (Arch Linux)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+First install this GPG key (it's needed for a PGP signature in the ncurses5-compat-libs and lib32-ncurses5-compat-libs packages)
+
+.. code-block:: guess
+
+   gpg --recv-keys 702353E0F7E48EDB
+
+Then install the ``lineageos-devel`` meta package from AUR
+
+**With pacaur**
+
+.. code-block:: guess
+
+   pacaur -S lineageos-devel
+
+**Manually**
+
+.. code-block:: guess
+
+   git clone https://aur.archlinux.org/lineageos-devel.git
+   cd lineageos-devel
+   makepkg -si
+   cd ..
+
+Lastly install ``cpio`` using pacman
+
+.. code-block:: guess
+
+   sudo pacman -S cpio
 
 What is repo?
 """""""""""""
@@ -321,7 +353,7 @@ The steps in detail are:
 
 * Determine the name of the usb network device on your desktop:
     ``dmesg | tail``. You're looking for a line similar to this:
-  
+
     .. code-block:: guess
 
        [ 1234.123456] rndis_host 1-7:1.0 enp0s20f0u7: renamed from usb0
@@ -336,7 +368,7 @@ The steps in detail are:
       link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
 
   If it shows the link/ether address ``00:00:00:00:00:00`` as shown above, you will have to manually assign the MAC address,
- 
+
   .. code-block:: guess
 
      ip link set USBNETWORK address 02:01:02:03:04:08
