@@ -1,21 +1,35 @@
-# supplementary hardware information
 
-## What to document here?
+supplementary hardware information
+==================================
+
+What to document here?
+----------------------
+
 In this section, we want to gather information about 
- * the exact hardware built into our phones and tablets
- * the software status for these devices, that is:
-   * which OS is available in what version and to which degree of functionality
-   * which kernel is available? What drivers are used for what part?
-   * where are the sources for all this? What is their license?
- * where can we reuse drivers/kernel patches/backports 
- 
-## Where to document this?
-The documentation should preferably have a logical structure so that every specific group of devs we are trying to help here can access the info that is meant for them without having to read the other parts.
- * [Device Overview](device_overview.md) this is meant for linking to each devices sub page, show halium status (for porters) and list exact hardware parts (for kernel devs)
- * [Hardware Enablement](hardware_enablement.md) this is more or less only for the kernel devs and should document mainlining/driver progress for all the hardware
- * [How 2 Document](how_2_document.md) this is only for newcomers who want to know how to help with documenting here
 
-## Why is this important?
+
+* the exact hardware built into our phones and tablets
+* the software status for these devices, that is:
+
+  * which OS is available in what version and to which degree of functionality
+  * which kernel is available? What drivers are used for what part?
+  * where are the sources for all this? What is their license?
+
+* where can we reuse drivers/kernel patches/backports 
+
+Where to document this?
+-----------------------
+
+The documentation should preferably have a logical structure so that every specific group of devs we are trying to help here can access the info that is meant for them without having to read the other parts.
+
+.. toctree::
+  
+  device_overview
+  hardware_enablement
+  how_2_document
+
+Why is this important?
+----------------------
 
 Halium is trying to reduce the workload for different OS teams by developing a common base. The deepest root in all of the OS systems, even the official ones, is the kernel, which is based upon the linux mainline kernel. For Halium to work, certain features need to be implemented into this kernel, for example the ability to use lxc.
 
@@ -29,11 +43,12 @@ With documenting these things at a central point, we may make connections easier
 
 For our porters, we can gather info about available Android/Lineage/Cyanogenmod/... versions, where the sources and if available proprietary blobs are located and perhaps what challenges/problems may occur if any are known already.
 
-## Who is this for?
+Who is this for?
+----------------
 
 This sub section of the documentation is meant for
 
- * **porters** as a first quick reference about the status for certain hardware parts (drivers) and whole devices (custom kernels & OSes)
- * **community members** who want to help by documenting
- * **kernel devs** as a reference which hardware is in what device, if there are open source drivers or where the official drivers are located
 
+* **porters** as a first quick reference about the status for certain hardware parts (drivers) and whole devices (custom kernels & OSes)
+* **community members** who want to help by documenting
+* **kernel devs** as a reference which hardware is in what device, if there are open source drivers or where the official drivers are located

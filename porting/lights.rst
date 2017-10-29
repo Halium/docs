@@ -1,11 +1,14 @@
-# Lights
+
+Lights
+======
 
 Lights is one of the simple parts to get going in Halium.
 
-## Tests
+Tests
+-----
 
-```
-test_lights
-```
+.. code-block::
+
+   test_lights
 
 The device's light should start flashing now.
