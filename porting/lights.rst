@@ -7,7 +7,7 @@ Lights is one of the simple parts to get going in Halium.
 Tests
 -----
 
-.. code-block::
+.. code-block:: guess
 
    test_lights
 

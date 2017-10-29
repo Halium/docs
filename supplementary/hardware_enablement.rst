@@ -14,7 +14,7 @@ This page is meant as an overview of
 How to use this Overview
 ------------------------
 
-If you are trying to document the parts of a new or incomplete documented device the chips should all be listed in the `Devices Overview Page <>`_ and on each devices sub page.
+If you are trying to document the parts of a new or incomplete documented device the chips should all be listed in the :doc:`device_overview` and on each devices sub page.
 
 Every hardware part should be listed on this page in it's category (connectivity, sensors, ...) and link to a **detailed sub page** with further info if possible **while only open source status should be presented here**.
 
@@ -41,13 +41,13 @@ Modern ARM devices should have their own **device tree** inside the mainline ker
 
 For all ARM based smart phones and tablets this should be inside 
 
-.. code-block::
+.. code-block:: guess
 
    root/arch/arm/boot/dts/
 
 or if your using 64-bit arm64 (e.g. BQ Aquaris M10) all files are sorted by manufacturer inside
 
-.. code-block::
+.. code-block:: guess
 
    root/arch/arm64/boot/dts/
 
@@ -60,7 +60,7 @@ System-on-Chips (SoC)
 Device specific dts
 ~~~~~~~~~~~~~~~~~~~
 
-**Please only include SoCs that are used inside any smart phone/tablet** and have a smart phone/tablet *.dts file.
+**Please only include SoCs that are used inside any smart phone/tablet** and have a smart phone/tablet `*.dts` file.
 
 .. list-table::
    :header-rows: 1
@@ -102,7 +102,7 @@ Here, we directly see what is the benefit of these tables -> The Qualcomm MSM897
 General dts
 ~~~~~~~~~~~
 
-Below are gathered mainlined SoCs and Smart phones/Tablets that use it but do not have a device-specific *.dts yet.
+Below are gathered mainlined SoCs and Smart phones/Tablets that use it but do not have a device-specific `*.dts` yet.
 
 .. list-table::
    :header-rows: 1

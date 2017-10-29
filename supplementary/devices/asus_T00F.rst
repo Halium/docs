@@ -12,7 +12,7 @@ Halium
 
 Halium 7.1 is being worked on by `Ilya Bizyaev <https://github.com/IlyaBizyaev>`_ and as of august 2017, he's got a **working x86 rootfs and LXC container** but test seem to fail. Here are `Device files <https://github.com/Halium/android_device_asus_T00F>`_ and `kernel <https://github.com/Halium/android_kernel_asus_T00F>`_. The local manifest has the following form
 
-.. code-block::
+.. code-block:: guess
 
    <manifest>
      <remote name="zf" fetch="http://github.com/zenfone-legacy" revision="refs/heads/cm-14.1"/>

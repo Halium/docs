@@ -9,19 +9,19 @@ Tests
 
 Here is some tests to test the graphics stack
 
-.. code-block::
+.. code-block:: guess
 
    test_hwcomposter
 
-.. code-block::
+.. code-block:: guess
 
    test_egl
 
-.. code-block::
+.. code-block:: guess
 
    test_egl_config
 
-.. code-block::
+.. code-block:: guess
 
    test_glesv2
 

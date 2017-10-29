@@ -27,13 +27,13 @@ Step 1: Installing required packages
 
 If you are on the ``amd64`` architecture (commonly referred to as 64 bit), enable the usage of the ``i386`` architecture:
 
-.. code-block::
+.. code-block:: guess
 
    sudo dpkg --add-architecture i386
 
 Install the required dependencies:
 
-.. code-block::
+.. code-block:: guess
 
    sudo apt install git gnupg flex bison gperf build-essential \
      zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
@@ -52,21 +52,21 @@ Repo is a tool written by the Android developers for working on Android source t
 Step 2: Create a new directory to download the Halium tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code-block::
+.. code-block:: guess
 
    mkdir halium && cd halium
 
 This directory will be called BUILDDIR in the remaining part of the guide, when necessary, to avoid confusion.
 
-If the target device has Android 7.1 or LineageOS 14.1 support, it's recommended to select ``halium-7.1``\ :
+If the target device has Android 7.1 or LineageOS 14.1 support, it's recommended to select ``halium-7.1``:
 
-.. code-block::
+.. code-block:: guess
 
    repo init -u https://github.com/Halium/android -b halium-7.1
 
 If your device does not have Android 7.1 or LineageOS 14.1 support but has support for Android 5.1 or CyanogenMod 12.1, select ``halium-5.1``\ :
 
-.. code-block::
+.. code-block:: guess
 
    repo init -u https://github.com/Halium/android -b halium-5.1
 
@@ -80,7 +80,7 @@ Step 3: Download the source code
 
 *Note:* the repo tool takes some time to download the sources. You need a little patience here. Execute the following:
 
-.. code-block::
+.. code-block:: guess
 
    repo sync -c
 
@@ -114,7 +114,7 @@ The repo tool will accept additional repositories to be synced on top of the one
 
 Create additional entries for the repo tool to download the required parts automatically:
 
-.. code-block::
+.. code-block:: guess
 
    cd <BUILDDIR>/.repo && mkdir local_manifests && cd local_manifests
 
@@ -122,7 +122,7 @@ Create a new file called ``<VENDOR>_<CODENAME>.xml`` and open it in your favorit
 
 For the time being, add entries to the created xml file as follows:
 
-.. code-block::
+.. code-block:: guess
 
    <?xml version="1.0" encoding="UTF-8"?>
    <manifest>
@@ -140,7 +140,7 @@ For the time being, add entries to the created xml file as follows:
 
 The remote properties "los" and "them" are shortcuts for the already defined remotes that Halium provides. They can be reviewed by looking into default.xml in the .repo/manifests directory (It is also symlinked to .repo/manifest.xml). Depending on which Halium branch you used, default.xml will be either set up for `LineageOS 14.1 <https://github.com/Halium/android/blob/halium-7.1/default.xml>`_ or `CyanogenMod 12.1 <https://github.com/Halium/android/blob/halium-5.1/default.xml>`_. You can create references to new remotes by adding the following snippet in front of any project definition:
 
-.. code-block::
+.. code-block:: guess
 
      <remote name="new_remote"
            fetch="http://github.com/<path_to_project>"
@@ -150,13 +150,13 @@ It is preferred to add them to your local manifest, and leave the default.xml in
 
 After your local manifest is finished, you need once again to call the repo tool to download the added parts:
 
-.. code-block::
+.. code-block:: guess
 
    repo sync -c
 
 repo will detect most mistakes in your local manifest. Sometimes, if you misspelled an URL for example, you need to tell repo to overwrite already prepared local settings:
 
-.. code-block::
+.. code-block:: guess
 
    repo sync -c --force-sync
 
@@ -167,7 +167,7 @@ Halium uses the systemd as the init system which requires various kernel config 
 
 To check which config options needs to be enabled we use `mer-kernel-check <https://github.com/mer-hybris/mer-kernel-check>`_ utility provided by mer-hybris.
 
-.. code-block::
+.. code-block:: guess
 
    git clone https://github.com/mer-hybris/mer-kernel-check
    cd mer-kernel-check
@@ -186,7 +186,7 @@ If it's not already included, you will need to add a few lines similar to `follo
 
 To figure out the actual device node for the block device you can use following command:
 
-.. code-block::
+.. code-block:: guess
 
    readlink -f /dev/block/platform/msm_sdcc.1/by-name/<blockdevicename>
 
@@ -198,13 +198,13 @@ Initialize
 
 First we need to initialize the environment using the envsetup.sh tool:
 
-.. code-block::
+.. code-block:: guess
 
    source build/envsetup.sh
 
 This will give you an output that looks like this:
 
-.. code-block::
+.. code-block:: guess
 
    including device/samsung/maguro/vendorsetup.sh
    including device/samsung/toro/vendorsetup.sh
@@ -229,13 +229,13 @@ Choose you target
 
 Now we need to choose the target to build using the lunch command:
 
-.. code-block::
+.. code-block:: guess
 
    lunch
 
 The output of this command will look something like this:
 
-.. code-block::
+.. code-block:: guess
 
    You're building on Linux
 
@@ -255,13 +255,13 @@ Building the system.img and hybris-boot.img
 
 Halium will use the mkbootimg tool for creating the boot image. In most cases it is not on the local harddisk, so it can be built by issuing
 
-.. code-block::
+.. code-block:: guess
 
    mka mkbootimg
 
 To build the ``system.img`` and ``hybris-boot.img`` - required for Halium - use the following commands
 
-.. code-block::
+.. code-block:: guess
 
    mka hybris-boot
    mka systemimage
@@ -308,38 +308,43 @@ The hybris-boot image can offer you a telnet interface to access the system on t
 
 The steps in detail are:
 
-
 * Execute this command to watch the changes in the usb serial number:\ :raw-html-m2r:`<br>`
   ``while : ; do lsusb -v 2>/dev/null | grep -Ee 'iSerial +[0-9]+ +[^ ]' ; done | uniq``
 * Boot your newly built image
 * Watch the output of the lsusb command above. It will put out lines like this:
-  .. code-block::
+
+  .. code-block:: guess
 
      iSerial                 3 01234567
      iSerial                 3 Mer Debug setting up (DONE_SWITCH=no)
      iSerial                 3 Mer Debug telnet on port 23 on usb0 192.168.2.15 - also running udhcpd
 
-
-  * Determine the name of the usb network device on your desktop:
+* Determine the name of the usb network device on your desktop:
     ``dmesg | tail``. You're looking for a line similar to this:
-    .. code-block::
+  
+    .. code-block:: guess
 
        [ 1234.123456] rndis_host 1-7:1.0 enp0s20f0u7: renamed from usb0
 
 * In this example shown above, ``enp0s20f0u7`` is the usb network device name. Use this for the USBNETWORK below
 * Check if the usb network device has a MAC address assigned.
-  .. code-block::
+
+  .. code-block:: guess
 
      $ ip address show dev USBNETWORK
      6: USBNETWORK: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
       link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+
   If it shows the link/ether address ``00:00:00:00:00:00`` as shown above, you will have to manually assign the MAC address,
-  .. code-block::
+ 
+  .. code-block:: guess
 
      ip link set USBNETWORK address 02:01:02:03:04:08
+
   You can set any MAC address you want, it just needs to be a valid MAC address.
 * Configure usb networking:
-  .. code-block::
+
+  .. code-block:: guess
 
      sudo ip address add 192.168.2.1 dev USBNETWORK
      ip address show dev USBNETWORK
