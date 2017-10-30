@@ -4,15 +4,15 @@ How to contribute documentation
 
 **DISCLAIMER: this is still a work in progress and some parts are missing, however this will change soon and you can use it as it is for now**
 
-Okay, we'll assume that you want to help in other ways than donating, bug reporting/testing, translating or organizing/moderating but instead **want to document**.
+Okay, we'll assume that you want to help in other ways than donating, bug reporting/testing, translating or organizing/moderating but instead want to document.
 
-Why is this useful? If you have device x at home and want to have a working UBports (Ubuntu Touch)/Plasma Mobile/Halium image but there is no developer out there right now who wants to take on this project you might think *I’ll just post a request in the forum, i can't do anything anyway* but **that's wrong**. If you gather information about **software support (Cyanogenmod/Lineage OS/Android images and Kernels available)** what **Hardware is inside exactly**. You have already done the first steps and some dev might think he/she gives it a quick look.
+Why is this useful? If you have device x at home and want to have a working UBports (Ubuntu Touch)/Plasma Mobile/Halium image but there is no developer out there right now who wants to take on this project you might think *I’ll just post a request in the forum, I can't do anything anyway* but **that's wrong**. If you gather information about **software support (Cyanogenmod/Lineage OS/Android images and Kernels available)** what **Hardware is inside exactly**. You have already done the first steps and some dev might think he/she gives it a quick look.
 
 If you now compare the exact hardware with existing, ported devices you **may find that most/some of the hardware is already supported on another device**. If this is the case, you can go a step further and try to find out where exactly in the code these hardware parts are mentioned and if they are also included in the so called 'mainline' linux kernel.
 
-You think **this sounds hard and as if you need dev skills**\ ? We will try to help you take this steps without any starting knowledge! (Okay you may need be able to search the web and write things into this wiki but we'll **do it together step by step below**.
+You think this sounds hard and as if you need dev skills? We will try to help you take this steps without any starting knowledge!
 
-For all those who read this but have a little more knowledge about some step/want to use different editors or tools to get to the end: This guide will **only show one way and no alternatives at all for better clarity for beginners** (for example, you can edit this wiki with many editors but we will recommend typora for now). There will also be nothing about github accounts, pull requests or anything but rather an approach that inexperienced users can do themselves. A and one final thing, some points are simplified to a great extend so don't take anything too literal!
+For all those who read this but have a little more knowledge about some step/want to use different editors or tools to get to the end: This guide will only show one way and no alternatives at all for better clarity for beginners (for example, you can edit this wiki with many editors but we will recommend typora for now). There will also be nothing about github accounts, pull requests or anything but rather an approach that inexperienced users can do themselves. A and one final thing, some points are simplified to a great extend so don't take anything too literal!
 
 Check for existing Halium work
 ------------------------------
@@ -40,9 +40,9 @@ If we will go deeper later on, we might have to create chip-specific sub pages a
 Edit device-overview
 --------------------
 
-1. Open up your browser of choice and head over to the :doc:`device_overview` again. You can use this for reference while editing it locally on your PC and also there is some useful links there that may lead you to the places where you find info about your device without opening it yourself.
+1. Open up your browser of choice and head over to the :doc:`device-overview` again. You can use this for reference while editing it locally on your PC and also there is some useful links there that may lead you to the places where you find info about your device without opening it yourself.
 2. Also open Devices-Overview.rst in gedit
-3. Then, just fill in the voids in the editor. Once finished you can save your work send in your changed Devices_Overview.rst to docu@ubports.com THIS MAIL ADRESS NEEDS TO BE FIXED!
+3. Then, just fill in the voids in the editor. Once finished you can save your work send in your changed Devices-Overview.rst to docu@ubports.com THIS MAIL ADRESS NEEDS TO BE FIXED!
 4. Wait until someone merged it into the official wiki
 
 
@@ -51,13 +51,13 @@ Edit device-overview
 Create device documentation
 ---------------------------
 
-**// TODO: create reference_device.rst //**
+**// TODO: create reference-device.rst //**
 
-1. Open up your browser and head over to the [showcasing page for device specific pages](reference_device.rst). This will again be our references and may provide some useful links as well.
+1. Open up your browser and head over to the :doc:`template for device specific pages <devices/devicetemplate>`. This will again be our reference and may provide some useful links as well.
 2. Also open up the _New_Device_Template.rst_ file with your editor and directly save-as *Your-Device-x.rst* so you always change the correct file and not the template
 3. Now look into the showcase and try to gather as much info about your device in the same style, save your work and submit in the same way as in step 3
 
-Okay, by now you may have noticed it's not that hard, it's just a lot of work to do this. You may also notice that **if info is gathered in a centralized manner, devs may save lot's of time! so hurray to us and let's document a little bit more!**
+Okay, by now you may have noticed it's not that hard, it's just a lot of work to do this. You may also notice that if info is gathered in a centralized manner, devs may save lot's of time!
 
 Check hardware enablement
 -------------------------
@@ -72,10 +72,10 @@ Also, we can link to older, working kernels and where inside of them the specifi
 
 So what to do:
 
-1. Open up your browser and head over to the :doc:`hardware_enablement` page.
+1. Open up your browser and head over to the :doc:`hardware-enablement` page.
 2. Open up the same page in your editor
 3. Insert missing info and submit your changes
-4. If you find a part without it's own sub page, you might want to create one, head over to Step 6 for that!
+4. If you find a part without its own subpage, you might want to create one. Head to the next step for that.
 
 
 Create pages for undocumented hardware
