@@ -439,104 +439,102 @@ Sources
 
 Since there are no sub pages yet, gathering links for the examples here:
 
-One Plus 5
+OnePlus 5
 ~~~~~~~~~~
 
 
-* `iFixit teardown <https://www.ifixit.com/Teardown/OnePlus+5+Teardown/94173>`_
-* `Wikipedia <https://en.wikipedia.org/wiki/OnePlus_5>`_
+* `Oneplus 5 iFixit teardown <https://www.ifixit.com/Teardown/OnePlus+5+Teardown/94173>`_
+* `Oneplus 5 Wikipedia <https://en.wikipedia.org/wiki/OnePlus_5>`_
 
 Samsung Galaxy S8+
 ~~~~~~~~~~~~~~~~~~
 
 
-* `iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8%2B+Teardown/87086>`_
+* `Galaxy S8+ iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8%2B+Teardown/87086>`_
 
 Samsung Galaxy S8
 ~~~~~~~~~~~~~~~~~
 
 
-* `iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8+Teardown/87136>`_
+* `Galaxy S8 iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8+Teardown/87136>`_
 
 Shift 5.1
 ~~~~~~~~~
 
 
-* `iFixit teardown <https://www.ifixit.com/Teardown/Shift5.1+Teardown/62850>`_
+* `Shift 5.1 iFixit teardown <https://www.ifixit.com/Teardown/Shift5.1+Teardown/62850>`_
 
 Wiko Pupl 4G
 ~~~~~~~~~~~~
 
 
-* iFixit teardown](https://www.ifixit.com/Teardown/Wiko+Pulp+4G+Teardown/64584)
+* `Pupl 4G iFixit teardown <https://www.ifixit.com/Teardown/Wiko+Pulp+4G+Teardown/64584>`_
 
 Nexus 5
 ~~~~~~~
 
 
-* `iFixit teardown <https://de.ifixit.com/Teardown/Nexus+5+Teardown/19016>`_
-* `Wikipedia <https://en.wikipedia.org/wiki/Nexus_5>`_
-* `Slideshare on Snapdragon 800 <https://de.slideshare.net/jjwu6266/qualcomm-snapdragon-800-mobile-device>`_
+* `Nexus 5 iFixit teardown <https://de.ifixit.com/Teardown/Nexus+5+Teardown/19016>`_
+* `Nexus 5 Wikipedia <https://en.wikipedia.org/wiki/Nexus_5>`_
+* `Nexus 5 Slideshare on Snapdragon 800 <https://de.slideshare.net/jjwu6266/qualcomm-snapdragon-800-mobile-device>`_
 
 Nexus 5X
 ~~~~~~~~
 
 
-* `iFixit teardown <https://de.ifixit.com/Teardown/Nexus+5X+Teardown/51318>`_
-* `Wikipedia <https://en.wikipedia.org/wiki/Nexus_5X>`_
+* `Nexus 5X iFixit teardown <https://de.ifixit.com/Teardown/Nexus+5X+Teardown/51318>`_
+* `Nexus 5X Wikipedia <https://en.wikipedia.org/wiki/Nexus_5X>`_
 
 Oneplus One
 ~~~~~~~~~~~
 
 
-* `iFixit teardown <https://de.ifixit.com/Teardown/OnePlus+One+Teardown/26484>`_
-* `Wikipedia <https://en.wikipedia.org/wiki/OnePlus_One>`_
+* `Oneplus One iFixit teardown <https://de.ifixit.com/Teardown/OnePlus+One+Teardown/26484>`_
+* `Oneplus One Wikipedia <https://en.wikipedia.org/wiki/OnePlus_One>`_
 
 Nexus 4
 ~~~~~~~
 
 
-* `iFixit teardown <https://www.ifixit.com/Teardown/Nexus+4+Teardown/11781>`_
-* `Wikipedia <https://en.wikipedia.org/wiki/Nexus_4>`_
-* `Kernel @ launchpad <https://launchpad.net/ubuntu/+source/linux-mako>`_
+* `Nexus 4 iFixit teardown <https://www.ifixit.com/Teardown/Nexus+4+Teardown/11781>`_
+* `Nexus 4 Wikipedia <https://en.wikipedia.org/wiki/Nexus_4>`_
+* `Nexus 4 Kernel @ launchpad <https://launchpad.net/ubuntu/+source/linux-mako>`_
 
 Fairphone 2
 ~~~~~~~~~~~
 
 
-* `iFixit teardown <https://www.ifixit.com/Teardown/Fairphone+2+Teardown/52523>`_
-* `UBP dev info page <https://wiki.ubports.com/wiki/Fairphone-2-Developer-Information>`_
-* `Wikipedia <https://en.wikipedia.org/wiki/Fairphone_2>`_
-* `Kernel Makefile @ github/UBP <https://github.com/ubports/android_kernel_fairphone_fp2/blob/fp2-sibon/Makefile>`_
+* `Fairphone 2 iFixit teardown <https://www.ifixit.com/Teardown/Fairphone+2+Teardown/52523>`_
+* `Fairphone 2 UBP dev info page <https://wiki.ubports.com/wiki/Fairphone-2-Developer-Information>`_
+* `Fairphone 2 Wikipedia <https://en.wikipedia.org/wiki/Fairphone_2>`_
+* `Fairphone 2 Kernel Makefile @ github/UBP <https://github.com/ubports/android_kernel_fairphone_fp2/blob/fp2-sibon/Makefile>`_
 
 Nexus 7 (2012)
 ~~~~~~~~~~~~~~
 
 
-* `iFixit teardown <https://www.ifixit.com/Teardown/Nexus+7+Teardown/9623>`_
-* `Wikipedia <https://en.wikipedia.org/wiki/Nexus_7_(2012>`_\ )
+* `Nexus 7 2012 iFixit teardown <https://www.ifixit.com/Teardown/Nexus+7+Teardown/9623>`_
+* `Nexus 7 2012 Wikipedia <https://en.wikipedia.org/wiki/Nexus_7_(2012>`_
 
 Nexus 7 (2013) Wifi-only = flo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-* `iFixit teardown <https://www.ifixit.com/Teardown/Nexus+7+2nd+Generation+Teardown/16072>`_
-* `Wikipedia <https://en.wikipedia.org/wiki/Nexus_7_(2013>`_\ )
+* `Nexus 7 2013 iFixit teardown <https://www.ifixit.com/Teardown/Nexus+7+2nd+Generation+Teardown/16072>`_
+* `Nexus 7 2013 Wikipedia <https://en.wikipedia.org/wiki/Nexus_7_(2013>`_
 
 BQ Aquaris E4.5
 ~~~~~~~~~~~~~~~
 
-
-* own teardown
-* `Wikipedia <https://en.wikipedia.org/wiki/BQ_Aquaris_E4.5>`_
+* `Aquaris E4.5 Wikipedia <https://en.wikipedia.org/wiki/BQ_Aquaris_E4.5>`_
 
 HTC 10
 ~~~~~~
 
 
-* `Wikipedia <https://en.wikipedia.org/wiki/HTC_10>`_
-* `GSMArena <https://www.gsmarena.com/htc_10-7884.php>`_
-* `DeviceSpecifications <https://www.devicespecifications.com/en/model/97ba3b52>`_
-* `iFixit <https://www.ifixit.com/Device/HTC_10>`_
-* `LOS <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/pme.yml>`_
-* `HTC <https://www.htc.com/us/smartphones/htc-10>`_
+* `HTC 10 Wikipedia <https://en.wikipedia.org/wiki/HTC_10>`_
+* `HTC 10 GSMArena <https://www.gsmarena.com/htc_10-7884.php>`_
+* `HTC 10 DeviceSpecifications <https://www.devicespecifications.com/en/model/97ba3b52>`_
+* `HTC 10 iFixit <https://www.ifixit.com/Device/HTC_10>`_
+* `HTC 10 LOS <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/pme.yml>`_
+* `HTC 10 Website <https://www.htc.com/us/smartphones/htc-10>`_
