@@ -1,6 +1,6 @@
 
-Nexus 4 aka mako
-================
+mako - Nexus 4
+==============
 
 As all Nexii rather good support of sources.
 
@@ -23,9 +23,9 @@ Distributions
      - Kernel
      - What works
      - What doesn't work
-   * - LineageOS 14.1 `device page <https://wiki.lineageos.org/devices/mako>`_
-     - [android_device_lge_mako]https://github.com/LineageOS/android_device_lge_mako)
-     - `android_kernel_lge_mako <https://github.com/LineageOS/lge-kernel-mako>`_ based on v3.4.0
+   * - `Mako on LineageOS Wiki <https://wiki.lineageos.org/devices/mako>`_
+     - `LineageOS/android_device_lge_mako <https://github.com/LineageOS/android_device_lge_mako>`_
+     - `LineageOS/android_kernel_lge_mako <https://github.com/LineageOS/lge-kernel-mako>`_ based on v3.4.0
      - ?
      - ?
    * - Ubports 15.04 (Android 5.1 base) `device page <https://devices.ubports.com/#/mako>`_

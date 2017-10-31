@@ -17,7 +17,7 @@ For all those who read this but have a little more knowledge about some step/wan
 Check for existing Halium work
 ------------------------------
 
-1. Check the :doc:`device-overview` page to see if your device has already been inserted
+1. Check the :doc:`devices/index` page to see if your device has already been inserted
     1.  If it is **inside the list** BUT has no image for download available based upon Halium, see if the entry has all points covered or if info is missing. Also check the device specific sub page and the hardware parts' sub pages if there is some info that has not been inserted yet. Even if all those exist,  the info has been gathered, perhaps something has changed since then?
     2. If it is **NOT in the list**, continue to the next section
 
@@ -40,7 +40,7 @@ If we will go deeper later on, we might have to create chip-specific sub pages a
 Edit device-overview
 --------------------
 
-1. Open up your browser of choice and head over to the :doc:`device-overview` again. You can use this for reference while editing it locally on your PC and also there is some useful links there that may lead you to the places where you find info about your device without opening it yourself.
+1. Open up your browser of choice and head over to the :doc:`devices/index` again. You can use this for reference while editing it locally on your PC and also there is some useful links there that may lead you to the places where you find info about your device without opening it yourself.
 2. Also open Devices-Overview.rst in gedit
 3. Then, just fill in the voids in the editor. Once finished you can save your work send in your changed Devices-Overview.rst to docu@ubports.com THIS MAIL ADRESS NEEDS TO BE FIXED!
 4. Wait until someone merged it into the official wiki
@@ -53,7 +53,7 @@ Create device documentation
 
 **// TODO: create reference-device.rst //**
 
-1. Open up your browser and head over to the :doc:`template for device specific pages <devices/devicetemplate>`. This will again be our reference and may provide some useful links as well.
+1. Open up your browser and head over to the :doc:`template for device specific pages <devices/index>`. This will again be our reference and may provide some useful links as well.
 2. Also open up the _New_Device_Template.rst_ file with your editor and directly save-as *Your-Device-x.rst* so you always change the correct file and not the template
 3. Now look into the showcase and try to gather as much info about your device in the same style, save your work and submit in the same way as in step 3
 

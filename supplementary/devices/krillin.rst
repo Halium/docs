@@ -1,8 +1,8 @@
 
-BQ Aquaris E4.5 aka krillin
-===========================
+krillin - BQ Aquaris E4.5
+=========================
 
-This device is besides having a smaller display almost identical to :doc:`the Aquaris E5 <devices/vegeta>` so maybe images are interchangeable.
+This device is besides having a smaller display almost identical to the Aquaris E5 so maybe images are interchangeable.
 
 Status
 ------
@@ -30,9 +30,9 @@ The following entries are just a placeholder, exactly as this sentence.
      - ?
      - ?
      - ?
-   * - Inofficial LineageOS 13 `device page <http://www.cyanogenmods.org/forums/topic/lineage-os-13-aquaris-e4-5-krillin-marshmallow-rom/>`_
-     - `android_device_bq_krillin <https://github.com/Pablito2020/android_device_bq_krillin>`_
-     - `android_kernel_bq_krillin <https://github.com/Pablito2020/android_kernel_bq_krillin>`_ based on 3.10.49
+   * - Unofficial `LineageOS 13 device page <http://www.cyanogenmods.org/forums/topic/lineage-os-13-aquaris-e4-5-krillin-marshmallow-rom/>`_
+     - `Pablito2020/android_device_bq_krillin <https://github.com/Pablito2020/android_device_bq_krillin>`_
+     - `Pablito2020/android_kernel_bq_krillin <https://github.com/Pablito2020/android_kernel_bq_krillin>`_ based on 3.10.49
      - ?
      - some problems with SMS
 

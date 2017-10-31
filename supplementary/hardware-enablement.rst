@@ -14,7 +14,7 @@ This page is meant as an overview of
 How to use this Overview
 ------------------------
 
-If you are trying to document the parts of a new or incomplete documented device the chips should all be listed in the :doc:`device_overview` and on each devices sub page.
+If you are trying to document the parts of a new or incomplete documented device the chips should all be listed in the :doc:`devices/index` and on each devices sub page.
 
 Every hardware part should be listed on this page in it's category (connectivity, sensors, ...) and link to a **detailed sub page** with further info if possible **while only open source status should be presented here**.
 

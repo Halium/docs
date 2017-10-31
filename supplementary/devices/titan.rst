@@ -1,6 +1,6 @@
 
-Moto G 2014 aka Titan
-=====================
+Titan - Moto G 2014
+===================
 
 Here only one or two sentences. What makes the device special? Is it a reference device? 
 

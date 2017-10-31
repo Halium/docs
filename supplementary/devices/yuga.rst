@@ -1,6 +1,6 @@
 
-Sony Xperia Z aka Yuga
-======================
+Yuga - Sony Xperia Z
+=====================
 
 Here only one or two sentences. What makes the device special? Is it a reference device? 
 
