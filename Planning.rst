@@ -39,7 +39,7 @@ This stack doesn't include the,
 * Lipstick
 * Gecko
 * Applications
-* ....
+* ``....``
 
 Action Points
 ^^^^^^^^^^^^^
