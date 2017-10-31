@@ -1,6 +1,3 @@
-.. role:: raw-html-m2r(raw)
-   :format: html
-
 
 Porting guide
 =============
@@ -47,6 +44,8 @@ Repo is a tool written by the Android developers for working on Android source t
 
 Step 2: Create a new directory to download the Halium tree
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Make yourself a new directory to put your Halium source in::
 
    mkdir halium && cd halium
 
