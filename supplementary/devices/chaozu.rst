@@ -1,6 +1,6 @@
 
-BQ Aquaris U aka Chaozu
-=======================
+Chaozu - BQ Aquaris U
+=====================
 
 Here only one or two sentences. What makes the device special? Is it a reference device? 
 
@@ -10,7 +10,7 @@ Status
 Halium
 ^^^^^^
 
-A port for **Halium 7.1 is being worked on** by `LNJ2 <https://github.com/LNJ2>`_ and `JBBgameich <https://github.com/JBBgameich/>`_. The Halium/projectmanagement is `here <https://github.com/Halium/projectmanagement/issues/21>`_.
+A port for **Halium 7.1 is being worked on** by `LNJ2 <https://github.com/LNJ2>`_ and `JBBgameich <https://github.com/JBBgameich/>`_. See the `Halium project management issue for chaozu <https://github.com/Halium/projectmanagement/issues/21>`_.
 
 Distributions
 ^^^^^^^^^^^^^

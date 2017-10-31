@@ -33,7 +33,7 @@ Contents
    :name: sec-supplemental
    
    supplementary/about-this-chapter
-   supplementary/device-overview
+   supplementary/devices/index
    supplementary/hardware-enablement
    supplementary/how-to-document
    
@@ -44,4 +44,4 @@ Contents
    
    Planning
    Development
-   
+   todo

@@ -1,8 +1,7 @@
+Device Overview
+===============
 
-Halium device overview
-======================
-
-Below are devices that
+These pages detail devices that
 
 
 * ( A ) **have a running Halium Image**
@@ -10,6 +9,25 @@ Below are devices that
 * ( C ) **users want to see ported**
 
 All of these should only be document in the exact same way here and **only an overview shall be given on this page** everything that goes into more detail should please be posted on a device specific sub page!
+
+.. toctree::
+   :maxdepth: 1
+   
+   devicetemplate
+   bullhead
+   chaozu
+   deb
+   flo
+   fp2
+   hammerhead
+   krillin
+   mako
+   pme
+   T00F
+   titan
+   vegeta
+   yuga
+   
 
 How to document
 ---------------
@@ -21,7 +39,7 @@ This table is meant for 2 purposes:
 
 
 * (A) give porters a **quick status reference** what has already been done in regard of Halium to a specific device or what the starting conditions are
-* (B) make hardware visible for **kernel team** to see  there may be a possibility of **a common drivers base** for multiple devices
+* (B) make hardware visible for **kernel team** to see there may be a possibility of **a common drivers base** for multiple devices
 
 Table Format
 ^^^^^^^^^^^^
@@ -72,7 +90,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - :doc:`Oneplus 5 <devices/cheeseburger>`
+   * - Oneplus 5
      - cheeseburger
      - Halium porting started
      - ?
@@ -91,7 +109,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - `Samsung Galaxy S8+ <devices/>`_
+   * - Samsung Galaxy S8+
      - Codename
      - No work so far
      - -
@@ -110,7 +128,7 @@ Devices
      - Navigation
      - Sensors
      - Skyworks 78160-11 (?), Avago AFEM-9066 (?), Avago AFEM-9053 (?), Silicon Mitus SM5720 (Power Management), Qualcomm PM8998 (Power Management)
-   * - `Samsung Galaxy S8 <devices/>`_
+   * - Samsung Galaxy S8
      - Codename
      - No work so far
      - -
@@ -129,7 +147,7 @@ Devices
      - Navigation
      - Sensors
      - Skyworks 78160-11 (?), Avago AFEM-9066 (?), Avago AFEM-9053 (?), Silicon Mitus SM5720 (Power Management), Qualcomm PM8998 (Power Management), IDT P9320S (?), Maxim MAX77838 (Power Management)
-   * - :doc:`LG Nexus 5 <devices/hammerhead>`
+   * - :doc:`LG Nexus 5 <hammerhead>`
      - hammerhead
      - ? reference
      - ?
@@ -148,7 +166,7 @@ Devices
      - Navigation
      - InvenSense MPU-6515 (6-Axis Gyro + Acc), Asahi Kasei AK8963 (3-Axis compass), InvenSense IDG-2020 (2-Axis Gyro - for OIS)
      - Avago RFI335 (optocopler ?), Qualcomm PM8841 & PM8941 (power management), Analogix ANX7808 (Slimport transmitter), Texas Instruments BQ24192 (I2C controlled USB charger)
-   * - :doc:`Nexus 5X <devices/bullhead>`
+   * - :doc:`Nexus 5X <bullhead>`
      - bullhead
      - ? reference
      - ?
@@ -167,7 +185,7 @@ Devices
      - Nav
      - Sens
      - Qualcomm SMB1358(Quick Charge), Qualcomm PMI8994 (Power management), ST Microelectronics STM32F411CE (32-bit 100 MHz ARM Cortex-M4 RISC microcontroller), Avago BFI523(?)
-   * - :doc:`Oneplus One <devices/bacon>`
+   * - Oneplus One
      - bacon
      - ? reference
      - ?
@@ -186,7 +204,7 @@ Devices
      - navi
      - AGD2 2402 WX9DR(gyro?)
      - Qualcomm PM8941 + PM8841(power management), Skyworks SKY77629-21(power amp)
-   * - :doc:`Fairphone 2 <devices/fp2>`
+   * - :doc:`Fairphone 2 <fp2>`
      - fp2
      - -
      - -
@@ -205,7 +223,7 @@ Devices
      - Navigation
      - ST Microelectronics LSM330DLC 6-Axis (Gyro + Acc)
      - Qualcomm QFE1100 (Power Management), Qualcomm PM8841 (Power Management IC)
-   * - :doc:`LG Nexus 4 <devices/mako>`
+   * - :doc:`LG Nexus 4 <mako>`
      - mako
      - -
      - -
@@ -243,7 +261,7 @@ Devices
      - Navigation
      - Invensense MPU-6050 6-Axis(Gyro + Acc)
      - Max 77612A (Inverting Switching regulator?)
-   * - :doc:`Asus Nexus 7 (2013) WiFi Edition <devices/flo>`
+   * - :doc:`Asus Nexus 7 (2013) WiFi Edition <flo>`
      - flo
      - -
      - -
@@ -262,7 +280,7 @@ Devices
      - Navigation
      - Sensors
      - Analogix ANX7808 SlimPort (HDMI transmitter), Texas Instruments BQ51013B (Inductive Charging Controller), Qualcomm PM8921 (Power Management)
-   * - :doc:`Asus Nexus 7 (2013) GSM Edition <devices/deb>`
+   * - :doc:`Asus Nexus 7 (2013) GSM Edition <deb>`
      - deb
      - Halium 7.1 working
      - -
@@ -281,7 +299,7 @@ Devices
      - Navigation
      - Sensors
      - Analogix ANX7808 SlimPort (HDMI transmitter), Texas Instruments BQ51013B (Inductive Charging Controller), Qualcomm PM8921 (Power Management)
-   * - :doc:`BQ Aquaris E4.5 <devices/krillin>`
+   * - :doc:`BQ Aquaris E4.5 <krillin>`
      - krillin
      - no work so far
      - -
@@ -300,7 +318,7 @@ Devices
      - Skyworks Inc. 77584-11 4459C2 1445CN (GSM, GPRS)
      - Sensors
      - Mediatek MT6323GA 1444-AGTH CTGRS355 (Power Management, 435 HWW DM (?), 8736 ABI3 (?), sAY 2W (?), KAY 0C(?), T260 EoE5 (?), 0000 4C28 6071(?), 0000 5102 6154(?)
-   * - `Shift 5.1 <devices/>`_
+   * - Shift 5.1
      - Codename
      - no work done yet
      - -
@@ -319,7 +337,7 @@ Devices
      - AIROHA AP6684 (GPRS)
      - Sensors
      - Mediatek MT6323GA (Power Management)
-   * - `Wiko Pulp 4G <devices/>`_
+   * - Wiko Pulp 4G
      - Codename
      - no work so far
      - -
@@ -338,7 +356,7 @@ Devices
      - Navigation
      - Sensors
      - Qualcomm PM8916 (Power management), SGM3140B (LED driver)
-   * - :doc:`Asus Zenfone 5 <devices/asus_T00F>`
+   * - :doc:`Asus Zenfone 5 <T00F>`
      - T00F
      - work in progress
      - Kernel
@@ -357,7 +375,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - :doc:`BQ Aquaris U <devices/chaozu>`
+   * - :doc:`BQ Aquaris U <chaozu>`
      - chaozu
      - Halium porting started
      - 3.18.31 based
@@ -376,7 +394,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - :doc:`Moto G 2014 <devices/titan>`
+   * - :doc:`Moto G 2014 <titan>`
      - titan
      - Halium 7.1 working
      - Kernel
@@ -395,7 +413,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - :doc:`Sony Xperia Z <devices/yuga>`
+   * - :doc:`Sony Xperia Z <yuga>`
      - yuga
      - Halium 7.1 working
      - Kernel
@@ -414,7 +432,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - :doc:`HTC 10 <devices/pme>`
+   * - :doc:`HTC 10 <pme>`
      - pme
      - Halium 7.1 WIP
      - v3.18.31

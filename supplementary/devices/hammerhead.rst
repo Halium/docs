@@ -1,6 +1,6 @@
 
-Nexus 5 aka Hammerhead
-======================
+Hammerhead - Nexus 5
+====================
 
 This is one of our **reference devices** and is besides the Nexus 7 2013 (flo) one of the best mainlined smartphones out there.
 
@@ -10,7 +10,7 @@ Status
 Halium
 ^^^^^^
 
-Halium is **working on this device as version 5.1**. You can find the `kernel here <https://github.com/Halium/android_kernel_lge_hammerhead>`_ and the `device files here <https://github.com/Halium/android_device_lge_hammerhead>`_.
+Halium is **working on this device as version 5.1**. You can find the kernel at `Halium/android_kernel_lge_hammerhead <https://github.com/Halium/android_kernel_lge_hammerhead>`_ and the device tree at `Halium/android_device_lge_hammerhead <https://github.com/Halium/android_device_lge_hammerhead>`_.
 
 Distributions
 ^^^^^^^^^^^^^
@@ -23,14 +23,14 @@ Distributions
      - Kernel
      - What works
      - What doesn't work
-   * - LineageOS 14.1 `device page <https://wiki.lineageos.org/devices/hammerhead>`_
-     - `android_device_lge_hammerhead <https://github.com/LineageOS/android_device_lge_hammerhead>`_
-     - `android_kernel_lge_hammerhead <https://github.com/LineageOS/android_kernel_lge_hammerhead>`_ based on v3.4.0
+   * - `LineageOS 14.1 device page <https://wiki.lineageos.org/devices/hammerhead>`_
+     - `LineageOS/android_device_lge_hammerhead <https://github.com/LineageOS/android_device_lge_hammerhead>`_
+     - `LineageOS/android_kernel_lge_hammerhead <https://github.com/LineageOS/android_kernel_lge_hammerhead>`_ based on v3.4.0
      - ?
      - ?
-   * - Ubports 15.04 (Android 5.1 base) `device page <https://devices.ubports.com/#/hammerhead>`_
-     - `android_device_lge_hammerhead <https://github.com/ubports/android_device_lge_hammerhead>`_
-     - `android_kernel_lge_hammerhead <https://github.com/ubports/android_kernel_lge_hammerhead>`_ based on v3.4.0
+   * - `UBports 15.04 (Android 5.1 base) device page <https://devices.ubports.com/#/hammerhead>`_
+     - `UBports/android_device_lge_hammerhead <https://github.com/ubports/android_device_lge_hammerhead>`_
+     - `UBports/android_kernel_lge_hammerhead <https://github.com/ubports/android_kernel_lge_hammerhead>`_ based on v3.4.0
      - ?
      - ?
 

@@ -1,6 +1,6 @@
 
-Nexus 7 (2013 Wifi only) aka Flo
-================================
+Flo - Nexus 7 (2013 Wifi only)
+==============================
 
 This is not being worked on right now, however it's the most mainline phone besides the N900 AFAIK.
 

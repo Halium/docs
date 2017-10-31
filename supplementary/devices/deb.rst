@@ -1,6 +1,6 @@
 
-Nexus 7 (2013 GSM) aka Deb
-==========================
+Deb - Nexus 7 (2013 GSM)
+========================
 
 This should probably **also work for the Wifi edition (flo)**.
 

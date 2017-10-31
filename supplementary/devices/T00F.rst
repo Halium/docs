@@ -1,6 +1,6 @@
 
-Asus Zenfone 5 aka T00F/T00J
-============================
+T00F/T00J - Asus Zenfone 5
+==========================
 
 Here only one or two sentences. What makes the device special? Is it a reference device? 
 
@@ -36,7 +36,7 @@ The following entries are just a placeholder, exactly as this sentence.
      - Kernel
      - What works
      - What doesn't work
-   * - No offical LineageOS `device page <https://wiki.lineageos.org/devices/hammerhead>`_
+   * - Hammerhead on LineageOS Wiki <https://wiki.lineageos.org/devices/hammerhead>`_
      - `android_device_placeholder <placeholder>`_
      - `android_kernel_placeholder <placeholder>`_ based on vX.Y.Z
      - ?

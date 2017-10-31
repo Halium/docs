@@ -1,6 +1,6 @@
 
-Template Device aka Codename
-============================
+Codename - Template Device
+===========================
 
 **//Disclaimer:** Please remove everything that is just part of this template and not actually about the device before submitting this into the official wiki, thank you! **//**
 

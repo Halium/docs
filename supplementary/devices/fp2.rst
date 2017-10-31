@@ -1,6 +1,6 @@
 
-Fairphone 2 aka FP2
-===================
+FP2 - Fairphone 2
+==================
 
 The Fairphone 2 is the smartphone made with highest priority for fair production worldwide (AFAIK) and extremely easy to repair (compared to other phones), This makes this a great candidate for a reference device ;-)
 
