@@ -31,3 +31,8 @@ This will do the following:
 * Convert the rootfs tarball into ext2 rootfs.img
 * Convert system.img into the ext4 mountable image from android sparse image.
 * Push the both images to /data partition
+
+Debugging
+---------
+
+Now that you have this installed, move on to :doc:`../debug-build/index` to test your port's functionality.
