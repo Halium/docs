@@ -41,7 +41,7 @@ Most of the drivers is already mainlined. Check John Stultzes kernel below for w
 The "John Stultz" almost mainline Kernel (4.11 latest)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-John Stultz from Linaro has been working some time on getting everything for the Nexus 7 mainline and the most promising candidate to try on this device should be `one of his kernel branches <https://git.linaro.org/people/john.stultz/flo.git/>`_. The 4.10 branch is just 23 commits different from mainline!
+John Stultz from Linaro has been working some time on getting everything for the Nexus 7 mainline and the most promising candidate to try on this device should be `one of his kernel branches <https://git.linaro.org/people/john.stultz/flo.git/>`_. The 4.10 branch is just 23 commits different from mainline! See here a `post from John on the mainlining effort <https://plus.google.com/111524780435806926688/posts/S4ajVewveSR>`_.
 
 LOS 14.1 Android Kernel (3.4.0)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
