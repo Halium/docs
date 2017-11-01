@@ -77,7 +77,8 @@ udev rules
 
 rootfs.img contains the udev rules which are device specific and is generated from the ueventd*.rc file from device tree.
 
-TODO: document how to generate them
+.. todo::
+  Document how to generate udev rules
 
 You can either,
 
