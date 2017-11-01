@@ -7,25 +7,24 @@ This repository contains the following documents:
 Contents
 ========
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Development
-   :name: sec-development
-   
-   
-.. toctree::
-   :maxdepth: 1
-   :caption: Distribution
-   :name: sec-distribution
-   
-   Distribution
    
 .. toctree::
    :maxdepth: 1
    :caption: Porting Guide
    :name: sec-porting
    
-   porting/index
+   porting/first-steps
+   porting/get-sources
+   porting/build-sources
+   porting/install-build/index
+   porting/debug-build/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Distribution
+   :name: sec-distribution
+   
+   Distribution
    
 .. toctree::
    :maxdepth: 1
