@@ -25,4 +25,5 @@ Here is some tests to test the graphics stack
 
    test_glesv2
 
-//TODO: add tests using more heavy graphics applications using Wayland (mir)
+.. todo::
+    Add tests using more heavy graphics applications using Wayland (mir)
