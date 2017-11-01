@@ -61,7 +61,8 @@ To check which config options needs to be enabled we use `mer-kernel-check <http
 
 If you don't know the path to your kernel config run ``grep "TARGET_KERNEL_CONFIG" device/<VENDOR>/<CODENAME>/BoardConfig.mk``. It should be in ``arch/arm/configs/<CONFIG>`` or ``arch/arm64/configs/<CONFIG>`` depending on the architecture of your device.
 
-**//TODO: Mention that the config parameters CONFIG_IKCONFIG and CONFIG_IKCONFIG_PROC need to be set to y, otherwise Halium wont boot (or add them to the check script**
+.. todo::
+    Mention that the config parameters CONFIG_IKCONFIG and CONFIG_IKCONFIG_PROC need to be set to y, otherwise Halium wont boot (or add them to the check script
 
 Include your device in fixup-mountpoints
 ----------------------------------------
