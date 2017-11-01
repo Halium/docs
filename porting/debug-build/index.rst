@@ -1,4 +1,3 @@
-
 Debug Halium
 ============
 
@@ -71,6 +70,7 @@ These pages will help you debug your Halium build after you've installed it.
    :maxdepth: 1
    
    debug-android-userspace
+   usbnet
    graphics
    lights
    vibrator
