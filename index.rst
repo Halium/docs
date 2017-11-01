@@ -25,7 +25,11 @@ Contents
    :caption: Porting Guide
    :name: sec-porting
    
-   porting/index
+   porting/first-steps
+   porting/get-sources
+   porting/build-sources
+   porting/install-build/index
+   porting/debug-build/index
    
 .. toctree::
    :maxdepth: 1
