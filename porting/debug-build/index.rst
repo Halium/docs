@@ -88,6 +88,8 @@ Once your device is booted, you should see that you have a new network interface
 
     ssh root@10.15.19.82
 
+.. _udev-rules:
+
 Add udev rules
 --------------
 
