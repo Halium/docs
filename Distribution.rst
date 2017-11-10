@@ -36,20 +36,20 @@ There are various parts which needs to be deployed on the device,
 boot.img
 ^^^^^^^^
 
-boot.img is based on `hybris-boot <https://github.com/mer-hybris/hybris-boot/>`_\ , this boot.img is built inside the android tree.
+boot.img is based on `hybris-boot <https://github.com/mer-hybris/hybris-boot/>`_, this boot.img is built inside the android tree.
 
 boot.img have really simple function,
 
 Mount the data partition, and the rootfs.img in it to /target
 
-.. code-block:: guess
+.. code::
 
    mount $DATA_PARTITION /data
    mount /data/rootfs.img /target
 
 And switch to the target rootfs and run the init (systemd)
 
-.. code-block:: guess
+.. code::
 
    exec switch_root /target $INIT --log-target=kmsg &> /target/init-stderrout
 
@@ -77,8 +77,7 @@ udev rules
 
 rootfs.img contains the udev rules which are device specific and is generated from the ueventd*.rc file from device tree.
 
-.. todo::
-  Document how to generate udev rules
+Instructions for getting these rules installed can be found at :ref:`udev-rules`.
 
 You can either,
 
