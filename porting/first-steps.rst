@@ -4,6 +4,18 @@ First steps
 
 This page contains the first steps you should take to start a Halium port.
 
+.. _support-channels:
+
+Getting help
+------------
+
+If you get stuck at any point during the porting process, we're here to help! You can contact us via the following support channels:
+
+* IRC: #halium on Freenode
+* Matrix: #halium:disroot.org
+* Telegram: @halium
+
+When you contact us, please link to the section of documentation you're stuck on. In the HTML version, you can copy links by hovering your pointer over a heading, right-clicking the 'link' icon that appears to the right of it, and selecting "Copy link location" or its equivalent in your browser.
 
 Pick an Android target device
 -----------------------------
