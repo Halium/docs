@@ -7,6 +7,7 @@ Debug Halium
    
    early-init
    logging-in
+   usbnet
    debug-android-userspace
    graphics
    lights
