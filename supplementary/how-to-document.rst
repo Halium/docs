@@ -51,7 +51,8 @@ Edit device-overview
 Create device documentation
 ---------------------------
 
-**// TODO: create reference-device.rst //**
+.. todo::
+  create reference-device.rst
 
 1. Open up your browser and head over to the :doc:`template for device specific pages <devices/index>`. This will again be our reference and may provide some useful links as well.
 2. Also open up the _New_Device_Template.rst_ file with your editor and directly save-as *Your-Device-x.rst* so you always change the correct file and not the template
@@ -81,6 +82,7 @@ So what to do:
 Create pages for undocumented hardware
 --------------------------------------
 
-** // TODO: add component_template.rst//**
+.. todo::
+  add component_template.rst
 
 If there is no sub page for a certain hardware component (e.g. a Wifi + Bluetooth chip) you can also create a new hardware component sub page from the template. Just open up the *New-component-template.rst* file, save as *Your-component.rst*\ , fill with info and submit to the docs team.
