@@ -7,7 +7,7 @@ Once booted, the reference rootfs will offer an SSH connection that you can use 
 To change the root user's password, reboot into TWRP and get access via ``adb shell``. Then, perform the following commands::
 
     mkdir /a
-    mount /data/system.img /a
+    mount /data/rootfs.img /a
     chroot /a /bin/bash
     . /etc/environment
     passwd
