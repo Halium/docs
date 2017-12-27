@@ -10,7 +10,27 @@ Status
 Halium
 ^^^^^^
 
-No work so far.
+Work in progress.
+
+.. list-table::
+   :header-rows: 1
+
+* Sources:
+ * Kernel <https://github.com/110101011/lge-kernel-mako>
+ * Device <https://github.com/110101011/android_device_lge_mako>
+ * Vendor <https://github.com/110101011/proprietary_vendor_lge>
+
+* What works:
+ * Halium boots with reference rootfs
+ * test_light
+ * test_vibrator
+ * EGL_PLATFORM=hwcomposer test_hwcomposer
+     
+* What doesn't work (or isn't tested yet):
+ * test_audio
+ * test_camera
+ * test_gps
+ * test_wifi
 
 Distributions
 ^^^^^^^^^^^^^
