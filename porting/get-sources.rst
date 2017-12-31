@@ -112,7 +112,12 @@ For example, let's say that you have a bunch of repositories at ``https://github
         fetch="https://github.com/MyUserName"
         revision="cm-14.1" />
 
-These remotes are available to you by default:
+There are also some remotes available to you by default, though they differ between halium-5.1 and 7.1. The following tables will help you identify these. See more information on these remotes by viewing the top of ``.repo/manifest.xml`` in your initialized BUILDDIR.
+
+halium-7.1
+""""""""""
+
+These remotes are available to you by default in halium-7.1:
 
 ===========  =======================
 Remote Name  Remote Description, URL
@@ -123,7 +128,23 @@ hal          Halium (link to GitHub root for legacy reasons), http://github.com
 them         TheMuppets, http://github.com/TheMuppets
 ===========  =======================
 
-If you do not specify a remote, ``aosp`` is assumed. See more information on these remotes by viewing the top of ``.repo/manifest.xml`` in your initialized BUILDDIR.
+If you do not specify a remote, ``aosp`` is assumed. 
+
+halium-5.1
+""""""""""
+
+===========  =========================
+Remote Name  Remote Description, URL
+-----------  -------------------------
+phablet      Canonical Ubuntu Phone compatibility, https://code-review.phablet.ubuntu.com
+aosp         Android Open Source Project, https://android.googlesource.com
+cm           CyanogenMod, https://github.com/CyanogenMod
+ubp          UBports (link to GitHub root for legacy reasons), https://github.com
+halium       Halium (link to GitHub root for legacy reasons), https://github.com
+ab2ut        Vendor blobs for UBports builds, https://github.com/ab2ut
+===========  =========================
+
+If you do not specify a remote, ``phablet`` is assumed.
 
 Sync
 ----
