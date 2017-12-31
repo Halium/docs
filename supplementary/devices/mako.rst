@@ -12,21 +12,26 @@ Halium
 
 Work in progress.
 
-* Sources:
- - Kernel <https://github.com/110101011/lge-kernel-mako>
- - Device <https://github.com/110101011/android_device_lge_mako>
- - Vendor <https://github.com/110101011/proprietary_vendor_lge>
-* What works:
- - Halium boots with reference rootfs
- - LED
- - Vibrator
- - Wifi
- - Buttons
- - Graphics
- - Battery
-* What doesn't work (or isn't tested yet):
- - Audio
- - Camera
+Sources:
+
+* `Kernel <https://github.com/110101011/lge-kernel-mako>`_
+* `Device <https://github.com/110101011/android_device_lge_mako>`_
+* `Vendor <https://github.com/110101011/proprietary_vendor_lge>`_
+
+What works:
+
+* Halium boots with reference rootfs
+* LED
+* Vibrator
+* Wifi
+* Buttons
+* Graphics
+* Battery
+
+What doesn't work (or isn't tested yet):
+
+* Audio
+* Camera
 
 Distributions
 ^^^^^^^^^^^^^
