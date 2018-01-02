@@ -11,7 +11,7 @@ Here is some tests to test the graphics stack
 
 .. code-block:: guess
 
-   test_hwcomposter
+   test_hwcomposer
 
 .. code-block:: guess
 
