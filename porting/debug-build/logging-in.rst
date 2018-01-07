@@ -21,6 +21,11 @@ You will be prompted to change the password. Once finished, clean up::
 
 You may now reboot your device into Halium.
 
-Once your device is booted, you should see that you have a new network interface again. Assign it an IP of 10.15.19.100. Once finished, you should be able to do the following to log in::
+Once your device is booted, you should see that you have a new network interface again. look at the output of ifconfig -a, the name will be e.g. enp0s29u1u1. rndis0 is not working on most kernels. Assign it a fake MAC address (if the default one is all 00s) and an IP of 10.15.19.100:
+
+    ifconfig <devicename> hw ether 02:11:22:33:44:55
+    ifconfig <devicename> 10.15.19.100 up
+
+ Once finished, you should be able to do the following to log in::
 
     ssh root@10.15.19.82
