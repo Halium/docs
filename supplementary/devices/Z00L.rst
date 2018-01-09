@@ -24,12 +24,12 @@ Distributions
      - What works
      - What doesn't work
    * - `Z00L on LineageOS Wiki <https://wiki.lineageos.org/devices/Z00L>`_
-     - `LineageOS\android_device_asus_Z00L <https://github.com/LineageOS/android_device_asus_Z00L>`_
-     - `LineageOS\android_kernel_asus_msm8916 <https://github.com/LineageOS/android_kernel_asus_msm8916>`_ based on v3.10.108
+     - `LineageOS/android_device_asus_Z00L <https://github.com/LineageOS/android_device_asus_Z00L>`_
+     - `LineageOS/android_kernel_asus_msm8916 <https://github.com/LineageOS/android_kernel_asus_msm8916>`_ based on v3.10.108
      - see device page
      - see device page
    * - `Z00L on Halium projectmanagement <https://github.com/Halium/projectmanagement/issues/37>`_
-     - `Halium/android_device_asus_Z00L <https://github.com/Halium/android_device_asus Z00L>`_
+     - `Halium/android_device_asus_Z00L <https://github.com/Halium/android_device_asus_Z00L>`_
      - `Halium/android_kernel_asus_msm8916 <https://github.com/Halium/android_kernel_asus_msm8916>`_ based on v3.10.108
      - see device page
      - see device page
