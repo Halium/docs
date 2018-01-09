@@ -1,0 +1,72 @@
+
+Z00L - Zenfone 2 Laser
+======================
+
+The Zenfone 2 Laser is a group of mid-range Android smartphones, released in August 2015, with a number of different region-specific configurations. The Zenfone 2 Laser comes with either a 5", 5.5" or 6" display, with either 720p or 1080p resolutions. Chipsets range from a 1.2GHz quad-core Snapdragon 410, to a 1.7GHz octa-core Snapdragon 616, with each device having either 2GB or 3GB of RAM and 8GB, 16GB or 32GB internal storage. All devices are capable of holding a microSD card up to 128GB and have dual-SIM capability. Cameras comes in either 8MP or 13MP and batteries range from 2400mAh to 3000mAh.
+
+Status
+------
+
+Halium
+^^^^^^
+
+A port for Halium 7.1 is being worked on by `Aayush Gupta <https://github.com/theimpulson>`_
+
+Distributions
+^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * - Distribution
+     - Device Specific Files
+     - Kernel
+     - What works
+     - What doesn't work
+   * - `Z00L on LineageOS Wiki <https://wiki.lineageos.org/devices/Z00L>`_
+     - `LineageOS\android_device_asus_Z00L <https://github.com/LineageOS/android_device_asus_Z00L>`_
+     - `LineageOS\android_kernel_asus_msm8916 <https://github.com/LineageOS/android_kernel_asus_msm8916>`_ based on v3.10.108
+     - see device page
+     - see device page
+   * - `Z00L on Halium projectmanagement <https://github.com/Halium/projectmanagement/issues/37>`_
+     - `Halium/android_device_asus_Z00L <https://github.com/Halium/android_device_asus Z00L>`_
+     - `Halium/android_kernel_asus_msm8916 <https://github.com/Halium/android_kernel_asus_msm8916>`_ based on v3.10.108
+     - see device page
+     - see device page
+
+
+Kernel & Hardware
+^^^^^^^^^^^^^^^^^
+
+Mainline (v3.10.108 as of writing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Everything required is already patched in kernel source and is fully upstreamed. Patches from CAF and Linux are also merged already.
+
+Cyanogemod based kernels (LOS & UBP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Both **Halium and LOS share a common base** which is Cyanogenmod. However, the Halium kernel was pacthed with Halium-specific edits. Currently some kernel flags and additional patches were used.
+
+Device Specifics
+----------------
+
+Guides
+^^^^^^
+
+Special boot modes
+
+    Recovery: With the device powered off, hold Volume Up + Power. On the next screen (fastboot mode) use Volume Down to scroll to “RECOVERY” and then press Power to select.
+
+    Download: With the device powered off, hold Volume Up + Power.
+
+
+Developer Info
+^^^^^^^^^^^^^^
+
+This device is competely open and has no weird behaviour
+
+Useful Resources
+^^^^^^^^^^^^^^^^
+
+* `TWRP for Z00L <https://eu.dl.twrp.me/Z00L/>`_
