@@ -27,6 +27,7 @@ All of these should only be document in the exact same way here and **only an ov
    titan
    vegeta
    yuga
+   Z00L
    
 
 How to document
@@ -375,6 +376,25 @@ Devices
      - Navigation
      - Sensors
      - Other
+   * - :doc:`Asus Zenfone 2 Laser <Z00L>`
+     - Z00L
+     - Halium 7.1 working
+     - v3.10.108
+     - Qualcomm MSM8939 (Snapdragon 615) / Qualcomm MSM8916 (Snapdragon 410)
+     - 8/4x Cortex A53 (1.7/1.0 GHz/1.2 GHz)
+     - Adreno 405/306
+     - 2 GB
+     - 16 GB + up to 128 GB
+     - 2G bands: 850 900 1800 1900 MHz GSM | 3G bands: 850 900 1700 1900 2100 MHz HSDPA | 4G bands: 2100 1900 1800 1700(AWS) 850 2600 900 700 800 MHz
+     - 5 MP (No flash)
+     - 13 MP (LED flash)
+     - 3000 mAh
+     - MSM89**sndcardm
+     - ft5*46
+     - IPS LCD capacitive touchscreen, 16M colors
+     - GPS
+     - Accelerometer | Gyroscope | Proximity sensor | Compass
+     - Other
    * - :doc:`BQ Aquaris U <chaozu>`
      - chaozu
      - Halium porting started
@@ -556,3 +576,9 @@ HTC 10
 * `HTC 10 iFixit <https://www.ifixit.com/Device/HTC_10>`_
 * `HTC 10 LOS <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/pme.yml>`_
 * `HTC 10 Website <https://www.htc.com/us/smartphones/htc-10>`_
+
+Asus Zenfone 2 Laser (Z00L)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+* `Asus Zenfone 2 Laser Z00L LOS <https://wiki.lineageos.org/devices/Z00L>`_
