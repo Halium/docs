@@ -12,6 +12,7 @@ Here is some tests to test the graphics stack
 .. code-block:: guess
 
    test_hwcomposer
+   EGL_PLATFORM=hwcomposer test_hwcomposer
 
 .. code-block:: guess
 
