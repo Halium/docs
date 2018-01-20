@@ -27,11 +27,10 @@ Download templates and files
 
 1. Getting the current wiki & templates for all sites we want to create
 
-Head over to `this documentation's GitHub repository <https://github.com/Halium/docs>`_, click on the green button **download or clone** and select *Download ZIP* from the drop down and unpack it in a folder of your choice and move to the folder "supplementary". Inside there are a few files of interest for us:
+Head over to `this documentation's GitHub repository <https://github.com/Halium/docs>`_, click on the green button **download or clone** and select *Download ZIP* from the drop down and unpack it in a folder of your choice and move to the folder "supplementary/devices". Inside there are a few files of interest for us:
 
-
-* **Devices-Overview.rst** here we will insert a quick list of the status of the device and link to a new device specific sub page we will create
-* **New-Device-Template.rst** this will be our device template, that means we will copy this file, rename it to match our device name and fill the specific info about it
+* **index.rst** here we will insert a quick list of the status of the device and link to a new device specific sub page we will create
+* **devicetemplate.rst** this will be our device template, that means we will copy this file, rename it to match our device name and fill the specific info about it
 
 You can open each of these in a multitude of editors but the simple **gedit** which is pre-installed on Ubuntu suffices.
 
@@ -41,8 +40,8 @@ Edit device-overview
 --------------------
 
 1. Open up your browser of choice and head over to the :doc:`devices/index` again. You can use this for reference while editing it locally on your PC and also there is some useful links there that may lead you to the places where you find info about your device without opening it yourself.
-2. Also open Devices-Overview.rst in gedit
-3. Then, just fill in the voids in the editor. Once finished you can save your work send in your changed Devices-Overview.rst to docu@ubports.com THIS MAIL ADRESS NEEDS TO BE FIXED!
+2. Also open index.rst in gedit
+3. Then, just fill in the voids in the editor. Once finished you can save your work send in your changed index.rst to docu@ubports.com THIS MAIL ADRESS NEEDS TO BE FIXED!
 4. Wait until someone merged it into the official wiki
 
 
@@ -55,8 +54,8 @@ Create device documentation
   create reference-device.rst
 
 1. Open up your browser and head over to the :doc:`template for device specific pages <devices/index>`. This will again be our reference and may provide some useful links as well.
-2. Also open up the _New_Device_Template.rst_ file with your editor and directly save-as *Your-Device-x.rst* so you always change the correct file and not the template
-3. Now look into the showcase and try to gather as much info about your device in the same style, save your work and submit in the same way as in step 3
+2. Also open up the **devicetemplate.rst** file with your editor and directly save-as *Your-Device-x.rst* so you always change the correct file and not the template.
+3. Now look into the showcase and try to gather as much info about your device in the same style, save your work and submit in the same way as in step 3.
 
 Okay, by now you may have noticed it's not that hard, it's just a lot of work to do this. You may also notice that if info is gathered in a centralized manner, devs may save lot's of time!
 
@@ -74,7 +73,7 @@ Also, we can link to older, working kernels and where inside of them the specifi
 So what to do:
 
 1. Open up your browser and head over to the :doc:`hardware-enablement` page.
-2. Open up the same page in your editor
+2. Open up the same page in your editor (**supplementary/hardware-enablement.rst**)
 3. Insert missing info and submit your changes
 4. If you find a part without its own subpage, you might want to create one. Head to the next step for that.
 
