@@ -11,17 +11,23 @@ Testing wifi is done using NetworkManager
 
    nmcli d
 
-Qcom devices
-------------
+Qcom devices and CAF devices
+------------------------------------
 
-Wifi is fairly easy to get going on most Qcom based devices
+Wifi is fairly easy to get going on most Qcom and CAf based devices
 
 .. code-block:: guess
 
-   echo 1 > /dev/wcnss_wlan
-   echo sta > /sys/module/wlan/parameters/fwpath
+   echo 1 > /dev/wcnss_wlan #if not up by default
+   echo sta > /sys/module/wlan/parameters/fwpath 
 
 That should enable wifi
+
+Test WiFi with :
+
+.. code-block:: guess
+
+   nmtui
 
 broadcom bcmdhd
 ---------------
