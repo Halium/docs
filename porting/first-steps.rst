@@ -56,7 +56,7 @@ Install the required dependencies::
 Arch
 ^^^^^^^^^^
 
-If you have a pure ``amd64`` running you need to add ``[Multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i386`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
+If you have a pure ``amd64`` running you need to add ``[Multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
 
 Install the required dependencies from official repository or AUR::
 
