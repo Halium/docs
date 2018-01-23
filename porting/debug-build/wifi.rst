@@ -19,7 +19,7 @@ Wifi is fairly easy to get going on most Qcom and CAf based devices
 .. code-block:: guess
 
    echo 1 > /dev/wcnss_wlan #if not up by default
-   echo sta > /sys/module/wlan/parameters/fwpath 
+   echo sta > /sys/module/wlan/parameters/fwpath
 
 That should enable wifi
 
