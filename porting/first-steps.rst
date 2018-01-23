@@ -53,5 +53,19 @@ Install the required dependencies::
      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
      repo liblz4-tool bc
 
+Arch
+^^^^^^^^^^
+
+If you have a pure ``amd64`` running you need to add ``[Multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i386`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
+
+Install the required dependencies from official repository or AUR::
+
+   lineageos-devel git repo flex qemu binfmt-support qemu-user-static e2fsprogs sudo simg-tools
+      android-sdk-platform-tools bootimg-tools-git
+
+.. Note::
+    Arch uses python3 as default python, which may cause some errors while building. You can set python2 as default by running
+    ``sudo ln -s /usr/bin/python2 /usr/local/bin/python`` and reboot. Check the current python version by running ``python`` .
+
 .. todo::
     Add information for installing packages on other distros
