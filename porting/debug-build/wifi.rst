@@ -14,7 +14,7 @@ Testing wifi is done using NetworkManager
 Qcom devices and CAF devices
 ------------------------------------
 
-Wifi is fairly easy to get going on most Qcom and CAf based devices
+Wifi is fairly easy to get going on most Qcom and CAF based devices
 
 .. code-block:: guess
 
