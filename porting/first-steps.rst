@@ -54,15 +54,25 @@ Install the required dependencies::
      repo liblz4-tool bc
 
 Arch
-^^^^^^^^^^
+^^^^
 
 If you have a pure ``amd64`` running you need to add ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
 Assuming you have already installed ``base-devel`` group; if not, then please install ``base-devel``.
 
-Install the required dependencies from official repository or AUR::
+Not every package is yet available in Arch official repository you need to have AUR repository enabled in your ``/etc/pacman.conf`` to install packages. To enable AUR repository run the following command::
 
-   lineageos-devel qemu binfmt-support qemu-user-static simg-tools
-      android-sdk-platform-tools bootimg-tools-git abootimg-git
+   echo "[archlinuxfr]
+   SigLevel = Never
+   Server = http://repo.archlinux.fr/$arch" >> /etc/pacman.conf && sudo pacman -Syyu yaourt
+   
+You need to install a GPG key which is required to install ``lineageos-devel`` meta package dependencies (``ncurses5-compat-libs`` and ``lib32-ncurses5-compat-libs``)::
+
+   gpg --recv-keys 702353E0F7E48EDB
+
+Install the required dependencies::
+
+   yaourt -S lineageos-devel simg-tools android-sdk-platform-tools bootimg-tools-git abootimg-git && sudo pacman -S qemu qemu-user-static
+   
 
 .. Note::
     Arch uses python3 as default version for Python, which may cause some errors while building. Using a Python virtualenv2 is highly recommended. Please refer to `<https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting the Virtual Environment.
