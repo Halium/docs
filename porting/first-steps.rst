@@ -57,11 +57,12 @@ Arch
 ^^^^^^^^^^
 
 If you have a pure ``amd64`` running you need to add ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
+Assuming you have already installed ``base-devel`` meta package; if not please install ``base-devel``.
 
 Install the required dependencies from official repository or AUR::
 
-   lineageos-devel git repo flex qemu binfmt-support qemu-user-static e2fsprogs sudo simg-tools
-      android-sdk-platform-tools bootimg-tools-git
+   lineageos-devel qemu binfmt-support qemu-user-static simg-tools
+      android-sdk-platform-tools bootimg-tools-git abootimg-git
 
 .. Note::
     Arch uses python3 as default python, which may cause some errors while building. Using a python virtualenv2 is highly recommended. Please refer to `<https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting the Virtual Environment.
