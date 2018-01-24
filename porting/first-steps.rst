@@ -57,7 +57,7 @@ Arch
 ^^^^^^^^^^
 
 If you have a pure ``amd64`` running you need to add ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
-Assuming you have already installed ``base-devel`` group while installing Arch; if not please install ``base-devel``.
+Assuming you have already installed ``base-devel`` group; if not, then please install ``base-devel``.
 
 Install the required dependencies from official repository or AUR::
 
