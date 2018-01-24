@@ -65,7 +65,7 @@ Install the required dependencies from official repository or AUR::
       android-sdk-platform-tools bootimg-tools-git abootimg-git
 
 .. Note::
-    Arch uses python3 as default python, which may cause some errors while building. Using a python virtualenv2 is highly recommended. Please refer to `<https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting the Virtual Environment.
+    Arch uses python3 as default version for Python, which may cause some errors while building. Using a Python virtualenv2 is highly recommended. Please refer to `<https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting the Virtual Environment.
 
 .. todo::
     Add information for installing packages on other distros
