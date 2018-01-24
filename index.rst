@@ -7,14 +7,7 @@ This repository contains the following documents:
 Contents
 ========
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Build & Install
-   :name: sec-building
-
-   building/build-images
-   building/device-installation
-
+   
 .. toctree::
    :maxdepth: 1
    :caption: Porting Guide
