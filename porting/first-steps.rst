@@ -56,7 +56,7 @@ Install the required dependencies::
 Arch
 ^^^^^^^^^^
 
-If you have a pure ``amd64`` running you need to add ``[Multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
+If you have a pure ``amd64`` running you need to add ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
 
 Install the required dependencies from official repository or AUR::
 
@@ -64,8 +64,7 @@ Install the required dependencies from official repository or AUR::
       android-sdk-platform-tools bootimg-tools-git
 
 .. Note::
-    Arch uses python3 as default python, which may cause some errors while building. You can set python2 as default by running
-    ``sudo ln -s /usr/bin/python2 /usr/local/bin/python`` and reboot. Check the current python version by running ``python`` .
+    Arch uses python3 as default python, which may cause some errors while building. Using a python virtualenv2 is highly suggested. Please refer to `<https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting the Virtual Environment.
 
 .. todo::
     Add information for installing packages on other distros
