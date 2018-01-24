@@ -30,7 +30,7 @@ If your device does not have Android 7.1 or LineageOS 14.1 support but has suppo
 Adding your device-specific source
 ----------------------------------
 
-Okay, so now you have the default manifest for Ubuntu Touch. This will enable you to download the basic Android sources used to build Ubuntu Touch, but you'll need to find device-specific files. These enable the build system to make Android for your device.
+Okay, so now you have the default manifest for Halium. This will enable you to download the basic Android sources used to build Halium, but you'll need to find device-specific files. These enable the build system to make Android for your device.
 
 If there's any part for you to make a mistake on, this will be the one. Finding the files isn't hard, but it might take you a couple of tries to get repo's local manifest created correctly.
 
@@ -38,7 +38,7 @@ First, you'll want to find the repositories for your device on `LineageOS's GitH
 
 There will be a ``cm.dependencies`` or ``lineage.dependencies`` file in that repository that will tell you all of the other repositories that your device is reliant upon. Keep this file around as you will need it in a little bit.
 
-Change into your Halium directory and create the directory ``.repo/local_manifests/``. Then, edit the file ``.repo/local_manifests/[manufacturer]_[device].xml``.
+Navigate into your Halium directory and create the subdirectory ``.repo/local_manifests/``. Then, edit the file ``.repo/local_manifests/[manufacturer]_[device].xml``.
 
 Paste the following into the file:
 
