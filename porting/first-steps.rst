@@ -58,10 +58,6 @@ Arch
 
 If you have a pure ``amd64`` running you need to add ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
 Assuming you have already installed ``base-devel`` group; if not, then please install ``base-devel``.
-   
-You need to install a GPG key which is required to install ``halium-devel`` meta package dependencies (``ncurses5-compat-libs`` and ``lib32-ncurses5-compat-libs``)::
-
-   gpg --recv-keys 702353E0F7E48EDB
 
 Install the required dependencies from AUR::
 
