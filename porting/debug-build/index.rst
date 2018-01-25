@@ -2,19 +2,23 @@
 Debug Halium
 ============
 
+The following subsections should help you through the porting process. 
+
+Keep in mind, every port is a bit different. You might be following this from top to bottom and even skip steps. Or, you might end up going back and forth between the sections while you improve your port. 
+
 .. toctree::
    :maxdepth: 1
    
    dmesg
    early-init
    logging-in
-   usbnet
    udev
-   debug-android-userspace
-   graphics
    lights
+   graphics
    vibrator
    wifi
+   debug-android-userspace
+   usbnet
 
 
 References
