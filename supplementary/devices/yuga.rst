@@ -2,7 +2,7 @@
 Yuga - Sony Xperia Z
 ====================
 
-There exsits basic mainline kernel support added by Sony. This possibly could
+There exists basic mainline kernel support added by Sony. This possibly could
 become a reference device.
 
 Status
