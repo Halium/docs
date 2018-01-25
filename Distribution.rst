@@ -77,7 +77,7 @@ udev rules
 
 rootfs.img contains the udev rules which are device specific and is generated from the ueventd*.rc file from device tree.
 
-Instructions for getting these rules installed can be found at :ref:`udev-rules`.
+Instructions for getting these rules installed can be found at :doc:`porting/debug-build/udev`.
 
 You can either,
 
