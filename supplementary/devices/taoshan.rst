@@ -61,7 +61,7 @@ Developer Info
 
 After flashing hybris-boot, recovery can not be accessed anymore. Therefore extract LineageOS boot image from `LineageOS build for taoshan <https://download.lineageos.org/taoshan>_` to boot partition (using fastboot) and `twrp image <https://dl.twrp.me/taoshan/>_` to recovery. Enter recovery and use twrp to mount /data. The size of the data partition is only 1.6 GB, which is enough for the halium reference rootfs. Clone `halium-install from JBB <https://github.com/JBBgameich/halium-install>` (the official one does not work). Edit functions/core.sh and change rootfs size to 1G. Then run halium-install with halium reference rootfs and the halium system.img.
 
-Usefull Ressources
+Usefull Resources
 ^^^^^^^^^^^^^^^^^^
 `halium-install from JBB <https://github.com/JBBgameich/halium-install>`    
     
