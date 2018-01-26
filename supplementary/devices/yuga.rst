@@ -11,8 +11,8 @@ Status
 Halium
 ^^^^^^
 
-There is a **working Halium 7.1** made by `LNJ <https://github.com/LNJ2>`_ and
-the according Halium/Projectmanagement issue is `here <https://github.com/Halium/projectmanagement/issues/19>`_.
+There is a **working Halium 7.1** port made by `LNJ <https://github.com/LNJ2>`_
+and here is the according `Halium project management issue <https://github.com/Halium/projectmanagement/issues/19>`_.
 
 Distributions
 ^^^^^^^^^^^^^
@@ -39,9 +39,9 @@ Mainline (v4.15-rc9 as of writing)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The kernel will start and there is already UART and USB debugging implemented
-for this device. There also has been worked on riva, which is AFAIK for
-connectivity like WiFi, Bluetooth and FM (at least the pins for those have been
-set in the dts file).
+for this device. There also has been worked on riva, which is used for
+connectivity like WiFi, Bluetooth and FM, but there is no documentation of what
+really works.
 
 LineageOS kernel (v3.4.113)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -71,7 +71,7 @@ Developer Info
 
 There's no strange behaviour, except the way to get into fastboot or recovery.
 
-Useful Ressources
-^^^^^^^^^^^^^^^^^
+Useful Resources
+^^^^^^^^^^^^^^^^
 
 `TWRP for yuga <https://twrp.me/sony/sonyxperiaz.html>`_ (only up to v3.0.2)
