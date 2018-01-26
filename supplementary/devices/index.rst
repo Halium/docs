@@ -455,7 +455,7 @@ Devices
      - Other
    * - :doc:`Sony Xperia L <taoshan>`
      - taoshan
-     - Halium 7.1 not working, yet
+     - Halium 7.1 can be installed, but does not work, yet
      - v3.4.0
      - Qualcomm MSM8230 Snapdragon 400
      - Dual-core 1.0 GHz Krait
