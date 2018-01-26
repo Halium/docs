@@ -159,7 +159,7 @@ This will first link your manifest from Halium devices to ``.repo/local_manifest
 Document
 --------
 
-After following these steps, create an issue on the `Halium project management repository <https://github.com/Halium/projectmanagement>`_ to document your porting progress. Also create a pull request containing your manifest on the `Halium devices repository <https://github.com/Halium/halium-devices>`_. You should link the manifest on Halium devices in your project management issue. Alternatively you can also use a link to the pull request, if the manifest was not merged already.
+After following these steps, create an issue on the `Halium project management repository <https://github.com/Halium/projectmanagement/issues/new?template=device-port.md>`_ to document your porting progress. Also create a pull request containing your manifest on the `Halium devices repository <https://github.com/Halium/halium-devices>`_. You should link the manifest on Halium devices in your project management issue. Alternatively you can also use a link to the pull request, if the manifest was not merged already.
 
 
 Next steps
