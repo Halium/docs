@@ -7,3 +7,6 @@ Now that you're logged in, you must create some udev rules to allow some tests t
 
 Now, reboot the device.
 
+.. todo::
++
++    Update these instructions to update udev rules on "host" machine. The ueventd*rc files are already in $OUT/root/ , so it needs updating for path and then instead of writing it to /etc/udev/rules.d/70-codename.rules, writing it to local file and then adb pushing it while in recovery.
