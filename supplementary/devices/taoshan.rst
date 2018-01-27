@@ -67,7 +67,7 @@ Special boot modes
 
 - Fastboot: With the device powered off, while holding Volume Up, connect the USB cable to the computer. The LED should turn blue.
 
-- Recovery: On boot, press Volume Down when the LEDs start lighting up. This only works with a working boot image. If there is none, the LineageOS boot image can be flashed to boot partition first.
+- Recovery: On boot, press Volume Down when the LEDs start lighting up. This only works with a working boot image. If there is none, you can flash twrp to boot partition first and use it to reboot into recovery.
 
 - Second Recovery: To boot the FOTA Recovery, press Volume Up instead. This seems to be equal to Recovery.
 
@@ -76,11 +76,10 @@ Developer Info
 
 After flashing hybris-boot, recovery can not be accessed anymore. Therefore follow these steps to install halium rootfs:
 
-- Extract LineageOS boot image from `LineageOS build for taoshan <https://download.lineageos.org/taoshan>`_
 - Enter Fastboot
-- Flash to LineageOS boot image to boot partition using fastboot
-- Flash `TWRP image <https://dl.TWRP.me/taoshan/>`_ to recovery partition
-- Enter Recovery
+- Flash `TWRP image <https://dl.TWRP.me/taoshan/>`_ to recovery and boot partition
+- Reboot into TWRP on boot
+- From TWRP reboot into Recovery
 - In TWRP mount data partition
 - Clone `halium-install from JBB <https://github.com/JBBgameich/halium-install>`_ (the official one does not work)
 - Edit functions/core.sh and change rootfs size to 1G (data partition has only 1.6 GB)
