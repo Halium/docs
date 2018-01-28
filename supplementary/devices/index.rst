@@ -27,6 +27,7 @@ All of these should only be document in the exact same way here and **only an ov
    titan
    vegeta
    yuga
+   taoshan
    Z00L
    
 
@@ -452,6 +453,25 @@ Devices
      - Navigation
      - Sensors
      - Other
+   * - :doc:`Sony Xperia L <taoshan>`
+     - taoshan
+     - Halium 7.1 can be installed, but does not work, yet
+     - v3.4.0
+     - Qualcomm MSM8230 Snapdragon 400
+     - Dual-core 1.0 GHz Krait
+     - Adreno 305
+     - 1GB
+     - 8GB
+     - Connectivity?
+     - VGA
+     - 8 MP
+     - Li-Ion 1750 mAh
+     - Sound?
+     - TFT capacitive touchscreen
+     - Display?
+     - A-GPS
+     - Accelerometer, proximity, compass
+     - Other?
    * - :doc:`HTC 10 <pme>`
      - pme
      - Halium 7.1 WIP
