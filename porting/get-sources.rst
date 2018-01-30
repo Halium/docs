@@ -5,8 +5,8 @@ Get Halium source
 Now that you have a target device selected and your build device ready, it's time to get the sources for your target together. Let's begin by initializing your source tree.
 
 
-Create and initialize source tree
----------------------------------
+Initialize and download source tree
+------------------------------------
 
 Make yourself a new directory to put your Halium source in::
 
@@ -25,6 +25,10 @@ If your device does not have Android 7.1 or LineageOS 14.1 support but has suppo
 ``halium-7.1`` is based on LineageOS 14.1
 
 ``halium-5.1`` is based on CyanogenMod 12.1
+
+Now that you have initialized the Halium tree, you can sync all repositories included in it. This will probably take a while as it downloads several GBs::
+
+   repo sync -c
 
 
 Adding your device-specific source
