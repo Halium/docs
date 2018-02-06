@@ -41,7 +41,7 @@ Kernel & Hardware
 Cyanogemod based kernels (LOS & UBP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Both **Halium and LOS share a common base** which is Cyanogenmod. However, the Halium kernel was pacthed with Halium-specific edits.
+Both **Halium and LOS share a common base** which is Cyanogenmod. However, the Halium kernel was patched with Halium-specific edits.
 
 Device Specifics
 ----------------
