@@ -26,8 +26,8 @@ All of these should only be document in the exact same way here and **only an ov
    T00F
    titan
    vegeta
+   wt88047
    yuga
-   taoshan
    Z00L
    
 
@@ -453,28 +453,9 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - :doc:`Sony Xperia L <taoshan>`
-     - taoshan
-     - Halium 7.1 can be installed, but does not work, yet
-     - v3.4.0
-     - Qualcomm MSM8230 Snapdragon 400
-     - Dual-core 1.0 GHz Krait
-     - Adreno 305
-     - 1GB
-     - 8GB
-     - Connectivity?
-     - VGA
-     - 8 MP
-     - Li-Ion 1750 mAh
-     - Sound?
-     - TFT capacitive touchscreen
-     - Display?
-     - A-GPS
-     - Accelerometer, proximity, compass
-     - Other?
    * - :doc:`HTC 10 <pme>`
      - pme
-     - Halium 7.1 working
+     - Halium 7.1 WIP
      - v3.18.31
      - Snapdragon 820 (MSM8996)
      - Quad-core ARMv8-A (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)
@@ -491,6 +472,25 @@ Devices
      - GPS + GLONASS + (Beidou) Navigation **??**
      - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor, Fingerprint sensor, Sensor Hub - **??**
      - Other **??**
+   * - :doc:`Xiaomi Redmi2/Prime <wt88047>`
+     - wt88047
+     - Halium 7.1 and 5.1
+     - 3.10.49
+     - Snapdragon 410 (MSM8916)
+     - Quad-Core ARMv8 (4x1.3Ghz)
+     - Adreno 306
+     - 1GB/2GB LPDDR3
+     - 8GB/16GB + MicroSd upto 64GB
+     - WiFi, Bluetooth4.1, DLNA
+     - 2 Mp
+     - 8 Mp
+     - 2,400 mAh [removable]
+     - Sound **??**
+     - Touch screen **?**
+     - IPS LCD (1280 x 720 pixels)
+     - GPS + GLONASS
+     - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor
+     - Other **?**
       
 Sources
 ^^^^^^^
@@ -602,3 +602,11 @@ Asus Zenfone 2 Laser (Z00L)
 
 
 * `Asus Zenfone 2 Laser Z00L LOS <https://wiki.lineageos.org/devices/Z00L>`_
+
+Xiaomi Redmi2/Prime (wt88047)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `Xiaomi Redmi 2/Prime GSM-Arena <https://www.gsmarena.com/xiaomi_redmi_2-6884.php>`__
+* `Xiaomi Redmi 2/Prime Fonearena <http://www.fonearena.com/xiaomi-redmi-2_6117.html>`__
+* `Wingtech Wt88047 LOS <https://wiki.lineageos.org/devices/wt88047>`__
+
