@@ -28,11 +28,6 @@ Distributions
      - `LineageOS\android_kernel_wingtech_msm8916 <https://github.com/LineageOS/android_kernel_wingtech_msm8916>`_ based on v3.10.49
      - see device page
      - see device page
-   * - `WT88047 on Halium projectmanagement <https://github.com/Halium/projectmanagement/issues/36>`_
-     - `Halium/android_device_wingtech_wt88047 <https://github.com/Halium/android_device_wingtech_wt88047>`_
-     - `Halium/android_kernel_wingtech_msm8916 <https://github.com/Halium/android_kernel_wingtech_msm8916>`_ based on v3.10.49
-     - see device page
-     - see device page
 
 
 Kernel & Hardware
