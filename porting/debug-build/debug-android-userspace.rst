@@ -36,6 +36,12 @@ For radio (Wi-Fi, GSM, LTE) logs, you can add a flag::
 
    /system/bin/logcat -b radio
 
+If you're not able to run this command for any reason (for example, because you're running an armhf rootfs on an arm64 device), you can try to run it inside the Android userland via ``lxc-attach``::
+
+    lxc-attach -n android -- /system/bin/logcat
+
+You may similarly use this to run any binary inside the Android system. Simply replace the command after the two dashes.
+
 dmesg
 -----
 
