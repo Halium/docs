@@ -454,25 +454,6 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - :doc:`HTC 10 <pme>`
-     - pme
-     - Halium 7.1 WIP
-     - v3.18.31
-     - Snapdragon 820 (MSM8996)
-     - Quad-core ARMv8-A (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)
-     - Adreno 530
-     - 4 GB LPDDR4 RAM **??**
-     - 32 or 64 GB **??** + microSD up to 256 GB
-     - Broadcom BCM4359 (Wi-Fi), NFC, BT 4.2, Display Port, Chromecast, DLNA™, AirPlay™, Miracast™ **??** 
-     - Samsung S5K4E6
-     - Sony Exmor R IMX377
-     - Non-removable Li-Ion 3.8 V, 11.5 Wh (3,000 mAh) **??**
-     - Sound **??**
-     - Touch screen **??**
-     - Super LCD 5 (2560 x 1440 pixels) **??**
-     - GPS + GLONASS + (Beidou) Navigation **??**
-     - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor, Fingerprint sensor, Sensor Hub - **??**
-     - Other **??**
    * - :doc:`Sony Xperia L <taoshan>`
      - taoshan
      - Halium 7.1 can be installed, but does not work, yet
@@ -492,6 +473,25 @@ Devices
      - A-GPS
      - Accelerometer, proximity, compass
      - Other?
+   * - :doc:`HTC 10 <pme>`
+     - pme
+     - Halium 7.1 WIP
+     - v3.18.31
+     - Snapdragon 820 (MSM8996)
+     - Quad-core ARMv8-A (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)
+     - Adreno 530
+     - 4 GB LPDDR4 RAM **??**
+     - 32 or 64 GB **??** + microSD up to 256 GB
+     - Broadcom BCM4359 (Wi-Fi), NFC, BT 4.2, Display Port, Chromecast, DLNA™, AirPlay™, Miracast™ **??**
+     - Samsung S5K4E6
+     - Sony Exmor R IMX377
+     - Non-removable Li-Ion 3.8 V, 11.5 Wh (3,000 mAh) **??**
+     - Sound **??**
+     - Touch screen **??**
+     - Super LCD 5 (2560 x 1440 pixels) **??**
+     - GPS + GLONASS + (Beidou) Navigation **??**
+     - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor, Fingerprint sensor, Sensor Hub - **??**
+     - Other **??**
    * - :doc:`Xiaomi Redmi2/Prime <wt88047>`
      - wt88047
      - Halium 7.1 and 5.1
