@@ -475,7 +475,7 @@ Devices
      - Other?
    * - :doc:`HTC 10 <pme>`
      - pme
-     - Halium 7.1 WIP
+     - Halium 7.1 working
      - v3.18.31
      - Snapdragon 820 (MSM8996)
      - Quad-core ARMv8-A (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)
