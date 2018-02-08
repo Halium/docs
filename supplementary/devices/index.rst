@@ -494,7 +494,7 @@ Devices
      - Other **??**
    * - :doc:`Xiaomi Redmi2/Prime <wt88047>`
      - wt88047
-     - Halium 7.1 and 5.1
+     - Halium 7.1 working
      - 3.10.49
      - Snapdragon 410 (MSM8916)
      - Quad-Core ARMv8 (4x1.3Ghz)
