@@ -502,8 +502,8 @@ Devices
      - 1GB/2GB LPDDR3
      - 8GB/16GB + MicroSd upto 64GB
      - WiFi, Bluetooth4.1, DLNA
-     - 2 Mp
-     - 8 Mp
+     - 2 MP
+     - 8 MP
      - 2,400 mAh [removable]
      - Sound **??**
      - Touch screen **?**
