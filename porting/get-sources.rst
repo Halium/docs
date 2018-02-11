@@ -42,7 +42,7 @@ First, you'll want to find the repositories for your device on `LineageOS's GitH
 
 There will be a ``cm.dependencies`` or ``lineage.dependencies`` file in that repository that will tell you all of the other repositories that your device is reliant upon. Keep this file around as you will need it in a little bit.
 
-Navigate into your Halium directory and edit the file ``halium/devices/manifests/[manufacturer]_[device].xml``.
+Navigate into your Halium directory and create the file ``halium/devices/manifests/[manufacturer]_[device].xml``.
 
 Paste the following into the file:
 
