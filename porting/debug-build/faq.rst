@@ -11,7 +11,7 @@ Getting ``kgsl kgsl-3d0: |_load_firmware| request_firmware(a330_pm4.fw) failed: 
 Toggle kernel option ``CONFIG_FW_***LOADER``
 
 Dmesg shows systemd errors when running ``switch_root /target /sbin/init``
----------------------------------------------------------
+--------------------------------------------------------------------------
 
 .. code-block:: guess
     systemd[1]: Failed to determine whether /sys/fs/cgroup is a mount point: Too many levels of symbolic links
@@ -65,7 +65,7 @@ There could be something wrong with your lxc container. Try the following to dis
    echo continue > /init-ctl/stdin
 
 SSH into upborts rootfs fails with ``Connection reset by 10.15.19.82 port 22``
---------------------------------------------------------------------------
+------------------------------------------------------------------------------
 
 It's a known problem with the sshd, go into chroot and add this in /etc/init/ssh.override:
 
