@@ -19,7 +19,7 @@ Keep in mind, every port is a bit different. You might be following this from to
    wifi
    debug-android-userspace
    usbnet
-
+   faq
 
 References
 ----------
