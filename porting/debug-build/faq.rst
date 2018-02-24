@@ -5,8 +5,12 @@ Porting FAQ
 This is a list of common error messages and corresponding fixes people run into when porting new devices to Halium. 
 Contributions welcome!
 
-Getting ``kgsl kgsl-3d0: |_load_firmware| request_firmware(a330_pm4.fw) failed: -2 … kgsl kgsl-3d0: |adreno_init| Reading pm4 microcode failed a330_pm4.fw``
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Reading pm4 microcode failed
+----------------------------
+
+.. code-block:: guess
+
+   kgsl kgsl-3d0: |_load_firmware| request_firmware(a330_pm4.fw) failed: -2 … kgsl kgsl-3d0: |adreno_init| Reading pm4 microcode failed a330_pm4.fw
 
 Toggle kernel option ``CONFIG_FW_***LOADER``
 
@@ -44,9 +48,7 @@ Also check the vendor folders of your dependencies.
 My device is constantly rebooting. How do I get a new last_kmsg?
 ----------------------------------------------------------------
 
-Enable the following configs:
-
-.. code-block:: guess
+Enable the following configs::
 
    CONFIG_ANDROID_RAM_CONSOLE=y
    CONFIG_ANDROID_RAM_CONSOLE_ENABLE_VERBOSE=y
@@ -57,9 +59,7 @@ You only get a usefull last_kmsg if you reboot without losing power.
 My device is constantly rebooting. I can get into telnet but it bootloops after ``echo continue > /init-ctl/stdin``
 -------------------------------------------------------------------------------------------------------------------
 
-There could be something wrong with your lxc container. Try the following to disable it for the moment:
-
-.. code-block:: guess
+There could be something wrong with your lxc container. Try the following to disable it for the moment::
 
    cd target/
    TERM=linux HOME=/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:$PATH chroot . /bin/bash
@@ -71,9 +71,7 @@ There could be something wrong with your lxc container. Try the following to dis
 SSH into upborts rootfs fails with ``Connection reset by 10.15.19.82 port 22``
 ------------------------------------------------------------------------------
 
-It's a known problem with the sshd, go into chroot and add this in /etc/init/ssh.override:
-
-.. code-block:: guess
+It's a known problem with the sshd, go into chroot and add this in /etc/init/ssh.override::
 
    start on startup
    exec /usr/sbin/sshd -D -o PasswordAuthentication=yes
@@ -83,9 +81,7 @@ Then remove the overlay: ``rm -r /data/system-data``
 I can't do video tests, but vibrator, wifi and lights work
 ----------------------------------------------------------
 
-Have you added the caf repo to your sources.list? If not run the following and reboot:
-
-.. code-block:: guess
+Have you added the caf repo to your sources.list? If not run the following and reboot::
    
    . /etc/environment
    echo "deb http://repo.halium.org/caf xenial main" >> /etc/apt/sources.list.d/halium-caf.list
