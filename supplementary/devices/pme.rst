@@ -65,6 +65,6 @@ TWRP's BusyBox for the device is partially broken. Thus stock rootstock might fa
 Useful Resources
 ^^^^^^^^^^^^^^^^
 
-* `Repo Manifest <https://gist.github.com/vanyasem/64fa7fdc0df556561c50a6048a982ce1>`_
+* `Repo Manifest <https://github.com/Halium/halium-devices/blob/halium-7.1/manifests/htc_pme.xml>`_
 * `Official HTC Unlock guide <https://www.htcdev.com/bootloader/>`_
-* `TWRP for HTC 10 <https://eu.dl.twrp.me/pme/>`_
+* `TWRP for HTC 10 <https://twrp.me/htc/htc10.html>`_
