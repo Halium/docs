@@ -2,7 +2,7 @@
 oneplus3 - OnePlus 3(T)
 ===========================
 
-The OnePlus 3  is a smartphone produced by OnePlus. It was revealed on June 14, 2016. The OnePlus 3 is the first OnePlus device to not be part of the invite system, which OnePlus had used for its last three devices to regulate flow with inadequate manufacturing for the inevitable high demand.
+The OnePlus 3 (also abbreviated as OP3) is a smartphone produced by OnePlus. It was revealed on June 14, 2016. The OnePlus 3 is the first OnePlus device to not be part of the invite system, which OnePlus had used for its last three devices to regulate flow with inadequate manufacturing for the inevitable high demand.
 
 The OnePlus 3T (also abbreviated as OP3T) is a smartphone made by OnePlus. It is the successor to the OnePlus 3 and was revealed on 15 November 2016. It is an incremental update to the company's flagship phone being released only 6 months later.
 
