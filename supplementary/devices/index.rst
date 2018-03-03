@@ -22,6 +22,7 @@ All of these should only be document in the exact same way here and **only an ov
    hammerhead
    krillin
    mako
+   oneplus3
    pme
    T00F
    titan
@@ -511,6 +512,25 @@ Devices
      - GPS + GLONASS
      - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor
      - Other **?**
+   * - :doc:`OnePlus 3(T) <oneplus3>`
+     - oneplus3
+     - Halium 7.1 working
+     - v3.18.31
+     - **3:** Snapdragon 820 (MSM8996) / **3T:** Snapdragon 821 (MSM8996Pro)
+     - Quad-core Kryo **3:** 2 x 2.15 GHz + 2 x 1.6 GHz / **3T:** 2 x 2.35 GHz + 2 x 1.6 GHz
+     - Adreno 530
+     - 6 GB LPDDR4
+     - **3:** 64 GB UFS 2.0 / **3T:** 64/128 GB UFS 2.0
+     - Wi-Fi, Bluetooth 4.2, DLNA
+     - **3:** Sony IMX179 Exmor R (8MP) / **3T:** Samsung (16MP)
+     - Sony IMX298 Exmor RS (16MP)
+     - **3:** Non-removable Li-Ion 3000 mAh / **3T:** Non-removable Li-Ion 3400 mAh
+     - Sound **?**
+     - Touch screen **?**
+     - Optic AMOLED (1080x1920)
+     - GPS, A-GPS, GLONASS, BeiDou
+     - Proximity, Light, Accelerometer, Compass, Gyroscope, Fingerprint, Hall
+     - Other **?**
       
 Sources
 ^^^^^^^
@@ -630,3 +650,16 @@ Xiaomi Redmi2/Prime (wt88047)
 * `Xiaomi Redmi 2/Prime Fonearena <http://www.fonearena.com/xiaomi-redmi-2_6117.html>`__
 * `Wingtech Wt88047 LOS <https://wiki.lineageos.org/devices/wt88047>`__
 
+OnePlus 5
+~~~~~~~~~~
+
+* `OnePlus 3 Wikipedia <https://en.wikipedia.org/wiki/OnePlus_3>`_
+* `OnePlus 3T Wikipedia <https://en.wikipedia.org/wiki/OnePlus_3T>`_
+* `OnePlus 3 GSMArena <https://www.gsmarena.com/oneplus_3-7995.php>`_
+* `OnePlus 3T GSMArena <https://www.gsmarena.com/oneplus_3t-8416.php>`_
+* `OnePlus 3 DeviceSpecifications <https://www.devicespecifications.com/en/model/437a3c9b>`_
+* `OnePlus 3T DeviceSpecifications <https://www.devicespecifications.com/en/model/446c3f91>`_
+* `OnePlus 3 iFixit teardown <https://www.ifixit.com/Teardown/Oneplus+3+Teardown/74012>`_
+* `OnePlus 3(T) LOS <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/oneplus3.yml>`_
+* `OnePlus 3 Website <https://oneplus.net/3>`_
+* `OnePlus 3T Website <https://oneplus.net/3t>`_
