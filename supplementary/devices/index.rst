@@ -113,43 +113,43 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - Samsung Galaxy S8+
-     - Codename
-     - No work so far
-     - -
-     - Qualcomm Snapdragon 835 (MSM8998)
-     - CPU
-     - GPU
+   * - :doc:`Samsung Galaxy S8+ <dream2lte>`
+     - dream2lte
+     - Halium 7.1 WIP
+     - v4.4.79
+     - Samsung Exynos 9 Octa 8895
+     - 4x 2.3 GHz Exynos M2 Mongoose, 4x 1.7 GHz ARM Cortex-A53
+     - Mali-G71 MP20
      - Samsung K3UH5H50MM-NGCJ 4 GB LPDDR4
      - Toshiba THGAF4G9N4LBAIR 64 GB UFS (NAND flash + controller)
      - Qualcomm WTR5975 (RF transceiver), Murata KM7118064 (WiFi), NXP 80T71 (NFC)
-     - Camera Front
-     - Camera Back
+     - Sony IMX320 Exmor RS (8MP)
+     - Sony IMX333 Exmor RS (12MP)
      - Battery @ 3.85V, 3500 mAh
      - Qualcomm WCD9341 (audio codec)
-     - Touch screen
-     - Display
-     - Navigation
-     - Sensors
+     - Touch screen **??**
+     - Super AMOLED (1440x2960)
+     - GPS, A-GPS, GLONASS, BDS, GALILEO
+     - Proximity, Light, Accelerometer, Compass, Gyroscope, Barometer, Fingerprint, Hall, Heart rate
      - Skyworks 78160-11 (?), Avago AFEM-9066 (?), Avago AFEM-9053 (?), Silicon Mitus SM5720 (Power Management), Qualcomm PM8998 (Power Management)
    * - Samsung Galaxy S8
-     - Codename
+     - dreamlte
      - No work so far
-     - -
-     - Qualcomm Snapdragon 835 (MSM8998)
-     - CPU
-     - GPU
+     - v4.4.79
+     - Samsung Exynos 9 Octa 8895
+     - 4x 2.3 GHz Exynos M2 Mongoose, 4x 1.7 GHz ARM Cortex-A53
+     - Mali-G71 MP20
      - Samsung K3UH5H50MM-NGCJ 4 GB LPDDR4
      - Toshiba THGBF7G9L4LBATR 64 GB UFS (NAND flash + controller)
      - Qualcomm WTR5975 (RF transceiver), Murata KM6D28040 (WiFi), NXP 80T71 (NFC)
-     - Camera Front
-     - Camera Back
-     - Battery
+     - Sony IMX320 Exmor RS (8MP)
+     - Sony IMX333 Exmor RS (12MP)
+     - Battery @ 3.85V, 3000 mAh
      - Qualcomm WCD9341 (audio codec)
-     - Touch screen
-     - Display
-     - Navigation
-     - Sensors
+     - Touch screen **??**
+     - Super AMOLED (1440x2960)
+     - GPS, A-GPS, GLONASS, BDS, GALILEO
+     - Proximity, Light, Accelerometer, Compass, Gyroscope, Barometer, Fingerprint, Hall, Heart rate
      - Skyworks 78160-11 (?), Avago AFEM-9066 (?), Avago AFEM-9053 (?), Silicon Mitus SM5720 (Power Management), Qualcomm PM8998 (Power Management), IDT P9320S (?), Maxim MAX77838 (Power Management)
    * - :doc:`LG Nexus 5 <hammerhead>`
      - hammerhead
@@ -548,13 +548,19 @@ Samsung Galaxy S8+
 ~~~~~~~~~~~~~~~~~~
 
 
-* `Galaxy S8+ iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8%2B+Teardown/87086>`_
+* `Samsung Galaxy S8+ iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8%2B+Teardown/87086>`_
+* `Samsung Galaxy S8+ GSMArena <https://www.gsmarena.com/samsung_galaxy_s8+-8523.php>`_
+* `Samsung Galaxy S8+ DeviceSpecifications <https://www.devicespecifications.com/en/model/2c0b4253>`_
+* `Samsung Galaxy S8(+) Website <http://www.samsung.com/global/galaxy/galaxy-s8/>`_
 
 Samsung Galaxy S8
 ~~~~~~~~~~~~~~~~~
 
 
-* `Galaxy S8 iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8+Teardown/87136>`_
+* `Samsung Galaxy S8 iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8+Teardown/87136>`_
+* `Samsung Galaxy S8 GSMArena <https://www.gsmarena.com/samsung_galaxy_s8-8161.php>`_
+* `Samsung Galaxy S8 DeviceSpecifications <https://www.devicespecifications.com/en/model/402341d2>`_
+* `Samsung Galaxy S8(+) Website <http://www.samsung.com/global/galaxy/galaxy-s8/>`_
 
 Shift 5.1
 ~~~~~~~~~
