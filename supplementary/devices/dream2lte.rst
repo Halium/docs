@@ -1,6 +1,6 @@
 
 dream2lte - Samsung Galaxy S8+
-===========================
+==============================
 
 The Samsung Galaxy S8+ (shortened to S8+) are Android smartphones produced by Samsung Electronics as part of the Samsung Galaxy S series. The S8+ was unveiled on 29 March 2017 and directly succeeds the Samsung Galaxy S7 Edge.
 
