@@ -56,7 +56,7 @@ Enable the following configs::
 Also be sure to not turn your device off. 
 You only get a useful last_kmsg if you reboot without losing power.
 
-You can get logs from /proc/last_kmsg or, if that fails, /sys/fs/pstore/*.
+You can get logs from ``/proc/last_kmsg`` or, if that fails ``/sys/fs/pstore/*``
 
 
 My device is constantly rebooting. I can get into telnet but it bootloops after ``echo continue > /init-ctl/stdin``
