@@ -54,7 +54,10 @@ Enable the following configs::
    CONFIG_ANDROID_RAM_CONSOLE_ENABLE_VERBOSE=y
 
 Also be sure to not turn your device off. 
-You only get a usefull last_kmsg if you reboot without losing power.
+You only get a useful last_kmsg if you reboot without losing power.
+
+You can get logs from /proc/last_kmsg or, if that fails, /sys/fs/pstore/*.
+
 
 My device is constantly rebooting. I can get into telnet but it bootloops after ``echo continue > /init-ctl/stdin``
 -------------------------------------------------------------------------------------------------------------------
