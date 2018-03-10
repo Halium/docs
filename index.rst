@@ -21,10 +21,11 @@ Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Distribution
-   :name: sec-distribution
-   
-   Distribution
+   :caption: Standards
+   :name: sec-standards
+
+   standards/index.rst
+   standards/pre-execution-environment.rst
    
 .. toctree::
    :maxdepth: 1
@@ -43,4 +44,5 @@ Contents
    
    Planning
    Development
+   Distribution
    todo
