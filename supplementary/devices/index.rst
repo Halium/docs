@@ -95,6 +95,25 @@ Devices
      - Navigation
      - Sensors
      - Other
+   * - Xiaomi redmi note 4
+     - mido
+     - no work yet
+     - ?
+     - Snapdragon 625
+     - octacore 2.0GHz
+     - Adreno 506
+     - 4 GB LPDDR3
+     - 64 GB eMMC 5.0 flash
+     - 2G bands GSM 900 / 1800 / 1900     3G bands	HSDPA 850 / 900 / 1900 / 2100      4G bands	LTE band 3(1800), 5(850), 40(2300)      HSPA, LTE, GPRS, EDGE     WLAN{Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct, hotspot}     Bluetooth{4.1, A2DP, LE}     GPS{with A-GPS, GLONASS, BDS}    Infrared port     Radio{FM radio}       USB{microUSB 2.0, USB On-The-Go}
+     - 5 MP, f/2.0, 1080p
+     - 13 MP (f/2.0, 1.12 µm)
+     - Non-removable Li-Po 4100 mAh battery
+     - Loudspeaker{Voice 67dB / Noise 70dB / Ring 81dB}    Audio quality{	Noise -94.6dB / Crosstalk -94.3dB}
+     - Touch screen
+     - IPS LCD capacitive touchscreen, 16M colors
+     - Navigation
+     - Sensors
+     - Other
    * - Oneplus 5
      - cheeseburger
      - Halium porting started
@@ -537,6 +556,15 @@ Sources
 ^^^^^^^
 
 Since there are no sub pages yet, gathering links for the examples here:
+
+Xiaomi redmi note 4
+~~~~~~~~~~~~~~~~~~~~
+
+
+* `Xiaomi redmi note 4 GSMArena <https://www.gsmarena.com/xiaomi_redmi_note_4-8531.php>`_
+* `Xiaomi redmi note 4 DeviceSpecifications <https://www.devicespecifications.com/en/model/9910413e>`_
+* `Xiaomi redmi note 4 Website <http://www.mi.com/in/note4/>`_
+
 
 OnePlus 5
 ~~~~~~~~~~
