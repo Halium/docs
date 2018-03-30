@@ -1,8 +1,8 @@
 
-Halium docs
-===========
+Halium
+======
 
-This repository contains the following documents:
+Welcome to the documentation for `Halium`_, the collaborative project to unify the Hardware Abstraction Layer for projects which run GNU/Linux on mobile devices with pre-installed Android.
 
 Contents
 ========
@@ -44,3 +44,5 @@ Contents
    Planning
    Development
    todo
+
+.. _halium: https://halium.org/
