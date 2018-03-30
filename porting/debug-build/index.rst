@@ -9,17 +9,16 @@ Keep in mind, every port is a bit different. You might be following this from to
 .. toctree::
    :maxdepth: 1
    
-   dmesg
    early-init
    logging-in
    udev
+   wifi
    lights
    graphics
    vibrator
-   wifi
    debug-android-userspace
    usbnet
-   faq
+   dmesg
 
 References
 ----------

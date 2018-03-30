@@ -4,6 +4,8 @@ Build Halium
 
 You've got all of your source downloaded, now it's time to start building!
 
+.. _breakfast-and-lunch:
+
 Initialize
 ----------
 
@@ -111,11 +113,20 @@ To build the ``system.img`` and ``hybris-boot.img`` - required for Halium - use 
 
     If you use ``make`` and not ``mka`` it is recommended to set ``-j[num]`` to do parallel building, which reduces build time. Replace ``[num]`` with the number of threads in your system plus 2.
 
+If you get any errors, jump down to `Documented errors`_. Otherwise, continue on to `Next steps`_.
 
-.. todo::
+Documented errors
+-----------------
 
-    There are some common build errors that we should go over, such as those generated when Java dependencies aren't removed from the tree. Maybe an appendix, maybe another page in this folder.
+If you receive errors while building Halium, check the following documents to see if there is a documented solution.
 
+.. toctree::
+   :maxdepth: 2
+
+   common-kernel-build-errors
+   common-system-build-errors
+
+If your error is not in this list, please :ref:`contact us for help <support-channels>`.
 
 Next steps
 ----------
