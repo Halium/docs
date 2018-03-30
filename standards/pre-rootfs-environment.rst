@@ -1,5 +1,5 @@
-Halium pre-rootfs standard
-==========================
+Pre-rootfs environment
+======================
 
 Introduction
 ------------
@@ -16,18 +16,10 @@ Halium-standard distribution maintainers may wish to skip to `Annex A: Summary f
 Terms and definitions
 ---------------------
 
-Halium-standard Linux Distribution, HSD
-    A Linux (GNU/Linux optionally) software distribution that implements the Halium standards.
-HSD root filesystem, HSD rootfs, rootfs
-    The file and directory tree that makes up the HSD.
+This document follows the general terms, definitions, and expressions defined in the Halium :ref:`standard-terms-and-conventions` with the following additions:
+
 Pre-rootfs environment
     Code that executes before the init system of the HSD begins to run.
-Device
-    The computing system targeted by Halium.
-
-All paths listed assume that the HSD rootfs is the root directory, ``/``.
-
-This document uses `IEC verbal forms for expression of provisions`_ to express what is required, recommended, permissive, or possible for implementations of the standard.
 
 Rootfs
 ------
@@ -186,7 +178,22 @@ Annex B: Reference implementation
 
 A reference implementation of this standard may be found at `initramfs-tools-halium`_ as the logic for the pre-rootfs environment and  `halium-boot`_ as the method for building it into an Android boot image.
 
-.. _IEC verbal forms for expression of provisions: http://www.iec.ch/standardsdev/resources/draftingpublications/directives/principles/verbal_forms.htm
+Revision
+--------
+
+This is version 1.0.0 of the pre-rootfs environment standard. 
+
+Changelog
+^^^^^^^^^
+
+1.0.0
+"""""
+
+This is the first version of the standard.
+
+Draft date: March 30, 2018. 
+Acceptance date: TODO
+
 .. _ubuntu core writable-paths: http://manpages.ubuntu.com/manpages/xenial/en/man5/writable-paths.5.html
 .. _initramfs-tools-halium's halium script: https://github.com/Halium/initramfs-tools-halium/blob/582349cf71ba6bcb223e0fa6ade1a647d930502b/scripts/halium#L238
 .. _initramfs-tools-ubuntu-core: https://bazaar.launchpad.net/~snappy-dev/initramfs-tools-ubuntu-core/trunk/view/head:/scripts/ubuntu-core-rootfs#L63

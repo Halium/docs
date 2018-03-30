@@ -24,7 +24,7 @@ Contents
    :caption: Standards
    :name: sec-standards
 
-   standards/index.rst
+   standards/standards.rst
    standards/pre-rootfs-environment.rst
    
 .. toctree::
