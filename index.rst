@@ -25,7 +25,7 @@ Contents
    :name: sec-standards
 
    standards/index.rst
-   standards/pre-execution-environment.rst
+   standards/pre-rootfs-environment.rst
    
 .. toctree::
    :maxdepth: 1
