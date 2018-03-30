@@ -27,7 +27,9 @@ Pre-rootfs environment
 Device
     The computing system targeted by Halium.
 
-This document uses `IEC verbal forms for expression of provisions`_ to specify what is required, recommended, permissive, or possible for implementations of the standard.
+All paths listed assume that the HSD rootfs is the root directory, ``/``.
+
+This document uses `IEC verbal forms for expression of provisions`_ to express what is required, recommended, permissive, or possible for implementations of the standard.
 
 
 Rootfs
@@ -39,7 +41,7 @@ The pre-rootfs environment shall mount the HSD rootfs and its desired Android sy
 * ``halium-rootfs/``, a directory (or symbolic link to a directory) on the device's ``/data`` partition. This directory will contain the ``system.img`` at ``var/lib/lxc/android/system.img``.
 * A partition containing the rootfs. This partition will contain the ``system.img`` at ``var/lib/lxc/android/system.img``.
 
-These formats are provided for reference only. The pre-rootfs environment should allow the use of one or more of these reference formats if it does not :ref`provide its own <Additional rootfs formats>`.
+These formats are provided for reference only. The pre-rootfs environment should allow the use of one or more of these reference formats if it does not provide its own. Providing additional rootfs formats is described in `Additional rootfs formats`_ in this document.
 
 If the pre-rootfs environment supports the use of multiple rootfs formats, the correct format to use shall be automatically detected at run time.
 
@@ -63,7 +65,7 @@ Generally, each partition on the device is mounted by reading the ``fstab`` file
 Special cases
 ^^^^^^^^^^^^^
 
-The ``/system`` and ``/data`` Android partitions are special cases. They must be mounted differently than the remaining block device mounts.
+The ``/system`` and ``/data`` Android filesystems are special cases. They must be mounted differently than the remaining block device mounts.
 
 
 ``/system``
@@ -75,7 +77,7 @@ The ``/system`` and ``/data`` Android partitions are special cases. They must be
 ``/data``
 """""""""
 
-``/data`` shall be a virtual mountpoint contained on non-volatile, writable storage. The virtual mountpoint shall not contain the rootfs' user data storage. This prevents the Android container being able to access the Device owner's data.
+``/data`` shall be a location on non-volatile, writable storage. The location shall not contain the rootfs' user data storage. This prevents the Android container being able to access the Device owner's data.
 
 .. note::
 
@@ -85,7 +87,7 @@ The ``/system`` and ``/data`` Android partitions are special cases. They must be
 ``/userdata``
 -------------
 
-A non-volatile and writable location to store user data shall be mounted at the rootfs' ``/userdata`` mountpoint.
+A non-volatile and writable location to store user data shall be mounted at the rootfs' ``/userdata`` mount point.
 
 .. note::
 
@@ -113,13 +115,15 @@ Writable paths
 
 The pre-rootfs environment shall provide Ubuntu Core-style writable-path generation. This should be done by:
 
-* Reading the ``/etc/system-image/writable-paths`` file from the HSD rootfs, which shall be formatted in the `Ubuntu Core writable-paths`_ style.
 * Creating a ``fstab`` file in temporary storage
+* Reading the ``/etc/system-image/writable-paths`` file from the HSD rootfs, which shall be formatted in the `Ubuntu Core writable-paths`_ style.
 * For each entry in the file:
     * Create a location for the path to be redirected to in an appropriate place in the rootfs' `/userdata`_ (from here called the 'target')
     * Depending on the type of path specified, copy all files and directories below the HSD rootfs path to the target
     * Create an ``fstab`` entry specifying a mount from the rootfs path to the target
 * Mounting the temporary ``fstab`` to the HSD rootfs' ``/etc/fstab`` file.
+
+If the ``/etc/system-image/writable-paths`` file is not available, no attempt to perform writable-path generation shall be made.
 
 Reference implementations may be found in `initramfs-tools-halium's halium script`_ or `initramfs-tools-ubuntu-core`_.
 
@@ -163,7 +167,7 @@ Additional rootfs formats are exceptions to the opt-in requirement of other addi
 Installation for common HSD distributions
 -----------------------------------------
 
-Many HSDs distribute their rootfs as Gzipped ``tar`` files. The pre-rootfs environment vendor should provide a way to install this distribution format to make it usable by their environment.
+Many HSDs distribute their rootfs as gzipped ``tar`` files. The pre-rootfs environment vendor should provide a way to install this distribution format to make it usable by their environment.
 
 The installation tool should do all of the following:
 
@@ -187,13 +191,20 @@ An HSD maintainer can expect the following features and conventions from a stand
 
 * If the HSD rootfs is distributed as a ``.tar.gz`` archive, it should be installable and usable on any pre-rootfs environment.
 * If the HSD rootfs has the ``/.writable_image`` file, it shall be mounted read-write. If not, it shall be mounted read-only
-* All device partitions that are be required to run the Halium container and userspace software shell be located at ``/android``. The symbolic links required to run Android userspace software in the HSD userspace shall be provided.
+* All device partitions that are be required to run the Halium container and user space software shell be located at ``/android``. The symbolic links required to run Android user space software in the HSD user space shall be provided.
 * A non-volatile, writable location to store userdata shall be mounted at ``/userdata``.
 * A HSD shall provide the ``/etc/halium/modules`` file containing the path where it expects kernel modules for the current kernel version to be. See `Kernel modules mount`_ for information about the format of this file.
 * An `Ubuntu Core writable-paths`_ file may be provided at ``/etc/system-image/writable-paths`` to define paths in the rootfs which will be available on writable, persistent storage.
 * A pre-rootfs environment may provide extra functionality not specified in this document. If a HSD would like to use this functionality, it shall provide the needed configuration. The scope and requirements of this configuration shall be available from the pre-rootfs environment's vendor.
 
+Annex B: Reference implementation
+---------------------------------
+
+A reference implementation of this standard may be found at `initramfs-tools-halium`_ as the logic for the pre-rootfs environment and  `halium-boot`_ as the method for building it into an Android boot image.
+
 .. _IEC verbal forms for expression of provisions: http://www.iec.ch/standardsdev/resources/draftingpublications/directives/principles/verbal_forms.htm
 .. _ubuntu core writable-paths: http://manpages.ubuntu.com/manpages/xenial/en/man5/writable-paths.5.html
 .. _initramfs-tools-halium's halium script: https://github.com/Halium/initramfs-tools-halium/blob/582349cf71ba6bcb223e0fa6ade1a647d930502b/scripts/halium#L238
 .. _initramfs-tools-ubuntu-core: https://bazaar.launchpad.net/~snappy-dev/initramfs-tools-ubuntu-core/trunk/view/head:/scripts/ubuntu-core-rootfs#L63
+.. _initramfs-tools-halium: https://github.com/halium/initramfs-tools-halium
+.. _halium-boot: https://github.com/halium/halium-boot
