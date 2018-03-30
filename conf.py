@@ -50,7 +50,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Halium'
-copyright = u'2018, Halium Documentation Contributors'
+copyright = u'2017-2018, Halium Documentation Contributors'
 author = u'Halium Documentation Contributors'
 
 # The version info for the project you're documenting, acts as replacement for
