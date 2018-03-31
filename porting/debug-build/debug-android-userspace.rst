@@ -14,7 +14,7 @@ LXC needs some kernel config to make sure it runs correctly. Check that you have
 
     lxc-checkconfig
 
-All option except `User namespace` need to be the green word `enabled`. If one of the options is a yellow `missing` or a red `required`, then you need to change the kernel config, rebuild hybrid-boot and check the status again.
+All option except ``User namespace`` need to be the green word `enabled`. If one of the options is a yellow `missing` or a red `required`, then you need to change the kernel config, rebuild hybris-boot and check the status again.
 
 .. note::
 
@@ -25,10 +25,12 @@ All option except `User namespace` need to be the green word `enabled`. If one o
         CONFIG_NET_CLS_CGROUP=n
         CONFIG_NETPRIO_CGROUP=n
 
+.. _logcat:
+
 Logcat
 ------
 
-Logcat is a tool that reads the Android userspace logs. This includes all services that should be running in Halium. You can run it at any time with the following command::
+Logcat is a tool that reads the Android user space logs. This includes all services that should be running in Halium. You can run it at any time with the following command::
 
    /system/bin/logcat
 
@@ -36,7 +38,7 @@ For radio (Wi-Fi, GSM, LTE) logs, you can add a flag::
 
    /system/bin/logcat -b radio
 
-If you're not able to run this command for any reason (for example, because you're running an armhf rootfs on an arm64 device), you can try to run it inside the Android userland via ``lxc-attach``::
+If you're not able to run this command for any reason (for example, because you're running an armhf rootfs on an arm64 device), you can try to run it inside the Android container via ``lxc-attach``::
 
     lxc-attach -n android -- /system/bin/logcat
 
@@ -45,7 +47,7 @@ You may similarly use this to run any binary inside the Android system. Simply r
 dmesg
 -----
 
-Even though Android logs does not normally end up in dmesg, early initialization of Android and kernel output ends up here::
+Even though Android logs do not normally end up in dmesg, early initialization of Android and kernel output ends up here::
 
    dmesg
 
