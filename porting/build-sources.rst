@@ -55,7 +55,7 @@ Modify the kernel configuration
 
 Halium uses systemd as the init system. This requires various specific kernel configurations.
 
-To check the kernel config we use `mer-kernel-check <https://github.com/mer-hybris/mer-kernel-check>`_ utility provided by mer-hybris::
+To check which config options needs to be adjusted we use `mer-kernel-check <https://github.com/mer-hybris/mer-kernel-check>`_ utility provided by mer-hybris::
 
    git clone https://github.com/mer-hybris/mer-kernel-check
    cd mer-kernel-check
