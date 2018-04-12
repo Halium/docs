@@ -53,9 +53,9 @@ Breakfast will attempt to find your device, set up all of the environment variab
 Modify the kernel configuration
 -------------------------------
 
-Halium uses the systemd as the init system which requires various kernel config options to be enabled.
+Halium uses systemd as the init system. This requires various specific kernel configurations.
 
-To check which config options needs to be enabled we use `mer-kernel-check <https://github.com/mer-hybris/mer-kernel-check>`_ utility provided by mer-hybris::
+To check which config options needs to be adjusted we use `mer-kernel-check <https://github.com/mer-hybris/mer-kernel-check>`_ utility provided by mer-hybris::
 
    git clone https://github.com/mer-hybris/mer-kernel-check
    cd mer-kernel-check
