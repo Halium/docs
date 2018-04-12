@@ -7,7 +7,7 @@ To find out what happened during an unsuccessful boot you can check the kernel l
 Linux kernel <=3.4
 ------------------
 
-Before Kernel 3.4, Android developers created a driver that the Linux kernel may use to store its kernel message buffer in a special persistent location in RAM. This information is preserved over a reboot but not a hard power cycle (such as holding the power button or powering off). This location is preserved to the system in ``/proc/last_kmsg``
+Until Kernel 3.4, Android developers created a driver that the Linux kernel may use to store its kernel message buffer in a special persistent location in RAM. This information is preserved over a reboot but not a hard power cycle (such as holding the power button or powering off). This location is preserved to the system in ``/proc/last_kmsg``
 
 To use ``last_kmsg`` to debug problems in your port, do the following:
 
@@ -25,7 +25,7 @@ If you aren't able to find these files, ensure that the following configs are se
 Linux Kernel >3.4
 -----------------
 
-Since Kernel 3.4, most Android vendors have used the upstream ``pstore`` and ``ramoops`` drivers to store kernel logs after a panic.
+After Kernel 3.4, most Android vendors have used the upstream ``pstore`` and ``ramoops`` drivers to store kernel logs after a panic.
 
 You can get these logs by following these steps:
 
