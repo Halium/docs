@@ -150,9 +150,6 @@ in the correct region to prevent this from being visible.
     TODO provide a nice link to help users unlock their bootloader
 
 
-
-
-
 Access the bootloader 
 ~~~~~~~~~~~~~~~~~~~~~
 
