@@ -16,6 +16,7 @@ All of these should only be document in the exact same way here and **only an ov
    devicetemplate
    dream2lte
    bullhead
+   cedric
    chaozu
    deb
    flo
@@ -531,6 +532,25 @@ Devices
      - Optic AMOLED (1080x1920)
      - GPS, A-GPS, GLONASS, BeiDou
      - Proximity, Light, Accelerometer, Compass, Gyroscope, Fingerprint, Hall
+     - Other **?**
+   * - :doc:`Motorola Moto G5 <cedric>`
+     - cedric
+     - No progress yet
+     - Kernel **?**
+     - Qualcomm MSM8937 Snapdragon 430
+     - Octa-core Cortex-A53 (4 × 1.4 GHz + 4 × 1.1 GHz)
+     - Adreno 505
+     - **XT1676:** 3 GB / **???:** 2 GB
+     - **XT1676:** 16 GB / **???:** 32GB
+     - Wi-Fi, Bluetooth 4.2
+     - OV5695, 5MP, no flash
+     - IMX258, 13MP, LED flash, phase detection autofocus
+     - Removable Li-Ion 2800 mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack **?**
+     - Capacitive Touch screen **?**
+     - IPS LCD (1080x1920)
+     - GPS, A-GPS, GLONASS
+     - Ambient Light Sensor, Fingerprint, Accelerometer, Proximity, Gyroscope
      - Other **?**
       
 Sources
