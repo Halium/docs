@@ -63,8 +63,17 @@ To check which config options needs to be adjusted we use `mer-kernel-check <htt
 
 If you don't know the path to your kernel config run ``grep "TARGET_KERNEL_CONFIG" device/<VENDOR>/<CODENAME>/BoardConfig.mk``. It should be in ``arch/arm/configs/<CONFIG>`` or ``arch/arm64/configs/<CONFIG>`` depending on the architecture of your device.
 
+.. warning::
+		Make sure that your configuration changes are not overridden by later lines in the config file.
+		
+		Also be aware that ``# CONFIG_IKCONFIG_PROC is not set`` *may* look like a harmless comment, `but it actually unsets`__ ``CONFIG_IKCONFIG_PROC`` if it is set (e.g. by an edit you made earlier in the file).
+		
+		.. __: https://www.tldp.org/HOWTO/SCSI-2.4-HOWTO/kconfig.html
+		
+		The build process will warn you if you do override any config entries, e.g. ``arch/arm/configs/<CONFIG>:<LINE NUMBER>:warning: override: reassigning to symbol IKCONFIG_PROC``
+
 .. todo::
-    Mention that the config parameters CONFIG_IKCONFIG and CONFIG_IKCONFIG_PROC need to be set to y, otherwise Halium wont boot (or add them to the check script
+    Mention that the config parameters CONFIG_IKCONFIG and CONFIG_IKCONFIG_PROC need to be set to y, otherwise Halium wont boot (or add them to the check script)
 
 Include your device in fixup-mountpoints
 ----------------------------------------
