@@ -51,6 +51,22 @@ Even though Android logs do not normally end up in dmesg, early initialization o
 
    dmesg
 
+strace
+------
+
+For cases where the log files do not reveal sufficient detail, an ``strace`` can be helpful. This is how you get an strace for the example of ``test_hwcomposer``::
+
+   EGL_PLATFORM=hwcomposer strace test_hwcomposer
+
+backtrace
+---------
+
+Another debugging technique is to investigate the backtrace when a program crashes. This is how you get a backtrace for the example of ``test_hwcomposer``::
+
+   EGL_PLATFORM=hwcomposer gdb test_hwcomposer
+
+This will start the interactive debugger ``gdb``. At the prompt of ``gdb`` you enter ``run``. Now the program is executed and you wait for it to crash. Then you enter ``bt full``. This will give you the full backtrace of what the program was trying to execute at the moment of the crash.
+
 Debug Libhybris crash
 ---------------------
 
