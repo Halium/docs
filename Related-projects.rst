@@ -30,10 +30,10 @@ SailfishOS
 `Sailfish OS <https://sailfishos.org/>`_ is based on the Mer Project. The user interface is developed by Jolla and not open source. The technical architecture should be largely compatible with Halium.
 
 
-UBports
--------
+Ubuntu Touch
+------------
 
-`UBports <https://ubports.com>`_ is based on Unity 8. It is the continuation of the earlier Ubuntu Touch project from Canonical. UBports is actively working on making their future releases available on Halium.
+`Ubuntu Touch <https://ubports.com>`_ is based on Unity 8 and is developed by UBports. It is the continuation of the earlier Ubuntu Touch project from Canonical. UBports is actively working on making their future releases available on Halium.
 
 
 Others
