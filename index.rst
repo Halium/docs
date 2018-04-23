@@ -38,9 +38,10 @@ Contents
    
 .. toctree::
    :maxdepth: 1
-   :caption: Project Plans
+   :caption: Project 
    :name: sec-planning
    
+   Related-projects
    Planning
    Development
    todo
