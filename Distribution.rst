@@ -5,7 +5,7 @@ Distribution
 Reference rootfs
 ----------------
 
-To make development and porting easier the halium team provides the reference rootfs. It is based on Ubuntu 16.04. and includes the following:
+To make development and porting easier the halium team provides the reference rootfs. It is based on Ubuntu 16.04 and includes the following:
 
 
 * systemd
@@ -77,7 +77,7 @@ The rootfs.img contains the udev rules. They are device specific and generated f
 
 You can either,
 
-a) copy them to /lib/udev/rules.d/ during the initial installation of the rootfsm or
+a) copy them to /lib/udev/rules.d/ during the initial installation of the rootfs or
 b) deploy all the supported udev rules in /usr/lib/lxc-android/, and have a systemd service to copy the device udev rule before starting udev service.
 
 lxc container configuration
