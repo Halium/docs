@@ -39,5 +39,5 @@ Ubuntu Touch
 Others
 ------
 
-There are more projects that share similar goals and/or similar tools and might have valuable resources. A few shout outs: `Replicant <https://www.replicant.us/>`_, `Neo900 <https://neo900.org/>`_.
+There are more projects that share similar goals and/or similar tools and might have valuable resources. A few shout outs: `LineageOS <https://www.lineageos.org/>`, `MaruOS <http://maruos.com>`, `Neo900 <https://neo900.org/>`_, `Replicant <https://www.replicant.us/>`_.
 
