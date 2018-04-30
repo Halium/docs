@@ -39,5 +39,5 @@ Ubuntu Touch
 Others
 ------
 
-There are more projects that share similar goals and/or similar tools and might have valuable resources. A few shout outs: `Replicant <https://www.replicant.us/>`_, `Neo900 <https://neo900.org/>`_.
+There are more projects that share similar goals and/or similar tools and might have valuable resources. A few shout outs: `LineageOS <https://www.lineageos.org/>`_, `MaruOS <http://maruos.com>`_, `Neo900 <https://neo900.org/>`_, `Purism Librem 5 <https://puri.sm/posts/tag/phones/>`_, `Replicant <https://www.replicant.us/>`_, `Tizen <https://www.tizen.org/>`_.
 
