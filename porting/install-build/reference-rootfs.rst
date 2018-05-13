@@ -2,7 +2,7 @@
 Halium reference rootfs
 =======================
 
-Once you have built the system.img from the android tree, you can download and install the rootfs using the ``halium-install`` script from the `halium-scripts repository <https://github.com/Halium/halium-scripts/>`_.
+Once you have built the system.img from the android tree, you can download and install the rootfs using the ``halium-install`` script from the `halium-scripts repository <https://github.com/Halium/halium-scripts/>`.
 
 
 Install hybris-boot.img 
@@ -47,7 +47,7 @@ The command for flashing is::
 Install rootfs and system.img
 -----------------------------
 
-Currently the latest rootfs is available at bshah's personal server: `Link <http://bshah.in/halium/halium-rootfs-20170630-151006.tar.gz>_
+Currently the latest rootfs is available at bshah's personal server: `Link <http://bshah.in/halium/halium-rootfs-20170630-151006.tar.gz>`
 
 You can use the halium-install script as below, when device is connected in recovery mode::
 
