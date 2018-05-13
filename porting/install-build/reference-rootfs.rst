@@ -35,7 +35,7 @@ On recent devices, only newer versions of the software should be used. Ubuntu´s
 
 For building instructions, consult the README.
 
-Note: Often you will find instructions on Samsung ROMs saying that you need to obtain a PIT file before flashing a device. This is not required and in fact it can soft-brick your device. The PIT file is the partition table and is only required when repartitioning. This is normally not necessary and using downloaded PIT files is risky.
+Note: Often you will find instructions on Samsung ROMs saying that you need to obtain a PIT file before flashing a device. This is not required and could in fact soft-brick your device. (The PIT file is the partition table and is only required when repartitioning. This is normally not necessary and using downloaded PIT files is risky.)
 
 Heimdall will always reboot by default after flashing. Using the --no-reboot option will leave the connection in a strange state. Therefore, after flashing a .img file it is not possible to immediately push a second one. Also, Heimdall is incapable of rebooting directly into recovery mode.
 
