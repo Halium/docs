@@ -20,7 +20,7 @@ If you're in BUILDDIR, ``hybris-boot.img`` will be located at ``out/target/produ
 Install hybris-boot.img on Samsung devices
 ------------------------------------------
 
-Samsung devices cannot be flashed using fastboot. Instead, the device needs to be brought into "Download Mode". This can be achieved in two ways::
+Samsung devices cannot be flashed using fastboot. Instead, the device needs to be brought into "Download Mode". This can be achieved in two ways:
 
 1. By manually by pressing Vol-Down, Home and Power button until the green warning text appears. Then press Vol-Up as instructed.
 2. By issuing the command::
