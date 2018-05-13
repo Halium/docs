@@ -22,8 +22,8 @@ Install hybris-boot.img on Samsung devices
 
 Samsung devices cannot be flashed using fastboot. Instead, the device needs to be brought into "Download Mode". This can be achieved in two ways::
 
-1) By manually by pressing Vol-Down, Home and Power button until the green warning text appears. Then press Vol-Up as instructed.
-2) By issuing the command::
+1. By manually by pressing Vol-Down, Home and Power button until the green warning text appears. Then press Vol-Up as instructed.
+2. By issuing the command::
 
     adb reboot download
 
@@ -53,7 +53,7 @@ You can use the halium-install script as below, when device is connected in reco
 
    halium-install <path to rootfs tarball> <path to android system.img>
 
-This will do the following:
+This will do the following: 
 
 * Convert the rootfs tarball into ext2 rootfs.img
 * Convert system.img into the ext4 mountable image from android sparse image.
