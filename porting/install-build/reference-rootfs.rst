@@ -5,7 +5,7 @@ Halium reference rootfs
 Once you have built the system.img from the android tree, you can download and install the rootfs using the ``halium-install`` script from the `halium-scripts repository <https://github.com/Halium/halium-scripts/>`.
 
 
-Install hybris-boot.img 
+Install hybris-boot.img
 -----------------------
 
 First, boot your device into its bootloader. This is normally done by holding Power+Volume Down, but it can be different on each device.
@@ -49,11 +49,11 @@ Install rootfs and system.img
 
 Currently the latest rootfs is available at bshah's personal server: `Link <http://bshah.in/halium/halium-rootfs-20170630-151006.tar.gz>`
 
-You can use the halium-install script as below, when device is connected in recovery mode::
+You can use the halium-install script as below, when the device is connected in recovery mode::
 
    halium-install <path to rootfs tarball> <path to android system.img>
 
-This will do the following: 
+This will do the following:
 
 * Convert the rootfs tarball into ext2 rootfs.img
 * Convert system.img into the ext4 mountable image from android sparse image.
