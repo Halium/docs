@@ -47,7 +47,7 @@ The command for flashing is::
 Install rootfs and system.img
 -----------------------------
 
-Currently latest rootfs is available at bshah's personal server: `Link <http://bshah.in/halium/halium-rootfs-20170630-151006.tar.gz>
+Currently the latest rootfs is available at bshah's personal server: `Link <http://bshah.in/halium/halium-rootfs-20170630-151006.tar.gz>_
 
 You can use the halium-install script as below, when device is connected in recovery mode::
 
