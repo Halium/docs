@@ -14,7 +14,9 @@ All of these should only be document in the exact same way here and **only an ov
    :maxdepth: 1
    
    devicetemplate
+   dream2lte
    bullhead
+   cedric
    chaozu
    deb
    flo
@@ -22,11 +24,15 @@ All of these should only be document in the exact same way here and **only an ov
    hammerhead
    krillin
    mako
+   oneplus3
    pme
    T00F
    titan
    vegeta
+   wt88047
    yuga
+   taoshan
+   Z00L
    
 
 How to document
@@ -109,43 +115,43 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - Samsung Galaxy S8+
-     - Codename
-     - No work so far
-     - -
-     - Qualcomm Snapdragon 835 (MSM8998)
-     - CPU
-     - GPU
+   * - :doc:`Samsung Galaxy S8+ <dream2lte>`
+     - dream2lte
+     - Halium 7.1 WIP
+     - v4.4.79
+     - Samsung Exynos 9 Octa 8895
+     - 4x 2.3 GHz Exynos M2 Mongoose, 4x 1.7 GHz ARM Cortex-A53
+     - Mali-G71 MP20
      - Samsung K3UH5H50MM-NGCJ 4 GB LPDDR4
      - Toshiba THGAF4G9N4LBAIR 64 GB UFS (NAND flash + controller)
      - Qualcomm WTR5975 (RF transceiver), Murata KM7118064 (WiFi), NXP 80T71 (NFC)
-     - Camera Front
-     - Camera Back
+     - Sony IMX320 Exmor RS (8MP)
+     - Sony IMX333 Exmor RS (12MP)
      - Battery @ 3.85V, 3500 mAh
      - Qualcomm WCD9341 (audio codec)
-     - Touch screen
-     - Display
-     - Navigation
-     - Sensors
+     - Touch screen **??**
+     - Super AMOLED (1440x2960)
+     - GPS, A-GPS, GLONASS, BDS, GALILEO
+     - Proximity, Light, Accelerometer, Compass, Gyroscope, Barometer, Fingerprint, Hall, Heart rate
      - Skyworks 78160-11 (?), Avago AFEM-9066 (?), Avago AFEM-9053 (?), Silicon Mitus SM5720 (Power Management), Qualcomm PM8998 (Power Management)
    * - Samsung Galaxy S8
-     - Codename
+     - dreamlte
      - No work so far
-     - -
-     - Qualcomm Snapdragon 835 (MSM8998)
-     - CPU
-     - GPU
+     - v4.4.79
+     - Samsung Exynos 9 Octa 8895
+     - 4x 2.3 GHz Exynos M2 Mongoose, 4x 1.7 GHz ARM Cortex-A53
+     - Mali-G71 MP20
      - Samsung K3UH5H50MM-NGCJ 4 GB LPDDR4
      - Toshiba THGBF7G9L4LBATR 64 GB UFS (NAND flash + controller)
      - Qualcomm WTR5975 (RF transceiver), Murata KM6D28040 (WiFi), NXP 80T71 (NFC)
-     - Camera Front
-     - Camera Back
-     - Battery
+     - Sony IMX320 Exmor RS (8MP)
+     - Sony IMX333 Exmor RS (12MP)
+     - Battery @ 3.85V, 3000 mAh
      - Qualcomm WCD9341 (audio codec)
-     - Touch screen
-     - Display
-     - Navigation
-     - Sensors
+     - Touch screen **??**
+     - Super AMOLED (1440x2960)
+     - GPS, A-GPS, GLONASS, BDS, GALILEO
+     - Proximity, Light, Accelerometer, Compass, Gyroscope, Barometer, Fingerprint, Hall, Heart rate
      - Skyworks 78160-11 (?), Avago AFEM-9066 (?), Avago AFEM-9053 (?), Silicon Mitus SM5720 (Power Management), Qualcomm PM8998 (Power Management), IDT P9320S (?), Maxim MAX77838 (Power Management)
    * - :doc:`LG Nexus 5 <hammerhead>`
      - hammerhead
@@ -375,6 +381,25 @@ Devices
      - Navigation
      - Sensors
      - Other
+   * - :doc:`Asus Zenfone 2 Laser <Z00L>`
+     - Z00L
+     - Halium 7.1 working
+     - v3.10.108
+     - Qualcomm MSM8939 (Snapdragon 615) / Qualcomm MSM8916 (Snapdragon 410)
+     - 8/4x Cortex A53 (1.7/1.0 GHz/1.2 GHz)
+     - Adreno 405/306
+     - 2 GB
+     - 16 GB + up to 128 GB
+     - 2G bands: 850 900 1800 1900 MHz GSM | 3G bands: 850 900 1700 1900 2100 MHz HSDPA | 4G bands: 2100 1900 1800 1700(AWS) 850 2600 900 700 800 MHz
+     - 5 MP (No flash)
+     - 13 MP (LED flash)
+     - 3000 mAh
+     - MSM89**sndcardm
+     - ft5*46
+     - IPS LCD capacitive touchscreen, 16M colors
+     - GPS
+     - Accelerometer | Gyroscope | Proximity sensor | Compass
+     - Other
    * - :doc:`BQ Aquaris U <chaozu>`
      - chaozu
      - Halium porting started
@@ -432,16 +457,35 @@ Devices
      - Navigation
      - Sensors
      - Other
+   * - :doc:`Sony Xperia L <taoshan>`
+     - taoshan
+     - Halium 7.1 can be installed, but does not work, yet
+     - v3.4.0
+     - Qualcomm MSM8230 Snapdragon 400
+     - Dual-core 1.0 GHz Krait
+     - Adreno 305
+     - 1GB
+     - 8GB
+     - Connectivity?
+     - VGA
+     - 8 MP
+     - Li-Ion 1750 mAh
+     - Sound?
+     - TFT capacitive touchscreen
+     - Display?
+     - A-GPS
+     - Accelerometer, proximity, compass
+     - Other?
    * - :doc:`HTC 10 <pme>`
      - pme
-     - Halium 7.1 WIP
+     - Halium 7.1 working
      - v3.18.31
      - Snapdragon 820 (MSM8996)
      - Quad-core ARMv8-A (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)
      - Adreno 530
      - 4 GB LPDDR4 RAM **??**
      - 32 or 64 GB **??** + microSD up to 256 GB
-     - Broadcom BCM4359 (Wi-Fi), NFC, BT 4.2, Display Port, Chromecast, DLNA™, AirPlay™, Miracast™ **??** 
+     - Broadcom BCM4359 (Wi-Fi), NFC, BT 4.2, Display Port, Chromecast, DLNA™, AirPlay™, Miracast™ **??**
      - Samsung S5K4E6
      - Sony Exmor R IMX377
      - Non-removable Li-Ion 3.8 V, 11.5 Wh (3,000 mAh) **??**
@@ -451,6 +495,63 @@ Devices
      - GPS + GLONASS + (Beidou) Navigation **??**
      - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor, Fingerprint sensor, Sensor Hub - **??**
      - Other **??**
+   * - :doc:`Xiaomi Redmi2/Prime <wt88047>`
+     - wt88047
+     - Halium 7.1 working
+     - 3.10.49
+     - Snapdragon 410 (MSM8916)
+     - Quad-Core ARMv8 (4x1.3Ghz)
+     - Adreno 306
+     - 1GB/2GB LPDDR3
+     - 8GB/16GB + MicroSd upto 64GB
+     - WiFi, Bluetooth4.1, DLNA
+     - 2 MP
+     - 8 MP
+     - 2,400 mAh [removable]
+     - Sound **??**
+     - Touch screen **?**
+     - IPS LCD (1280 x 720 pixels)
+     - GPS + GLONASS
+     - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor
+     - Other **?**
+   * - :doc:`OnePlus 3(T) <oneplus3>`
+     - oneplus3
+     - Halium 7.1 working
+     - v3.18.31
+     - **3:** Snapdragon 820 (MSM8996) / **3T:** Snapdragon 821 (MSM8996Pro)
+     - Quad-core Kryo **3:** 2 x 2.15 GHz + 2 x 1.6 GHz / **3T:** 2 x 2.35 GHz + 2 x 1.6 GHz
+     - Adreno 530
+     - 6 GB LPDDR4
+     - **3:** 64 GB UFS 2.0 / **3T:** 64/128 GB UFS 2.0
+     - Wi-Fi, Bluetooth 4.2, DLNA
+     - **3:** Sony IMX179 Exmor R (8MP) / **3T:** Samsung (16MP)
+     - Sony IMX298 Exmor RS (16MP)
+     - **3:** Non-removable Li-Ion 3000 mAh / **3T:** Non-removable Li-Ion 3400 mAh
+     - Sound **?**
+     - Touch screen **?**
+     - Optic AMOLED (1080x1920)
+     - GPS, A-GPS, GLONASS, BeiDou
+     - Proximity, Light, Accelerometer, Compass, Gyroscope, Fingerprint, Hall
+     - Other **?**
+   * - :doc:`Motorola Moto G5 <cedric>`
+     - cedric
+     - No progress yet
+     - Kernel **?**
+     - Qualcomm MSM8937 Snapdragon 430
+     - Octa-core Cortex-A53 (4 × 1.4 GHz + 4 × 1.1 GHz)
+     - Adreno 505
+     - **XT1676:** 3 GB / **???:** 2 GB
+     - **XT1676:** 16 GB / **???:** 32GB
+     - Wi-Fi, Bluetooth 4.2
+     - OV5695, 5MP, no flash
+     - IMX258, 13MP, LED flash, phase detection autofocus
+     - Removable Li-Ion 2800 mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack **?**
+     - Capacitive Touch screen **?**
+     - IPS LCD (1080x1920)
+     - GPS, A-GPS, GLONASS
+     - Ambient Light Sensor, Fingerprint, Accelerometer, Proximity, Gyroscope
+     - Other **?**
       
 Sources
 ^^^^^^^
@@ -468,13 +569,19 @@ Samsung Galaxy S8+
 ~~~~~~~~~~~~~~~~~~
 
 
-* `Galaxy S8+ iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8%2B+Teardown/87086>`_
+* `Samsung Galaxy S8+ iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8%2B+Teardown/87086>`_
+* `Samsung Galaxy S8+ GSMArena <https://www.gsmarena.com/samsung_galaxy_s8+-8523.php>`_
+* `Samsung Galaxy S8+ DeviceSpecifications <https://www.devicespecifications.com/en/model/2c0b4253>`_
+* `Samsung Galaxy S8(+) Website <http://www.samsung.com/global/galaxy/galaxy-s8/>`_
 
 Samsung Galaxy S8
 ~~~~~~~~~~~~~~~~~
 
 
-* `Galaxy S8 iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8+Teardown/87136>`_
+* `Samsung Galaxy S8 iFixit teardown <https://www.ifixit.com/Teardown/Samsung+Galaxy+S8+Teardown/87136>`_
+* `Samsung Galaxy S8 GSMArena <https://www.gsmarena.com/samsung_galaxy_s8-8161.php>`_
+* `Samsung Galaxy S8 DeviceSpecifications <https://www.devicespecifications.com/en/model/402341d2>`_
+* `Samsung Galaxy S8(+) Website <http://www.samsung.com/global/galaxy/galaxy-s8/>`_
 
 Shift 5.1
 ~~~~~~~~~
@@ -556,3 +663,30 @@ HTC 10
 * `HTC 10 iFixit <https://www.ifixit.com/Device/HTC_10>`_
 * `HTC 10 LOS <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/pme.yml>`_
 * `HTC 10 Website <https://www.htc.com/us/smartphones/htc-10>`_
+
+Asus Zenfone 2 Laser (Z00L)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+* `Asus Zenfone 2 Laser Z00L LOS <https://wiki.lineageos.org/devices/Z00L>`_
+
+Xiaomi Redmi2/Prime (wt88047)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `Xiaomi Redmi 2/Prime GSM-Arena <https://www.gsmarena.com/xiaomi_redmi_2-6884.php>`__
+* `Xiaomi Redmi 2/Prime Fonearena <http://www.fonearena.com/xiaomi-redmi-2_6117.html>`__
+* `Wingtech Wt88047 LOS <https://wiki.lineageos.org/devices/wt88047>`__
+
+OnePlus 5
+~~~~~~~~~~
+
+* `OnePlus 3 Wikipedia <https://en.wikipedia.org/wiki/OnePlus_3>`_
+* `OnePlus 3T Wikipedia <https://en.wikipedia.org/wiki/OnePlus_3T>`_
+* `OnePlus 3 GSMArena <https://www.gsmarena.com/oneplus_3-7995.php>`_
+* `OnePlus 3T GSMArena <https://www.gsmarena.com/oneplus_3t-8416.php>`_
+* `OnePlus 3 DeviceSpecifications <https://www.devicespecifications.com/en/model/437a3c9b>`_
+* `OnePlus 3T DeviceSpecifications <https://www.devicespecifications.com/en/model/446c3f91>`_
+* `OnePlus 3 iFixit teardown <https://www.ifixit.com/Teardown/Oneplus+3+Teardown/74012>`_
+* `OnePlus 3(T) LOS <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/oneplus3.yml>`_
+* `OnePlus 3 Website <https://oneplus.net/3>`_
+* `OnePlus 3T Website <https://oneplus.net/3t>`_

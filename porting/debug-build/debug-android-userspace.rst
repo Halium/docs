@@ -14,7 +14,7 @@ LXC needs some kernel config to make sure it runs correctly. Check that you have
 
     lxc-checkconfig
 
-All option except `User namespace` need to be the green word `enabled`. If one of the options is a yellow `missing` or a red `required`, then you need to change the kernel config, rebuild hybrid-boot and check the status again.
+All option except ``User namespace`` need to be the green word `enabled`. If one of the options is a yellow `missing` or a red `required`, then you need to change the kernel config, rebuild hybris-boot and check the status again.
 
 .. note::
 
@@ -25,10 +25,12 @@ All option except `User namespace` need to be the green word `enabled`. If one o
         CONFIG_NET_CLS_CGROUP=n
         CONFIG_NETPRIO_CGROUP=n
 
+.. _logcat:
+
 Logcat
 ------
 
-Logcat is a tool that reads the Android userspace logs. This includes all services that should be running in Halium. You can run it at any time with the following command::
+Logcat is a tool that reads the Android user space logs. This includes all services that should be running in Halium. You can run it at any time with the following command::
 
    /system/bin/logcat
 
@@ -36,10 +38,16 @@ For radio (Wi-Fi, GSM, LTE) logs, you can add a flag::
 
    /system/bin/logcat -b radio
 
+If you're not able to run this command for any reason (for example, because you're running an armhf rootfs on an arm64 device), you can try to run it inside the Android container via ``lxc-attach``::
+
+    lxc-attach -n android -- /system/bin/logcat
+
+You may similarly use this to run any binary inside the Android system. Simply replace the command after the two dashes.
+
 dmesg
 -----
 
-Even though Android logs does not normally end up in dmesg, early initialization of Android and kernel output ends up here::
+Even though Android logs do not normally end up in dmesg, early initialization of Android and kernel output ends up here::
 
    dmesg
 
@@ -51,3 +59,17 @@ One of the main problems with the current Hybris based architecture, is the lack
 .. todo::
 
     Add information for importing debug libhybris libraries.
+
+.. todo::
+
+    Document how to deal with firmware partitions.
+
+    For example xLeEco Le Max2, codename "x2" has a firmware partition where the vendor blobs are stored. Initially lxc@android would not start. The resolution was roughly:
+
+    * no need for a vendor blobs repository in the manifest
+    * determine firmware partition name
+    * ensure fix-mountpoints takes it into account
+    * reflash android to ensure the blobs are in the partition
+    * reflash halium
+
+    See http://logs.nslu2-linux.org/livelogs/halium/halium.20180430.txt

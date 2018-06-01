@@ -56,10 +56,10 @@ Debugging via telnet
 
 * Connect with telnet: ``telnet 192.168.2.15``
 
-Now you have terminal access to the system running from initrd.
+Now you have terminal access to the system running from initramfs. The first command to run once you're logged in is ``cat diagnosis.log`` to see if it has any hints.
 
-If telnet is never exposed
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Forcing debug mode
+------------------
 
 If the device simply reboots when trying to boot and does not bring up telnet, you may build and use the ``hybris-recovery.img`` file to attempt to force a shell to come up. To do this, set up your build tree and issue the following command::
 
@@ -67,4 +67,42 @@ If the device simply reboots when trying to boot and does not bring up telnet, y
 
 The file will be in the standard $OUTDIR. Simply flash it in the same way you did for ``hybris-boot.img``.
 
-There are several cases in which telnet will not be exposed, such as when the device fails to load the kernel or initramfs, or when an in-kernel driver decides to cause a kernel panic very early. In this case, the phone will almost immediately reboot when it starts, even when using ``hybris-recovery``. To see why this is happening, you may be able to :ref:`read the previous boot's kernel message buffer <last-kmsg>`. Please have that ready if you :ref:`contact us for help <support-channels>`.
+Common errors
+-------------
+
+The device reboots after leaving hybris-recovery
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If your device reboots after you leave hybris-recovery by running ``echo continue > /init-ctl/stdin``,there could be something wrong with your lxc container. Try the following in the hybris-recovery shell to disable it for the moment::
+
+   TERM=linux HOME=/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:$PATH chroot target/ /bin/bash
+   systemctl disable lxc@android
+   systemctl mask lxc@android
+   exit
+   echo continue > /init-ctl/stdin
+
+You should then be offered SSH. See :doc:`logging-in` for more details. Once you are logged in, you can try to troubleshoot what is causing your reboots by running ``systemctl unmask lxc@android && systemctl start lxc@android``.
+
+Bootloop: "Too many levels of symbolic links" when leaving hybris-boot
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: guess
+
+   systemd[1]: Failed to determine whether /sys/fs/cgroup is a mount point: Too many levels of symbolic links
+   systemd[1]: Failed to mount cgroup at /sys/fs/cgroup/systemd: NO such filE oR directory
+   systemd[1]: Freezing execution.
+
+There's a patch on hammerhead kernel from Linus Torvalds you need to apply: `Fix /proc/<tid>/fdinfo/<fd> file handling`_.
+
+The device reboots with hybris-recovery
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There are several cases in which telnet will not be exposed, such as when the device fails to load the kernel or initramfs, or when an in-kernel driver decides to cause a kernel panic very early. In this case, the phone will almost immediately reboot when it starts, even when using ``hybris-recovery``. You may be able to :doc:`read the previous boot's kernel message buffer <dmesg>`. Please have that ready and :ref:`contact us for help <support-channels>`.
+
+None of these describe my issue
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You may be able to :doc:`read the previous boot's kernel message buffer <dmesg>`. Please have that ready and :ref:`contact us for help <support-channels>`.
+
+
+.. _Fix /proc/<tid>/fdinfo/<fd> file handling: https://github.com/Halium/android_kernel_lge_hammerhead/commit/25437b2a54dd619a96e268ecaf303b089aa785e4

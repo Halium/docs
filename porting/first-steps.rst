@@ -51,7 +51,20 @@ Install the required dependencies::
      libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
      libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
-     repo liblz4-tool bc
+     repo liblz4-tool bc lzop
+
+Arch
+^^^^
+
+If you have a pure ``amd64`` running you need to add ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
+Assuming you have already installed ``base-devel`` group; if not, then please install ``base-devel``.
+
+Install the required dependencies from AUR::
+
+   git clone https://aur.archlinux.org/halium-devel.git && cd halium-devel && makepkg -i
+
+.. Note::
+    Arch uses python3 as default version for Python, which may cause some errors while building. Using a Python virtualenv2 is highly recommended. Please refer to `<https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting the Virtual Environment.
 
 .. todo::
     Add information for installing packages on other distros

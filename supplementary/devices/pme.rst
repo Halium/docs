@@ -10,7 +10,7 @@ Status
 Halium
 ^^^^^^
 
-A port for Halium 7.1 is being worked on by `Ivan Semkin <https://github.com/vanyasem>`_ and `Marius Gripsgard <https://github.com/mariogrip>`_
+Halium is **working on this device as version 7.1**. Ported by `Ivan Semkin <https://github.com/vanyasem>`_ and `Marius Gripsgard <https://github.com/mariogrip>`_
 
 Distributions
 ^^^^^^^^^^^^^
@@ -38,15 +38,10 @@ Distributions
 Kernel & Hardware
 ^^^^^^^^^^^^^^^^^
 
-Mainline (vX.Y.Z as of writing)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Write whether something that is needed for the device is mainline already (switch the version in the heading for what's recent when you write this). This means **device tree source files (.dts) as well as single drivers** (for example only the wifi driver).
-
 Cyanogemod based kernels (LOS & UBP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Both **Halium and LOS share a common base** which is Cyanogenmod. However, the Halium kernel was pacthed with Halium-specific edits. Currently only kernel flags in ``pme_defconfig`` were altered.
+Both **Halium and LOS share a common base** which is Cyanogenmod. However, the Halium kernel was patched with Halium-specific edits.
 
 Device Specifics
 ----------------
@@ -65,11 +60,11 @@ Also, be sure to check `the LineageOS device info for PME <https://github.com/Li
 Developer Info
 ^^^^^^^^^^^^^^
 
-This device is mostly open and has no weird behaviour
+TWRP's BusyBox for the device is partially broken. Thus stock rootstock might fail to install Halium properly. I suggest using `JBB's alternative installation script <https://github.com/JBBgameich/halium-install/>`_.
 
 Useful Resources
 ^^^^^^^^^^^^^^^^
 
-* `Repo Manifest <https://gist.github.com/vanyasem/64fa7fdc0df556561c50a6048a982ce1>`_
+* `Repo Manifest <https://github.com/Halium/halium-devices/blob/halium-7.1/manifests/htc_pme.xml>`_
 * `Official HTC Unlock guide <https://www.htcdev.com/bootloader/>`_
-* `TWRP for HTC 10 <https://eu.dl.twrp.me/pme/>`_
+* `TWRP for HTC 10 <https://twrp.me/htc/htc10.html>`_

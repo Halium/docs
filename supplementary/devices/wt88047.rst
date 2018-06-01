@@ -1,0 +1,69 @@
+
+Xiaomi Redmi 2/Prime (wt88047)
+===============================
+
+Xiaomi Redmi 2 smartphone was launched in January 2015. The phone comes with a 4.70-inch touchscreen display with a resolution of 720 pixels by 1280 pixels at a PPI of 312 pixels per inch.
+
+Status
+------
+
+Halium
+^^^^^^
+
+A port for Halium 7.1 is being worked on by `Abhishek Mudgal <https://github.com/abhishek9650>`_ 
+
+Distributions
+^^^^^^^^^^^^^
+
+.. list-table::
+   :header-rows: 1
+
+   * - Distribution
+     - Device Specific Files
+     - Kernel
+     - What works
+     - What doesn't work
+   * - `WT88047 on LineageOS Wiki <https://wiki.lineageos.org/devices/wt88047>`_
+     - `LineageOS\android_device_wingtech_wt88047 <https://github.com/LineageOS/android_device_wingtech_wt8804>`_
+     - `LineageOS\android_kernel_wingtech_msm8916 <https://github.com/LineageOS/android_kernel_wingtech_msm8916>`_ based on v3.10.49
+     - see device page
+     - see device page
+
+
+Kernel & Hardware
+^^^^^^^^^^^^^^^^^
+
+Mainline (vX.Y.Z as of writing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Write whether something that is needed for the device is mainline already (switch the version in the heading for what's recent when you write this). This means **device tree source files (.dts) as well as single drivers** (for example only the wifi driver).
+
+Cyanogemod based kernels (LOS & UBP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Both **Halium and LOS share a common base** which is Cyanogenmod. However, the Halium kernel was pacthed with Halium-specific edits. Currently only kernel flags in ``lineageos_wt88047_defconfig`` were altered.
+
+Device Specifics
+----------------
+
+Guides
+^^^^^^
+
+Bootloader for wt88047 comes pre unlocked.
+
+Flash hybris-boot as a boot image from fastboot.
+
+In order to launch recovery, do press "Power + Volume Down + Volume UP"
+
+Also, be sure to check `the LineageOS device info for WT88047 <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/wt88047.yml>`_
+
+Developer Info
+^^^^^^^^^^^^^^
+
+This device is mostly open and has no weird behaviour
+
+Useful Resources
+^^^^^^^^^^^^^^^^
+
+* `Repo Manifest <https://gist.github.com/abhishek9650/0a33682de9c2307dd8694ea2168cb578>`_
+* `TWRP for Xiaomi Redmi2/Prime <https://eu.dl.twrp.me/wt88047/>`_

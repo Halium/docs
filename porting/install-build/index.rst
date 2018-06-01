@@ -29,4 +29,4 @@ These distributions require changes to the source or use different scripts than 
    Ubuntu Touch <https://docs.ubports.com/en/latest/porting/introduction.html>
 
 .. todo::
-   Distributions like Ubuntu Touch and LuneOS go here. Links to their respective documentation should be sufficient, but please place them inside the toctree above. Also, remove the example.com link.
+   Distributions like Ubuntu Touch and LuneOS go here. Links to their respective documentation should be sufficient, but please place them inside the toctree above.

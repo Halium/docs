@@ -49,9 +49,9 @@ source_suffix = ['.rst']
 master_doc = 'index'
 
 # General information about the project.
-project = u'Halium docs'
-copyright = u'2017, Marius Gripsgard, Bhushan Shah, Luca Weiss, JBBgameich, Radagast'
-author = u'Marius Gripsgard, Bhushan Shah, Luca Weiss, JBBgameich, Radagast'
+project = u'Halium'
+copyright = u'2017-2018, Halium Documentation Contributors'
+author = u'Halium Documentation Contributors'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -120,7 +120,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Haliumdocsdoc'
+htmlhelp_basename = 'Haliumdocs'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -147,8 +147,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Haliumdocs.tex', u'Halium docs Documentation',
-     u'Marius Gripsgard, Bhushan Shah, Luca Weiss, JBBgameich, Radagast', 'manual'),
+    (master_doc, 'Haliumdocs.tex', u'Halium Documentation',
+     u'Halium Documentation Contributors', 'manual'),
 ]
 
 
@@ -157,7 +157,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'haliumdocs', u'Halium docs Documentation',
+    (master_doc, 'haliumdocs', u'Halium Documentation',
      [author], 1)
 ]
 
@@ -168,7 +168,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Haliumdocs', u'Halium docs Documentation',
+    (master_doc, 'Haliumdocs', u'Halium Documentation',
      author, 'Haliumdocs', 'One line description of project.',
      'Miscellaneous'),
 ]

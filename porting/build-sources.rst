@@ -4,6 +4,8 @@ Build Halium
 
 You've got all of your source downloaded, now it's time to start building!
 
+.. _breakfast-and-lunch:
+
 Initialize
 ----------
 
@@ -51,9 +53,9 @@ Breakfast will attempt to find your device, set up all of the environment variab
 Modify the kernel configuration
 -------------------------------
 
-Halium uses the systemd as the init system which requires various kernel config options to be enabled.
+Halium uses systemd as the init system. This requires various specific kernel configurations.
 
-To check which config options needs to be enabled we use `mer-kernel-check <https://github.com/mer-hybris/mer-kernel-check>`_ utility provided by mer-hybris::
+To check which config options needs to be adjusted we use `mer-kernel-check <https://github.com/mer-hybris/mer-kernel-check>`_ utility provided by mer-hybris::
 
    git clone https://github.com/mer-hybris/mer-kernel-check
    cd mer-kernel-check
@@ -83,7 +85,7 @@ If it's not already included, you will need to add it. Your device should be run
                 "$@"
             ;;
 
-4. For every line in fstab where the type is not ``auto``, run ``readlink -f [src]`` on the target device over ADB. ``[src]`` is the leftmost colum in fstab.
+4. For every line in fstab where the type is not ``auto``, ``emmc`` or ``swap``, run ``readlink -f [src]`` on the target device over ADB. ``[src]`` is the leftmost colum in fstab.
 5. Write all of our replacements, one for every mountpoint. Here's the bones of one::
 
 	-e 's [src] [return] ' \
@@ -111,11 +113,20 @@ To build the ``system.img`` and ``hybris-boot.img`` - required for Halium - use 
 
     If you use ``make`` and not ``mka`` it is recommended to set ``-j[num]`` to do parallel building, which reduces build time. Replace ``[num]`` with the number of threads in your system plus 2.
 
+If you get any errors, jump down to `Documented errors`_. Otherwise, continue on to `Next steps`_.
 
-.. todo::
+Documented errors
+-----------------
 
-    There are some common build errors that we should go over, such as those generated when Java dependencies aren't removed from the tree. Maybe an appendix, maybe another page in this folder.
+If you receive errors while building Halium, check the following documents to see if there is a documented solution.
 
+.. toctree::
+   :maxdepth: 2
+
+   common-kernel-build-errors
+   common-system-build-errors
+
+If your error is not in this list, please :ref:`contact us for help <support-channels>`.
 
 Next steps
 ----------
