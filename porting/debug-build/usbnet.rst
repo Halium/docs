@@ -26,7 +26,7 @@ If you're in initrd debug (telnet)::
    
 If you're in the real rootfs (ssh)::
 
-   ip route add default gw 10.15.19.100
+   ip route add default via 10.15.19.100
 
 Then try ``ping 8.8.8.8`` from the phone. The pings should go through.
 
