@@ -18,7 +18,7 @@ You'll need them for the following commands::
    sudo iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
    sudo iptables -A FORWARD -i [USBNETWORK] -o [INTERNET] -j ACCEPT
 
-Then, run the following command as root on your phone::
+Then, run the following command as root on your phone:
 
 If you're in initrd debug (telnet)::
 
