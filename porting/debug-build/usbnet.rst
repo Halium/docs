@@ -22,7 +22,7 @@ Then, run the following command as root on your phone:
 
 If you're in initrd debug (telnet)::
 
-   ip route add default gw 192.168.2.1
+   route add default gw 192.168.2.1
    
 If you're in the real rootfs (ssh)::
 
