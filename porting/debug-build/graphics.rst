@@ -47,7 +47,7 @@ On the reference rootfs, you can get this software from the Halium repository by
    
    . /etc/environment
    echo "deb http://repo.halium.org/caf xenial main" >> /etc/apt/sources.list.d/halium-caf.list
-   apt -get update
+   apt-get update
    apt-get dist-upgrade
 
 Non-reference distributions will need to provide software which is compatible with CAF Android trees.

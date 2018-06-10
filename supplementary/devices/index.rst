@@ -33,6 +33,7 @@ All of these should only be document in the exact same way here and **only an ov
    yuga
    taoshan
    Z00L
+   nicki
    
 
 How to document
@@ -551,6 +552,25 @@ Devices
      - IPS LCD (1080x1920)
      - GPS, A-GPS, GLONASS
      - Ambient Light Sensor, Fingerprint, Accelerometer, Proximity, Gyroscope
+     - Other **?**
+   * - :doc:`Sony Xperia M <nicki>`
+     - nicki
+     - Halium-7.1 and 5.1 wip
+     - Kernel v3.4.0
+     - Qualcomm MSM8227/8x27/8627 (reffering to the same soc) 
+     - Dual core Krait (2x 1.0 Ghz)
+     - Adreno 305
+     - 1 GB
+     - 4 GB
+     - Wi-Fi, Bluetooth 4.0
+     - 0.3 MP (no flash)
+     - 5 MP (LED flash)
+     - Removable Li-Ion 1700 mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack
+     - Touch screen
+     - 4" TFT (480 x 854)
+     - GPS, A-GPS, GLONASS
+     - Ambient Light Sensor, Accelerometer, Proximity,
      - Other **?**
       
 Sources
