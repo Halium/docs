@@ -24,14 +24,14 @@ Distributions
      - What works
      - What doesn't work
    * - `LineageOS <https://wiki.lineageos.org/devices/nicki>`_
-     - `android_device_sony_nicki <https://github.com/lineageos/android_sony_device_nicki>`_
+     - `android_device_sony_nicki <https://github.com/lineageos/android_device_sony_nicki>`_
      - `android_kernel_sony_msm8x27 <https://github.com/lineageos/android_kernel_sony_msm8x27>`_ based on v3.4.0
      - Everything(afaik)
      - Nothing
    * - Halium Reference Rootfs
      - `ewentual/halium_device_sony_nicki <https://github.com/ewentual/halium_device_sony_nicki>`_
      - `ewentual/halium_kernel_sony_msm8x27 <https://github.com/ewentual/halium_kernel_sony_msm8x27>`_ based on v3.4.0
-     - Boots to rootfs, let me ssh in, test_vibrator
+     - Boots to rootfs, ssh works, test_vibrator works
      - Everything else
    * - Ubports
      - Not yet
