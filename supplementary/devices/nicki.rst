@@ -12,14 +12,8 @@ Halium
 
 There is an ongoing port of Halium for Nicki that `Konrad Dybcio <https://github.com/ewentual>`_ is working on. Halium-7.1 branch builds with slightly tweaked LOS 14 sources (manifest will be published soon). Halium rootfs can be flashed using `halium-install by JBB <https://github.com/JBBgameich/halium-install>`_, yet /data partition is too small (2 gigs) to fit a plasma mobile rootfs.
 
-
-* Is someone already working on Halium for this device? If YES: link to repositories of **device specific files** (usually github repos called "android_device_manufacturer_codename") and **device kernel** (usually a repo beginning with "android\ *kernel*\ ") and name authors if possible (perhaps link to their github profile)
-* Is Halium working for this device? If YES: Name the android base version (5.1 or 7.1) and everything you know about the actual status (what's working, which rootfs, ...)
-
 Distributions
 ^^^^^^^^^^^^^
-
-The following entries are just a placeholder, exactly as this sentence.
 
 .. list-table::
    :header-rows: 1
