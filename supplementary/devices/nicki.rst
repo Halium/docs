@@ -36,7 +36,7 @@ Distributions
    * - Ubports
      - Not yet
      - Not yet
-     - To be seen :p
+     - Nothing, even putting rootfs on the device (not enough space)
      - Everything
 
 
