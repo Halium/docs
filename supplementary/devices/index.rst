@@ -554,9 +554,9 @@ Devices
      - Ambient Light Sensor, Fingerprint, Accelerometer, Proximity, Gyroscope
      - Other **?**
 
-   * - :doc:`Xiaomi Redmi 3s/Prime <land>`
+   * - :doc:`Xiaomi Redmi 3S/Prime <land>`
      - land
-     - LXC service works without crashing
+     - Halium 7.1 working
      - v3.18.31
      - Qualcomm MSM8937 Snapdragon 430
      - Octa-core Cortex-A53 (4 × 1.4 GHz + 4 × 1.1 GHz)
@@ -712,7 +712,7 @@ OnePlus 5
 * `OnePlus 3 Website <https://oneplus.net/3>`_
 * `OnePlus 3T Website <https://oneplus.net/3t>`_
 
-Xiaomi Redmi 3s/Prime (land)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Xiaomi Redmi 3s/Prime
+~~~~~~~~~~~~~~~~~~~~~
 
 * `Redmi 3s Website <http://www.mi.com/sg/redmi3s/>`_
