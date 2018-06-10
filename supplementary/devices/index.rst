@@ -557,7 +557,7 @@ Devices
      - nicki
      - Halium-7.1 and 5.1 wip
      - Kernel v3.4.0
-     - Qualcomm MSM8227/8x27/8627 (reffering to the same soc) 
+     - Qualcomm MSM8227/8x27/8627 (referring to the same soc) 
      - Dual core Krait (2x 1.0 Ghz)
      - Adreno 305
      - 1 GB
