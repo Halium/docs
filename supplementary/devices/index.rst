@@ -23,6 +23,7 @@ All of these should only be document in the exact same way here and **only an ov
    fp2
    hammerhead
    krillin
+   land
    mako
    oneplus3
    pme
@@ -570,7 +571,26 @@ Devices
      - Touch screen
      - 4" TFT (480 x 854)
      - GPS, A-GPS, GLONASS
-     - Ambient Light Sensor, Accelerometer, Proximity,
+     - Ambient Light Sensor, Accelerometer, Proximity
+     - Other **?**
+   * - :doc:`Xiaomi Redmi 3S/Prime <land>`
+     - land
+     - Halium 7.1 working
+     - v3.18.31
+     - Qualcomm MSM8937 Snapdragon 430
+     - Octa-core Cortex-A53 (4 × 1.4 GHz + 4 × 1.1 GHz)
+     - Adreno 505
+     - **3s:** 2 GB / **Prime:** 3 GB
+     - **3s:** 16 GB / **Prime:** 32GB
+     - Wi-Fi, Bluetooth 4.2
+     - 5MP, no flash
+     - 13MP, LED flash
+     - Non removable 4100mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack **?**
+     - Capacitive Touch screen **?**
+     - IPS LCD (720x1280)
+     - GPS, A-GPS, GLONASS
+     - Ambient Light Sensor, Fingerprint(Prime only), Accelerometer, Proximity, Gyroscope
      - Other **?**
       
 Sources
@@ -710,3 +730,8 @@ OnePlus 5
 * `OnePlus 3(T) LOS <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/oneplus3.yml>`_
 * `OnePlus 3 Website <https://oneplus.net/3>`_
 * `OnePlus 3T Website <https://oneplus.net/3t>`_
+
+Xiaomi Redmi 3s/Prime
+~~~~~~~~~~~~~~~~~~~~~
+
+* `Redmi 3s Website <http://www.mi.com/sg/redmi3s/>`_
