@@ -31,7 +31,7 @@ Distributions
    * - Halium Reference Rootfs
      - `ewentual/halium_device_sony_nicki <https://github.com/ewentual/halium_device_sony_nicki>`_
      - `ewentual/halium_kernel_sony_msm8x27 <https://github.com/ewentual/halium_kernel_sony_msm8x27>`_ based on v3.4.0
-     - Boots to rootfs, ssh works, test_vibrator works
+     -  See projectmanagement issue
      - Everything else
    * - Ubports
      - Not yet
@@ -71,7 +71,7 @@ Developer Info
 
 With hybris-boot only way to access TWRP is to flash it as boot.
 
-Usefull Resources
+Useful Resources
 ^^^^^^^^^^^^^^^^^^
 
 - `halium-install from JBB <https://github.com/JBBgameich/halium-install>`_
