@@ -130,7 +130,7 @@ Startup sequence
 * fastboot starts the kernel and loads the initrd
 * initrd mounts the userdata partition and rootfs.img from it
 * After mounting rootfs.img it will start the systemd init from the rootfs
-* The tootfs is expected to mount the /system, /vendor and other android mount points before local-fs.target
+* The rootfs is expected to mount the /system, /vendor and other android mount points before local-fs.target
 * After the local-fs target, the lxc container is started
 * lxc pre-start hook will bind mount the mounted android partitions inside the android rootfs
 * Once the android container is started the host system will start udev and other system daemons

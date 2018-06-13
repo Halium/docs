@@ -2,7 +2,7 @@
 Vibrator
 ========
 
-vibrator is one of the simple parts to get going in Halium, and is often used as to goto test to check if libhybris linker works as expected.
+Vibrator is one of the simple parts to get going in Halium, and is often used as to goto test to check if libhybris linker works as expected.
 
 Tests
 -----
