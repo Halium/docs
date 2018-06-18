@@ -67,10 +67,26 @@ Another debugging technique is to investigate the backtrace when a program crash
 
 This will start the interactive debugger ``gdb``. At the prompt of ``gdb`` you enter ``run``. Now the program is executed and you wait for it to crash. Then you enter ``bt full``. This will give you the full backtrace of what the program was trying to execute at the moment of the crash.
 
+In order to make the backtrace most useful you want to ensure that you have debug symbols installed for the program you are debugging.
+
+Firstly, let's fix the ``PATH`` variable which is currently missing ``/sbin`` on the reference rootfs::
+
+   export PATH=$PATH:/sbin
+
+Secondly, do install debug symbols for libc::
+
+   apt install libc6-dbg
+
+Thirdly, install whichever package contains the debug symbols for the program in question. Typically it is in a package with a name similar to the one containing the program and ending in ``-dbg``. For the example of ``test_hwcomposer`` you want::
+
+   apt install libhybris-dbgsym
+
+If ``gdb`` reports "(no debugging symbols found)", then you are still missing debug symbols, look further for the relevant package.
+
 Debug Libhybris crash
 ---------------------
 
-One of the main problems with the current Hybris based architecture, is the lack of symbols resolution and mapping once a crash happens at the Android layer. To workaround this we need to manuly import non stripped libaries
+One of the main problems with the current Hybris based architecture, is the lack of symbols resolution and mapping once a crash happens at the Android layer. To workaround this we need to manually import non-stripped libaries
 
 .. todo::
 
