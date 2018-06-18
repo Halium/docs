@@ -85,7 +85,7 @@ If it's not already included, you will need to add it. Your device should be run
                 "$@"
             ;;
 
-4. For every line in fstab where the type is not ``auto``, run ``readlink -f [src]`` on the target device over ADB. ``[src]`` is the leftmost colum in fstab.
+4. For every line in fstab where the type is not ``auto``, ``emmc`` or ``swap``, run ``readlink -f [src]`` on the target device over ADB. ``[src]`` is the leftmost colum in fstab.
 5. Write all of our replacements, one for every mountpoint. Here's the bones of one::
 
 	-e 's [src] [return] ' \

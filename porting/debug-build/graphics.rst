@@ -36,7 +36,7 @@ EGL_BAD_SURFACE
 
 If these tests fail but some others succeed (lights, vibrator, Wi-Fi), you may need software which is built for Code Aurora Forum's Android for MSM (generally nicknamed "CAF" for short) rather than AOSP.
 
-If this is the case, you'll errors similar to the following in :ref:`logcat`::
+If this is the case, you'll encounter errors similar to the following in :ref:`logcat`::
 
    W Adreno-GSL: <gsl_ldd_control:475>: ioctl fd 8 code 0xc0140933 (IOCTL_KGSL_TIMESTAMP_EVENT) failed: errno 22 Invalid argument
    W Adreno-GSL: <ioctl_kgsl_syncobj_create:2984>: (9, 1, 62845) fail 22 Invalid argument
@@ -47,7 +47,7 @@ On the reference rootfs, you can get this software from the Halium repository by
    
    . /etc/environment
    echo "deb http://repo.halium.org/caf xenial main" >> /etc/apt/sources.list.d/halium-caf.list
-   apt -get update
+   apt-get update
    apt-get dist-upgrade
 
 Non-reference distributions will need to provide software which is compatible with CAF Android trees.

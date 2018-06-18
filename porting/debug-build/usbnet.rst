@@ -18,9 +18,15 @@ You'll need them for the following commands::
    sudo iptables -A FORWARD -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
    sudo iptables -A FORWARD -i [USBNETWORK] -o [INTERNET] -j ACCEPT
 
-Then, run the following command using your telnet connection on your phone::
+Then, run the following command as root on your phone:
+
+If you're in initrd debug (telnet)::
 
    route add default gw 192.168.2.1
+   
+If you're in the real rootfs (ssh)::
+
+   ip route add default via 10.15.19.100
 
 Then try ``ping 8.8.8.8`` from the phone. The pings should go through.
 

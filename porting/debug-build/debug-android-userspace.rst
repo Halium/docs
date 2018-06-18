@@ -75,3 +75,17 @@ One of the main problems with the current Hybris based architecture, is the lack
 .. todo::
 
     Add information for importing debug libhybris libraries.
+
+.. todo::
+
+    Document how to deal with firmware partitions.
+
+    For example xLeEco Le Max2, codename "x2" has a firmware partition where the vendor blobs are stored. Initially lxc@android would not start. The resolution was roughly:
+
+    * no need for a vendor blobs repository in the manifest
+    * determine firmware partition name
+    * ensure fix-mountpoints takes it into account
+    * reflash android to ensure the blobs are in the partition
+    * reflash halium
+
+    See http://logs.nslu2-linux.org/livelogs/halium/halium.20180430.txt
