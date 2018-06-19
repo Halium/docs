@@ -31,7 +31,7 @@ If you're in the real rootfs (ssh)::
 
 Then try ``ping 8.8.8.8`` from the phone. The pings should go through.
 
-To add a DNS server on your device, edit ``/etc/resolv.conf`` and add the line ``nameserver 8.8.8.8``. This is NOT the recommended way to add a nameserver on Debian, but it works reliably when you can't depend on other options. Your changes will be overwritten on reboot, so you will need to perform them again.
+To add an DNS server on your device, edit ``/etc/resolv.conf`` and add the line ``nameserver 8.8.8.8``. This is NOT the recommended way to add a nameserver on Debian, but it works reliably when you can't depend on other options. Your changes will be overwritten on reboot, so you will need to perform them again.
 
 
 You should now be able to ``ping debian.org`` and generally have internet access on the device.
