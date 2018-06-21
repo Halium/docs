@@ -19,7 +19,7 @@ You will be prompted to change the password. Once finished, clean up::
     rmdir /a
     sync
 
-You may now reboot your device into Halium.
+You may now reboot using '/sbin/reboot' your device into Halium.
 
 Once your device is booted, you should see that you have a new network interface again. Look at the output of ``ip link show``, the name will be e.g. enp0s29u1u1. rndis0 is not working on most kernels. Assign it a fake MAC address (if the default one is all 00s) and an IP of 10.15.19.100::
 
