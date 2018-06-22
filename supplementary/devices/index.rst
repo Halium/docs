@@ -25,6 +25,7 @@ All of these should only be document in the exact same way here and **only an ov
    krillin
    land
    mako
+   nicki
    oneplus3
    pme
    T00F
@@ -34,7 +35,6 @@ All of these should only be document in the exact same way here and **only an ov
    yuga
    taoshan
    Z00L
-   nicki
    
 
 How to document
