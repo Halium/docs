@@ -14,6 +14,19 @@ All APKs and Java libraries should be removed from the Makefiles in ``vendor/[ma
 
 Also check the vendor folders of your dependencies.
 
+Undefined or missing bluetooth headers
+-------------------------------------
+
+.. code-block:: guess
+
+    *TODO: example*
+
+Some devices requires bluetooth when compiling, which aren't synced for default by Halium. This can be fixed adding LineageOS's repo to the device manifest:
+
+.. code-block:: guess
+
+    <project path="system/bt" name="android_system_bt" remote="los" revision="cm-14.1" />
+    
 HYBRIS_BOOT_PART and HYBRIS_DATA_PART
 -------------------------------------
 
