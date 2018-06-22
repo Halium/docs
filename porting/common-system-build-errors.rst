@@ -23,7 +23,7 @@ Undefined or missing bluetooth headers
 
 Some devices requires bluetooth when compiling, which aren't synced for default by Halium. This can be fixed adding LineageOS's repo to the device manifest:
 
-.. code-block:: guess
+... to the device manifest::
 
     <project path="system/bt" name="android_system_bt" remote="los" revision="cm-14.1" />
     
