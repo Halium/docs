@@ -41,3 +41,16 @@ Example of the error::
    error, forbidden warning: firmware_class.c:1226
    
 Set 'CONFIG_FW_LOADER_USER_HELPER' to 'y' in your defconfig.
+
+ECRYPTFS error
+----------------------
+
+Example of the error::
+
+   ../../../../../../kernel/lenovo/msm8916/fs/ecryptfs/file.c: In function 'ecryptfs_readdir':
+   ../../../../../../kernel/lenovo/msm8916/fs/ecryptfs/file.c:130:16: error: assignment of read-only member 'actor'
+  buf.ctx.actor = ecryptfs_filldir;
+
+Apply `this patch from bullhead`_.
+
+.. _this patch from bullhead: https://github.com/usb-bullhead-ubuntu-touch/kernel_msm/commit/b0403f0ee02e6582017cdb45b4c0c72b00cc72eb
