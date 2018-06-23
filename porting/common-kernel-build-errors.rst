@@ -19,7 +19,7 @@ Apply the patch `nick kvfree() from apparmor`_.
 
 
 'kuid_t' (sdcardfs, cgroup) error 
---------------
+----------------------------------
 
 Example of the error::
 
