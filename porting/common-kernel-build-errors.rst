@@ -29,7 +29,7 @@ Example of the error::
    ../../../../../../kernel/lenovo/msm8916/kernel/cgroup.c:2139:18: error: invalid operands to binary != (have 'kuid_t' and 'kuid_t')
        cred->euid != tcred->suid)
        
-Set 'CONFIG_USER_NS' to 'n' in your defconfig.
+Set ``CONFIG_USER_NS`` to ``n`` in your defconfig.
 
 Firmware class error
 ----------------------
@@ -40,7 +40,7 @@ Example of the error::
    ../../../../../../kernel/lenovo/msm8916/drivers/base/firmware_class.c:1226:38: warning: passing argument 2 of 'fw_load_from_user_helper' from incompatible pointer type
    error, forbidden warning: firmware_class.c:1226
    
-Set 'CONFIG_FW_LOADER_USER_HELPER' to 'y' in your defconfig.
+Set ``CONFIG_FW_LOADER_USER_HELPER`` to ``y`` in your defconfig.
 
 ECRYPTFS error
 ----------------------
