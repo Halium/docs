@@ -62,6 +62,15 @@ This will do the following:
 * Convert system.img into the ext4 mountable image from android sparse image.
 * Push the both images to /data partition
 
+Install rootfs and system.img (alternative method)
+--------------------------------------------------
+
+If the method above failed for some reason, you could try the ``halium-install`` script from the `JBB's repository <https://github.com/JBBgameich/halium-install/>`_.
+
+You can use the halium-install script as below, when the device is connected in recovery mode::
+
+   halium-install -p halium <path to rootfs tarball> <path to android system.img>
+
 Debugging
 ---------
 
