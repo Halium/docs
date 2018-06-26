@@ -54,7 +54,7 @@ Currently the latest rootfs is available at bshah's personal server: `Link <http
 
 You can use the halium-install script as below, when the device is connected in recovery mode::
 
-   halium-install -p halium <path to rootfs tarball> <path to android system.img>
+   halium-install <path to rootfs tarball> <path to android system.img>
 
 This will do the following:
 
@@ -69,7 +69,7 @@ If the method above failed for some reason, you could try the ``halium-install``
 
 You can use the halium-install script as below, when the device is connected in recovery mode::
 
-   halium-install <path to rootfs tarball> <path to android system.img> halium
+   halium-install -p halium <path to rootfs tarball> <path to android system.img>
 
 Debugging
 ---------
