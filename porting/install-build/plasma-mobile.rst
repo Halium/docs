@@ -7,7 +7,9 @@ In order to install `Plasma mobile <https://www.plasma-mobile.org>`_ you perform
 Install rootfs and system.img
 -----------------------------
 
-Use the plasma mobile rootfs. Download the latest version from: `<https://images.plasma-mobile.org/rootfs/>`_.
+Use the plasma mobile rootfs. Download the latest version from here: `<https://images.plasma-mobile.org/rootfs/>`_.
+
+If you have a "CAF" device (Code Aurora Forum), then you must use the rootfs from here: `<https://images.plasma-mobile.org/caf-rootfs/>`_. Generally speaking, if it is a Qualcomm device and it is not a Nexus, then it is CAF.
 
 
 Debugging
