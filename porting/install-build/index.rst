@@ -7,16 +7,13 @@ At this point, you've set up your build device, downloaded all of the sources fo
 Fully halium-integrated distributions
 -------------------------------------
 
-You may choose any of the following distributions to install with the scripts and sources provided by Halium. We recommend you start with the reference rootfs for testing.
+You may choose any of the following distributions to install with the scripts and sources provided by Halium. We recommend you start with the Halium reference rootfs for testing.
 
 .. toctree::
    :maxdepth: 1
-   
+
    reference-rootfs
-
-.. todo::
-   Add instructions for installing Plasma Mobile
-
+   plasma-mobile
 
 Halium-modified distributions
 -----------------------------
