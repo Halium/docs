@@ -1,6 +1,10 @@
 Add udev rules
 ==============
 
+You must create some udev rules to allow some tests to have access to your hardware. 
+
+There are 2 different ways to do this:
+
 On device:
 ----------
 
