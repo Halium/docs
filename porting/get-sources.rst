@@ -26,10 +26,13 @@ If your device does not have Android 7.1 or LineageOS 14.1 support but has suppo
 
 ``halium-5.1`` is based on CyanogenMod 12.1
 
-Now that you have initialized the Halium tree, you can sync all repositories included in it. This will probably take a while as it downloads several GBs::
+Now that you have initialized the Halium tree (a shallow copy due to --depth=1), you can sync all repositories included in it. This will probably take a while as it downloads several GBs::
 
    repo sync -c -j 16
 
+In case you want to get the full repo history at some point in the future because you want to patch, contribute, etc. You can execute the following command from the repository directory ::
+
+   git fetch --unshallow
 
 Adding your device-specific source
 ----------------------------------
