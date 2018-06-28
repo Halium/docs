@@ -21,7 +21,7 @@ Alternatively, if you want to create the file with the udev rules on your "host"
 
     cat out/target/product/[codename]/root/ueventd*.rc | grep ^/dev | sed -e 's/^\/dev\///' | awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' > 70-[codename].rules
 
-You can then use either `ssh` or `adb push` to push the file to the right location:
+You can then use either ``ssh`` or ``adb push`` to push the file to the right location:
 
 SSH:: 
 
