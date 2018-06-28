@@ -16,11 +16,11 @@ This directory will be called BUILDDIR in the remaining part of the guide, when 
 
 If the target device has Android 7.1 or LineageOS 14.1 support, it's recommended to select ``halium-7.1``::
 
-   repo init -u https://github.com/Halium/android -b halium-7.1
+   repo init -u https://github.com/Halium/android -b halium-7.1 --depth=1
 
 If your device does not have Android 7.1 or LineageOS 14.1 support but has support for Android 5.1 or CyanogenMod 12.1, select ``halium-5.1``\ ::
 
-   repo init -u https://github.com/Halium/android -b halium-5.1
+   repo init -u https://github.com/Halium/android -b halium-5.1 --depth=1
 
 ``halium-7.1`` is based on LineageOS 14.1
 
@@ -28,7 +28,7 @@ If your device does not have Android 7.1 or LineageOS 14.1 support but has suppo
 
 Now that you have initialized the Halium tree, you can sync all repositories included in it. This will probably take a while as it downloads several GBs::
 
-   repo sync -c
+   repo sync -c -j 16
 
 
 Adding your device-specific source
