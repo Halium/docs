@@ -60,3 +60,12 @@ This error may appear in :ref:`logcat` when running these tests::
    kgsl kgsl-3d0: |_load_firmware| request_firmware(a330_pm4.fw) failed: -2 … kgsl kgsl-3d0: |adreno_init| Reading pm4 microcode failed a330_pm4.fw
 
 To resolve this, toggle ``CONFIG_FW_***LOADER`` in your kernel config.
+
+
+
+test_hwcomposer failure on aarch64 device with armhf rootfs
+----------------------------
+
+Given that the current rootfs' available are all armhf, test_hwcomposer may simply fail despite doing the above on 64-bit devices.
+
+As per Ivan on Telegram, please apply `this patch <https://github.com/Halium/android_kernel_oneplus_msm8996/pull/1/commits/3e019b8700b36aef379846a748e3a447a8c3dbe7>`_  to your kernel repository
