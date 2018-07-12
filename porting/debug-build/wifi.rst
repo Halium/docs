@@ -13,6 +13,25 @@ Wifi is fairly easy to get going on most Qualcomm devices. The following should 
    echo 1 > /dev/wcnss_wlan
    echo sta > /sys/module/wlan/parameters/fwpath
 
+Errors
+~~~~~~
+
+What to do if the first command line fails with ``/dev/wcnss_wlan: Bad address``
+********************************************************************************
+
+This is not an error condition; don't get put off — try the second command.
+
+What to try if ``/sys/module/wlan`` is missing (not found)
+**********************************************************
+
+Try to load the ``wlan`` kernel module first::
+
+    insmod /system/lib/modules/wlan.ko
+
+If ``insmod`` fails with ``Required key is not found``, you could temporarily disable all the ``CONFIG_MODULE_SIG**`` options in your ``defconfig`` and then re-build ``hybris-boot`` and ``system.img``. **Beware: this disables kernel module signatures (a security feature) — consider fixing it later.**
+
+If ``insmod`` fails with ``Invalid module format``, then you need to ensure that you build your ``hybris-boot`` and ``system.img`` with the same kernel configuration (e.g. perhaps you forgot to re-install ``system.img`` after disabling kernel module signatures above).
+
 Broadcom bcmdhd
 ^^^^^^^^^^^^^^^
 
