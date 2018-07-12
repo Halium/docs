@@ -64,7 +64,7 @@ To resolve this, toggle ``CONFIG_FW_***LOADER`` in your kernel config.
 
 
 test_hwcomposer failure on aarch64 device with armhf rootfs
-----------------------------
+-----------------------------------------------------------
 
 Given that the current rootfs' available are all armhf, test_hwcomposer may simply fail despite doing the above on 64-bit devices.
 
