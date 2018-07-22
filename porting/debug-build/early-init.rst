@@ -26,6 +26,8 @@ If you get a line similar to the last two above, Telnet is running. Continue to 
 
 If you instead get the line ``GNU/Linux devices on rndis0 10.15.19.82``, the system has booted successfully. Move to :doc:`logging-in` to continue your debugging.
 
+.. _telnet:
+
 Debugging via telnet
 --------------------
 
