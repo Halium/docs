@@ -30,7 +30,7 @@ If you're here, you probably already have a device in mind that you wish to port
 Collaborate
 -----------
 
-Head over to the list of  `list of ports <https://github.com/Halium/projectmanagement/issues>`_ and check if someone is already working on this device. If it is started, collaborate with those porters.
+Head over to the  `list of ports <https://github.com/Halium/projectmanagement/issues>`_ and check if someone is already working on this device. If it is started, collaborate with those porters.
 
 Document your target device
 ---------------------------
