@@ -1,12 +1,12 @@
 Add udev rules
 ==============
 
-You must create some udev rules to allow some tests to have access to your hardware. 
+You must create certain udev rules to allow some tests access to the hardware. There are 2 different ways to do this:
 
 There are 2 different ways to do this:
 
-On device:
-----------
+On the device:
+--------------
 
 Log in on the device, you must create some udev rules to allow some tests to access your hardware. Run the following command, replacing [codename] with your device's codename::
 
@@ -25,13 +25,15 @@ You can then use either `ssh` or `adb push` to push the file to the right locati
 
 SSH:: 
 
-    cat 70-[codename].rules | ssh 10.15.19.82 'cat > /tmp/plan.md'
-
-ADB: Reboot into recovery to push the file to `/data/halium-rootfs/etc/udev/rules.d/` i.e.::
+    cat 70-[codename].rules | ssh 10.15.19.82 'cat > /tmp/udev.rules'
+    ssh 10.15.19.82
+    sudo cp /tmp/udev.rules /etc/udev/rules.d/70-[codename].rules
+ 
+ADB: Reboot into recovery. If your rootfs is mounted at ``/data/halium-rootfs/`` you can push it with::
 
     adb push 70-[codename].rules /data/halium-rootfs/etc/udev/rules.d/
 
 Send upstream:
 --------------
 
-In order for other users to be able to use the udev rules as well, it's necessary to send a pull request containing the new file to the lxc-android repository. Similar to: https://github.com/Halium/lxc-android/pull/12/files
+In order for other users to be able to use the udev rules send a pull request to the lxc-android repository. Similar to: https://github.com/Halium/lxc-android/pull/12/files
