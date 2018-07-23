@@ -8,7 +8,7 @@ There are 2 different ways to do this:
 On the device:
 --------------
 
-Log in on the device, you must create some udev rules to allow some tests to access your hardware. Run the following command, replacing [codename] with your device's codename::
+Log in on the device, run the following command, replacing [codename] with your device's codename::
 
     cat /var/lib/lxc/android/rootfs/ueventd*.rc | grep ^/dev | sed -e 's/^\/dev\///' | awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/etc/udev/rules.d/70-[codename].rules
 
@@ -21,7 +21,7 @@ Alternatively, if you want to create the file with the udev rules on your "host"
 
     cat out/target/product/[codename]/root/ueventd*.rc | grep ^/dev | sed -e 's/^\/dev\///' | awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' > 70-[codename].rules
 
-You can then use either `ssh` or `adb push` to push the file to the right location:
+You can then use either ``ssh`` or ``adb push`` to push the file to the right location:
 
 SSH:: 
 
