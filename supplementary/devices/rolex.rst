@@ -16,8 +16,6 @@ Halium
 
 Halium 7.1 is **WIP**. Ported by `echosalik <https://github.com/echosalik>`_
 
-**camera** folder from device tree had to be removed due to an missing dependency that I couldn't resolve.
-
 Distributions
 ^^^^^^^^^^^^^
 
@@ -47,7 +45,9 @@ Distributions
 Kernel & Hardware
 ^^^^^^^^^^^^^^^^^
 
-The kernel is based off LineageOS-R4A's kernel (though it has some halium specific patches)
+The kernel is based off LineageOS-R4A's kernel (though it has some halium specific patches).
+
+**camera** folder from device tree had to be removed due to an missing dependency that I couldn't resolve.
 
 Device Specifics
 ----------------
