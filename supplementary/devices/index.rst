@@ -755,3 +755,10 @@ Xiaomi Redmi 3s/Prime
 ~~~~~~~~~~~~~~~~~~~~~
 
 * `Redmi 3s Website <http://www.mi.com/sg/redmi3s/>`_
+
+
+Xiaomi Redmi 4A
+~~~~~~~~~~~~~~~~~~~~~
+
+* `Redmi 4A Website <https://www.mistore.pk/redmi-4a-overview/>`_
+* `Redmi 4A GSMArena <https://www.gsmarena.com/xiaomi_redmi_4a-8420.php>`_
