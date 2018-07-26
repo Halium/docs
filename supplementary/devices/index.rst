@@ -28,6 +28,7 @@ All of these should only be document in the exact same way here and **only an ov
    nicki
    oneplus3
    pme
+   rolex
    T00F
    titan
    vegeta
