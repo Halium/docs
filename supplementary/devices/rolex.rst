@@ -4,7 +4,7 @@ rolex - Xiaomi Redmi 4a
 
 A Snapdragon 425 (MSM8917) budget phone from Xiaomi released in 2016 that is great on its own. Comes with MIUI 8 (Marshmallow), upgradeable to MIUI 9 (Nougat).
 
-Its has 2GB LPDDR3 RAM, 16GB/32GB eMMC storage.
+It has 2GB LPDDR3 RAM, 16GB/32GB eMMC storage.
 
 An updated version of this device Redmi 5a (riva) was released in 2017. Both are basically same, have same device tree and kernels. So anything that applies to 4a should as it is apply to 5a
 
@@ -47,8 +47,6 @@ Kernel & Hardware
 
 The kernel is based off LineageOS-R4A's kernel (though it has some halium specific patches).
 
-**camera** folder from device tree had to be removed due to an missing dependency that I couldn't resolve.
-
 Device Specifics
 ----------------
 
@@ -57,7 +55,7 @@ Guides
 
 Unlocking the bootloader WILL void the warranty for this device.
 
-To unlock the bootloader, you need to get the permission from Xiaomi. Takes around a week or two. It is rather simple.
+To unlock the bootloader, you need to get the permission from Xiaomi. Takes around a week or two. `Offical Guide <http://en.miui.com/thread-246705-1-1.html>`_.
 
 Press Volume Down + Power Button to enter fastboot mode.
 
