@@ -63,11 +63,6 @@ Press Volume Down + Power Button to enter fastboot mode.
 
 Press Volume Up + Volume Down + Power button to enter recovery mode.
 
-Developer Info
-^^^^^^^^^^^^^^
-
-WIP
-
 Useful Resources
 ^^^^^^^^^^^^^^^^^^
 
