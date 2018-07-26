@@ -593,6 +593,25 @@ Devices
      - GPS, A-GPS, GLONASS
      - Ambient Light Sensor, Fingerprint(Prime only), Accelerometer, Proximity, Gyroscope
      - Other **?**
+   * - :doc:`Xiaomi Redmi 4A <rolex>`
+     - rolex
+     - Halium 7.1 (WIP)
+     - v3.18.31
+     - Qualcomm MSM8917 Snapdragon 425
+     - Quad-core 1.4 GHz Cortex-A53
+     - Adreno 308
+     - 2 GB
+     - 16 GB / 32GB
+     - Wi-Fi, Bluetooth 4.1
+     - 5MP, no flash
+     - 13MP, LED flash
+     - Non removable 3120mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack
+     - Capacitive Touch screen
+     - IPS LCD (720x1280)
+     - GPS, A-GPS, GLONASS, BDS
+     - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
+     - IR Blaster 
       
 Sources
 ^^^^^^^
