@@ -30,7 +30,7 @@ Try to load the ``wlan`` kernel module first::
 
 If ``insmod`` fails with ``Required key is not found``, you could temporarily disable all the ``CONFIG_MODULE_SIG**`` options in your ``defconfig`` and then re-build ``hybris-boot`` (or ``halium-boot``) and ``system.img``. **Beware: this disables kernel module signatures (a security feature) — consider fixing it later.**
 
-If ``insmod`` fails with ``Invalid module format``, then you need to ensure that you build your ``hybris-boot`` (or ``halium-boot``) and ``system.img`` with the same kernel configuration (e.g. perhaps you forgot to re-install ``system.img`` after disabling kernel module signatures above).
+If ``insmod`` fails with ``Invalid module format``, then you need to ensure that you build your ``hybris-boot`` (or ``halium-boot``) and ``system.img`` with the same kernel configuration (e.g. perhaps you forgot to re-install ``system.img`` after disabling kernel module signatures above, it contains kernel modules).
 
 Broadcom bcmdhd
 ^^^^^^^^^^^^^^^
