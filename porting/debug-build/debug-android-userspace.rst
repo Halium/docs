@@ -54,7 +54,7 @@ Even though Android logs do not normally end up in dmesg, early initialization o
 strace
 ------
 
-For cases where the log files do not reveal sufficient detail, an ``strace`` can be helpful. This is how you get an strace for the example of ``test_hwcomposer``::
+For cases where the log files do not reveal sufficient detail, a ``strace`` can be helpful. This is how you get a strace for the example of ``test_hwcomposer``::
 
    EGL_PLATFORM=hwcomposer strace test_hwcomposer
 
