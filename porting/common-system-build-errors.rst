@@ -15,7 +15,7 @@ All APKs and Java libraries should be removed from the Makefiles in ``vendor/[ma
 Also check the vendor folders of your dependencies.
 
 Undefined or missing bluetooth headers
--------------------------------------
+--------------------------------------
 
 .. code-block:: guess
 
