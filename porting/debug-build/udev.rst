@@ -1,7 +1,7 @@
 Add udev rules
 ==============
 
-You must create certain udev rules to allow some tests access to the hardware. There are 2 different ways to do this:
+You must create certain udev rules to allow some tests access to the hardware. 
 
 There are 2 different ways to do this:
 
