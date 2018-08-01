@@ -6,7 +6,7 @@ A Snapdragon 425 (MSM8917) budget phone from Xiaomi released in 2016 that is gre
 
 It has 2GB LPDDR3 RAM, 16GB/32GB eMMC storage.
 
-An updated version of this device Redmi 5a (riva) was released in 2017. Both are basically same, have same device tree and kernels. So anything that applies to 4a should as it is apply to 5a
+An updated version of this device Redmi 5a (riva) was released in 2017. Both are basically the same, and share device trees and kernels. So anything that applies to 4a should as well apply to 5a
 
 Status
 ------
