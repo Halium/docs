@@ -59,7 +59,7 @@ To unlock the bootloader, you need to get the permission from Xiaomi. Takes arou
 
 Press Volume Down + Power Button to enter fastboot mode.
 
-Press Volume Up + Volume Down + Power button to enter recovery mode.
+Press Volume Up + Power button to enter recovery mode.
 
 Useful Resources
 ^^^^^^^^^^^^^^^^^^
