@@ -66,6 +66,6 @@ To resolve this, toggle ``CONFIG_FW_***LOADER`` in your kernel config.
 test_hwcomposer failure on aarch64 device with armhf rootfs
 -----------------------------------------------------------
 
-On an armhf only rootfs, test_hwcomposer may simply fail despite doing the above on 64-bit devices.
+On an armhf only rootfs, test_hwcomposer will fail despite doing the above on 64-bit devices running kernel 3.18.
 
-To work around the issue, apply `this patch <https://github.com/Halium/android_kernel_oneplus_msm8996/pull/1/commits/3e019b8700b36aef379846a748e3a447a8c3dbe7>`_  to your kernel repository.
+To work around the issue, apply `this patch <https://github.com/Halium/android_kernel_oneplus_msm8996/pull/1/commits/3e019b8700b36aef379846a748e3a447a8c3dbe7>`_  to your device's kernel repository.
