@@ -71,6 +71,8 @@ You can use the halium-install script as below, when the device is connected in 
 
    halium-install -p halium <path to rootfs tarball> <path to android system.img>
 
+If you have trouble getting this to work, use the ``-v`` option to get verbose output.
+
 Debugging
 ---------
 
