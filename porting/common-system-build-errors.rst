@@ -30,3 +30,14 @@ Make sure you run the commands :ref:`here <breakfast-and-lunch>` before trying t
 
 
 .. _remove apks on lyudmila17/android_device_motorola_athene: https://github.com/Lyudmila17/android_device_motorola_athene/commit/a752422012165d937c058c1b671497bad44a4962
+
+Flex errors
+-----------
+
+.. code-block:: guess
+
+   [ 7% 1622/20905] Lex: libsepol_32 <= external/selinux/libsepol/cil/src/cil_lexer.l 
+   FAILED: /bin/bash -c "prebuilts/misc/linux-x86/flex/flex-2.5.39 -o/home/mika/halium/out/host/linux-x86/obj32/SHARED_LIBRARIES/libsepol_intermediates/cil/src/cil_lexer.c
+   external/selinux/libsepol/cil/src/cil_lexer.l" flex-2.5.39: loadlocale.c:130: _nl_intern_locale_data: Assertion `cnt < (sizeof (_nl_value_type_LC_TIME) / sizeof (_nl_value_type_
+
+Run ``cp /usr/bin/flex halium/prebuilts/misc/linux-x86/flex/flex-2.5.39``
