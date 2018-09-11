@@ -11,7 +11,7 @@ Status
 Halium
 ^^^^^^
 
-Halium 7.1 is **WIP**. Ported by  `rupansh <https://github.com/rupansh>`_.
+Halium 7.1 is **WIP**. Ported by  `rupansh <https://github.com/rupansh>`_ and `sridhardv <https://github.com/SRIDHARDV>`_.
 
 Distributions
 ^^^^^^^^^^^^^
