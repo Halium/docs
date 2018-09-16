@@ -83,7 +83,7 @@ If your device reboots after you leave hybris-recovery by running ``echo continu
    exit
    echo continue > /init-ctl/stdin
 
-You should then be offered SSH. See :doc:`logging-in` for more details. Once you are logged in, you can try to troubleshoot what is causing your reboots by running ``systemctl unmask lxc@android && systemctl start lxc@android``.
+You should then be offered SSH. See :doc:`logging-in` for more details.
 
 Bootloop: "Too many levels of symbolic links" when leaving hybris-boot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
