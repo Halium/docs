@@ -45,7 +45,7 @@ For all ARM based smart phones and tablets this should be inside
 
    root/arch/arm/boot/dts/
 
-or if your using 64-bit arm64 (e.g. BQ Aquaris M10) all files are sorted by manufacturer inside
+or if your device is using a 64-bit (arm64) processor (e.g. BQ Aquaris M10) all files are sorted by manufacturer inside
 
 .. code-block:: guess
 
