@@ -51,14 +51,37 @@ Even though Android logs do not normally end up in dmesg, early initialization o
 
    dmesg
 
-Debug Libhybris crash
----------------------
+strace
+------
 
-One of the main problems with the current Hybris based architecture, is the lack of symbols resolution and mapping once a crash happens at the Android layer. To workaround this we need to manuly import non stripped libaries
+For cases where the log files do not reveal sufficient detail, a ``strace`` can be helpful. This is how you get a strace for the example of ``test_hwcomposer``::
 
-.. todo::
+   EGL_PLATFORM=hwcomposer strace test_hwcomposer
 
-    Add information for importing debug libhybris libraries.
+backtrace
+---------
+
+Another debugging technique is to investigate the backtrace when a program crashes. This is how you get a backtrace for the example of ``test_hwcomposer``::
+
+   EGL_PLATFORM=hwcomposer gdb test_hwcomposer
+
+This will start the interactive debugger ``gdb``. At the prompt of ``gdb`` you enter ``run``. Now the program is executed and you wait for it to crash. Then you enter ``bt full``. This will give you the full backtrace of what the program was trying to execute at the moment of the crash.
+
+In order to make the backtrace most useful you want to ensure that you have debug symbols installed for the program you are debugging.
+
+Firstly, let's fix the ``PATH`` variable which is currently missing ``/sbin`` on the reference rootfs::
+
+   export PATH=$PATH:/sbin
+
+Secondly, do install debug symbols for libc::
+
+   apt install libc6-dbg
+
+Thirdly, install whichever package contains the debug symbols for the program in question. Typically it is in a package with a name similar to the one containing the program and ending in ``-dbg``. For the example of ``test_hwcomposer`` you want::
+
+   apt install libhybris-dbgsym
+
+If ``gdb`` reports "(no debugging symbols found)", then you are still missing debug symbols, look further for the relevant package.
 
 .. todo::
 
