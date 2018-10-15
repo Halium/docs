@@ -83,15 +83,6 @@ Thirdly, install whichever package contains the debug symbols for the program in
 
 If ``gdb`` reports "(no debugging symbols found)", then you are still missing debug symbols, look further for the relevant package.
 
-Debug Libhybris crash
----------------------
-
-One of the main problems with the current Hybris based architecture, is the lack of symbols resolution and mapping once a crash happens at the Android layer. To workaround this we need to manually import non-stripped libaries
-
-.. todo::
-
-    Add information for importing debug libhybris libraries.
-
 .. todo::
 
     Document how to deal with firmware partitions.
