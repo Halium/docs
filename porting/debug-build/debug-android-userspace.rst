@@ -84,6 +84,9 @@ Thirdly, install whichever package contains the debug symbols for the program in
 If ``gdb`` reports "(no debugging symbols found)", then you are still missing debug symbols, look further for the relevant package.
 
 .. todo::
+    Document the debugging of libhybris: https://wiki.ubuntu.com/Touch/Core/UbuntuDebugAndroid
+
+.. todo::
 
     Document how to deal with firmware partitions.
 
