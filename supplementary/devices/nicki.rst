@@ -62,7 +62,7 @@ Special boot modes
 
 Fastboot: With the device powered off, while holding Volume Up, connect the USB cable to the computer. The LED should turn blue.
 
-Flashmode: With the device powered off, while holding Volume Down, connect the USB cable to the computer. The LED should turn green. Then you can go back to the stock rom using `Androxyde's Flashtool <http://www.flashtool.net/downloads.php>`_. Last sure to be working version of Flashtool working with nicki was 0.9.18.6, newer versions could fail.
+Flashmode: With the device powered off, while holding Volume Down, connect the USB cable to the computer. The LED should turn green. Then you can go back to the stock rom using `Androxyde's Flashtool <http://www.flashtool.net/downloads.php>`_. Last sure to be working with nicki version of Flashtool was 0.9.18.6, newer versions could fail.
 
 Recovery (ONLY on android custom kernels): On boot, press Volume Down when the LEDs start lighting up. This only works with a working boot image. If there is none, you can flash twrp to boot partition first and use it to reboot into recovery.
 
