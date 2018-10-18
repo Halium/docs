@@ -10,7 +10,7 @@ Status
 Halium
 ^^^^^^
 
-There is an ongoing port of Halium for Nicki that `Konrad Dybcio <https://github.com/ewentual>`_ is working on. Halium-7.1 branch builds with LOS 14.1 sources. Halium rootfs can be flashed using `halium-install by JBB <https://github.com/JBBgameich/halium-install>`_, yet /data partition is too small (2 gigs) to fit a plasma mobile rootfs. This can be worked around by changing `IMAGE_SIZE=2G` to for example `IMAGE_SIZE=1.7G` for `pm` in halium-install/functions/distributions.sh.
+There is an ongoing port of Halium for Nicki that `Konrad Dybcio <https://github.com/ewentual>`_ is working on. Halium-7.1 branch builds with LOS 14.1 sources. Halium rootfs can be flashed using `halium-install by JBB <https://github.com/JBBgameich/halium-install>`_, yet /data partition is too small (2 gigs) to fit a plasma mobile rootfs. This can be worked around by changing IMAGE_SIZE=2G to for example IMAGE_SIZE=1.7G for pm in halium-install/functions/distributions.sh.
 
 Distributions
 ^^^^^^^^^^^^^
