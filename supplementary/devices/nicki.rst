@@ -10,7 +10,7 @@ Status
 Halium
 ^^^^^^
 
-There is an ongoing port of Halium for Nicki that `Konrad Dybcio <https://github.com/ewentual>`_ is working on. Halium-7.1 branch builds with slightly tweaked LOS 14 sources (manifest will be published soon). Halium rootfs can be flashed using `halium-install by JBB <https://github.com/JBBgameich/halium-install>`_, yet /data partition is too small (2 gigs) to fit a plasma mobile rootfs.
+There is an ongoing port of Halium for Nicki that `Konrad Dybcio <https://github.com/ewentual>`_ is working on. Halium-7.1 branch builds with slightly tweaked LOS 14 sources (manifest will be published soon). Halium rootfs can be flashed using `halium-install by JBB <https://github.com/JBBgameich/halium-install>`_, yet /data partition is too small (2 gigs) to fit a plasma mobile rootfs. This can be worked around by changing `IMAGE_SIZE=2G` to for example `IMAGE_SIZE=1.7G` for `pm` in halium-install/functions/distributions.sh.
 
 Distributions
 ^^^^^^^^^^^^^
@@ -62,7 +62,9 @@ Special boot modes
 
 Fastboot: With the device powered off, while holding Volume Up, connect the USB cable to the computer. The LED should turn blue.
 
-Recovery: On boot, press Volume Down when the LEDs start lighting up. This only works with a working boot image. If there is none, you can flash twrp to boot partition first and use it to reboot into recovery.
+Flashmode: With the device powered off, while holding Volume Down, connect the USB cable to the computer. The LED should turn green. Then you can go back to the stock rom using _`Androxyde's Flashtool <http://www.flashtool.net/downloads.php>`_ Last sure to be working version of flashtool working with nicki was 0.9.18.6, newer versions could fail.
+
+Recovery (ONLY on android custom kernels): On boot, press Volume Down when the LEDs start lighting up. This only works with a working boot image. If there is none, you can flash twrp to boot partition first and use it to reboot into recovery.
 
 Second Recovery: To boot the FOTA Recovery, press Volume Up instead. This seems to be equal to Recovery.
 
