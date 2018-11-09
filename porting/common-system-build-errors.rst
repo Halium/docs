@@ -30,3 +30,19 @@ Make sure you run the commands :ref:`here <breakfast-and-lunch>` before trying t
 
 
 .. _remove apks on lyudmila17/android_device_motorola_athene: https://github.com/Lyudmila17/android_device_motorola_athene/commit/a752422012165d937c058c1b671497bad44a4962
+
+Flex locale error
+-----------------
+
+.. code-block:: guess
+
+   [ 19% 2365/12156] Lex: checkpolicy <= external/selinux/libsepol/cil/src/cil_lexer.l
+   FAILED: /bin/bash -c "prebuilts/misc/linux-x86/flex/flex-2.5.39 -o/home/peter/docs/devel/halium.amami/out/host/linux-x86/obj/STATIC_LIBRARIES/libsepol_intermediates/cil/src/cil_lexer.c external/selinux/libsepol/cil/src/cil_lexer.l"
+   flex-2.5.39: loadlocale.c:130: _nl_intern_locale_data: Assertion `cnt < (sizeof (_nl_value_type_LC_TIME) / sizeof (_nl_value_type_LC_TIME[0]))' failed.
+   Aborted (core dumped)
+
+
+
+Seems to be a problem with locales and the prebuilt `flex`. You can avoid this by using the "C" locale while building::
+
+   LANG=C make systemimage
