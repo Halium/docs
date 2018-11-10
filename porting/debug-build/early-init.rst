@@ -53,7 +53,7 @@ Debugging via telnet
 
      sudo ip address add 192.168.2.1 dev USBNETWORK
      ip address show dev USBNETWORK
-     sudo ip route  add 192.168.2.15 dev USBNETWORK
+     sudo ip route add 192.168.2.15 dev USBNETWORK
      ping -c 2 192.168.2.15
 
 * Connect with telnet: ``telnet 192.168.2.15``
