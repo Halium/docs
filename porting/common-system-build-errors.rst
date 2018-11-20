@@ -26,7 +26,7 @@ HYBRIS_BOOT_PART and HYBRIS_DATA_PART
    halium/hybris-boot/Android.mk:68: ********************* /data appears to live on ERROR: *fstab* not found
    halium/hybris-boot/Android.mk:71: *** There should be a one and only one device entry for HYBRIS_BOOT_PART and HYBRIS_DATA_PART.
 
-Make sure you run the commands :ref:`here <breakfast-and-lunch>` before trying to build.
+Make sure you run the commands :ref:`here <breakfast-and-lunch>` before trying to build. The Makefile depends on the environment set up immediately before by envsetup.sh; so if running in a build environment such as Emacs, be sure to set your compile command to something like "source build/envsetup.sh && breakfast [codename] && make [target]"
 
 
 .. _remove apks on lyudmila17/android_device_motorola_athene: https://github.com/Lyudmila17/android_device_motorola_athene/commit/a752422012165d937c058c1b671497bad44a4962
