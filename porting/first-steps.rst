@@ -73,15 +73,13 @@ Install the required dependencies::
 Arch
 ^^^^
 
-If you have a pure ``amd64`` running you need to add ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
-Assuming you have already installed ``base-devel`` group; if not, then please install ``base-devel``.
+If you have an ``amd64`` installation of Arch, you need to add the ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `'Official Repositories/multilib' on the Arch Wiki <https://wiki.archlinux.org/index.php/multilib>`_.
+
+Install the ``base-devel`` package if you have not already.
 
 Install the required dependencies from AUR::
 
    git clone https://aur.archlinux.org/halium-devel.git && cd halium-devel && makepkg -i
 
 .. Note::
-    Arch uses python3 as default version for Python, which may cause some errors while building. Using a Python virtualenv2 is highly recommended. Please refer to `<https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting the Virtual Environment.
-
-.. todo::
-    Add information for installing packages on other distros
+    Arch uses Python 3 as its default ``python``, which may cause some errors while building. Using a Python 2 virtualenv is highly recommended. Please refer to `'Python/Virtual environment' on the Arch Wiki <https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting up a Virtual Environment.
