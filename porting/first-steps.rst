@@ -57,6 +57,10 @@ If you are on the ``amd64`` architecture (commonly referred to as 64 bit), enabl
 
    sudo dpkg --add-architecture i386
 
+Update your package lists to take advantage of the new architecture::
+
+    sudo apt update
+
 Install the required dependencies::
 
    sudo apt install git gnupg flex bison gperf build-essential \
