@@ -19,7 +19,7 @@ Apply the patch `nick kvfree() from apparmor`_.
 
 
 'kuid_t' (sdcardfs, cgroup) error 
-----------------------------------
+---------------------------------
 
 Example of the error::
 
@@ -32,7 +32,7 @@ Example of the error::
 Set ``CONFIG_USER_NS`` to ``n`` in your defconfig.
 
 Firmware class error
-----------------------
+--------------------
 
 Example of the error::
 
@@ -43,7 +43,7 @@ Example of the error::
 Set ``CONFIG_FW_LOADER_USER_HELPER`` to ``y`` in your defconfig.
 
 ECRYPTFS error
-----------------------
+--------------
 
 Example of the error::
 
