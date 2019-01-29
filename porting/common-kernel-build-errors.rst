@@ -14,10 +14,6 @@ If you receive something similar to the following error::
 
 Apply the patch `nick kvfree() from apparmor`_.
 
-
-.. _nick kvfree() from apparmor: https://github.com/ubports/android_kernel_moto_shamu/commit/83f949a8de673fe45499d1741da8654831a5afae
-
-
 'kuid_t' (sdcardfs, cgroup) error
 ---------------------------------
 
@@ -51,6 +47,41 @@ Example of the error::
    ../../../../../../kernel/lenovo/msm8916/fs/ecryptfs/file.c:130:16: error: assignment of read-only member 'actor'
   buf.ctx.actor = ecryptfs_filldir;
 
-Apply `this patch from bullhead`_.
+Apply `'patch ecryptfs to fix a build error' from bullhead`_.
 
-.. _this patch from bullhead: https://github.com/usb-bullhead-ubuntu-touch/kernel_msm/commit/b0403f0ee02e6582017cdb45b4c0c72b00cc72eb
+'Undefined reference to pidns_operations' on Linux 3.4
+------------------------------------------------------
+
+The implementation of PID Namespacing was incomplete in the Android kernel 3.4, causing the following error::
+
+   fs/built-in.o:namespaces.c:ns_entries: error: undefined reference to 'pidns_operations'
+
+To fix this issue, apply the patch `Finish implementation of PID namespace`_
+
+'struct perf_cpu_context' has no member named 'unique_pmu'
+----------------------------------------------------------
+
+This is caused by an incomplete merge of a few changes in some 3.4 kernels::
+
+   /../../../../kernel/fairphone/msm8974/kernel/events/core.c: In function 'perf_cgroup_switch':
+   /../../../../kernel/fairphone/msm8974/kernel/events/core.c:379:13: error: 'struct perf_cpu_context' has no member named 'unique_pmu'
+   if (cpuctx->unique_pmu != pmu)
+
+Reverting `perf: Fix perf_cgroup_switch for sw-events`_ should fix the problem.
+
+'PROC_PID_INIT_INO' undeclared here (not in a function)
+-------------------------------------------------------
+
+Somehow, the implementation of the ``/proc`` filesystem is incomplete in some 3.4 kernels::
+
+   /../../../../kernel/fairphone/msm8974/kernel/pid.c:81:15: error: 'PROC_PID_INIT_INO' undeclared here (not in a function)
+     .proc_inum = PROC_PID_INIT_INO,
+
+Add the following line after all of the other ``#include`` lines in the file::
+
+   #include <linux/proc_fs.h>
+
+.. _'patch ecryptfs to fix a build error' from bullhead: https://github.com/usb-bullhead-ubuntu-touch/kernel_msm/commit/b0403f0ee02e6582017cdb45b4c0c72b00cc72eb
+.. _nick kvfree() from apparmor: https://github.com/ubports/android_kernel_moto_shamu/commit/83f949a8de673fe45499d1741da8654831a5afae
+.. _Finish implementation of PID namespace: https://github.com/Halium/android_kernel_lge_hammerhead/commit/bd221854de33b75db7a7fa01cb34274b62a7cbf8
+.. _perf\: Fix perf_cgroup_switch for sw-events: https://github.com/LineageOS/android_kernel_fairphone_msm8974/commit/fed4b99c5eb99ab792f223cefef67d940bbe8796
