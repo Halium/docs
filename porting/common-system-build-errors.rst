@@ -41,7 +41,7 @@ Flex locale error
    flex-2.5.39: loadlocale.c:130: _nl_intern_locale_data: Assertion `cnt < (sizeof (_nl_value_type_LC_TIME) / sizeof (_nl_value_type_LC_TIME[0]))' failed.
    Aborted (core dumped)
 
-This to be a problem with locales and the prebuilt ``flex``. You can avoid this by using the flex installed on your host::
+This seems to be a problem with locales and the prebuilt ``flex``. You can avoid this by using the flex installed on your host::
 
     export USE_HOST_LEX=yes
     make systemimage
