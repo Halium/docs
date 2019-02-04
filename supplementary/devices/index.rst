@@ -23,9 +23,12 @@ All of these should only be document in the exact same way here and **only an ov
    fp2
    hammerhead
    krillin
+   land
    mako
+   nicki
    oneplus3
    pme
+   rolex
    T00F
    titan
    vegeta
@@ -552,6 +555,63 @@ Devices
      - GPS, A-GPS, GLONASS
      - Ambient Light Sensor, Fingerprint, Accelerometer, Proximity, Gyroscope
      - Other **?**
+   * - :doc:`Sony Xperia M <nicki>`
+     - nicki
+     - Halium-7.1 and 5.1 wip
+     - Kernel v3.4.0
+     - Qualcomm MSM8227/8x27/8627 (referring to the same soc) 
+     - Dual core Krait (2x 1.0 Ghz)
+     - Adreno 305
+     - 1 GB
+     - 4 GB
+     - Wi-Fi, Bluetooth 4.0
+     - 0.3 MP (no flash)
+     - 5 MP (LED flash)
+     - Removable Li-Ion 1700 mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack
+     - Touch screen
+     - 4" TFT (480 x 854)
+     - GPS, A-GPS, GLONASS
+     - Ambient Light Sensor, Accelerometer, Proximity
+     - Other **?**
+   * - :doc:`Xiaomi Redmi 3S/Prime <land>`
+     - land
+     - Halium 7.1 working
+     - v3.18.31
+     - Qualcomm MSM8937 Snapdragon 430
+     - Octa-core Cortex-A53 (4 × 1.4 GHz + 4 × 1.1 GHz)
+     - Adreno 505
+     - **3s:** 2 GB / **Prime:** 3 GB
+     - **3s:** 16 GB / **Prime:** 32GB
+     - Wi-Fi, Bluetooth 4.2
+     - 5MP, no flash
+     - 13MP, LED flash
+     - Non removable 4100mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack **?**
+     - Capacitive Touch screen **?**
+     - IPS LCD (720x1280)
+     - GPS, A-GPS, GLONASS
+     - Ambient Light Sensor, Fingerprint(Prime only), Accelerometer, Proximity, Gyroscope
+     - Other **?**
+   * - :doc:`Xiaomi Redmi 4A <rolex>`
+     - rolex
+     - Halium 7.1 (WIP)
+     - v3.18.31
+     - Qualcomm MSM8917 Snapdragon 425
+     - Quad-core 1.4 GHz Cortex-A53
+     - Adreno 308
+     - 2 GB
+     - 16 GB / 32GB
+     - Wi-Fi, Bluetooth 4.1
+     - 5MP, no flash
+     - 13MP, LED flash
+     - Non removable 3120mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack
+     - Capacitive Touch screen
+     - IPS LCD (720x1280)
+     - GPS, A-GPS, GLONASS, BDS
+     - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
+     - IR Blaster 
       
 Sources
 ^^^^^^^
@@ -690,3 +750,15 @@ OnePlus 5
 * `OnePlus 3(T) LOS <https://github.com/LineageOS/lineage_wiki/blob/master/_data/devices/oneplus3.yml>`_
 * `OnePlus 3 Website <https://oneplus.net/3>`_
 * `OnePlus 3T Website <https://oneplus.net/3t>`_
+
+Xiaomi Redmi 3s/Prime
+~~~~~~~~~~~~~~~~~~~~~
+
+* `Redmi 3s Website <http://www.mi.com/sg/redmi3s/>`_
+
+
+Xiaomi Redmi 4A
+~~~~~~~~~~~~~~~~~~~~~
+
+* `Redmi 4A Website <https://www.mistore.pk/redmi-4a-overview/>`_
+* `Redmi 4A GSMArena <https://www.gsmarena.com/xiaomi_redmi_4a-8420.php>`_

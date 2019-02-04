@@ -26,6 +26,8 @@ If you get a line similar to the last two above, Telnet is running. Continue to 
 
 If you instead get the line ``GNU/Linux devices on rndis0 10.15.19.82``, the system has booted successfully. Move to :doc:`logging-in` to continue your debugging.
 
+.. _telnet:
+
 Debugging via telnet
 --------------------
 
@@ -51,7 +53,7 @@ Debugging via telnet
 
      sudo ip address add 192.168.2.1 dev USBNETWORK
      ip address show dev USBNETWORK
-     sudo ip route  add 192.168.2.15 dev USBNETWORK
+     sudo ip route add 192.168.2.15 dev USBNETWORK
      ping -c 2 192.168.2.15
 
 * Connect with telnet: ``telnet 192.168.2.15``
@@ -81,7 +83,7 @@ If your device reboots after you leave hybris-recovery by running ``echo continu
    exit
    echo continue > /init-ctl/stdin
 
-You should then be offered SSH. See :doc:`logging-in` for more details. Once you are logged in, you can try to troubleshoot what is causing your reboots by running ``systemctl unmask lxc@android && systemctl start lxc@android``.
+You should then be offered SSH. See :doc:`logging-in` for more details.
 
 Bootloop: "Too many levels of symbolic links" when leaving hybris-boot
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

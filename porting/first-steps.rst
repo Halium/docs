@@ -27,6 +27,11 @@ If you're here, you probably already have a device in mind that you wish to port
 * **Chipset:** Try to avoid Mediatek chipsets, they are not open-sourced and so there is rarely a usable Android source tree available for them.
 * **Storage:** 16GB of storage is generally enough for any Halium-based OS.
 
+Collaborate
+-----------
+
+Head over to the  `list of ports <https://github.com/Halium/projectmanagement/issues>`_ and check if someone is already working on this device. If it is started, collaborate with those porters.
+
 Document your target device
 ---------------------------
 
@@ -51,7 +56,7 @@ Install the required dependencies::
      libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
      libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
-     repo liblz4-tool bc lzop
+     repo liblz4-tool bc lzop imagemagick
 
 Arch
 ^^^^
