@@ -58,7 +58,7 @@ Debugging via telnet
 
 * Connect with telnet: ``telnet 192.168.2.15``
 
-Now you have terminal access to the system running from initramfs. The first command to run once you're logged in is ``cat diagnosis.log`` to see if it has any hints.
+Now you have terminal access to the system running from initramfs. The first command to run once you're logged in is ``cat init.log`` to see if it has any hints.
 
 Forcing debug mode
 ------------------
