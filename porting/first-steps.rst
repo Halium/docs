@@ -49,6 +49,12 @@ If you are on the ``amd64`` architecture (commonly referred to as 64 bit), enabl
 
    sudo dpkg --add-architecture i386
 
+Ubuntu 18.04 needs a flag to be set in the ~/.bashrc file to enable the build to complete successfully. Run this command to set the flag::
+
+   export LC_ALL=C
+
+and add it to your ~/.bashrc file so it is automatically applied to every new shell instance
+
 Install the required dependencies::
 
    sudo apt install git gnupg flex bison gperf build-essential \
