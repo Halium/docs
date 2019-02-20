@@ -22,10 +22,18 @@ Pick an Android target device
 
 If you're here, you probably already have a device in mind that you wish to port to. However, we still encourage you to port to devices that meet the following requirements:
 
-* **Kernel:** Halium currently requires a device with a kernel greater than or equal to version 3.1.0 - older device kernels are not compatible with the glibc build in the root filesystem being used. Check your device's kernel version by finding "Kernel Version" in the About page of your Android settings.
-* **RAM:** While 1GB of RAM is sufficient to start the OS, it is recommended to have greater than 2GB to have a good end user experience.
-* **Chipset:** Try to avoid Mediatek chipsets, they are not open-sourced and so there is rarely a usable Android source tree available for them.
-* **Storage:** 16GB of storage is generally enough for any Halium-based OS.
+Source availability
+    Your device must have its Linux kernel source publicly available. The source code required to build LineageOS must also be available. Both of these should be available if your device has an official or unofficial LineageOS port, or a port of a LineageOS derivative.
+Kernel
+    Halium currently requires a device with a Linux kernel version greater than or equal to 3.10.0. According to the `systemd v217 README <https://github.com/systemd/systemd/blob/v217/README#L40>`_, older device kernels are not compatible with systemd v217 or newer. You may learn your device's kernel version by finding "Kernel Version" in the About page of your Android settings. The kernel version can also be found in the ``Makefile`` at the top level of any Linux kernel source tree.
+
+    Some Halium distributions may use a kernel as old as 3.4, such as Ubuntu Touch.
+RAM
+    1GB of RAM is sufficient to start most Halium distributions. 2GB or higher is recommended for a better end-user experience.
+Storage
+    16GB of storage is required. Devices with less storage will likely not have enough space for a full Halium distribution.
+
+It is unlikely that you will be able to build and run Halium if your device does not meet these requirements. Please :ref:`contact us <support-channels>` if you are unsure whether your device meets these requirements.
 
 Collaborate
 -----------
