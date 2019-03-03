@@ -15,9 +15,7 @@ If you get stuck at any point during the porting process, we're here to help! Yo
 * Matrix: #halium:disroot.org
 * Telegram: @halium
 
-When you contact us, please use a pastebin service like `pastebin.com <https://pastebin.com>`_ to **pastebin the full log** of whichever step you are at.
-
-You might be convinced that you know which one single message is actually the culprit. And you might think that you are saving peoples time by posting only that snippet. You're probably achieving the opposite. Pastebin the full log. Seriously, especially when you start a new conversation. Also please point out which section of documentation you're stuck on.
+When you contact us, please use a pastebin service like `pastebin.com <https://pastebin.com>`_ to **pastebin the full log** of whichever step you are at. Also please point out which section of the documentation you're stuck on.
 
 Pick an Android target device
 -----------------------------
