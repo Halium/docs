@@ -66,6 +66,11 @@ If you don't know the path to your kernel config run ``grep "TARGET_KERNEL_CONFI
 .. todo::
     Mention that the config parameters CONFIG_IKCONFIG and CONFIG_IKCONFIG_PROC need to be set to y, otherwise Halium wont boot (or add them to the check script
 
+As of systemd 233 the 3.4 kernel needs to have a patch in order to boot (tmpmnt not being created)
+--------------------------------------------------------------------------------------------------
+
+Due to changes introduced in systemd 233, specifically https://github.com/systemd/systemd-stable/commit/e187369587b1c6a5f65a12e7ec0bf7844905d014#diff-091b5e8286ba9db94f3958b92eb3653a is causing issues in many 3.4 kernels due to fstat not returning the correct value. A simple one line patch to the kernel will address this. See https://github.com/ubports/android_kernel_google_msm/pull/5/commits/1ad88b041787d8ce8407a021271ef1031e95cba6 
+
 Include your device in fixup-mountpoints
 ----------------------------------------
 
