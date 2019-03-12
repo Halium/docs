@@ -15,7 +15,7 @@ If you get stuck at any point during the porting process, we're here to help! Yo
 * Matrix: #halium:disroot.org
 * Telegram: @halium
 
-When you contact us, please link to the section of documentation you're stuck on. In the HTML version, you can copy links by hovering your pointer over a heading, right-clicking the 'link' icon that appears to the right of it, and selecting "Copy link location" or its equivalent in your browser.
+When you contact us, please use a pastebin service like `pastebin.com <https://pastebin.com>`_ to **pastebin the full log** of whichever step you are at. Also please point out which section of the documentation you're stuck on.
 
 Pick an Android target device
 -----------------------------
