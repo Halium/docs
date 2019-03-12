@@ -77,7 +77,7 @@ Somehow, the implementation of the ``/proc`` filesystem is incomplete in some 3.
    /../../../../kernel/fairphone/msm8974/kernel/pid.c:81:15: error: 'PROC_PID_INIT_INO' undeclared here (not in a function)
      .proc_inum = PROC_PID_INIT_INO,
 
-Add the following line after all of the other ``#include`` lines in the file::
+Add the following line after all of the other ``#include`` lines in the file kernel/user_namespace.c similar to https://github.com/Halium/android_kernel_lge_hammerhead/commit/5754614eb43dea44a99e54898e3b83d4d96d8b83 ::
 
    #include <linux/proc_fs.h>
 
