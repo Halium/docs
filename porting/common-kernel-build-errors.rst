@@ -81,6 +81,17 @@ Add the following line after all of the other ``#include`` lines in the file ker
 
    #include <linux/proc_fs.h>
 
+POSIX_ACL not supported in 3.18 backport
+----------------------------------------
+
+Example of the error::
+
+/home/florian/halium-7.1/kernel/huawei/angler/fs/ext4/inode.c: In function 'ext4_setattr':
+/home/florian/halium-7.1/kernel/huawei/angler/fs/ext4/inode.c:4717:2: error: #error POSIX_ACL not supported in 3.18 backport
+ #error POSIX_ACL not supported in 3.18 backport
+
+Set ``CONFIG_EXT4_FS_POSIX_ACL`` to ``n`` in your defconfig.
+
 .. _'patch ecryptfs to fix a build error' from bullhead: https://github.com/usb-bullhead-ubuntu-touch/kernel_msm/commit/b0403f0ee02e6582017cdb45b4c0c72b00cc72eb
 .. _nick kvfree() from apparmor: https://github.com/ubports/android_kernel_moto_shamu/commit/83f949a8de673fe45499d1741da8654831a5afae
 .. _Finish implementation of PID namespace: https://github.com/Halium/android_kernel_lge_hammerhead/commit/bd221854de33b75db7a7fa01cb34274b62a7cbf8
