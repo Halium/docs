@@ -15,17 +15,25 @@ If you get stuck at any point during the porting process, we're here to help! Yo
 * Matrix: #halium:disroot.org
 * Telegram: @halium
 
-When you contact us, please link to the section of documentation you're stuck on. In the HTML version, you can copy links by hovering your pointer over a heading, right-clicking the 'link' icon that appears to the right of it, and selecting "Copy link location" or its equivalent in your browser.
+When you contact us, please use a pastebin service like `pastebin.com <https://pastebin.com>`_ to **pastebin the full log** of whichever step you are at. Also please point out which section of the documentation you're stuck on.
 
 Pick an Android target device
 -----------------------------
 
 If you're here, you probably already have a device in mind that you wish to port to. However, we still encourage you to port to devices that meet the following requirements:
 
-* **Kernel:** Halium currently requires a device with a kernel greater than or equal to version 3.1.0 - older device kernels are not compatible with the glibc build in the root filesystem being used. Check your device's kernel version by finding "Kernel Version" in the About page of your Android settings.
-* **RAM:** While 1GB of RAM is sufficient to start the OS, it is recommended to have greater than 2GB to have a good end user experience.
-* **Chipset:** Try to avoid Mediatek chipsets, they are not open-sourced and so there is rarely a usable Android source tree available for them.
-* **Storage:** 16GB of storage is generally enough for any Halium-based OS.
+Source availability
+    Your device must have its Linux kernel source publicly available. The source code required to build LineageOS must also be available. Both of these should be available if your device has an official or unofficial LineageOS port, or a port of a LineageOS derivative.
+Kernel
+    Halium currently requires a device with a Linux kernel version greater than or equal to 3.10.0. According to the `systemd v217 README <https://github.com/systemd/systemd/blob/v217/README#L40>`_, older device kernels are not compatible with systemd v217 or newer. You may learn your device's kernel version by finding "Kernel Version" in the About page of your Android settings. The kernel version can also be found in the ``Makefile`` at the top level of any Linux kernel source tree.
+
+    Some Halium distributions may use a kernel as old as 3.4, such as Ubuntu Touch.
+RAM
+    1GB of RAM is sufficient to start most Halium distributions. 2GB or higher is recommended for a better end-user experience.
+Storage
+    16GB of storage is required. Devices with less storage will likely not have enough space for a full Halium distribution.
+
+It is unlikely that you will be able to build and run Halium if your device does not meet these requirements. Please :ref:`contact us <support-channels>` if you are unsure whether your device meets these requirements.
 
 Collaborate
 -----------
@@ -49,6 +57,10 @@ If you are on the ``amd64`` architecture (commonly referred to as 64 bit), enabl
 
    sudo dpkg --add-architecture i386
 
+Update your package lists to take advantage of the new architecture::
+
+    sudo apt update
+
 Install the required dependencies::
 
    sudo apt install git gnupg flex bison gperf build-essential \
@@ -61,15 +73,13 @@ Install the required dependencies::
 Arch
 ^^^^
 
-If you have a pure ``amd64`` running you need to add ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `<https://wiki.archlinux.org/index.php/multilib>`_
-Assuming you have already installed ``base-devel`` group; if not, then please install ``base-devel``.
+If you have an ``amd64`` installation of Arch, you need to add the ``[multilib]`` repository to your ``/etc/pacman.conf`` . This will allow you to install and run ``i686`` packages. Please refer to `'Official Repositories/multilib' on the Arch Wiki <https://wiki.archlinux.org/index.php/multilib>`_.
+
+Install the ``base-devel`` package if you have not already.
 
 Install the required dependencies from AUR::
 
    git clone https://aur.archlinux.org/halium-devel.git && cd halium-devel && makepkg -i
 
 .. Note::
-    Arch uses python3 as default version for Python, which may cause some errors while building. Using a Python virtualenv2 is highly recommended. Please refer to `<https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting the Virtual Environment.
-
-.. todo::
-    Add information for installing packages on other distros
+    Arch uses Python 3 as its default ``python``, which may cause some errors while building. Using a Python 2 virtualenv is highly recommended. Please refer to `'Python/Virtual environment' on the Arch Wiki <https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting up a Virtual Environment.
