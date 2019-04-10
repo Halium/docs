@@ -86,9 +86,9 @@ POSIX_ACL not supported in 3.18 backport
 
 Example of the error::
 
-/home/florian/halium-7.1/kernel/huawei/angler/fs/ext4/inode.c: In function 'ext4_setattr':
-/home/florian/halium-7.1/kernel/huawei/angler/fs/ext4/inode.c:4717:2: error: #error POSIX_ACL not supported in 3.18 backport
- #error POSIX_ACL not supported in 3.18 backport
+   /home/florian/halium-7.1/kernel/huawei/angler/fs/ext4/inode.c: In function 'ext4_setattr':
+   /home/florian/halium-7.1/kernel/huawei/angler/fs/ext4/inode.c:4717:2: error: #error POSIX_ACL not supported in 3.18 backport
+    #error POSIX_ACL not supported in 3.18 backport
 
 Set ``CONFIG_EXT4_FS_POSIX_ACL`` to ``n`` in your defconfig.
 
