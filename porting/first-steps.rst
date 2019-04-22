@@ -23,7 +23,7 @@ Pick an Android target device
 If you're here, you probably already have a device in mind that you wish to port to. However, we still encourage you to port to devices that meet the following requirements:
 
 Source availability
-    Your device must have its Linux kernel source publicly available. The source code required to build LineageOS must also be available. Both of these should be available if your device has an official or unofficial LineageOS port, or a port of a LineageOS derivative.
+    Your device must have its Linux kernel source publicly available. The source code required to build LineageOS 12.1 or 14.1 must also be available. Both of these should be available if your device has a LineageOS 12.1 or 14.1 port, or a port of a LineageOS derivative based on these versions.
 Kernel
     Halium currently requires a device with a Linux kernel version greater than or equal to 3.10.0. According to the `systemd v217 README <https://github.com/systemd/systemd/blob/v217/README#L40>`_, older device kernels are not compatible with systemd v217 or newer. You may learn your device's kernel version by finding "Kernel Version" in the About page of your Android settings. The kernel version can also be found in the ``Makefile`` at the top level of any Linux kernel source tree.
 
