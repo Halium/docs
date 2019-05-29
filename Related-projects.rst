@@ -8,9 +8,8 @@ There are a number of other free software projects to provide a *Linux experienc
 LuneOS
 ------
 
-`LuneOS <https://webos-ports.org>`_ is based on Open webOS. It is provided by the WebOS Ports team.
-The system has it's legacy in projects by LG, HP and Palm. There are ongoing conversations about a cooperation with Halium.
-
+`LuneOS <https://webos-ports.org>`_ is based on Open webOS and webOS OSE. It is provided by the WebOS Ports team.
+The system has it's legacy in projects by Palm, HP and LG. It is a continuation of Palm/HP's webOS that was used in 2009-2011 in various phones and tablets. The project is fully open source and can be build completely from scratch. LuneOS developers are actively contributing to Halium, even though only the minimal Android image from Halium is being used currently. LuneOS actively uses the Yocto Project build system and builds their kernels with GCC provided by Yocto. 
 
 Plasma mobile
 -------------
