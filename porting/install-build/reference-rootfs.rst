@@ -65,7 +65,7 @@ This will do the following:
 Install rootfs and system.img (alternative method)
 --------------------------------------------------
 
-If the method above failed for some reason, you could try the ``halium-install`` script from the `JBB's repository <https://github.com/JBBgameich/halium-install/>`_.
+If the method above failed for some reason, you could try the ``halium-install`` script from the `JBB's repository <https://gitlab.com/JBBgameich/halium-install/>`_.
 
 You can use the halium-install script as below, when the device is connected in recovery mode::
 
