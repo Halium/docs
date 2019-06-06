@@ -67,7 +67,7 @@ This is caused by an incomplete merge of a few changes in some 3.4 kernels::
    /../../../../kernel/fairphone/msm8974/kernel/events/core.c:379:13: error: 'struct perf_cpu_context' has no member named 'unique_pmu'
    if (cpuctx->unique_pmu != pmu)
 
-Reverting `perf: Fix perf_cgroup_switch for sw-events`_ should fix the problem.
+To fix this issue, apply `perf: Clarify perf_cpu_context::active_pmu usage by renaming it to ::unique_pmu`_
 
 'PROC_PID_INIT_INO' undeclared here (not in a function)
 -------------------------------------------------------
@@ -95,4 +95,4 @@ Set ``CONFIG_EXT4_FS_POSIX_ACL`` to ``n`` in your defconfig.
 .. _'patch ecryptfs to fix a build error' from bullhead: https://github.com/usb-bullhead-ubuntu-touch/kernel_msm/commit/b0403f0ee02e6582017cdb45b4c0c72b00cc72eb
 .. _nick kvfree() from apparmor: https://github.com/ubports/android_kernel_moto_shamu/commit/83f949a8de673fe45499d1741da8654831a5afae
 .. _Finish implementation of PID namespace: https://github.com/Halium/android_kernel_lge_hammerhead/commit/bd221854de33b75db7a7fa01cb34274b62a7cbf8
-.. _perf\: Fix perf_cgroup_switch for sw-events: https://github.com/LineageOS/android_kernel_fairphone_msm8974/commit/fed4b99c5eb99ab792f223cefef67d940bbe8796
+.. _perf\: Clarify perf_cpu_context\:\:active_pmu usage by renaming it to \:\:unique_pmu: https://github.com/Halium/android_kernel_fairphone_msm8974/commit/99bdb252098c1b926d3c851efbd70ab574d10a2c
