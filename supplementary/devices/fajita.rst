@@ -25,12 +25,12 @@ The following entries are just a placeholder, exactly as this sentence.
      - Kernel
      - What works
      - What doesn't work
-   * - `Oneplus6T on XDA <https://forum.xda-developers.com/oneplus-6t/development/rom-lineageos-16-0-t3897334>`_
+   * - `Oneplus6T LineageOS on XDA <https://forum.xda-developers.com/oneplus-6t/development/rom-lineageos-16-0-t3897334>`_
      - `LineageOS/android_device_oneplus_fajita <https://github.com/LineageOS/android_device_oneplus_fajita>`_
      - Stock Kernel?
      - Everything
      - Does not have kernel source to look into
-   * - `Oneplus6T on XDA <https://forum.xda-developers.com/oneplus-6t/development/rom-omnirom-oneplus6t-t3888582>`_
+   * - `Oneplus6T Omnirom on XDA <https://forum.xda-developers.com/oneplus-6t/development/rom-omnirom-oneplus6t-t3888582>`_
      - `omnirom/android_device_oneplus_oneplus6t <https://github.com/omnirom/android_device_oneplus_oneplus6t>`_
      - `omnirom/android_kernel_oneplus_sdm845 <https://github.com/omnirom/android_kernel_oneplus_sdm845>`_ based on v4.9.112
      - Everything
