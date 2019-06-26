@@ -36,6 +36,7 @@ All of these should only be document in the exact same way here and **only an ov
    yuga
    taoshan
    Z00L
+   fajita
    
 
 How to document
@@ -612,6 +613,25 @@ Devices
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
      - IR Blaster 
+  * - :doc:`Oneplus 6T <fajita>`
+     - fajita
+     - No work so far
+     - ?
+     - Qualcomm Snapdragon 845
+     - Octa-core, 10nm, up to 2.8 GHz
+     - Adreno 630
+     - 6 GB / 8 GB / 10 GB LPDDR4X
+     - 128 GB / 256 GB UFS 2.1 2-LANE
+     - LTE/LTE-A DL 5CA/256QAM, UL CA/64QAM, 4x4 MIMO, WiFi(2x2 MIMO, Wi-Fi 802.11 a/b/g/n/ac, 2.4G/5G), Bluetooth(Bluetooth 5.0, support aptX and aptX HD)
+     - Sony IMX 519, 16MP
+     - Sony IMX 376K, 20MP
+     - 3700 mAh (non-removable) Fast Charging (5V 4A)
+     - Speaker, Microphone, No Headphone Jack
+     - Measured diagonally, 6.41 inches in the full rectangle and 6.24 inches accounting for the rounded corners.
+     - Optic AMOLED, 2340 x 1080 pixels, 402 ppi, 19.5:9 Aspect Ratio
+     - GPS, GLONASS, BeiDou, Galileo 
+     - In-display Fingerprint Sensor, Hall, Accelerometer, Gyroscope, Proximity, RGB Ambient Light Sensor, Electronic Compass, Sensor Core
+     - Other
       
 Sources
 ^^^^^^^
@@ -762,3 +782,11 @@ Xiaomi Redmi 4A
 
 * `Redmi 4A Website <https://www.mistore.pk/redmi-4a-overview/>`_
 * `Redmi 4A GSMArena <https://www.gsmarena.com/xiaomi_redmi_4a-8420.php>`_
+
+
+OnePlus 6
+~~~~~~~~~~
+
+* `Oneplus 6T Website <https://www.oneplus.in/6t/specs>`_
+* `Oneplus 6T XDA <https://forum.xda-developers.com/oneplus-6t>`_
+* `Oneplus 6T Wikipedia <https://en.wikipedia.org/wiki/OnePlus_6T>`_
