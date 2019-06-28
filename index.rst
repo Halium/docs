@@ -21,10 +21,11 @@ Contents
 
 .. toctree::
    :maxdepth: 1
-   :caption: Distribution
-   :name: sec-distribution
-   
-   Distribution
+   :caption: Standards
+   :name: sec-standards
+
+   standards/standards.rst
+   standards/pre-rootfs-environment.rst
    
 .. toctree::
    :maxdepth: 1
@@ -44,6 +45,7 @@ Contents
    Related-projects
    Planning
    Development
+   Distribution
    todo
 
 .. _halium: https://halium.org/
