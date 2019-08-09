@@ -41,9 +41,9 @@ Contents
    :caption: Project 
    :name: sec-planning
    
-   Related-projects
-   Planning
-   Development
-   todo
+   project/Related-projects
+   project/Planning
+   project/Development
+   project/todo
 
 .. _halium: https://halium.org/

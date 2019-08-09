@@ -106,8 +106,8 @@ Graphic output, camera and other sensors are managed by libhybris.
 The linux distribution running with this stack can either use packages of libhybris etc. offered by us, if it’s compatible, or build it’s own
 
 
-.. image:: images/architecture.png
-   :target: images/architecture.png
+.. image:: ../images/architecture.png
+   :target: ../images/architecture.png
    :alt: halium architecture
 
 
