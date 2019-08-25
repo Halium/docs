@@ -41,6 +41,7 @@ Contents
    :caption: Project 
    :name: sec-planning
    
+   project/Scope
    project/Related-projects
    project/Planning
    project/Development
