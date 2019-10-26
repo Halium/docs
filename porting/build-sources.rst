@@ -112,7 +112,7 @@ Halium will use the mkbootimg tool for creating the boot image. In most cases it
 To build the ``system.img`` and ``hybris-boot.img`` - required for Halium - use the following commands::
 
    mka hybris-boot
-   mka systemimage
+   LC_ALL="C.UTF-8" mka systemimage
 
 .. note::
 
