@@ -28,7 +28,7 @@ Distributions
      - What doesn't work
    * - `Bullhead on LineageOS Wiki <https://wiki.lineageos.org/devices/bullhead>`_
      - `LineageOS/android_device_lge_bullhead <https://github.com/LineageOS/android_device_lge_bullhead>`_
-     - `LineageOS/android_kernel_lge_bullhead <https://github.com/LineageOS/android_kernel__lge_bullhead>`_ based on v3.10.73
+     - `LineageOS/android_kernel_lge_bullhead <https://github.com/LineageOS/android_kernel_lge_bullhead>`_ based on v3.10.73
      - ?
      - ?
 
