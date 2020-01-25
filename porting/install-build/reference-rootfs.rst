@@ -50,26 +50,11 @@ The command for flashing is::
 Install rootfs and system.img
 -----------------------------
 
-Currently the latest rootfs is available at bshah's personal server: `Link <http://bshah.in/halium/halium-rootfs-20170630-151006.tar.gz>`_
+* Download the halium reference rootfs from `bshah's personal server <http://bshah.in/halium/halium-rootfs-20170630-151006.tar.gz>`_.
+* Get the halium-install script from the `JBB's repository <https://gitlab.com/JBBgameich/halium-install/>`_.
+* Bring the device into recovery mode and run::
 
-You can use the halium-install script as below, when the device is connected in recovery mode::
-
-   halium-install <path to rootfs tarball> <path to android system.img>
-
-This will do the following:
-
-* Convert the rootfs tarball into ext2 rootfs.img
-* Convert system.img into the ext4 mountable image from android sparse image.
-* Push the both images to /data partition
-
-Install rootfs and system.img (alternative method)
---------------------------------------------------
-
-If the method above failed for some reason, you could try the ``halium-install`` script from the `JBB's repository <https://gitlab.com/JBBgameich/halium-install/>`_.
-
-You can use the halium-install script as below, when the device is connected in recovery mode::
-
-   halium-install -p halium <path to rootfs tarball> <path to android system.img>
+    ./halium-install -p halium <path to rootfs tarball> <path to android system.img>
 
 If you have trouble getting this to work, use the ``-v`` option to get verbose output.
 
