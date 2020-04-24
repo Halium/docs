@@ -14,7 +14,7 @@ Status
 Halium
 ^^^^^^
 
-Halium 7.1 is **WIP**. Ported by `echosalik <https://github.com/echosalik>`_
+Halium 7.1 is **WIP**. Ported by `areyoudeveloper(Tea) <https://github.com/areyoudeveloper>`_
 
 Distributions
 ^^^^^^^^^^^^^
@@ -28,16 +28,16 @@ Distributions
      - Kernel
      - What works
      - What doesn't work
-   * - `Unofficial LineageOS 14.1 Tree by LineageOS-R4A <https://github.com/LineageOS-R4A/>`_
-     - `LineageOS-R4A/android_device_xiaomi_rolex <https://github.com/LineageOS-R4A/android_device_xiaomi_rolex>`_
+   * - `Unofficial LineageOS 14.1 Tree by murali <https://github.com/muralivijay/>`_
+     - `muralivijay/android_device_xiaomi_rolex <https://github.com/muralivijay/android_device_xiaomi_rolex>`_
      - NA
-     - `LineageOS-R4A/android_kernel_xiaomi_msm8917 <https://github.com/LineageOS-R4A/android_kernel_xiaomi_msm8917>`_ based on v3.18.31
+     - `Nick89786/android_kernel_xiaomi_msm8917 <https://github.com/Nick89786/android_kernel_xiaomi_msm8917>`_ based on v3.18.140
      - see device page
      - see device page
-   * - `rolex on Halium projectmanagement <https://github.com/Halium/projectmanagement/issues/92>`_
-     - `echosalik/android_device_xiaomi_rolex <https://github.com/echosalik/android_device_xiaomi_rolex>`_
+   * - `rolex on Halium projectmanagement <https://github.com/ubports/porting-notes/wiki/Xiaomi-Redmi-4(A)-(xiaomi-rolex)>`_
+     - `areyoudeveloper1/android_device_xiaomi_rolex <https://github.com/areyoudeveloper1/android_device_xiaomi_rolex>`_
      - NA
-     - `echosalik/android_kernel_xiaomi_msm8917 <https://github.com/echosalik/android_kernel_xiaomi_msm8917>`_ based on v3.18.31
+     - `areyoudeveloper1/android_kernel_xiaomi_msm8917 <https://github.com/areyoudeveloper1/android_kernel_xiaomi_msm8917>`_ based on v3.18.140
      - see projectmanagement issue
      - see projectmanagement issue
 
@@ -45,7 +45,7 @@ Distributions
 Kernel & Hardware
 ^^^^^^^^^^^^^^^^^
 
-The kernel is based off LineageOS-R4A's kernel (though it has some halium specific patches).
+The kernel is based off nick's kernel (though it has some halium specific patches).
 
 Device Specifics
 ----------------
