@@ -1,10 +1,8 @@
 
-Codename - Template Device
+Herolte - Samsung Galaxy S7
 ===========================
 
-**//Disclaimer:** Please remove everything that is just part of this template and not actually about the device before submitting this into the official wiki, thank you! **//**
-
-Here only one or two sentences. What makes the device special? Is it a reference device? 
+*** Page under construction ***
 
 Status
 ------
@@ -31,16 +29,16 @@ The following entries are just a placeholder, exactly as this sentence.
      - Kernel
      - What works
      - What doesn't work
-   * - LineageOS placeholder `device page placeholder <placeholder>`_
-     - `android_device_placeholder <placeholder>`_
-     - `android_kernel_placeholder <placeholder>`_ based on vX.Y.Z
+   * - LineageOS for Samsung Galaxy S7 `wiki page <https://wiki.lineageos.org/devices/herolte>`_
+     - `android_device_samsung_herolte <https://github.com/LineageOS/android_device_samsung_herolte/tree/cm-14.1>`_
+     - `LOS kernel source <xxx>`_ based on v3.18.14
      - ?
      - ?
-   * - Ubports placeholder `device page placeholder <placeholder>`_
-     - `android_device_placeholder <placeholder>`_
-     - `android_kernel_placeholder <placeholder>`_ based on vX.Y.Z
-     - ?
-     - ?
+   * - Ubports `No UBPorts device page at this time <placeholder>`_
+     - `Same as above <https://github.com/LineageOS/android_device_samsung_herolte/tree/cm-14.1>`_
+     - `android_kernel_samsung_universal8890 <https://github.com/ZeroPointEnergy/android_kernel_samsung_universal8890/tree/cm-14.1>`_ based on v3.18.14
+     - Graphics, screen rotation, wifi, lights, vibration.
+     - Sound, bluetooth, phone, sms, gps, camera, video.
 
 
 Kernel & Hardware
