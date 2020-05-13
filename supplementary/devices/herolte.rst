@@ -39,9 +39,9 @@ The following table is somewhat lacking, but a good start.
      - Kernel
      - What works
      - What doesn't work
-   * - LineageOS for Samsung Galaxy S7 `wiki page <https://wiki.lineageos.org/devices/herolte>`_
+   * - `LineageOS for Samsung Galaxy S7 wiki page <https://wiki.lineageos.org/devices/herolte>`_
      - `android_device_samsung_herolte <https://github.com/LineageOS/android_device_samsung_herolte/tree/cm-14.1>`_
-     - `LOS kernel source <xxx>`_ based on v3.18.14
+     - `android_kernel_samsung_universal8890 <https://github.com/ZeroPointEnergy/android_kernel_samsung_universal8890/tree/cm-14.1>`_ based on v3.18.14
      - ?
      - ?
    * - Ubports `No UBPorts device page at this time <placeholder>`_
