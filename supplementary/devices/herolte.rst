@@ -2,7 +2,9 @@
 Herolte - Samsung Galaxy S7
 ===========================
 
-*** Page under construction ***
+The Samsung Galaxy S7 is a lightweight, powerful handset with an impressively crisp screen, and good look and feel. As with Samsung devices in general, the process of building and flashing ROMs has its peculiarities compared to devices of other makes. This page should help overcome the challenges they might otherwise present.
+
+(Note: This page is still under construction.)
 
 Status
 ------
@@ -20,14 +22,14 @@ Building Halium 7.1 for the Galaxy S7 is a straightforward process. It is well d
 * Check and record the details of your device (version, hardware, the currently installed OS and its version)
 * Completing a successful build is the easy step. Installing, configuring, debugging and fixing issues is the demanding part. However, anyone with a fair amount of patience and the ability to read and follow a slightly above average cooking recipe should manage to build, install and get the system up and running. Making everything work is different question.
 
-For convenience, links to some of the important resources mentioned in the guides are gathered at the bottom of this page along with other useful/potentially useful resources not mentioned there.
+For convenience, links to some of the important resources mentioned in the guides are also gathered at the bottom of this page, along with other useful/potentially useful resources not mentioned there.
 
 Good luck!
 
 Distributions
 ^^^^^^^^^^^^^
 
-The following entries are just a placeholder, exactly as this sentence.
+The following table is somewhat lacking, but a good start.
 
 .. list-table::
    :header-rows: 1
@@ -55,12 +57,12 @@ Kernel & Hardware
 Mainline (vX.Y.Z as of writing)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Write whether something that is needed for the device is mainline already (switch the version in the heading for what's recent when you write this). This means **device tree source files (.dts) as well as single drivers** (for example only the wifi driver).
+(To be completed...)
 
 Cyanogemod based kernels (LOS & UBP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If other kernels exist, just make up headlines with a name that describe the origin (Cyanogemod, LineageOS, UBports, Canonical, ...) and which is the underlying mainline version. Afterwards describe what's been improved or altered and if possible why or what is still missing.
+(To be completed...)
 
 Device Specifics
 ----------------
@@ -76,12 +78,7 @@ Guides
 
 `The author's detailed account of the porting process, including valuable extra links and tips <https://github.com/Halium/projectmanagement/issues/48#issuecomment-626908532>`_
 
-`The Halium Porting Guide <https://tricksempire.com/kernel-is-not-seandroid-enforcing-android/>`_
-
-`The Halium Porting Guide <https://tricksempire.com/kernel-is-not-seandroid-enforcing-android/>`_
-
-`The Halium Porting Guide <https://tricksempire.com/kernel-is-not-seandroid-enforcing-android/>`_
-
+`Device port discussion thread for the S7 on Github <https://github.com/Halium/projectmanagement/issues/48>`_
 
 Developer Info
 ^^^^^^^^^^^^^^
