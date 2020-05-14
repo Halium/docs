@@ -90,8 +90,11 @@ Switching of the device when in the download mode can be done by simultaneously 
 After flashing a custom recovery, entering custom recovery from the power-off state is done by simulteaneously pressing the volume-up button, the home button and the power button until the Samsung boot logo appears, then IMMEDIATELY releasing all buttons.
 
 If at some point the device does not boot at all from the power off state, no matter how long you press the power button, try this: 
+
 * First enter the download mode as described above. 
+
 * Then switch completely off, also as described above. 
+
 * Now, you should once more be able to either boot normally or boot into recovery, whichever you wish.
 
 Useful Resources
