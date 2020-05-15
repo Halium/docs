@@ -12,7 +12,7 @@ Getting help
 If you get stuck at any point during the porting process, we're here to help! You can contact us via the following support channels:
 
 * IRC: #halium on Freenode
-* Matrix: #halium:disroot.org
+* Matrix: #halium:matrix.org
 * Telegram: @halium
 
 When you contact us, please use a pastebin service like `pastebin.com <https://pastebin.com>`_ to **pastebin the full log** of whichever step you are at. Also please point out which section of the documentation you're stuck on.
