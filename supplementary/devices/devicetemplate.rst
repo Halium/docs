@@ -70,6 +70,6 @@ Developer Info
 Some devices show strange behaviour of some kind, try to find this (for example in the xda-developers forum) and document it
 
 Useful Resources
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 If anything might be usefull but didn't fit above you can just throw in some links here.
