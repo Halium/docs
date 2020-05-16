@@ -76,7 +76,7 @@ Guides
 
 `The Halium Porting Guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_
 
-`The author's detailed account of the process of porting Ubuntu Touch to the S7, including valuable extra links and tips <https://github.com/Halium/projectmanagement/issues/48#issuecomment-626908532>`_
+`Detailed account of one porter's porting process for Ubuntu Touch to the S7, including valuable extra links and tips <https://github.com/Halium/projectmanagement/issues/48#issuecomment-626908532>`_
 
 `Device port discussion thread for the S7 on Github <https://github.com/Halium/projectmanagement/issues/48>`_
 
@@ -98,7 +98,7 @@ If at some point the device does not boot at all from the power off state, no ma
 * Now, you should once more be able to either boot normally or boot into recovery, whichever you wish.
 
 Useful Resources
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^
 
 `GSMARENA full phone specifications for Samsung Galaxy S7 <https://www.gsmarena.com/samsung_galaxy_s7-7821.php>`_
 
