@@ -133,6 +133,7 @@ aosp         Android Open Source Project, https://android.googlesource.com
 los          LineageOS, http://github.com/LineageOS
 hal          Halium (link to GitHub root for legacy reasons), http://github.com
 them         TheMuppets, http://github.com/TheMuppets
+them2        TheMuppets, https://gitlab.com/the-muppets
 ===========  =======================
 
 If you do not specify a remote, ``aosp`` is assumed. 
