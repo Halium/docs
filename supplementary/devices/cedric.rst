@@ -41,7 +41,9 @@ Maintainership
 Halium
 ^^^^^^
 Halium porting for this device is centered around Ubuntu Touch. There are only a few bugs left.
+
 GitHub: https://github.com/halium-on-cedric
+
 Telegram: https://t.me/noandroidoncedric
 
 Distributions
@@ -58,7 +60,7 @@ Distributions
    * - Unofficial LineageOS 14.1 (GitHub User: Wzedlare)
      - `android_device_motorola_cedric/cm-14.1 <https://github.com/Wzedlare/android_device_motorola_cedric/tree/cm-14.1>`_
      - `android_kernel_motorola_msm8937/cm-14.1 <https://github.com/Wzedlare/android_kernel_motorola_msm8937/tree/cm-14.1>`_ based on v3.18.49
-     - Eveerything
+     - Everything
      - Nothing
    * - Unofficial LineageOS 15.1 (GitHub User: Sohamlad7)
      - `android_device_motorola_cedric/lineage-15.1 <https://github.com/Sohamlad7/android_device_motorola_cedric/tree/lineage-15.1>`_
@@ -71,8 +73,8 @@ Distributions
      - Almost everything
      - Audio for Wfd & Camera problems
    * - Unoffical LineageOS 17.1 (GitHub User: Sohamlad7)
-     - `android_device_motorola_cedric/lineage-16.0 <https://github.com/Sohamlad7/android_device_motorola_cedric/tree/lineage-17.1>`_
-     - `android_kernel_motorola_msm8937/lineage-16.0 <https://github.com/Sohamlad7/android_kernel_motorola_msm8937/tree/lineage-17.1>`_ based on the newest 3.18
+     - `android_device_motorola_cedric/lineage-17.1 <https://github.com/Sohamlad7/android_device_motorola_cedric/tree/lineage-17.1>`_
+     - `android_kernel_motorola_msm8937/lineage-17.1 <https://github.com/Sohamlad7/android_kernel_motorola_msm8937/tree/lineage-17.1>`_ based on the newest 3.18
      - Almost everything
      - Camera problems
 
@@ -83,7 +85,7 @@ Mainline (v4.16-rc7 as of writing, 2018-03-31): Not Mainline
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is no device tree source (dts) file in the mainline kernel, neither for the device itself nor for the underlying SoC (MSM8937).
-Consult the table below for status on other hardware.
+Consult the table below for status on other hardware. There is some progress here (boots pmOS but no touch, no USB, no network): https: //github.com/Hacker1245/linux-1.
 
 .. list-table::
     :header-rows: 1
