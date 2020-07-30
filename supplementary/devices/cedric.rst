@@ -3,8 +3,11 @@ Cedric - Motorola Moto G5
 =========================
 
 The Moto G5 is a mid-range phone, with a few variants.
-
-The XT1676 variant is special in that it has 3 GB of RAM.
+It has multiple factors that are different for each variant:
+- XT number
+- 2GB or 3GB RAM
+- 16GB or 32GB Internal Storage
+- Single SIM or Dual SIM
 
 .. todo::
     Document some other device variants.
@@ -29,11 +32,19 @@ Maintainership
       - reivilibre
       - LambdaPerl
       - n/a
+    * - nift4
+      - More docs
+      - nift4
+      - nift4
+      - http://nift4.tk
 
 Halium
 ^^^^^^
+Halium porting for this device is centered around Ubuntu Touch. There are only a few bugs left.
 
-No progress to speak of, yet.
+GitHub: https://github.com/halium-on-cedric
+
+Telegram: https://t.me/noandroidoncedric
 
 Distributions
 ^^^^^^^^^^^^^
@@ -49,13 +60,23 @@ Distributions
    * - Unofficial LineageOS 14.1 (GitHub User: Wzedlare)
      - `android_device_motorola_cedric/cm-14.1 <https://github.com/Wzedlare/android_device_motorola_cedric/tree/cm-14.1>`_
      - `android_kernel_motorola_msm8937/cm-14.1 <https://github.com/Wzedlare/android_kernel_motorola_msm8937/tree/cm-14.1>`_ based on v3.18.49
-     - The vast majority of things
-     - ?
-   * - Unofficial LineageOS 15.1 (GitHub User: Wzedlare)
-     - `android_device_motorola_cedric/lineage-15.1 <https://github.com/Wzedlare/android_device_motorola_cedric/tree/lineage-15.1>`_
-     - `android_kernel_motorola_msm8937/lineage-15.1 <https://github.com/Wzedlare/android_kernel_motorola_msm8937/tree/lineage-15.1>`_ based on v3.18.100
-     - ?
-     - ?
+     - Everything
+     - Nothing
+   * - Unofficial LineageOS 15.1 (GitHub User: Sohamlad7)
+     - `android_device_motorola_cedric/lineage-15.1 <https://github.com/Sohamlad7/android_device_motorola_cedric/tree/lineage-15.1>`_
+     - `android_kernel_motorola_msm8937/lineage-15.1 <https://github.com/Sohamlad7/android_kernel_motorola_msm8937/tree/lineage-15.1>`_ based on v3.18.100
+     - Almost everything
+     - USB tethering (can be fixed tho)
+   * - Unoffical LineageOS 16.0 (GitHub User: Sohamlad7)
+     - `android_device_motorola_cedric/lineage-16.0 <https://github.com/Sohamlad7/android_device_motorola_cedric/tree/lineage-16.0>`_
+     - `android_kernel_motorola_msm8937/lineage-16.0 <https://github.com/Sohamlad7/android_kernel_motorola_msm8937/tree/lineage-16.0>`_ based on the newest 3.18
+     - Almost everything
+     - Audio for Wfd & Camera problems
+   * - Unoffical LineageOS 17.1 (GitHub User: Sohamlad7)
+     - `android_device_motorola_cedric/lineage-17.1 <https://github.com/Sohamlad7/android_device_motorola_cedric/tree/lineage-17.1>`_
+     - `android_kernel_motorola_msm8937/lineage-17.1 <https://github.com/Sohamlad7/android_kernel_motorola_msm8937/tree/lineage-17.1>`_ based on the newest 3.18
+     - Almost everything
+     - Camera problems
 
 Kernel & Hardware
 ^^^^^^^^^^^^^^^^^
@@ -64,7 +85,7 @@ Mainline (v4.16-rc7 as of writing, 2018-03-31): Not Mainline
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 There is no device tree source (dts) file in the mainline kernel, neither for the device itself nor for the underlying SoC (MSM8937).
-Consult the table below for status on other hardware.
+Consult the table below for status on other hardware. There is some progress here (boots pmOS but no touch, no USB, no network): https: //github.com/Hacker1245/linux-1.
 
 .. list-table::
     :header-rows: 1
@@ -167,7 +188,7 @@ Developer Info
 
 .. Some devices show strange behaviour of some kind, try to find this (for example in the xda-developers forum) and document it
 
-The XT1676 had `segmentation faults <https://forum.xda-developers.com/g5/how-to/segmentation-fault-customs-roms-t3682734>`_ with a particular (kernel?) configuration under LineageOS 14.1 and other custom Android versions. Investigation may be required to track down the cause and solution in the event that the Halium porting effort runs into it again.
+The XT1676 had `segmentation faults <https://forum.xda-developers.com/g5/how-to/segmentation-fault-customs-roms-t3682734>`_ with a particular (kernel?) configuration under LineageOS 14.1 and other custom Android versions. Investigation may be required to track down the cause and solution in the event that the Halium porting effort runs into it again. Update: Solved.
 
 
 Useful Resources
