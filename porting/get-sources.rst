@@ -30,9 +30,10 @@ Now that you have initialized the Halium tree (a shallow copy due to --depth=1),
 
    repo sync -c -j 16
 
-In case you want to get the full repo history at some point in the future because you want to patch, contribute, etc. You can execute the following command from the repository directory ::
+In case you want to get the full repo history at some point in the future because you want to patch, contribute, etc. You can execute the following commands from the repository directory ::
 
-   git fetch --unshallow
+   git remote -v # The leftmost word is the remote name
+   git fetch --unshallow [remote_name]
 
 Adding your device-specific source
 ----------------------------------
