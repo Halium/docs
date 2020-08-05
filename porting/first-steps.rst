@@ -17,6 +17,11 @@ If you get stuck at any point during the porting process, we're here to help! Yo
 
 When you contact us, please use a pastebin service like `pastebin.com <https://pastebin.com>`_ to **pastebin the full log** of whichever step you are at. Also please point out which section of the documentation you're stuck on.
 
+What is porting about - in a nutshell
+-------------------------------------
+Think of your device as a car. You do have got a petrol car (Android). You want to put in a electric driven engine (target OS). In the garage you get told you can put in a diesel engine (e.g. Lineage OS). Fine, so your car is capable of exchanging the engine. Now you need to get all parts for the electric driven engine (kernel, firmware, ...), assemble them and build them into your car (porting). And because every car's chassis is different, you can not use the parts of a Ford to use with a Porsche. That's why every type of car needs its own engine (port). Got it?
+
+
 Pick an Android target device
 -----------------------------
 
