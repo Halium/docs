@@ -2,17 +2,17 @@
 Halium
 ======
 
-Welcome to the documentation for `Halium`_, the collaborative project to unify the Hardware Abstraction Layer for projects which run GNU/Linux on mobile devices with pre-installed Android.
+Welcome to the `Halium`_ porting guide. Halium is a collaborative project to unify the Hardware Abstraction Layer for projects which run GNU/Linux on mobile devices with pre-installed Android.
 
 Contents
 ========
 
-   
+
 .. toctree::
    :maxdepth: 1
    :caption: Porting Guide
    :name: sec-porting
-   
+
    porting/first-steps
    porting/get-sources
    porting/build-sources
@@ -23,24 +23,24 @@ Contents
    :maxdepth: 1
    :caption: Distribution
    :name: sec-distribution
-   
+
    Distribution
-   
+
 .. toctree::
    :maxdepth: 1
    :caption: Supplementary Information
    :name: sec-supplemental
-   
+
    supplementary/about-this-chapter
    supplementary/devices/index
    supplementary/hardware-enablement
    supplementary/how-to-document
-   
+
 .. toctree::
    :maxdepth: 1
-   :caption: Project 
+   :caption: Project
    :name: sec-planning
-   
+
    project/Scope
    project/Related-projects
    project/Planning
