@@ -26,7 +26,7 @@ Some devices requires bluetooth when compiling, which aren't synced for default 
 ... to the device manifest::
 
     <project path="system/bt" name="android_system_bt" remote="los" revision="cm-14.1" />
-    
+
 HYBRIS_BOOT_PART and HYBRIS_DATA_PART
 -------------------------------------
 
@@ -58,3 +58,22 @@ This seems to be a problem with locales and the prebuilt ``flex``. You can avoid
 
     export USE_HOST_LEX=yes
     make systemimage
+
+Missing bison error
+-------------------
+
+.. code-block:: guess
+
+    [  1% 322/20069] Yacc: checkpolicy <= external/selinux/checkpolicy/policy_parse.y
+    FAILED: /bin/bash -c "prebuilts/misc/linux-x86/bison/bison -d -v --defines=/home/builder/workdir/out/host/linux-x86/obj/EXECUTABLES/checkpolicy_intermediates/policy_parse.h -o /home/builder/workdir/out/host/linux-x86/obj/EXECUTABLES/checkpolicy_intermediates/policy_parse.c external/selinux/checkpolicy/policy_parse.y"
+    /bin/bash: prebuilts/misc/linux-x86/bison/bison: No such file or directory
+
+The error message is very misleading here. The issue stems from the bison shipped with ``halium-7.1`` at ``prebuilts/misc/linux-x86/bison/bison`` being 32-bit only, with the host system lacking 32-bit compatibility.
+
+The fix is to install 32-bit support for Ubuntu via:
+
+.. code-block:: guess
+
+    sudo dpkg --add-architecture i386
+    sudo apt-get update
+    sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386
