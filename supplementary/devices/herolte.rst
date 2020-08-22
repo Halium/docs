@@ -14,7 +14,7 @@ Halium
 
 Halium 7.1 can be built for the Samsung Galaxy S7, although not everything works as of writing.
 
-Building Halium 7.1 for the Galaxy S7 is a straightforward process. It is well described in the LineageOS guide, the UBPorts porting guide and the Halium porting guide. For those wishing undertake this endeavor, some words of advice: 
+Building Halium 7.1 for the Galaxy S7 is a straightforward process. It is well described in the UBPorts porting guide and the Halium porting guide, but you should also consult the LineageOS guide. For those wishing undertake this endeavor, some words of advice: 
 
 * Read the guides and familiarize yourself with the process before starting.
 * Secure the necessary resources beforehand, including a PC to do the development work on and a good USB cable.
@@ -44,11 +44,11 @@ The following table is somewhat lacking, but a good start.
      - `android_kernel_samsung_universal8890 <https://github.com/ZeroPointEnergy/android_kernel_samsung_universal8890/tree/cm-14.1>`_ based on v3.18.14
      - ?
      - ?
-   * - Ubports `No UBPorts device page at this time <placeholder>`_
+   * - `Halium and Ubports device port page <https://github.com/Halium/projectmanagement/issues/48>`_
      - `Same as above <https://github.com/LineageOS/android_device_samsung_herolte/tree/cm-14.1>`_
      - `android_kernel_samsung_universal8890 <https://github.com/ZeroPointEnergy/android_kernel_samsung_universal8890/tree/cm-14.1>`_ based on v3.18.14
-     - Graphics, screen rotation, wifi, lights, vibration.
-     - Sound, bluetooth, phone, sms, gps, camera, video.
+     - Graphics, screen rotation, wifi, lights, sound, vibration.
+     - Bluetooth, phone, sms, gps, camera, video.
 
 
 Kernel & Hardware
