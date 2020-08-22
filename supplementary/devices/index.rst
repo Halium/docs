@@ -614,7 +614,7 @@ Devices
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
      - IR Blaster 
-   * - :doc: `Samsung Galaxy S7 <herolte>`
+   * - :doc:`Samsung Galaxy S7 <herolte>`
      - herolte
      - Halium 7.1 (WIP). Boots, runs UT, graphics, light, vibration, wifi work.
      - v3.18.14
@@ -633,7 +633,7 @@ Devices
      - A-GPS, GLONASS, BDS
      - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, heart rate, SpO2
      - IP68 dust/water resistant (up to 1.5m for 30 mins)
-   * - :doc: `LG G4 (International) <h815>`
+   * - :doc:`LG G4 (International) <h815>`
      - h815
      - Halium 7.1 (WIP). Boots, runs UT, graphics, screen rotation, lights, vibration, wifi, audio, sensors, sms work.
      - v3.10.84
