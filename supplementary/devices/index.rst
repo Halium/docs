@@ -23,6 +23,7 @@ All of these should only be document in the exact same way here and **only an ov
    fp2
    hammerhead
    herolte
+   h815
    krillin
    land
    mako
@@ -632,6 +633,25 @@ Devices
      - A-GPS, GLONASS, BDS
      - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, heart rate, SpO2
      - IP68 dust/water resistant (up to 1.5m for 30 mins)
+   * - :doc: `LG G4 (International) <h815>`
+     - h815
+     - Halium 7.1 (WIP). Boots, runs UT, graphics, screen rotation, lights, vibration, wifi, audio, sensors, sms work.
+     - v3.10.84
+     - Qualcomm Snapdragon 808 MSM8992
+     - 2 x 1.8 GHz ARM Cortex-A57, 4 x 1.44 GHz ARM Cortex-A53
+     - Qualcomm Adreno 418
+     - 3 GB
+     - 32 GB, extendable to 2 TB (microSD, microsSDHC, microSDXC)
+     - Wifi, bluetooth, microUSB, HDMI (slimport), infrared
+     - Toshiba T4KA3 7.99 MP
+     - Sony IMX234 Exmor RS 15.87 MP
+     - 3000 mAh
+     - Audio jack, speaker (Qualcomm WCD9330)
+     - Capacitive multi-touch screen
+     - 5.5 inch, 1440 x 2560 pixels, 16:9 ratio, 16M colors, Corning Gorilla Glass 4
+     - GPS, AGPS, GLONASS
+     - Proximity, light, accelerometer, gyroscope, barometer, compass.
+     - --
       
 Sources
 ^^^^^^^
@@ -789,3 +809,9 @@ Samsung Galaxy S7
 * `Samsung Galaxy S7 GSMArena <https://www.gsmarena.com/samsung_galaxy_s7-7821.php>`_
 * `Samsung Galaxy S7 Exynos DeviceSpecifications <https://www.devicespecifications.com/en/model/63063a47>`_
 * `Samsung Galaxy S7 SD820 DeviceSpecifications <https://www.devicespecifications.com/en/model/16f73a49>`_
+
+LG G4
+~~~~~
+
+* `LG G4 GSMArena <https://www.gsmarena.com/lg_g4-6901.php>`_
+* `LG G4 DeviceSpecifications <https://www.devicespecifications.com/en/model/52f833d1>`_
