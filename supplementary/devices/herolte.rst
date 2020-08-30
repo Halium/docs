@@ -95,7 +95,7 @@ If at some point the device does not boot at all from the power off state, no ma
 
 * Then switch completely off, also as described above. 
 
-* Now, you should once more be able to either boot normally or boot into recovery, whichever you wish.s
+* Now, you should once more be able to either boot normally or boot into recovery, whichever you wish.
 
 Useful Resources
 ^^^^^^^^^^^^^^^^
