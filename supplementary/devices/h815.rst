@@ -1,5 +1,5 @@
 
-H815 - LG G4
+h815 - LG G4
 ============
 
 The LG G4 is a mobile handset featuring a 5.5 in 1440p display, a snapdragon 808 hexacore processor and 3 GB RAM, 32 GB internal storage with the option to expand to 2TB. The micro USB port doubles as HDMI out.
