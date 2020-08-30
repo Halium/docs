@@ -45,8 +45,8 @@ The following table is somewhat lacking, but a good start.
      - ?
      - ?
    * - `Halium and Ubports device port page <http://docs.halium.org/en/latest/supplementary/devices/herolte.html>`_
-     - `android_device_samsung_hero-common <https://github.com/abkro/android_device_samsung_hero-common/tree/halium-7.1-ut>`_ `android_device_samsung_herolte <https://github.com/abkro/android_device_samsung_herolte/tree/halium-7.1-ut>`_
-     - `android_kernel_samsung_universal8890 <https://github.com/abkro/android_kernel_samsung_universal8890/tree/ubports-ut>`_ based on v3.18.14
+     - `abkro/android_device_samsung_hero-common <https://github.com/abkro/android_device_samsung_hero-common/tree/halium-7.1-ut>`_ `abkro/android_device_samsung_herolte <https://github.com/abkro/android_device_samsung_herolte/tree/halium-7.1-ut>`_
+     - `abkro/android_kernel_samsung_universal8890 <https://github.com/abkro/android_kernel_samsung_universal8890/tree/ubports-ut>`_ based on v3.18.14
      - Graphics, screen rotation, wifi, lights, sound (partially), vibration.
      - Bluetooth, phone, sms, gps, camera, video.
 
