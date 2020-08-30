@@ -4,7 +4,7 @@ Herolte - Samsung Galaxy S7
 
 The Samsung Galaxy S7 is a lightweight, powerful handset with an impressively crisp screen, and good look and feel. As with Samsung devices in general, the process of building and flashing ROMs has its peculiarities compared to devices of other makes. This page should help overcome the challenges they might otherwise present.
 
-(Note: This page is still under construction.)
+This device is currently being worked on by `Ari Börde Kröyer <https://github.com/abkro>`_.
 
 Status
 ------
