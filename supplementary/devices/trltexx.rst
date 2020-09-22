@@ -38,7 +38,7 @@ Distributions
      - TBA
      - TBA
      - GUI, Touchscreen, Power Off Charging Animation, Status LED, Bluetooth (on boot only), some ADB, some Hiemdall, GPS (one device, early test results)
-     - QCOM Sensors, Cellular not tested, Media Hub (D-Bus errors), Auto Brightness Sensor, Wifi (forgets pw on reboot), X Cellular, Stylus: shows DMESG/works in libinput but Lormiri ignores, X Audio only shows devices, AppArmor missing items, OTA: partition too small to complete updates
+     - QCOM Sensors, Cellular not tested, Media Hub (D-Bus errors), Auto Brightness Sensor, Wifi (forgets pw on reboot), X Cellular, Stylus: shows DMESG/works in libinput but Lomiri ignores, X Audio only shows devices, AppArmor missing items, OTA: partition too small to complete updates
 
 
 Kernel & Hardware
