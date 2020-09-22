@@ -2,7 +2,7 @@
 Codename - trlte
 ===========================
 
-Samsung Galaxy Note 4 released October 2014. 3GB of RAM along with active stylus pen. References: `Wikipedia <https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_4>`_ and `GSM Arena <https://www.gsmarena.com/samsung_galaxy_note_4-6434.php>`_
+Samsung Galaxy Note 4 released October 2014. 3GB of RAM along with active stylus pen. References: `Wikipedia <https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_4>`_ and `GSM Arena <https://www.gsmarena.com/samsung_galaxy_note_4-6434.php>`_.
 
 Status
 ------
@@ -32,13 +32,13 @@ Distributions
    * - LineageOS UNOFFICAL
      - https://github.com/tyg3rpro/android_device_samsung_trlte-common
      - https://github.com/tyg3rpro/android_kernel_samsung_trlte
+     - seemed ok, not much tested (?)
      - ?
-     - ?
-   * - Ubports TBD 
+   * - Ubports 
      - TBD
      - TBD
-     - see Halium section Status
-     - see Halium section Status
+     - GUI, Touchscreen, Power Off Charging Animation, Status LED, Bluetooth (on boot only), some ADB, some Hiemdall
+     - QCOM Sensors, Cellular not tested, Media Hub (D-Bus errors), Auto Brightness Sensor, Wifi (forgets pw on reboot), X Cellular, Stylus: shows DMESG/works in libinput but Lormiri ignores, X Audio only shows devices, AppArmor missing items, OTA: partition too small to complete updates
 
 
 Kernel & Hardware
