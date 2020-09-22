@@ -33,11 +33,11 @@ Distributions
      - https://github.com/tyg3rpro/android_device_samsung_trlte-common
      - https://github.com/tyg3rpro/android_kernel_samsung_trlte
      - seemed ok, not much tested (?)
-     - ?
+     - unknown (?)
    * - Ubports 
-     - TBD
-     - TBD
-     - GUI, Touchscreen, Power Off Charging Animation, Status LED, Bluetooth (on boot only), some ADB, some Hiemdall
+     - TBA
+     - TBA
+     - GUI, Touchscreen, Power Off Charging Animation, Status LED, Bluetooth (on boot only), some ADB, some Hiemdall, GPS (one device, early test results)
      - QCOM Sensors, Cellular not tested, Media Hub (D-Bus errors), Auto Brightness Sensor, Wifi (forgets pw on reboot), X Cellular, Stylus: shows DMESG/works in libinput but Lormiri ignores, X Audio only shows devices, AppArmor missing items, OTA: partition too small to complete updates
 
 
