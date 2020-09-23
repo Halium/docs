@@ -88,6 +88,6 @@ Useful Resources
   - Phone Case (decent, not quite Unicorn-Beetle tough): https://amzn.to/35srUOq
 
 Other - Not Applicable
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
   For Reference only:
   - LineageOS Official build: Samsung Galaxy Note 4 Exynos (N910C variant): https://github.com/LineageOS/android_device_samsung_treltexx
