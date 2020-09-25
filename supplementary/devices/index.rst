@@ -33,7 +33,6 @@ All of these should only be document in the exact same way here and **only an ov
    rolex
    T00F
    titan
-   trlte
    vegeta
    wt88047
    yuga
@@ -425,26 +424,6 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - :doc:`Samsung Galaxy Note 4 <trlte>`
-     - trlte
-     - Halium
-     - Kernel
-     - SoC
-     - CPU 
-     - GPU
-     - RAM
-     - Storage
-     - Connectivity
-     - Camera Front
-     - Camera Back
-     - Battery
-     - Sound
-     - Touch screen
-     - Display
-     - Navigation
-     - Sensors
-     - Other
-
    * - :doc:`Moto G 2014 <titan>`
      - titan
      - Halium 7.1 working
