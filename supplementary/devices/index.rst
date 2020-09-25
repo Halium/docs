@@ -32,6 +32,7 @@ All of these should only be document in the exact same way here and **only an ov
    pme
    rolex
    T00F
+   trlte
    titan
    vegeta
    wt88047
@@ -424,6 +425,25 @@ Devices
      - Navigation
      - Sensors
      - Other
+   * - :doc:`Samsung Galaxy Note 4 <trlte>`
+     - trlte
+     - Halium 7.1 working
+     - v3.10.4
+     - Qualcomm APQ8084 Snapdragon 805 (28 nm)
+     - Quad-core 2.7 GHz Krait 450
+     - Adreno 420
+     - 3GB
+     - 32GB
+     - GSM / CDMA / HSPA / EVDO / LTE
+     - 16 MP, f/2.2, 31mm (standard), 1/2.6", 1.12µm, AF, OIS, 4K@30fps, 1080p@30/60fps, stereo sound rec.
+     - 3.7 MP, f/1.9, 22mm (wide), HDR, 1440p@30fps
+     - Li-Ion 3220 mAh, removable, Fast charging 15W
+     - Loudspeaker, 3.5mm, 24-bit/192kHz audio
+     - Super AMOLED capacitive touchscreen, 16M colors
+     - 5.7 inches, 1440 x 2560 pixels, 16:9 ratio (~518 ppi density), Corning Gorilla Glass 4
+     - Yes, with A-GPS, GLONASS
+     - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, gesture, UV, heart rate, SpO2, digitizer
+     - S-pen stylus
    * - :doc:`Moto G 2014 <titan>`
      - titan
      - Halium 7.1 working
