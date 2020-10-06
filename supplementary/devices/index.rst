@@ -14,16 +14,16 @@ All of these should only be document in the exact same way here and **only an ov
    :maxdepth: 1
    
    devicetemplate
-   dream2lte
    bullhead
    cedric
    chaozu
    deb
+   dream2lte
    flo
    fp2
+   h815
    hammerhead
    herolte
-   h815
    krillin
    land
    mako
@@ -32,13 +32,14 @@ All of these should only be document in the exact same way here and **only an ov
    pme
    rolex
    T00F
-   trlte
+   taoshan
    titan
+   trlte
    vegeta
    wt88047
    yuga
-   taoshan
    Z00L
+
    
 
 How to document
