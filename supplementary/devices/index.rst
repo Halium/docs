@@ -22,6 +22,8 @@ All of these should only be document in the exact same way here and **only an ov
    flo
    fp2
    hammerhead
+   herolte
+   h815
    krillin
    land
    mako
@@ -632,14 +634,52 @@ Devices
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
      - IR Blaster
-
+   * - :doc: `Samsung Galaxy S7 <herolte>`
+     - herolte
+     - Halium 7.1 (WIP). Boots, runs UT, graphics, light, vibration, wifi work.
+     - v3.18.14
+     - US and China: Qualcomm Snapdragon 820 MSM8996; Rest of world: Samsung Exynos 8 Octa 8890
+     - US and China: 2x2.15 GHz Kryo, 2x1.6 GHz Kryo, 4 cores; Rest of world: 4x2.3 GHz Exynos M1 Mongoose, 4x1.6 GHz ARM Cortex-A53, 8 cores
+     - US and China: Adreno 530, Rest of world: Mali-T880 MP12
+     - 4 GB
+     - 32 GM / 64 GB
+     - Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot; Bluetooth 4.2, A2DP, LE, aptX; microUSB 2.0
+     - 5 MP, f/1.7, 22mm (wide), 1/4.1", 1.34µm; Dual video call, Auto-HDR; Video 1440p
+     - 12 MP, f/1.7, 26mm (wide), 1/2.55", 1.4µm, Dual Pixel PDAF, OIS; LED flash, auto-HDR, panorama; Video 4K@30fps, 1080p@30fps (gyro-EIS), 1080p@60fps, 720p@240fps, HDR, stereo sound rec., OIS
+     - Non-removable Li-Ion 3000 mAh battery; Fast charging 15W
+     - Loudspeaker, 3.5mm jack, 24-bit/192kHz audio
+     - Super AMOLED capacitive touchscreen 
+     - 5.1 inches, 1440 x 2560 pixels, 16:9 ratio (~577 ppi density), 16M colors, Corning Gorilla Glass 4
+     - A-GPS, GLONASS, BDS
+     - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, heart rate, SpO2
+     - IP68 dust/water resistant (up to 1.5m for 30 mins)
+   * - :doc: `LG G4 (International) <h815>`
+     - h815
+     - Halium 7.1 (WIP). Boots, runs UT, graphics, screen rotation, lights, vibration, wifi, audio, sensors, sms work.
+     - v3.10.84
+     - Qualcomm Snapdragon 808 MSM8992
+     - 2 x 1.8 GHz ARM Cortex-A57, 4 x 1.44 GHz ARM Cortex-A53
+     - Qualcomm Adreno 418
+     - 3 GB
+     - 32 GB, extendable to 2 TB (microSD, microsSDHC, microSDXC)
+     - Wifi, bluetooth, microUSB, HDMI (slimport), infrared
+     - Toshiba T4KA3 7.99 MP
+     - Sony IMX234 Exmor RS 15.87 MP
+     - 3000 mAh
+     - Audio jack, speaker (Qualcomm WCD9330)
+     - Capacitive multi-touch screen
+     - 5.5 inch, 1440 x 2560 pixels, 16:9 ratio, 16M colors, Corning Gorilla Glass 4
+     - GPS, AGPS, GLONASS
+     - Proximity, light, accelerometer, gyroscope, barometer, compass.
+     - --
+      
 Sources
 ^^^^^^^
 
 Since there are no sub pages yet, gathering links for the examples here:
 
 OnePlus 5
-~~~~~~~~~~
+~~~~~~~~~
 
 
 * `Oneplus 5 iFixit teardown <https://www.ifixit.com/Teardown/OnePlus+5+Teardown/94173>`_
@@ -782,3 +822,16 @@ Xiaomi Redmi 4A
 
 * `Redmi 4A Website <https://www.mistore.pk/redmi-4a-overview/>`_
 * `Redmi 4A GSMArena <https://www.gsmarena.com/xiaomi_redmi_4a-8420.php>`_
+
+Samsung Galaxy S7
+~~~~~~~~~~~~~~~~~
+
+* `Samsung Galaxy S7 GSMArena <https://www.gsmarena.com/samsung_galaxy_s7-7821.php>`_
+* `Samsung Galaxy S7 Exynos DeviceSpecifications <https://www.devicespecifications.com/en/model/63063a47>`_
+* `Samsung Galaxy S7 SD820 DeviceSpecifications <https://www.devicespecifications.com/en/model/16f73a49>`_
+
+LG G4
+~~~~~
+
+* `LG G4 GSMArena <https://www.gsmarena.com/lg_g4-6901.php>`_
+* `LG G4 DeviceSpecifications <https://www.devicespecifications.com/en/model/52f833d1>`_

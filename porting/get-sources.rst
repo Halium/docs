@@ -30,9 +30,10 @@ Now that you have initialized the Halium tree (a shallow copy due to --depth=1),
 
    repo sync -c -j 16
 
-In case you want to get the full repo history at some point in the future because you want to patch, contribute, etc. You can execute the following command from the repository directory ::
+In case you want to get the full repo history at some point in the future because you want to patch, contribute, etc. You can execute the following commands from the repository directory ::
 
-   git fetch --unshallow
+   git remote -v # The leftmost word is the remote name
+   git fetch --unshallow [remote_name]
 
 Adding your device-specific source
 ----------------------------------
@@ -133,6 +134,7 @@ aosp         Android Open Source Project, https://android.googlesource.com
 los          LineageOS, http://github.com/LineageOS
 hal          Halium (link to GitHub root for legacy reasons), http://github.com
 them         TheMuppets, http://github.com/TheMuppets
+them2        TheMuppets (for some xiaomi vendor repos) https://gitlab.com/the-muppets
 ===========  =======================
 
 If you do not specify a remote, ``aosp`` is assumed. 

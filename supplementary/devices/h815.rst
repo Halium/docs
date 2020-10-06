@@ -1,0 +1,79 @@
+H815 - LG G4
+===========================
+
+The LG G4 is a mobile handset featuring a 5.5 in 1440p display, a snapdragon 808 hexacore processor and 3 GB RAM, 32 GB internal storage with the option to expand to 2TB. The micro USB port doubles as HDMI out.
+
+Status
+------
+
+Halium
+^^^^^^
+
+Halium works on this device although not all features are functional as of writing. The device is currently being worked on by `Ari Börde Kröyer <https://github.com/abkro>`_.
+
+The Halium version is 7.1 and the kernel is version 3.10.84. The device boots into the Ubports Ubuntu Touch 32 bit rootfs. 
+
+What works:
+Graphics (including screen rotation), wifi, audio, sensors, and sms are all working. Audio in calls is currently not functional, although it is possible to place and receive calls.
+
+Distributions
+^^^^^^^^^^^^^
+
+Overview of available distributions and the status of these, as well as corresponding sources.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Distribution
+     - Device Specific Files
+     - Kernel
+     - What works
+     - What doesn't work
+   * - `LG G4 (h815) on LineageOS Wiki <https://wiki.lineageos.org/devices/h815/>`_
+     - `LineageOS/android_device_lge_h815 <https://github.com/LineageOS/android_device_lge_h815>`_  `LineageOS/android_device_lge_g4-common <https://github.com/LineageOS/android_device_lge_g4-common>`_ `proprietary_vendor_lge <https://github.com/TheMuppets/proprietary_vendor_lge>`_
+     - `android_kernel_placeholder <placeholder>`_ based on vX.Y.Z
+     - ?
+     - ?
+   * - Ubports device page: `none as yet <placeholder>`_
+     - `abkro/android_device_lge_h815/tree/halium-7.1-ut <https://github.com/abkro/android_device_lge_h815/tree/halium-7.1-ut>`_ `abkro/android_device_lge_g4-common/tree/halium-7.1-ut <https://github.com/abkro/android_device_lge_g4-common/tree/halium-7.1-ut>`_ Vendor blobs: see above.
+     - `abkro/android_kernel_lge_msm8992 <https://github.com/abkro/android_kernel_lge_msm8992/tree/halium-7.1-ut>`_ based on v3.10.84
+     - Graphics, screen rotation, wifi, audio, sensors, sms
+     - Camera, audio in calls
+
+
+Kernel & Hardware
+^^^^^^^^^^^^^^^^^
+
+Mainline (vX.Y.Z as of writing)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+---
+
+Cyanogemod based kernels (LOS & UBP)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+---
+
+Device Specifics
+----------------
+
+Guides
+^^^^^^
+
+`LOS device page <https://wiki.lineageos.org/devices/h815/>`_.
+
+Developer Info
+^^^^^^^^^^^^^^
+
+Once the device has been unlocked, TWRP recovery has been installed and you have flashed the device, reflashing has to be done as follows, using adb:
+
+Enter TWRP recovery
+Wipe as necessary
+Connect to host pc by USB cable
+Enter directory on host where your boot image resides
+Input command: 'adb push <your_boot_image> /sdcard/Download/'
+On the device: Select 'install', navigate to directory /sdcard/Download, choose 'Image', select the file, select 'Boot', swipe to flash.
+
+For flashing system image and rootfs, follow instructions in the relevant guide.
+
+
