@@ -1,6 +1,6 @@
 
 Codename - trlte
-===========================
+================
 
 Samsung Galaxy Note 4 released October 2014. 3GB of RAM along with active stylus pen. References: `Wikipedia <https://en.wikipedia.org/wiki/Samsung_Galaxy_Note_4>`_ and `GSM Arena <https://www.gsmarena.com/samsung_galaxy_note_4-6434.php>`_.
 
@@ -45,10 +45,10 @@ Kernel & Hardware
 ^^^^^^^^^^^^^^^^^
 
 Kernel (v3.10.4 as of writing)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 LineageOS based kernels: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 Please see: https://www.cyanogenmods.org/list-lineage-os-14-1-rom-samsung-phones/#List_of_Available_UNOFFICIAL_LineageOS_141_for_all_Samsung_Phones_and_Tabs_Arranged_Alphabetically
 
   - Samsung Galaxy NOTE 4 (trltexx) LineageOS 14.1 for Samsung Galaxy NOTE 4
