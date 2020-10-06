@@ -12,7 +12,7 @@ All of these should only be document in the exact same way here and **only an ov
 
 .. toctree::
    :maxdepth: 1
-   
+
    devicetemplate
    dream2lte
    bullhead
@@ -33,12 +33,13 @@ All of these should only be document in the exact same way here and **only an ov
    rolex
    T00F
    titan
+   griffin
    vegeta
    wt88047
    yuga
    taoshan
    Z00L
-   
+
 
 How to document
 ---------------
@@ -557,11 +558,30 @@ Devices
      - GPS, A-GPS, GLONASS
      - Ambient Light Sensor, Fingerprint, Accelerometer, Proximity, Gyroscope
      - Other **?**
+   * - :doc:`Motorola Moto Z <griffin>`
+     - griffin
+     - Halium porting started
+     - Kernel MSM8996
+     - Qualcomm MSM8996 Snapdragon 820
+     - Quad-core (2x1.8 GHz Kryo & 2x1.6 GHz Kryo)
+     - Adreno 530
+     - **XT1650:** 4 GB
+     - **XT1650:** 32 GB / **XT1650** 64 GB
+     - Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 4.1, A2DP, LE, aptX
+     - 5MP, LED flash
+     - 13MP, Dual-LED dual-tone flash, HDR, panorama
+     - Non-Removable Li-Ion 2600 mAh, Fast charging 15W
+     - Speaker, Microphone
+     - AMOLED capacitive touchscreen, 16M colors
+     - 5.5 inches, 1440 x 2560, 16:9 ratio (~535 ppi density)
+     - GPS, A-GPS, GLONASS
+     - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass
+     - Other
    * - :doc:`Sony Xperia M <nicki>`
      - nicki
      - Halium-7.1 and 5.1 wip
      - Kernel v3.4.0
-     - Qualcomm MSM8227/8x27/8627 (referring to the same soc) 
+     - Qualcomm MSM8227/8x27/8627 (referring to the same soc)
      - Dual core Krait (2x 1.0 Ghz)
      - Adreno 305
      - 1 GB
@@ -613,7 +633,7 @@ Devices
      - IPS LCD (720x1280)
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
-     - IR Blaster 
+     - IR Blaster
    * - :doc: `Samsung Galaxy S7 <herolte>`
      - herolte
      - Halium 7.1 (WIP). Boots, runs UT, graphics, light, vibration, wifi work.
@@ -659,7 +679,7 @@ Sources
 Since there are no sub pages yet, gathering links for the examples here:
 
 OnePlus 5
-~~~~~~~~~~
+~~~~~~~~~
 
 
 * `Oneplus 5 iFixit teardown <https://www.ifixit.com/Teardown/OnePlus+5+Teardown/94173>`_
