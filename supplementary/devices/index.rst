@@ -160,7 +160,7 @@ Devices
      - GPS, A-GPS, GLONASS, BDS, GALILEO
      - Proximity, Light, Accelerometer, Compass, Gyroscope, Barometer, Fingerprint, Hall, Heart rate
      - Skyworks 78160-11 (?), Avago AFEM-9066 (?), Avago AFEM-9053 (?), Silicon Mitus SM5720 (Power Management), Qualcomm PM8998 (Power Management), IDT P9320S (?), Maxim MAX77838 (Power Management)
-   * - `LG Nexus 5 <hammerhead>`
+   * - :doc:`LG Nexus 5 <hammerhead>`
      - hammerhead
      - ? reference
      - ?
@@ -179,7 +179,7 @@ Devices
      - Navigation
      - InvenSense MPU-6515 (6-Axis Gyro + Acc), Asahi Kasei AK8963 (3-Axis compass), InvenSense IDG-2020 (2-Axis Gyro - for OIS)
      - Avago RFI335 (optocopler ?), Qualcomm PM8841 & PM8941 (power management), Analogix ANX7808 (Slimport transmitter), Texas Instruments BQ24192 (I2C controlled USB charger)
-   * - `Nexus 5X <bullhead>`
+   * - :doc:`Nexus 5X <bullhead>`
      - bullhead
      - ? reference
      - ?
@@ -217,7 +217,7 @@ Devices
      - navi
      - AGD2 2402 WX9DR(gyro?)
      - Qualcomm PM8941 + PM8841(power management), Skyworks SKY77629-21(power amp)
-   * - `Fairphone 2 <fp2>`
+   * - :doc:`Fairphone 2 <fp2>`
      - fp2
      - -
      - -
@@ -236,7 +236,7 @@ Devices
      - Navigation
      - ST Microelectronics LSM330DLC 6-Axis (Gyro + Acc)
      - Qualcomm QFE1100 (Power Management), Qualcomm PM8841 (Power Management IC)
-   * - `LG Nexus 4 <mako>`
+   * - :doc:`LG Nexus 4 <mako>`
      - mako
      - -
      - -
@@ -255,7 +255,7 @@ Devices
      - Avago 3012 (GNSS)
      - Invensense MPU-6050 6-Axis (Gyro + Acc),
      - SlimPort ANX7808 SlimPort Transmitter(HDMI out), Qualcomm PM8921 & PM8821 (Power Management), Avago A5702, A5704, A5505 (?)
-   * - `Asus Nexus 7 (2012) <sub page>`_
+   * - :doc:`Asus Nexus 7 (2012) <sub page>`_
      - ?
      - ?
      - ?
@@ -274,7 +274,7 @@ Devices
      - Navigation
      - Invensense MPU-6050 6-Axis(Gyro + Acc)
      - Max 77612A (Inverting Switching regulator?)
-   * - `Asus Nexus 7 (2013) WiFi Edition <flo>`
+   * - :doc:`Asus Nexus 7 (2013) WiFi Edition <flo>`
      - flo
      - -
      - -
@@ -293,7 +293,7 @@ Devices
      - Navigation
      - Sensors
      - Analogix ANX7808 SlimPort (HDMI transmitter), Texas Instruments BQ51013B (Inductive Charging Controller), Qualcomm PM8921 (Power Management)
-   * - `Asus Nexus 7 (2013) GSM Edition <deb>`
+   * - :doc:`Asus Nexus 7 (2013) GSM Edition <deb>`
      - deb
      - Halium 7.1 working
      - -
@@ -312,7 +312,7 @@ Devices
      - Navigation
      - Sensors
      - Analogix ANX7808 SlimPort (HDMI transmitter), Texas Instruments BQ51013B (Inductive Charging Controller), Qualcomm PM8921 (Power Management)
-   * - `BQ Aquaris E4.5 <krillin>`
+   * - :doc:`BQ Aquaris E4.5 <krillin>`
      - krillin
      - no work so far
      - -
@@ -369,7 +369,7 @@ Devices
      - Navigation
      - Sensors
      - Qualcomm PM8916 (Power management), SGM3140B (LED driver)
-   * - `Asus Zenfone 5 <T00F>`
+   * - :doc:`Asus Zenfone 5 <T00F>`
      - T00F
      - work in progress
      - Kernel
@@ -388,7 +388,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - `Asus Zenfone 2 Laser <Z00L>`
+   * - :doc:`Asus Zenfone 2 Laser <Z00L>`
      - Z00L
      - Halium 7.1 working
      - v3.10.108
@@ -407,7 +407,7 @@ Devices
      - GPS
      - Accelerometer | Gyroscope | Proximity sensor | Compass
      - Other
-   * - `BQ Aquaris U <chaozu>`
+   * - :doc:`BQ Aquaris U <chaozu>`
      - chaozu
      - Halium porting started
      - 3.18.31 based
@@ -426,7 +426,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - `Samsung Galaxy Note 4 <trlte>`
+   * - :doc:`Samsung Galaxy Note 4 <trlte>`
      - trlte
      - Halium 7.1 working
      - v3.10.4
@@ -445,7 +445,7 @@ Devices
      - Yes, with A-GPS, GLONASS
      - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, gesture, UV, heart rate, SpO2, digitizer
      - S-pen stylus
-   * - `Moto G 2014 <titan>`
+   * - :doc:`Moto G 2014 <titan>`
      - titan
      - Halium 7.1 working
      - Kernel
@@ -464,7 +464,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - `Sony Xperia Z <yuga>`
+   * - :doc:`Sony Xperia Z <yuga>`
      - yuga
      - Halium 7.1 working
      - Kernel
@@ -483,7 +483,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - `Sony Xperia L <taoshan>`
+   * - :doc:`Sony Xperia L <taoshan>`
      - taoshan
      - Halium 7.1 can be installed, but does not work, yet
      - v3.4.0
@@ -502,7 +502,7 @@ Devices
      - A-GPS
      - Accelerometer, proximity, compass
      - Other?
-   * - `HTC 10 <pme>`
+   * - :doc:`HTC 10 <pme>`
      - pme
      - Halium 7.1 working
      - v3.18.31
@@ -521,7 +521,7 @@ Devices
      - GPS + GLONASS + (Beidou) Navigation **??**
      - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor, Fingerprint sensor, Sensor Hub - **??**
      - Other **??**
-   * - `Xiaomi Redmi2/Prime <wt88047>`
+   * - :doc:`Xiaomi Redmi2/Prime <wt88047>`
      - wt88047
      - Halium 7.1 working
      - 3.10.49
@@ -540,7 +540,7 @@ Devices
      - GPS + GLONASS
      - Ambient light sensor, Proximity sensor, Motion G-sensor, Compass sensor, Gyro sensor, Magnetic sensor
      - Other **?**
-   * - `OnePlus 3(T) <oneplus3>`
+   * - :doc:`OnePlus 3(T) <oneplus3>`
      - oneplus3
      - Halium 7.1 working
      - v3.18.31
@@ -559,7 +559,7 @@ Devices
      - GPS, A-GPS, GLONASS, BeiDou
      - Proximity, Light, Accelerometer, Compass, Gyroscope, Fingerprint, Hall
      - Other **?**
-   * - `Motorola Moto G5 <cedric>`
+   * - :doc:`Motorola Moto G5 <cedric>`
      - cedric
      - No progress yet
      - Kernel **?**
@@ -578,7 +578,7 @@ Devices
      - GPS, A-GPS, GLONASS
      - Ambient Light Sensor, Fingerprint, Accelerometer, Proximity, Gyroscope
      - Other **?**
-   * - `Sony Xperia M <nicki>`
+   * - :doc:`Sony Xperia M <nicki>`
      - nicki
      - Halium-7.1 and 5.1 wip
      - Kernel v3.4.0
@@ -597,7 +597,7 @@ Devices
      - GPS, A-GPS, GLONASS
      - Ambient Light Sensor, Accelerometer, Proximity
      - Other **?**
-   * - `Xiaomi Redmi 3S/Prime <land>`
+   * - :doc:`Xiaomi Redmi 3S/Prime <land>`
      - land
      - Halium 7.1 working
      - v3.18.31
@@ -616,7 +616,7 @@ Devices
      - GPS, A-GPS, GLONASS
      - Ambient Light Sensor, Fingerprint(Prime only), Accelerometer, Proximity, Gyroscope
      - Other **?**
-   * - `Xiaomi Redmi 4A <rolex>`
+   * - :doc:`Xiaomi Redmi 4A <rolex>`
      - rolex
      - Halium 7.1 (WIP)
      - v3.18.31
@@ -635,7 +635,7 @@ Devices
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
      - IR Blaster 
-   * - :doc: `Samsung Galaxy S7 <herolte>`
+   * - :doc:`Samsung Galaxy S7 <herolte>`
      - herolte
      - Halium 7.1 (WIP). Boots, runs UT, graphics, light, vibration, wifi work.
      - v3.18.14
@@ -654,7 +654,7 @@ Devices
      - A-GPS, GLONASS, BDS
      - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, heart rate, SpO2
      - IP68 dust/water resistant (up to 1.5m for 30 mins)
-   * - :doc: `LG G4 (International) <h815>`
+   * - :doc:`LG G4 (International) <h815>`
      - h815
      - Halium 7.1 (WIP). Boots, runs UT, graphics, screen rotation, lights, vibration, wifi, audio, sensors, sms work.
      - v3.10.84
