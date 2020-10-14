@@ -121,7 +121,7 @@ Devices
      - Navigation
      - Sensors
      - Other
-   * - `Samsung Galaxy S8+ <dream2lte>`
+   * - :doc:`Samsung Galaxy S8+ <dream2lte>`
      - dream2lte
      - Halium 7.1 WIP
      - v4.4.79
@@ -652,7 +652,7 @@ Devices
      - IPS LCD (720x1280)
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
-     - IR Blaster 
+     - IR Blaster
    * - :doc:`Samsung Galaxy S7 <herolte>`
      - herolte
      - Halium 7.1 (WIP). Boots, runs UT, graphics, light, vibration, wifi work.
