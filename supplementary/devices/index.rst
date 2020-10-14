@@ -254,7 +254,7 @@ Devices
      - Avago 3012 (GNSS)
      - Invensense MPU-6050 6-Axis (Gyro + Acc),
      - SlimPort ANX7808 SlimPort Transmitter(HDMI out), Qualcomm PM8921 & PM8821 (Power Management), Avago A5702, A5704, A5505 (?)
-   * - :doc:`Asus Nexus 7 (2012) <sub page>`
+   * - `Asus Nexus 7 (2012) <asus-grouper>`
      - ?
      - ?
      - ?
