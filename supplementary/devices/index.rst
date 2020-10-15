@@ -14,16 +14,17 @@ All of these should only be document in the exact same way here and **only an ov
    :maxdepth: 1
 
    devicetemplate
-   dream2lte
    bullhead
    cedric
    chaozu
    deb
+   dream2lte
    flo
    fp2
+   griffin
+   h815
    hammerhead
    herolte
-   h815
    krillin
    land
    mako
@@ -32,14 +33,13 @@ All of these should only be document in the exact same way here and **only an ov
    pme
    rolex
    T00F
+   taoshan
    titan
-   griffin
+   trlte
    vegeta
    wt88047
    yuga
-   taoshan
    Z00L
-
 
 How to document
 ---------------
@@ -254,7 +254,7 @@ Devices
      - Avago 3012 (GNSS)
      - Invensense MPU-6050 6-Axis (Gyro + Acc),
      - SlimPort ANX7808 SlimPort Transmitter(HDMI out), Qualcomm PM8921 & PM8821 (Power Management), Avago A5702, A5704, A5505 (?)
-   * - `Asus Nexus 7 (2012) <sub page>`_
+   * - `Asus Nexus 7 (2012) <asus-grouper>`
      - ?
      - ?
      - ?
@@ -425,6 +425,25 @@ Devices
      - Navigation
      - Sensors
      - Other
+   * - :doc:`Samsung Galaxy Note 4 <trlte>`
+     - trlte
+     - Halium 7.1 working
+     - v3.10.4
+     - Qualcomm APQ8084 Snapdragon 805 (28 nm)
+     - Quad-core 2.7 GHz Krait 450
+     - Adreno 420
+     - 3GB
+     - 32GB
+     - GSM / CDMA / HSPA / EVDO / LTE
+     - 16 MP, f/2.2, 31mm (standard), 1/2.6", 1.12µm, AF, OIS, 4K@30fps, 1080p@30/60fps, stereo sound rec.
+     - 3.7 MP, f/1.9, 22mm (wide), HDR, 1440p@30fps
+     - Li-Ion 3220 mAh, removable, Fast charging 15W
+     - Loudspeaker, 3.5mm, 24-bit/192kHz audio
+     - Super AMOLED capacitive touchscreen, 16M colors
+     - 5.7 inches, 1440 x 2560 pixels, 16:9 ratio (~518 ppi density), Corning Gorilla Glass 4
+     - Yes, with A-GPS, GLONASS
+     - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, gesture, UV, heart rate, SpO2, digitizer
+     - S-pen stylus
    * - :doc:`Moto G 2014 <titan>`
      - titan
      - Halium 7.1 working
@@ -634,7 +653,7 @@ Devices
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
      - IR Blaster
-   * - :doc: `Samsung Galaxy S7 <herolte>`
+   * - :doc:`Samsung Galaxy S7 <herolte>`
      - herolte
      - Halium 7.1 (WIP). Boots, runs UT, graphics, light, vibration, wifi work.
      - v3.18.14
@@ -653,7 +672,7 @@ Devices
      - A-GPS, GLONASS, BDS
      - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, heart rate, SpO2
      - IP68 dust/water resistant (up to 1.5m for 30 mins)
-   * - :doc: `LG G4 (International) <h815>`
+   * - :doc:`LG G4 (International) <h815>`
      - h815
      - Halium 7.1 (WIP). Boots, runs UT, graphics, screen rotation, lights, vibration, wifi, audio, sensors, sms work.
      - v3.10.84
