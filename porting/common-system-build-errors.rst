@@ -23,14 +23,14 @@ Undefined or missing bluetooth headers
 
 Some devices require bluetooth headers which aren't synced by default. This can be fixed by adding the following repository to the device manifest:
 
-.. code-block::
+.. code-block:: xml
 
     <project path="system/bt" name="android_system_bt" remote="los" revision="cm-14.1" />
 
 HYBRIS_BOOT_PART and HYBRIS_DATA_PART
 -------------------------------------
 
-.. code-block::
+.. code-block:: text
 
    find: ‘device/*/generic’: No such file or directory
    find: ‘device/unknown’: No such file or directory
@@ -47,7 +47,7 @@ Make sure you rerun the :ref:`initialization commands <breakfast-and-lunch>` bef
 Flex locale error
 -----------------
 
-.. code-block::
+.. code-block:: text
 
    [ 19% 2365/12156] Lex: checkpolicy <= external/selinux/libsepol/cil/src/cil_lexer.l
    FAILED: /bin/bash -c "prebuilts/misc/linux-x86/flex/flex-2.5.39 -o/home/peter/docs/devel/halium.amami/out/host/linux-x86/obj/STATIC_LIBRARIES/libsepol_intermediates/cil/src/cil_lexer.c external/selinux/libsepol/cil/src/cil_lexer.l"
@@ -64,7 +64,7 @@ This seems to be a problem with locales and the prebuilt ``flex``. You can avoid
 Missing bison error
 -------------------
 
-.. code-block::
+.. code-block:: text
 
     [  1% 322/20069] Yacc: checkpolicy <= external/selinux/checkpolicy/policy_parse.y
     FAILED: /bin/bash -c "prebuilts/misc/linux-x86/bison/bison -d -v --defines=/home/builder/workdir/out/host/linux-x86/obj/EXECUTABLES/checkpolicy_intermediates/policy_parse.h -o /home/builder/workdir/out/host/linux-x86/obj/EXECUTABLES/checkpolicy_intermediates/policy_parse.c external/selinux/checkpolicy/policy_parse.y"
