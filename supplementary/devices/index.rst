@@ -12,15 +12,17 @@ All of these should only be document in the exact same way here and **only an ov
 
 .. toctree::
    :maxdepth: 1
-   
+
    devicetemplate
-   dream2lte
    bullhead
    cedric
    chaozu
    deb
+   dream2lte
    flo
    fp2
+   griffin
+   h815
    hammerhead
    herolte
    h815
@@ -32,13 +34,13 @@ All of these should only be document in the exact same way here and **only an ov
    pme
    rolex
    T00F
+   taoshan
    titan
+   trlte
    vegeta
    wt88047
    yuga
-   taoshan
    Z00L
-   
 
 How to document
 ---------------
@@ -253,7 +255,7 @@ Devices
      - Avago 3012 (GNSS)
      - Invensense MPU-6050 6-Axis (Gyro + Acc),
      - SlimPort ANX7808 SlimPort Transmitter(HDMI out), Qualcomm PM8921 & PM8821 (Power Management), Avago A5702, A5704, A5505 (?)
-   * - `Asus Nexus 7 (2012) <sub page>`_
+   * - `Asus Nexus 7 (2012) <asus-grouper>`
      - ?
      - ?
      - ?
@@ -424,6 +426,25 @@ Devices
      - Navigation
      - Sensors
      - Other
+   * - :doc:`Samsung Galaxy Note 4 <trlte>`
+     - trlte
+     - Halium 7.1 working
+     - v3.10.4
+     - Qualcomm APQ8084 Snapdragon 805 (28 nm)
+     - Quad-core 2.7 GHz Krait 450
+     - Adreno 420
+     - 3GB
+     - 32GB
+     - GSM / CDMA / HSPA / EVDO / LTE
+     - 16 MP, f/2.2, 31mm (standard), 1/2.6", 1.12µm, AF, OIS, 4K@30fps, 1080p@30/60fps, stereo sound rec.
+     - 3.7 MP, f/1.9, 22mm (wide), HDR, 1440p@30fps
+     - Li-Ion 3220 mAh, removable, Fast charging 15W
+     - Loudspeaker, 3.5mm, 24-bit/192kHz audio
+     - Super AMOLED capacitive touchscreen, 16M colors
+     - 5.7 inches, 1440 x 2560 pixels, 16:9 ratio (~518 ppi density), Corning Gorilla Glass 4
+     - Yes, with A-GPS, GLONASS
+     - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer, gesture, UV, heart rate, SpO2, digitizer
+     - S-pen stylus
    * - :doc:`Moto G 2014 <titan>`
      - titan
      - Halium 7.1 working
@@ -557,11 +578,30 @@ Devices
      - GPS, A-GPS, GLONASS
      - Ambient Light Sensor, Fingerprint, Accelerometer, Proximity, Gyroscope
      - Other **?**
+   * - :doc:`Motorola Moto Z <griffin>`
+     - griffin
+     - Halium porting started
+     - Kernel MSM8996
+     - Qualcomm MSM8996 Snapdragon 820
+     - Quad-core (2x1.8 GHz Kryo & 2x1.6 GHz Kryo)
+     - Adreno 530
+     - **XT1650:** 4 GB
+     - **XT1650:** 32 GB / **XT1650** 64 GB
+     - Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 4.1, A2DP, LE, aptX
+     - 5MP, LED flash
+     - 13MP, Dual-LED dual-tone flash, HDR, panorama
+     - Non-Removable Li-Ion 2600 mAh, Fast charging 15W
+     - Speaker, Microphone
+     - AMOLED capacitive touchscreen, 16M colors
+     - 5.5 inches, 1440 x 2560, 16:9 ratio (~535 ppi density)
+     - GPS, A-GPS, GLONASS
+     - Fingerprint (front-mounted), accelerometer, gyro, proximity, compass
+     - Other
    * - :doc:`Sony Xperia M <nicki>`
      - nicki
      - Halium-7.1 and 5.1 wip
      - Kernel v3.4.0
-     - Qualcomm MSM8227/8x27/8627 (referring to the same soc) 
+     - Qualcomm MSM8227/8x27/8627 (referring to the same soc)
      - Dual core Krait (2x 1.0 Ghz)
      - Adreno 305
      - 1 GB
@@ -613,7 +653,7 @@ Devices
      - IPS LCD (720x1280)
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
-     - IR Blaster 
+     - IR Blaster
    * - :doc:`Samsung Galaxy S7 <herolte>`
      - herolte
      - Halium 7.1 (WIP). Boots, runs UT, graphics, light, vibration, wifi work.
@@ -659,7 +699,7 @@ Sources
 Since there are no sub pages yet, gathering links for the examples here:
 
 OnePlus 5
-~~~~~~~~~~
+~~~~~~~~~
 
 
 * `Oneplus 5 iFixit teardown <https://www.ifixit.com/Teardown/OnePlus+5+Teardown/94173>`_
