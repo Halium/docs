@@ -27,6 +27,7 @@ All of these should only be document in the exact same way here and **only an ov
    herolte
    krillin
    land
+   laurel_sprout
    mako
    nicki
    oneplus3
@@ -691,6 +692,25 @@ Devices
      - GPS, AGPS, GLONASS
      - Proximity, light, accelerometer, gyroscope, barometer, compass.
      - --
+   * - :doc:`Xiaomi Mi A3 <laurel_sprout>`
+     - laurel_sprout
+     - Halium 9 (WIP)
+     - v4.14.7
+     - Qualcomm SDM665 Snapdragon 665
+     - Octa-core 4x2.0 GHz Kryo 260 Gold & 4x1.8 GHz Kryo 260 Silver
+     - Adreno 610
+     - 4 GB
+     - 64 GB / 128 GB
+     - Wi-Fi, Bluetooth 5.0,
+     - 32 MP, No flash
+     - 48 MP + 8 MP + 2 MP, LED flash
+     - Non removable 4030mAh
+     - Speaker, Microphone, 3.5mm Headphone Jack
+     - Capacitive Touch screen
+     - 6.088 inches Super AMOLED capacitive touchscreen, 720 x 1560 pixels, ~286 ppi, 16M colors
+     - GPS, A-GPS, GLONASS, BDS
+     - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
+     - IR Blaster
       
 Sources
 ^^^^^^^
@@ -841,6 +861,14 @@ Xiaomi Redmi 4A
 
 * `Redmi 4A Website <https://www.mistore.pk/redmi-4a-overview/>`_
 * `Redmi 4A GSMArena <https://www.gsmarena.com/xiaomi_redmi_4a-8420.php>`_
+
+
+Xiaomi Mi A3
+~~~~~~~~~~~~~~~~~~~~~
+
+* `Mi A3 GSMArena <https://www.gsmarena.com/xiaomi_mi_a3-9769.php>`_
+* `Mi A3 Wikipedia <https://en.wikipedia.org/wiki/Xiaomi_Mi_A3>`_
+
 
 Samsung Galaxy S7
 ~~~~~~~~~~~~~~~~~
