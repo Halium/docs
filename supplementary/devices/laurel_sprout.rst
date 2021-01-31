@@ -1,14 +1,54 @@
 
 laurel_sprout - Xiaomi Mi A3
-===========================
+============================  
 
-The phone features a 6.088 inch HD+ (1560 x 720 pixel) resolution, 283ppi Super AMOLED display, with Corning Gorilla Glass 5 protection. 
-It is powered by a Qualcomm Snapdragon 665 SoC. It also has a 2.0, Type-C 1.0 reversible connector. 
-The main camera has a 48MP Sony IMX586 sensor,8MP ultrawide and 2MP depth sensing cameras. 
-The front camera has a resolution of 32MP. The battery has a capacity of 4030mAh, which supports 18W quick charging via Qualcomm Quick Charge 3.0. 
+.. list-table::
+   :header-rows: 0
 
-The Xiaomi Mi A3 is a re-branded Xiaomi Mi CC9e smartphone, that comes with Android One instead of MIUI on the Mi CC9e. The Xiaomi Mi CC9e is a version meant for China, while the Xiaomi Mi A3 is the global version of the Mi CC9e.
-The phone when released in July 2019,was  preinstalled with Android 9 "Pie" .Xiaomi released Android 11 update.
+   * - Codename
+     - laurel_sprout 
+   * - Halium status
+     - Halium 9 (WIP)
+   * - Kernel
+     - v4.14.7
+   * - SoC
+     - Qualcomm SDM665 Snapdragon 665
+   * - CPU
+     - Octa-core 4x2.0 GHz Kryo 260 Gold & 4x1.8 GHz Kryo 260 Silver
+   * - GPU
+     - Adreno 610
+   * - RAM
+     - 4 GB
+   * - Storage
+     - 64 GB / 128 GB
+   * - Connectivity
+     - Wi-Fi, Bluetooth 5.0,
+   * - Camera Front
+     - 32 MP, No flash
+   * - Camera Back
+     - 48 MP + 8 MP + 2 MP, LED flash
+   * - Battery
+     - Non removable 4030mAh
+   * - Sound
+     - Speaker, Microphone, 3.5mm Headphone Jack
+   * - Touch screen
+     - 6.088 inch HD+ Super AMOLED capacitive touchscreen,
+   * - Display
+     - 720 x 1560 pixels, ~286 ppi, 16M colors
+   * - Navigation
+     - GPS, A-GPS, GLONASS, BDS
+   * - Sensors
+     - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
+   * - Other
+     - IR Blaster
+   * - Connector
+     - 2.0, Type-C 1.0 reversible connector
+   * - Quick Charge support 
+     - 18W quick charging via Qualcomm Quick Charge 3.0. 
+   * - Initial Android Version 	
+     - Android 9.0 "Pie"
+   * - Latest Android Version 	
+     - Android 11
 
 Status
 ------
@@ -16,7 +56,7 @@ Status
 Halium
 ^^^^^^
 
-A port for Halium 9 is Work-in-Progress by _`mintphin <https://github.com/mintphin>`_ . The device is capable of running Ubuntu touch based on erfan's GSI images.
+A port for Halium 9 is Work-in-Progress by `mintphin <https://github.com/mintphin>`_ . The device is capable of running Ubuntu touch based on erfan's GSI images.
 The latest erfan's GSI images are based on Ubuntu touch OTA-13.
 
 Distributions
@@ -31,16 +71,17 @@ Distributions
      - Kernel
      - What works
      - What doesn't work
+   * - `Ubuntu Touch <https://devices.ubuntu-touch.io/device/laurel-sprout>`_
+     - Not available
+     - `source <https://github.com/mintphin/lunecrash>`_ based on v4.14.7
+     - refer device specific `page <https://devices.ubuntu-touch.io/device/laurel-sprout>`_ 
+     - refer device specific `page <https://devices.ubuntu-touch.io/device/laurel-sprout>`_ 
    * - LineageOS placeholder `device page placeholder <placeholder>`_
      - `android_device_placeholder <placeholder>`_
      - `android_kernel_placeholder <placeholder>`_ based on vX.Y.Z
      - ?
      - ?
-   * - Ubports `https://devices.ubuntu-touch.io/device/laurel-sprout/ <https://devices.ubuntu-touch.io/device/laurel-sprout>`_
-     - ?
-     - `Kernel source <https://github.com/mintphin/lunecrash>`_ based on v4.14.7
-     - refer device specific `page <https://devices.ubuntu-touch.io/device/laurel-sprout>`_ 
-     - refer device specific `page <https://devices.ubuntu-touch.io/device/laurel-sprout>`_ 
+   
 
 
 Kernel & Hardware
