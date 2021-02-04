@@ -70,6 +70,9 @@ Install the required dependencies::
      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
      repo liblz4-tool bc lzop imagemagick libncurses5 rsync
 
+.. Note::
+    repo is not available in repositories of Ubuntu 20.04 or later versions. Please refer to :doc:`/porting/install_repo` for instructions on installing repo manually.
+
 Arch
 ^^^^
 

@@ -18,6 +18,7 @@ Contents
    :name: sec-porting
 
    porting/first-steps
+   porting/install_repo
    porting/get-sources
    porting/build-sources
    porting/install-build/index
