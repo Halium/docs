@@ -25,6 +25,7 @@ All of these should only be document in the exact same way here and **only an ov
    h815
    hammerhead
    herolte
+   h815
    krillin
    land
    laurel_sprout

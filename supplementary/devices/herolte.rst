@@ -4,7 +4,7 @@ Herolte - Samsung Galaxy S7
 
 The Samsung Galaxy S7 is a lightweight, powerful handset with an impressively crisp screen, and good look and feel. As with Samsung devices in general, the process of building and flashing ROMs has its peculiarities compared to devices of other makes. This page should help overcome the challenges they might otherwise present.
 
-(Note: This page is still under construction.)
+This device is currently being worked on by `Ari Börde Kröyer <https://github.com/abkro>`_.
 
 Status
 ------
@@ -44,6 +44,11 @@ The following table is somewhat lacking, but a good start.
      - `android_kernel_samsung_universal8890 <https://github.com/ZeroPointEnergy/android_kernel_samsung_universal8890/tree/cm-14.1>`_ based on v3.18.14
      - ?
      - ?
+   * - Ubports device port page: none as yet
+     - `abkro/android_device_samsung_hero-common <https://github.com/abkro/android_device_samsung_hero-common/tree/halium-7.1-ut>`_ `abkro/android_device_samsung_herolte <https://github.com/abkro/android_device_samsung_herolte/tree/halium-7.1-ut>`_
+     - `abkro/android_kernel_samsung_universal8890 <https://github.com/abkro/android_kernel_samsung_universal8890/tree/ubports-ut>`_ based on v3.18.14
+     - Graphics, screen rotation, wifi, lights, sound (partially), vibration.
+     - ?
    * - `Halium and Ubports device port page <https://github.com/Halium/projectmanagement/issues/48>`_
      - `Same as above <https://github.com/LineageOS/android_device_samsung_herolte/tree/cm-14.1>`_
      - `android_kernel_samsung_universal8890 <https://github.com/ZeroPointEnergy/android_kernel_samsung_universal8890/tree/cm-14.1>`_ based on v3.18.14
@@ -76,7 +81,7 @@ Guides
 
 `The Halium Porting Guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_
 
-`Detailed account of one porter's porting process for Ubuntu Touch to the S7, including valuable extra links and tips <https://github.com/Halium/projectmanagement/issues/48#issuecomment-626908532>`_
+`Detailed account of the porting process for Ubuntu Touch to the S7, which led to the repositories linked in the table above <https://github.com/Halium/projectmanagement/issues/48#issuecomment-626908532>`_
 
 `Device port discussion thread for the S7 on Github <https://github.com/Halium/projectmanagement/issues/48>`_
 
