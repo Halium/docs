@@ -71,29 +71,22 @@ Install the required dependencies::
      repo liblz4-tool bc lzop imagemagick libncurses5 rsync
 
 .. Note::
-    repo is not available in repositories of Ubuntu 20.04 or later versions. Hence it has to be installed manually.
+    ``repo`` command is not available in repositories of Ubuntu 20.04 or later versions. Hence it has to be installed manually.
 
 
-Installing repo 
-^^^^^^^^^^^^^^^^^
-
-To install repo, we need to ensure that you curl and git is installed. To install curl & git run the following command :
-
-.. code-block::
-
-    sudo apt install curl && sudo apt install git
-
-Run the following commands to create a .bin directory in the home directory, and include it in your path.
+Installing repo manually
+""""""""""""""""""""""""
+#. Run the following commands to create a bin directory in your home directory, and include it in your path.
     
-.. code-block::
+.. code-block:: shell
 
-    mkdir -p ~/.bin
-    echo export PATH=\$PATH:\$HOME/.bin >> ~/.bashrc
+    mkdir -p ~/bin
+    echo export PATH=\$PATH:\$HOME/bin >> ~/.bashrc
     source ~/.bashrc
 
-Run the following commands to download the repo script and ensure it is executable :
+#. Run the following commands to download the repo script and ensure it is executable :
 
-.. code-block::
+.. code-block:: shell
 
     curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
     chmod a+rx ~/.bin/repo
