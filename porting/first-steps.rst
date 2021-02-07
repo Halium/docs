@@ -70,6 +70,29 @@ Install the required dependencies::
      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
      repo liblz4-tool bc lzop imagemagick libncurses5 rsync
 
+.. Note::
+    ``repo`` command is not available in repositories of Ubuntu 20.04 or later versions. Hence it has to be installed manually.
+
+
+Installing repo manually
+""""""""""""""""""""""""
+#. Run the following commands to create a bin directory in your home directory, and include it in your path.
+    
+.. code-block:: shell
+
+    mkdir -p ~/bin
+    echo export PATH=\$PATH:\$HOME/bin >> ~/.bashrc
+    source ~/.bashrc
+
+#. Run the following commands to download the repo script and ensure it is executable :
+
+.. code-block:: shell
+
+    curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+    chmod a+rx ~/.bin/repo
+
+
+
 Arch
 ^^^^
 
