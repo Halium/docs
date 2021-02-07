@@ -38,7 +38,7 @@ Ubuntu Touch
 hybris-mobian
 -------------
 
-`hybris-mobian <https://hybris-mobian.org/>`_ is a GNU/Linux distribution based on top of Mobian, a Debian-based distribution for mobile devices.The goal of hybris-mobian is to be able to run Mobian on Android phones
+`hybris-mobian <https://hybris-mobian.org/>`_ is a GNU/Linux distribution based on top of Mobian, a Debian-based distribution for mobile devices. The goal of hybris-mobian is to be able to run Mobian on Android phones.
 
 
 Others
