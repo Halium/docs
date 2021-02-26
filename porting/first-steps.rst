@@ -103,9 +103,8 @@ Run the following commands to download the repo script and ensure it is executab
 
 .. code-block:: shell
 
-    curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
-    chmod a+rx ~/.bin/repo
-
+    curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+    chmod a+rx ~/bin/repo
 
 Arch
 ^^^^
