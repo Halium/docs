@@ -48,14 +48,14 @@ Head over to :doc:`/supplementary/how-to-document` to learn about adding your de
 Set up your build device
 ------------------------
 
-Now you will need to install packages on the computer you wish to build Halium with.
+Now you will need to install packages on the computer you wish to build Halium with. Make sure to have Python 3.6 or higher installed.
 
-Debian (Stretch or newer) / Ubuntu (16.04 or newer)
+Debian (Stretch or newer) / Ubuntu (16.04 or 18.04)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you are on the ``amd64`` architecture (commonly referred to as 64 bit), enable the usage of the ``i386`` architecture::
 
-   sudo dpkg --add-architecture i386
+    sudo dpkg --add-architecture i386
 
 Update your package lists to take advantage of the new architecture::
 
@@ -63,20 +63,35 @@ Update your package lists to take advantage of the new architecture::
 
 Install the required dependencies::
 
-   sudo apt install git gnupg flex bison gperf build-essential \
-     zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
-     libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
-     libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
-     python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
-     repo liblz4-tool bc lzop imagemagick libncurses5 rsync
+    sudo apt install git gnupg flex bison gperf build-essential \
+      zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
+      libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
+      libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
+      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
+      repo liblz4-tool bc lzop imagemagick libncurses5 rsync
 
-.. Note::
-    ``repo`` command is not available in repositories of Ubuntu 20.04 or later versions. Hence it has to be installed manually.
+Ubuntu (20.04 or newer)
+^^^^^^^^^^^^^^^^^^^^^^^
 
+If you are on the ``amd64`` architecture (commonly referred to as 64 bit), enable the usage of the ``i386`` architecture::
 
-Installing repo manually
-""""""""""""""""""""""""
-#. Run the following commands to create a bin directory in your home directory, and include it in your path.
+    sudo dpkg --add-architecture i386
+
+Update your package lists to take advantage of the new architecture::
+
+    sudo apt update
+
+Install the required dependencies::
+
+    sudo apt install git gnupg flex bison gperf build-essential \
+      zip bzr curl libc6-dev libncurses5-dev:i386 x11proto-core-dev \
+      libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-glx:i386 \
+      libgl1-mesa-dev g++-multilib mingw-w64-i686-dev tofrodos \
+      python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
+      liblz4-tool bc lzop imagemagick libncurses5 rsync \
+      python-is-python3
+
+Run the following commands to create a bin directory in your home directory, and include it in your path.
     
 .. code-block:: shell
 
@@ -84,13 +99,12 @@ Installing repo manually
     echo export PATH=\$PATH:\$HOME/bin >> ~/.bashrc
     source ~/.bashrc
 
-#. Run the following commands to download the repo script and ensure it is executable :
+Run the following commands to download the repo script and ensure it is executable :
 
 .. code-block:: shell
 
     curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
     chmod a+rx ~/.bin/repo
-
 
 
 Arch
