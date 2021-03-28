@@ -110,6 +110,12 @@ The space after [return] is important. The build fails without it.
 
     Be careful to ensure that your indentation is the same as other devices! The ``"[codename]")`` line should be indented by four spaces, and everything below it should be indented as shown.
 
+Adding the Hybris patches
+-------------------------
+Halium needs to have the Hybris patches applied before compiling or you will get errors. To add the patches, simply run::
+
+   hybris-patches/apply-patches.sh --mb
+
 Building the system.img and hybris-boot.img
 -------------------------------------------
 
