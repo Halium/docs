@@ -11,7 +11,6 @@ Getting help
 
 If you get stuck at any point during the porting process, we're here to help! You can contact us via the following support channels:
 
-* IRC: #halium on Freenode
 * Matrix: #halium:matrix.org
 * Telegram: @halium
 
