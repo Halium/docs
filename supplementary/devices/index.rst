@@ -25,7 +25,6 @@ All of these should only be document in the exact same way here and **only an ov
    h815
    hammerhead
    herolte
-   h815
    krillin
    land
    laurel_sprout
@@ -42,6 +41,7 @@ All of these should only be document in the exact same way here and **only an ov
    wt88047
    yuga
    Z00L
+   gts7lwifi
 
 How to document
 ---------------
@@ -712,6 +712,25 @@ Devices
      - GPS, A-GPS, GLONASS, BDS
      - Ambient Light Sensor, Accelerometer, Proximity, Gyroscope
      - IR Blaster
+   * - :doc:`Samsung Galaxy Tab S7 (Wi-Fi) <gts7lwifi>`
+     - gts7lwifi
+     - Begin porting Halium (Android 10/Android 11). I'm total newbie and any help will be appreciated!
+     - Latest A11 kernel: 4.19.113
+     - Snapdragon SDM865+
+     - 1x3.09 GHz Kryo 585 Prime & 3x2.42 GHz Kryo 585 Gold & 4x1.8 GHz Kryo 585 Silver
+     - Adreno 650
+     - 6Gb LPDDR5
+     - 128Gb UFS 3.0
+     - Wi-Fi 802.11ax (Wi-Fi 6 support), Bluetooth 5.0 (LE mode support), GPS, USB Type-C 3.2 Gen1 (5Gbps throughput)
+     - 8 MP, f/2.0, 26mm (wide), 1/4", 1.12µm
+     - 13 MP, f/2.0, 26mm (wide), 1/3.4", 1.0µm   /   5 MP, f/2.2, 12mm (ultrawide), 1.12µm
+     - Battery @ 4,195V, 8000mAh
+     - Quad-speaker system in coop with AKG (most likely the codec is Qualcomm WCD9385)
+     - No Information
+     - 11" LTPS TFT 120Hz, HDR10+
+     - GPS, A-GPS, GLONASS, BDS, GALILEO
+     - Fingerprint (power button-mounted), accelerometer, gyroscope, proximity, compass
+     - I'm newbie into porting so I haven't figured out as many info as possible, but I will try to fulfill it when possible.
       
 Sources
 ^^^^^^^
@@ -804,7 +823,6 @@ Nexus 7 (2012)
 Nexus 7 (2013) Wifi-only = flo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
 * `Nexus 7 2013 iFixit teardown <https://www.ifixit.com/Teardown/Nexus+7+2nd+Generation+Teardown/16072>`_
 * `Nexus 7 2013 Wikipedia <https://en.wikipedia.org/wiki/Nexus_7_(2013>`_
 
@@ -883,3 +901,11 @@ LG G4
 
 * `LG G4 GSMArena <https://www.gsmarena.com/lg_g4-6901.php>`_
 * `LG G4 DeviceSpecifications <https://www.devicespecifications.com/en/model/52f833d1>`_
+
+Samsung Galaxy Tab S7 (Wi-Fi)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* `Samsung Galaxy Tab S7 (Wi-Fi) GSMArena <https://www.gsmarena.com/samsung_galaxy_tab_s7-10337.php>`_
+* `Samsung Galaxy Tab S7 (Wi-Fi) DeviceSpecifications <https://www.devicespecifications.com/en/model/62955422>`_
+* `Samsung Galaxy Tab S7 (Wi-Fi) XDA-Devs Forum <https://forum.xda-developers.com/c/samsung-galaxy-tab-s7-s7-plus.11247/>`_
+* `Samsung Galaxy Tab S7 (Wi-Fi) Website <https://www.samsung.com/us/tablets/tab-s7/>`_
