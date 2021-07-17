@@ -1,3 +1,4 @@
 _build/*
 env/
 *.DS_Store
+.vscode/
