@@ -8,6 +8,8 @@ Porting Ubuntu Touch seems a good idea for those, how want to combine entertainm
 Status
 ------
 
+**Development freezed until the complete device tree is released.**
+
 Halium
 ^^^^^^
 
