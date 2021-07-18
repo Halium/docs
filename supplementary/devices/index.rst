@@ -714,7 +714,7 @@ Devices
      - IR Blaster
    * - :doc:`Samsung Galaxy Tab S7 (Wi-Fi) <gts7lwifi>`
      - gts7lwifi
-     - Begin porting Halium (Android 10/Android 11). I'm total newbie and any help will be appreciated!
+     - Porting process suspended until complete device tree is released.
      - Latest A11 kernel: 4.19.113
      - Snapdragon SDM865+
      - 1x3.09 GHz Kryo 585 Prime & 3x2.42 GHz Kryo 585 Gold & 4x1.8 GHz Kryo 585 Silver
