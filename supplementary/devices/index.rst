@@ -42,6 +42,7 @@ All of these should only be document in the exact same way here and **only an ov
    yuga
    Z00L
    gts7lwifi
+   a5xelte
 
 How to document
 ---------------
@@ -714,7 +715,7 @@ Devices
      - IR Blaster
    * - :doc:`Samsung Galaxy Tab S7 (Wi-Fi) <gts7lwifi>`
      - gts7lwifi
-     - Porting process suspended until complete device tree is released.
+     - Current Halium status: suspended. Until complete device-tree is released.
      - Latest A11 kernel: 4.19.113
      - Snapdragon SDM865+
      - 1x3.09 GHz Kryo 585 Prime & 3x2.42 GHz Kryo 585 Gold & 4x1.8 GHz Kryo 585 Silver
@@ -731,7 +732,26 @@ Devices
      - GPS, A-GPS, GLONASS, BDS, GALILEO
      - Fingerprint (power button-mounted), accelerometer, gyroscope, proximity, compass
      - I'm newbie into porting so I haven't figured out as many info as possible, but I will try to fulfill it when possible.
-      
+   * - :doc:`Samsung Galaxy A5 (2016) <a5xelte>`
+     - a5xelte
+     - Halium status: start porting.
+     - Linux 3.10.108, May 8 2021.
+     - Exynos 7580
+     - 8x 1.6 GHz Cortex-A53
+     - Mali-T720MP2
+     - 2GB LPDDR3
+     - 16GB eMMC 4.5 or 5.0
+     - Wi-Fi 802.11 a/b/g/n, Bluetooth 4.1, NFC
+     - 5 MP, f/1.9, 24mm (wide)
+     - 13 MP, f/1.9, 28mm (wide), AF, OIS
+     - Li-Ion 2900 mAh + 18W Fast Charging
+     - Single speaker, 3.5mm jack
+     - Touch screen **no info**
+     - 5,2" SuperAMOLED 1080x1920, 9:16 aspect ratio
+     - GPS, A-GPS, GLONASS
+     - Fingerprint (home button-mounted), accelerometer, proximity, compass, ANT+
+     - Latest official firmware: Nougat 7.0
+
 Sources
 ^^^^^^^
 
@@ -909,3 +929,10 @@ Samsung Galaxy Tab S7 (Wi-Fi)
 * `Samsung Galaxy Tab S7 (Wi-Fi) DeviceSpecifications <https://www.devicespecifications.com/en/model/62955422>`_
 * `Samsung Galaxy Tab S7 (Wi-Fi) XDA-Devs Forum <https://forum.xda-developers.com/c/samsung-galaxy-tab-s7-s7-plus.11247/>`_
 * `Samsung Galaxy Tab S7 (Wi-Fi) Website <https://www.samsung.com/us/tablets/tab-s7/>`_
+
+Samsung Galaxy A5 2016
+~~~~~~~~~~~~~~~~~~~~~~
+
+* `Samsung Galaxy A5 2016 GSMArena <https://www.gsmarena.com/samsung_galaxy_a5_(2016)-7789.php>`_
+* `Samsung Galaxy A5 2016 DeviceSpecifications <https://www.devicespecifications.com/en/model/b7c6387d>`_
+* `Samsung Galaxy A5 2016 iFixit disassembly guides <https://www.ifixit.com/Device/Samsung_Galaxy_A5_%282016%29>`_
