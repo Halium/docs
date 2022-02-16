@@ -66,7 +66,7 @@ If you don't know the path to your kernel config run ``grep "TARGET_KERNEL_CONFI
 .. warning::
 		Make sure that your configuration changes are not overridden by later lines in the config file.
 		
-		Also be aware that ``# CONFIG_IKCONFIG_PROC is not set`` *may* look like a harmless comment, `but it actually unsets`__ ``CONFIG_IKCONFIG_PROC`` if it is set (e.g. by an edit you made earlier in the file).
+		Also be aware that ``# CONFIG_IKCONFIG_PROC is not set`` *may* look like a harmless comment, but it actually unsets ``CONFIG_IKCONFIG_PROC`` if it is set (e.g. by an edit you made earlier in the file); see `Kernel Configuration in the Linux kernel documentation`__.
 		
 		.. __: https://www.tldp.org/HOWTO/SCSI-2.4-HOWTO/kconfig.html
 		
