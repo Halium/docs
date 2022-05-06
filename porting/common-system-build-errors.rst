@@ -17,20 +17,20 @@ Also check the vendor folders of your dependencies.
 Undefined or missing bluetooth headers
 --------------------------------------
 
-.. code-block:: guess
+.. todo::
 
-    *TODO: example*
+    add example of error message
 
-Some devices requires bluetooth when compiling, which aren't synced for default by Halium. This can be fixed adding LineageOS's repo to the device manifest:
+Some devices require bluetooth headers which aren't synced by default. This can be fixed by adding the following repository to the device manifest:
 
-... to the device manifest::
+.. code-block:: xml
 
     <project path="system/bt" name="android_system_bt" remote="los" revision="cm-14.1" />
 
 HYBRIS_BOOT_PART and HYBRIS_DATA_PART
 -------------------------------------
 
-.. code-block:: guess
+.. code-block:: text
 
    find: ‘device/*/generic’: No such file or directory
    find: ‘device/unknown’: No such file or directory
@@ -39,7 +39,7 @@ HYBRIS_BOOT_PART and HYBRIS_DATA_PART
    halium/hybris-boot/Android.mk:68: ********************* /data appears to live on ERROR: *fstab* not found
    halium/hybris-boot/Android.mk:71: *** There should be a one and only one device entry for HYBRIS_BOOT_PART and HYBRIS_DATA_PART.
 
-Make sure you run the commands :ref:`here <breakfast-and-lunch>` before trying to build. The Makefile depends on the environment set up immediately before by envsetup.sh; so if running in a build environment such as Emacs, be sure to set your compile command to something like "source build/envsetup.sh && breakfast [codename] && make [target]"
+Make sure you rerun the :ref:`initialization commands <breakfast-and-lunch>` before trying to build. The Makefile depends on the environment set up immediately before by ``envsetup.sh``. So if running in a build environment such as Emacs, be sure to set your compile command to something like ``source build/envsetup.sh && breakfast [codename] && make [target]``.
 
 
 .. _remove apks on lyudmila17/android_device_motorola_athene: https://github.com/Lyudmila17/android_device_motorola_athene/commit/a752422012165d937c058c1b671497bad44a4962
@@ -47,14 +47,16 @@ Make sure you run the commands :ref:`here <breakfast-and-lunch>` before trying t
 Flex locale error
 -----------------
 
-.. code-block:: guess
+.. code-block:: text
 
    [ 19% 2365/12156] Lex: checkpolicy <= external/selinux/libsepol/cil/src/cil_lexer.l
    FAILED: /bin/bash -c "prebuilts/misc/linux-x86/flex/flex-2.5.39 -o/home/peter/docs/devel/halium.amami/out/host/linux-x86/obj/STATIC_LIBRARIES/libsepol_intermediates/cil/src/cil_lexer.c external/selinux/libsepol/cil/src/cil_lexer.l"
    flex-2.5.39: loadlocale.c:130: _nl_intern_locale_data: Assertion `cnt < (sizeof (_nl_value_type_LC_TIME) / sizeof (_nl_value_type_LC_TIME[0]))' failed.
    Aborted (core dumped)
 
-This seems to be a problem with locales and the prebuilt ``flex``. You can avoid this by using the flex installed on your host::
+This seems to be a problem with locales and the prebuilt ``flex``. You can avoid this by using the flex installed on your host:
+
+.. code-block:: bash
 
     export USE_HOST_LEX=yes
     make systemimage
@@ -62,7 +64,7 @@ This seems to be a problem with locales and the prebuilt ``flex``. You can avoid
 Missing bison error
 -------------------
 
-.. code-block:: guess
+.. code-block:: text
 
     [  1% 322/20069] Yacc: checkpolicy <= external/selinux/checkpolicy/policy_parse.y
     FAILED: /bin/bash -c "prebuilts/misc/linux-x86/bison/bison -d -v --defines=/home/builder/workdir/out/host/linux-x86/obj/EXECUTABLES/checkpolicy_intermediates/policy_parse.h -o /home/builder/workdir/out/host/linux-x86/obj/EXECUTABLES/checkpolicy_intermediates/policy_parse.c external/selinux/checkpolicy/policy_parse.y"
@@ -72,7 +74,7 @@ The error message is very misleading here. The issue stems from the bison shippe
 
 The fix is to install 32-bit support for Ubuntu via:
 
-.. code-block:: guess
+.. code-block:: bash
 
     sudo dpkg --add-architecture i386
     sudo apt-get update
