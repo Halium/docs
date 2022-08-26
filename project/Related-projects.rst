@@ -35,10 +35,10 @@ Ubuntu Touch
 `Ubuntu Touch <https://ubports.com>`_ is based on Unity 8 and is developed by UBports. It is the continuation of the earlier Ubuntu Touch project from Canonical. UBports is actively working on making their future releases available on Halium.
 
 
-hybris-mobian
+Droidian
 -------------
 
-`hybris-mobian <https://hybris-mobian.org/>`_ is a GNU/Linux distribution based on top of Mobian, a Debian-based distribution for mobile devices. The goal of hybris-mobian is to be able to run Mobian on Android phones.
+`Droidian <https://droidian.org/>`_ is a GNU/Linux distribution based on top of Mobian, a Debian-based distribution for mobile devices. The goal of Droidian is to be able to run Mobian on Android phones.
 
 
 Others
