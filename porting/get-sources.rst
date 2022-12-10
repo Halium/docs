@@ -14,7 +14,7 @@ Make yourself a new directory to put your Halium source in::
 
 This directory will be called BUILDDIR in the remaining part of the guide, when necessary, to avoid confusion.
 
-If the target device has Android 10.0 or LineageOS 18.1 support, it's recommended to select ``halium-10.0``::
+If the target device has Android 10.0 or LineageOS 17.1 support, it's recommended to select ``halium-10.0``::
 
    repo init -u https://github.com/Halium/android -b halium-10.0 --depth=1
 
